@@ -1,0 +1,18 @@
+{
+  "repository": "https://github.com/nagy-ag/bpm-class",
+  "code_commit_verified": "5ab0f61e25e9b4194dbc818b6aaef48aa9aed43b",
+  "remote_main_matches_code_commit": true,
+  "public_file_count": 1376,
+  "required_entrypoints_present": true,
+  "private_credentials_or_runtime_directories_present": false,
+  "skill_entrypoints": 5,
+  "test_files_retained": 6,
+  "verifier_files_retained": 18,
+  "verification_scope": "Remote code snapshot; final progress documentation may follow in a separate commit",
+  "github_actions": {
+    "run_id": 37742227919,
+    "url": "https://github.com/nagy-ag/bpm-class/actions/runs/37742227919",
+    "conclusion": "success",
+    "scope": "Clean Windows checkout, dependencies, offline tests/source hashes and sharing audit"
+  }
+}

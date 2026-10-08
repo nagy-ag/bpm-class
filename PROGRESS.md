@@ -1,6 +1,8 @@
-## 2026-10-08 portable harness publication — in progress
+## 2026-10-08 portable harness publication — complete
 
-Preparing a reusable, credential-free Git repository for another Windows/Codex installation. Existing course completion is reference evidence only; each new user needs fresh progress, their own accounts/sign-ins/licensing and actual platform checks. See shared harness-01 in TASK_PROGRESS.md. No exercise rerun or account-permission transfer.
+Published [bpm-class](https://github.com/nagy-ag/bpm-class) with five repo-scoped skills, setup/technology instructions, fresh ordered progress and guarded isolated project preparation. A clean checkout with spaces passed setup with a fresh environment,231offline checks/39regression tests and223unchanged supplied file hashes. GitHub's clean Windows CI passed for code commit5ab0f61. Remote tree verified:1376files, six test files and18verifier files retained, no credentials/runtime/private state. [Setup](SETUP.md), [workflow](harness/WORKFLOWS.md), [verification](harness/reports/portable_verification.json), [publication](harness/reports/publication.json).
+
+Existing course completion is reference evidence only. Each new user starts75tasks/294steps pending and needs their own accounts, keys, private sign-ins, licensing and actual platform checks. Native Excel query relocation was independently reopened successfully; no new-account robot/cloud success is claimed. Source bundles and original local evidence remain preserved. Shared harness-01 in TASK_PROGRESS.md records this publication; no graded exercise submission or account-permission transfer occurred.
 
 ## 2026-10-07 final automation verification
 
