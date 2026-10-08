@@ -1,6 +1,7 @@
 """Isolated imports/revisions and passive injection audits, never real course writes."""
 import importlib.util
 import json
+import os
 from pathlib import Path
 import shutil
 import stat
@@ -138,6 +139,19 @@ class LessonTests(unittest.TestCase):
             stage_lessons(self.root, self.archive(files={'nap02/index.html': 'a', 'nap03/index.html': 'b'}))
         with self.assertRaises(ValueError):
             stage_lessons(self.root, self.root.parent / 'external.zip')
+
+    @unittest.skipUnless(os.name == 'nt', 'NTFS short paths are Windows-specific')
+    def test_windows_short_name_alias_is_same_checkout_without_allowing_escape(self):
+        import ctypes
+        archive = self.archive()
+        buffer = ctypes.create_unicode_buffer(32768)
+        length = ctypes.windll.kernel32.GetShortPathNameW(str(archive), buffer, len(buffer))
+        if not length or Path(buffer.value) == archive:
+            self.skipTest('This filesystem does not expose distinct short names')
+        record = stage_lessons(self.root.resolve(), Path(buffer.value))
+        result = apply_lessons(self.root, record['id'], 'Inspected same archive via NTFS alias')
+        self.assertEqual(result['state'], 'applied')
+        self.assertEqual(snapshot(self.root / 'nap02/nap02'), record['files'])
 
     def test_malicious_paths_case_collisions_private_entries_and_links_rejected(self):
         for name in ['../escape.txt', '/absolute.txt', 'C:/evil.txt', 'a/../../evil.txt',

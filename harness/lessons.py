@@ -28,17 +28,18 @@ def write_json(path, value):
 
 def ensure_inside(root, path):
     root, path = Path(root).resolve(), Path(path).absolute()
-    if not path.is_relative_to(root):
+    resolved = path.resolve()
+    # Windows may spell the same real directory with an NTFS 8.3 alias.
+    # Compare canonical paths, but still inspect the original ancestry for links.
+    if not resolved.is_relative_to(root):
         raise ValueError('Path must stay inside the checkout.')
     # Reject junctions/symlinks even when their current destination is inside.
     for node in [path, *path.parents]:
         if linked(node):
             raise ValueError('Linked workspace paths are not supported.')
-        if node == root:
+        if node.resolve() == root:
             break
-    if not path.resolve().is_relative_to(root):
-        raise ValueError('Resolved path escapes the checkout.')
-    return path
+    return resolved
 
 
 def snapshot(folder):
