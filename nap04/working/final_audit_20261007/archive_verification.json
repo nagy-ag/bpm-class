@@ -1,0 +1,1331 @@
+{
+  "passed": true,
+  "archive": "nap04/deliverables/BPA_nap04_final_handoff_20261007.zip",
+  "sha256": "2e40a77030b25c763f855c65abc9e10ffb006b4524313a63021e947c16a77088",
+  "files_byte_verified": 325,
+  "manifest": [
+    {
+      "file": "archive_verification.json",
+      "sha256": "ef39894a94f4d5e6c005b25584e1e820375cf25c9c9231efcd07764e208f8e8c"
+    },
+    {
+      "file": "ExcelRobot/.claude/rules/project-context.md",
+      "sha256": "cfb7ed2091a061cd13ab4666105954bf7b988b55b303bbf36c1d0a2ae6ae0b07"
+    },
+    {
+      "file": "ExcelRobot/AGENTS.md",
+      "sha256": "d417ccf5a033d6784d99302cbfe4a4086ccda6a3ae0298ccd1f5be02d69c8cbc"
+    },
+    {
+      "file": "ExcelRobot/Classify_150000.xaml",
+      "sha256": "d7017ba9643bcb3d17e17567a14d074e702c226687f4b3162bf2f0d3f503fa5e"
+    },
+    {
+      "file": "ExcelRobot/entry-points.json",
+      "sha256": "cf557bbc44572ad2768c209afb243e9db1404307fd1a27052803386f7286924a"
+    },
+    {
+      "file": "ExcelRobot/input/ugyfelek.xlsx",
+      "sha256": "fde91c4eb136216ef5748fea2960ac04497226a730a5cd3986bf07a96c5b9b60"
+    },
+    {
+      "file": "ExcelRobot/input_manifest.json",
+      "sha256": "672bfa353754b2981be998f62a69656fb4a9d087076b39ea50174e7321907254"
+    },
+    {
+      "file": "ExcelRobot/Main.xaml",
+      "sha256": "24aeee2d92919c6ee27e598b5296977edb2b2c88bb2541643e1a84dba584605c"
+    },
+    {
+      "file": "ExcelRobot/mini_baseline.json",
+      "sha256": "832bf2d3fc90a850c120f18a1a0063a47fc7408f685eb17c7855428ace92277b"
+    },
+    {
+      "file": "ExcelRobot/output/ugyfelek_minositve.xlsx",
+      "sha256": "3c72e8023bdba87f07f26cbb392f9eee4b4666c58478f611855eec70f7ac82b5"
+    },
+    {
+      "file": "ExcelRobot/output/ugyfelek_minositve_v2.xlsx",
+      "sha256": "18575018377e3b380cddfbf9c6b157ddb1680633c1df7cbffd7b4ebb6822a3d2"
+    },
+    {
+      "file": "ExcelRobot/project.json",
+      "sha256": "791867e8c77375cc8aef9a1c06b963b4d575001d0b90729b9fcad2d246757a4f"
+    },
+    {
+      "file": "ExcelRobot/project.uiproj",
+      "sha256": "4da64742e8b8981ce9c89125750ddd561f4b8184ca26029f384150192c907b2e"
+    },
+    {
+      "file": "ExcelRobot/README.md",
+      "sha256": "5ce4b7370d256ece987bfb792580a981fcd843620fe28e434ac039791034b1b7"
+    },
+    {
+      "file": "ExcelRobot/verification_100000.json",
+      "sha256": "b625182d82ad4bab9c477c3c12bd082963714ca559f5559f120f4b052afc6f84"
+    },
+    {
+      "file": "ExcelRobot/verification_150000.json",
+      "sha256": "cb902eaae5dbc65fa84c2ecdb434bca270ce3ddd3b221bd27da417a6a56a6410"
+    },
+    {
+      "file": "Fajlrendezo/.claude/rules/project-context.md",
+      "sha256": "e778243d40b7e82e9be3021d20e9c819f2a804d80c7ea4b4b00d3f650c6086f5"
+    },
+    {
+      "file": "Fajlrendezo/AGENTS.md",
+      "sha256": "5c0c91eff8f7d1b01b4844d8f2d427503f3f7d2dec9578f997dd79e6547a564f"
+    },
+    {
+      "file": "Fajlrendezo/evidence_basic_state/gyakorlo_mappa/Excel/riport_Q1.xlsx",
+      "sha256": "4bca357df463160fe665599dae41f25070271789107ea129d141cec1c8a0b22a"
+    },
+    {
+      "file": "Fajlrendezo/evidence_basic_state/gyakorlo_mappa/Excel/riport_Q2.xlsx",
+      "sha256": "753a9197ec044a25b7b6dd1536af4b2afc7c16a793c88fd1e9a3ca5ffe21a677"
+    },
+    {
+      "file": "Fajlrendezo/evidence_basic_state/gyakorlo_mappa/Excel/riport_Q3.xlsx",
+      "sha256": "7da96cc22aa43de205f172f603bcd1aa06ea7c906dfe4b07750652b42d493592"
+    },
+    {
+      "file": "Fajlrendezo/evidence_basic_state/gyakorlo_mappa/Excel/riport_Q4.xlsx",
+      "sha256": "ca1bfb92a2a621c76fcd15083726e54bd35340d9d8a7c78d6a54d2a2c6579b4c"
+    },
+    {
+      "file": "Fajlrendezo/evidence_basic_state/gyakorlo_mappa/jegyzet_atlas.txt",
+      "sha256": "4ae96f384a3b8cc87b757261ee4955c530a3e82a565974c35f45e4d6b3d94478"
+    },
+    {
+      "file": "Fajlrendezo/evidence_basic_state/gyakorlo_mappa/jegyzet_meridian.txt",
+      "sha256": "79987643d85f58f7ff2bf584a4cec02e4017505b996e122ae25aba13df1062fe"
+    },
+    {
+      "file": "Fajlrendezo/evidence_basic_state/gyakorlo_mappa/logo_verzio1.png",
+      "sha256": "c7ba51d3908c43fd85ea3a8410cb4159456f765a504a8fa54f448fc043607091"
+    },
+    {
+      "file": "Fajlrendezo/evidence_basic_state/gyakorlo_mappa/logo_verzio2.png",
+      "sha256": "d764f8e2db3295a187e1602b5bb3512ad1302567af154ce5a5af261786e32b6e"
+    },
+    {
+      "file": "Fajlrendezo/evidence_basic_state/gyakorlo_mappa/logo_verzio3.png",
+      "sha256": "3bab384d5e5ff31b2393ad5bb9c2be94e529d600524dcf26cc8db8ab41307fee"
+    },
+    {
+      "file": "Fajlrendezo/evidence_basic_state/gyakorlo_mappa/PDF/szamla_2026_100.pdf",
+      "sha256": "564b23f9cb29099474989c227ba453cd6b666dd487f99868531c3d8cf029f43c"
+    },
+    {
+      "file": "Fajlrendezo/evidence_basic_state/gyakorlo_mappa/PDF/szamla_2026_107.pdf",
+      "sha256": "97ec5eb567ae003ee7d6f94704fb0ca880bd30813ecf056131786edb0d3b5caa"
+    },
+    {
+      "file": "Fajlrendezo/evidence_basic_state/gyakorlo_mappa/PDF/szamla_2026_114.pdf",
+      "sha256": "bf57dc9f9ba4b4e328cc0ea8029aa016a601184fba151b2070c1d323b89d2b22"
+    },
+    {
+      "file": "Fajlrendezo/evidence_basic_state/gyakorlo_mappa/PDF/szamla_2026_121.pdf",
+      "sha256": "22d4e90a436ddff1b94511009a8b79a6fe8f9efc07083763f8fb7583c95ea11b"
+    },
+    {
+      "file": "Fajlrendezo/evidence_basic_state/gyakorlo_mappa/PDF/szamla_2026_128.pdf",
+      "sha256": "a05aa0f8276878173194214b3e7bf591705500a78f209e1027c56cd58a0d3cc4"
+    },
+    {
+      "file": "Fajlrendezo/evidence_basic_state/gyakorlo_mappa/PDF/szamla_2026_135.pdf",
+      "sha256": "848d7de88d0c626dd9fc49fa43e80450bfcbb5c5690bdc22339ee7ac3da43a3e"
+    },
+    {
+      "file": "Fajlrendezo/evidence_basic_state/gyakorlo_mappa/Word/arajanlat_atlas.docx",
+      "sha256": "d6dd3b3d2b28890600c0c0c5f865c43c7f403fe4353487ec188b59b33456c7a3"
+    },
+    {
+      "file": "Fajlrendezo/evidence_basic_state/gyakorlo_mappa/Word/arajanlat_meridian.docx",
+      "sha256": "4c528732a03194151787e128d588f1443edcdec9d89b6dd154a481d2ded271d5"
+    },
+    {
+      "file": "Fajlrendezo/evidence_basic_state/gyakorlo_mappa/Word/arajanlat_northbridge.docx",
+      "sha256": "e1238b442db91846617e11bd1d7ae7a9202379dd06f1a24ff848fa5e2784d39e"
+    },
+    {
+      "file": "Fajlrendezo/evidence_basic_state/gyakorlo_mappa/Word/szerzodes_terv_atlas.docx",
+      "sha256": "5b962e70af99d634039738b013c9365a2684e290089c7a2d138b46155e1f3157"
+    },
+    {
+      "file": "Fajlrendezo/evidence_basic_state/gyakorlo_mappa/Word/szerzodes_terv_meridian.docx",
+      "sha256": "7e48aec2d6476916503614f508b47fe9d9f8a34616bf03feccd0a93fdc988468"
+    },
+    {
+      "file": "Fajlrendezo/exercise/gyakorlo_mappa/Excel/riport_Q1.xlsx",
+      "sha256": "4bca357df463160fe665599dae41f25070271789107ea129d141cec1c8a0b22a"
+    },
+    {
+      "file": "Fajlrendezo/exercise/gyakorlo_mappa/Excel/riport_Q2.xlsx",
+      "sha256": "753a9197ec044a25b7b6dd1536af4b2afc7c16a793c88fd1e9a3ca5ffe21a677"
+    },
+    {
+      "file": "Fajlrendezo/exercise/gyakorlo_mappa/Excel/riport_Q3.xlsx",
+      "sha256": "7da96cc22aa43de205f172f603bcd1aa06ea7c906dfe4b07750652b42d493592"
+    },
+    {
+      "file": "Fajlrendezo/exercise/gyakorlo_mappa/Excel/riport_Q4.xlsx",
+      "sha256": "ca1bfb92a2a621c76fcd15083726e54bd35340d9d8a7c78d6a54d2a2c6579b4c"
+    },
+    {
+      "file": "Fajlrendezo/exercise/gyakorlo_mappa/jegyzet_atlas.txt",
+      "sha256": "4ae96f384a3b8cc87b757261ee4955c530a3e82a565974c35f45e4d6b3d94478"
+    },
+    {
+      "file": "Fajlrendezo/exercise/gyakorlo_mappa/jegyzet_meridian.txt",
+      "sha256": "79987643d85f58f7ff2bf584a4cec02e4017505b996e122ae25aba13df1062fe"
+    },
+    {
+      "file": "Fajlrendezo/exercise/gyakorlo_mappa/Kepek/logo_verzio1.png",
+      "sha256": "c7ba51d3908c43fd85ea3a8410cb4159456f765a504a8fa54f448fc043607091"
+    },
+    {
+      "file": "Fajlrendezo/exercise/gyakorlo_mappa/Kepek/logo_verzio2.png",
+      "sha256": "d764f8e2db3295a187e1602b5bb3512ad1302567af154ce5a5af261786e32b6e"
+    },
+    {
+      "file": "Fajlrendezo/exercise/gyakorlo_mappa/Kepek/logo_verzio3.png",
+      "sha256": "3bab384d5e5ff31b2393ad5bb9c2be94e529d600524dcf26cc8db8ab41307fee"
+    },
+    {
+      "file": "Fajlrendezo/exercise/gyakorlo_mappa/PDF/szamla_2026_100.pdf",
+      "sha256": "564b23f9cb29099474989c227ba453cd6b666dd487f99868531c3d8cf029f43c"
+    },
+    {
+      "file": "Fajlrendezo/exercise/gyakorlo_mappa/PDF/szamla_2026_107.pdf",
+      "sha256": "97ec5eb567ae003ee7d6f94704fb0ca880bd30813ecf056131786edb0d3b5caa"
+    },
+    {
+      "file": "Fajlrendezo/exercise/gyakorlo_mappa/PDF/szamla_2026_114.pdf",
+      "sha256": "bf57dc9f9ba4b4e328cc0ea8029aa016a601184fba151b2070c1d323b89d2b22"
+    },
+    {
+      "file": "Fajlrendezo/exercise/gyakorlo_mappa/PDF/szamla_2026_121.pdf",
+      "sha256": "22d4e90a436ddff1b94511009a8b79a6fe8f9efc07083763f8fb7583c95ea11b"
+    },
+    {
+      "file": "Fajlrendezo/exercise/gyakorlo_mappa/PDF/szamla_2026_128.pdf",
+      "sha256": "a05aa0f8276878173194214b3e7bf591705500a78f209e1027c56cd58a0d3cc4"
+    },
+    {
+      "file": "Fajlrendezo/exercise/gyakorlo_mappa/PDF/szamla_2026_135.pdf",
+      "sha256": "848d7de88d0c626dd9fc49fa43e80450bfcbb5c5690bdc22339ee7ac3da43a3e"
+    },
+    {
+      "file": "Fajlrendezo/exercise/gyakorlo_mappa/Word/arajanlat_atlas.docx",
+      "sha256": "d6dd3b3d2b28890600c0c0c5f865c43c7f403fe4353487ec188b59b33456c7a3"
+    },
+    {
+      "file": "Fajlrendezo/exercise/gyakorlo_mappa/Word/arajanlat_meridian.docx",
+      "sha256": "4c528732a03194151787e128d588f1443edcdec9d89b6dd154a481d2ded271d5"
+    },
+    {
+      "file": "Fajlrendezo/exercise/gyakorlo_mappa/Word/arajanlat_northbridge.docx",
+      "sha256": "e1238b442db91846617e11bd1d7ae7a9202379dd06f1a24ff848fa5e2784d39e"
+    },
+    {
+      "file": "Fajlrendezo/exercise/gyakorlo_mappa/Word/szerzodes_terv_atlas.docx",
+      "sha256": "5b962e70af99d634039738b013c9365a2684e290089c7a2d138b46155e1f3157"
+    },
+    {
+      "file": "Fajlrendezo/exercise/gyakorlo_mappa/Word/szerzodes_terv_meridian.docx",
+      "sha256": "7e48aec2d6476916503614f508b47fe9d9f8a34616bf03feccd0a93fdc988468"
+    },
+    {
+      "file": "Fajlrendezo/input_manifest.json",
+      "sha256": "aa490f8ff450f9c060ce12900fb299b183d0eade4db743c59bd7b7b2207866fb"
+    },
+    {
+      "file": "Fajlrendezo/Main.xaml",
+      "sha256": "4708b01770eb002d9b0bdb83569685fab75e10209455891959150fed6beb9060"
+    },
+    {
+      "file": "Fajlrendezo/original_exercise.zip",
+      "sha256": "3ae0afac36ae1f2736dee3ebee90d87f87d599e7b83a5a21816c1124aac88068"
+    },
+    {
+      "file": "Fajlrendezo/project.json",
+      "sha256": "201498c155e9e98a52f3f667d31426fbb5a0e628858ae5c95b0d4a2849946c8d"
+    },
+    {
+      "file": "Fajlrendezo/project.uiproj",
+      "sha256": "cc9de3855df2526fa4757abba5fc0248a95b827ffa41eb3aa4067de8d9985305"
+    },
+    {
+      "file": "Fajlrendezo/README.md",
+      "sha256": "6c6ce83604f556fe35082c1a0692d3d287ba5825d6f4bb17f0e4dfec4231e7f3"
+    },
+    {
+      "file": "Fajlrendezo/Sort_With_Images.xaml",
+      "sha256": "37288e240cfd452f8e6c28aa07aff5cd7181a16ddd38df4c33f2aad3544b1c2d"
+    },
+    {
+      "file": "Fajlrendezo/verification_basic.json",
+      "sha256": "5ec8cd7899b72ec248c09692c9ed849ebed6f2540a6a51751030c8e4eb74feeb"
+    },
+    {
+      "file": "Fajlrendezo/verification_images_run1.json",
+      "sha256": "fafcb52f3ac0140ff278db607d8ebc24fe1675fe85335f2e2b1cd84329457c68"
+    },
+    {
+      "file": "Fajlrendezo/verification_images_run2.json",
+      "sha256": "c12a3d619fd3d3d32176f5d5b37b5d0d4104212823acc18596ff5c7b55598236"
+    },
+    {
+      "file": "greeting_initial_evidence.json",
+      "sha256": "1b7eb9ba8634f3034a96c8bf49cacf9a2c941e78e80e5ae342ae0c872d86e8d1"
+    },
+    {
+      "file": "greeting_repaired_evidence.json",
+      "sha256": "4754eee06b8496f38615c440be27f0b3645091ecd31cf1fe4990c0c4f0612410"
+    },
+    {
+      "file": "HANDOFF.md",
+      "sha256": "759d015b5c80433f93db4b82250c4414da1589df78af8d6d4c63e6a79c705080"
+    },
+    {
+      "file": "Nap04_gyakorlas/Calculation_Validated.xaml",
+      "sha256": "0c13fa81e8ed54062648953e8989cdfa5ab5f9f16f5e6ca3755a76b9f9a651e4"
+    },
+    {
+      "file": "Nap04_gyakorlas/Greeting_Initial.xaml",
+      "sha256": "f922a7c421b4fc3f620363f6710518db9f5843dc0ae8b1d50003b180aee870da"
+    },
+    {
+      "file": "Nap04_gyakorlas/Greeting_Repaired.xaml",
+      "sha256": "d767ed7ca8c8f8d03ddda0e4d6a37a5e5759149b30e38dd277d66b154521c01c"
+    },
+    {
+      "file": "Nap04_gyakorlas/Main.xaml",
+      "sha256": "5e653b30aadc1a2d257b8e826984eda324d9264f7bf6861a75822f99855adeac"
+    },
+    {
+      "file": "Nap04_gyakorlas/project.json",
+      "sha256": "e0fa0a5507ca19542d5956296bdcae48e497aa9f92795d2170a41a03f0815f75"
+    },
+    {
+      "file": "Nap04_gyakorlas/project.uiproj",
+      "sha256": "6359e2c1d75b4e8bd489beca5831199b7a52c6acc59a594365df602c3da110c3"
+    },
+    {
+      "file": "Nap04_gyakorlas/README.md",
+      "sha256": "6947d3b4b9f742a328bdc04c597caf815d046586a0ba0d92d7c1a52a8ff9ec7a"
+    },
+    {
+      "file": "Nap04_gyakorlas/Validation_Regression.xaml",
+      "sha256": "1db820ec0b5ef94d980197611bc81ec5c2b911f3fe6b291b0f6624f4829700db"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/batch_verification.json",
+      "sha256": "a7b88a99b33321faa6ad3f67fa1f78264fa0ae179f4eb87dcc3b67ababb8d455"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/events.csv",
+      "sha256": "8e0289d2ef9472eacae1d0c0fc3d1ec2e8f890889e66062ddfe102f65a1b0703"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/execution_review.json",
+      "sha256": "f6ca6ae18710f9e242a912aea34fec589bed75baf99ff66b17454a41edced55a"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/input_snapshot.xlsx",
+      "sha256": "07a3f395a239a69448e5f83186f088646f26fb21071243b44453b2a16019b210"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/last_event.txt",
+      "sha256": "e0cb5762101d4a6a595ce59981e2d40a1863f13b9ef25a645b6daee8c6a617d7"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/sajat_karbejelentesek (4).csv",
+      "sha256": "49f433d5440e7ddc38b41b679d88b18892758f97e23f26e2a49004477ca33b1b"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-118264/01_before.png",
+      "sha256": "7999880a27903e9c100d9b428a0db7731ccea66d85245dc3c25f18553e5fdd57"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-118264/02_filled.png",
+      "sha256": "df30d5f6e3f1e82a5c2d155f21143dc574d549d882c0f65561a9c87bb0032bc3"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-118264/03_confirmation.png",
+      "sha256": "f1b79c3a44e4fc7c4d622860e3d30ddb18b88ae68d2455514b42ba6b45385798"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-118264/case_id.txt",
+      "sha256": "ecd9c87f6c1fac14359f819979b47c928ed0c3454a0992c83785c5f674b69709"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-118264/events.csv",
+      "sha256": "e4f673df09b0e502aa01f486d2f51238c6fd40d03e0a04ba33da08d786a35637"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-118264/input_snapshot.xlsx",
+      "sha256": "d1e961d6be1e08b48d952f29aecd688782029870d35d084cb96c61cc3451cf6b"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-118264/last_event.txt",
+      "sha256": "ceec99743ac3b62be7b3e6a72808493aad41f265d709a41c668bc2b3048a3d4a"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-138476/01_before.png",
+      "sha256": "28b728f54fd361a422113b7df8f0c158a7c7c970885c4be0e65ea8e1a22a61d5"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-138476/02_filled.png",
+      "sha256": "9753b7707ece20d55892edf5f6d544ed64110ab74b26c1da6613d2240c47727d"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-138476/03_confirmation.png",
+      "sha256": "a407952bea14bdb7e9697e5c3273e41a6b5c12e2b6216809c1a5402184a37908"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-138476/case_id.txt",
+      "sha256": "1397fdc3967a64bfe6759f8a2695c70504ed953f5b363108e27edb9133cae10e"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-138476/events.csv",
+      "sha256": "76efadde7df57e08379a4eb3eb640752f80e68451a9687de4dae1aaa198f52e3"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-138476/input_snapshot.xlsx",
+      "sha256": "19dddeff55503319a2c40ffe52a21711bf01b0045a12ae390e1716ae2da70ce9"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-138476/last_event.txt",
+      "sha256": "b0366dc2b91c8ea15f5cd16d3526560053161ba4fe8378740e76cff9f41522f6"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-204531/01_before.png",
+      "sha256": "28b728f54fd361a422113b7df8f0c158a7c7c970885c4be0e65ea8e1a22a61d5"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-204531/02_filled.png",
+      "sha256": "7766d29ea1818e48023d53511f96002526fb778da94bdf8c6628a5c08b05b2ce"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-204531/03_confirmation.png",
+      "sha256": "b66febb2e5f9e6f0fb41a0a8c29112647a9c1cd551a6f9da50b40b22695d2c6a"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-204531/case_id.txt",
+      "sha256": "58db40b57ae8bfd006bd2fa3cf1ca996662fb3f2f5f99f1ae2ca5c53385f3979"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-204531/events.csv",
+      "sha256": "65f9a79d0d1f0cd9e4f1b10028793065ffbc7514c34099258ff19c24ae8ee507"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-204531/input_snapshot.xlsx",
+      "sha256": "717d9f88102994e032853aff8b02d395b0801aab414230c1127be4fc3e10c52e"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-204531/last_event.txt",
+      "sha256": "0af9e642556561e4cb5d46c05da7071e755047c0272a0278c0117340c72eb4b0"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-390162/01_before.png",
+      "sha256": "28b728f54fd361a422113b7df8f0c158a7c7c970885c4be0e65ea8e1a22a61d5"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-390162/02_filled.png",
+      "sha256": "3eb22af0a44ad4feeabd76ba4750a59eacc285fa393c6b8efe95ef06f0ca3aa7"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-390162/03_confirmation.png",
+      "sha256": "7e48802d064220b7604d6fdb6536bbdcb11bcaac91209af8d33d1f3b1e57f09b"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-390162/case_id.txt",
+      "sha256": "2f73770d34773f615bdce692a2c34de8eece734f4582449ec1559f9e6bcb7926"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-390162/events.csv",
+      "sha256": "1c2e1bd2b6263359a9ff9ac7eb636fc4b7a97fd9de1807256e7fde2e9711f8c4"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-390162/input_snapshot.xlsx",
+      "sha256": "dcc4f7ebe791093aa386cb495eefd137b1de96eaff316044784cdd201875c0d7"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-390162/last_event.txt",
+      "sha256": "b9a8765db1fe722ff2c89f9ea27e1f9cbdba6f821234721c1fe880e8add9865b"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-562017/01_before.png",
+      "sha256": "28b728f54fd361a422113b7df8f0c158a7c7c970885c4be0e65ea8e1a22a61d5"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-562017/02_filled.png",
+      "sha256": "2cb681f372a001bb0081c698da80e6d4a41ca36e3c94443b2b8406e1c01724de"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-562017/03_confirmation.png",
+      "sha256": "85eae97ceae962de3d53c6884c5eb91b644f6802156b29579e9c5fb0c3625818"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-562017/case_id.txt",
+      "sha256": "2ca0657536cc215ba8f3beb55360dadf851f7b24ab9dbaf7bee4233993625d84"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-562017/events.csv",
+      "sha256": "8f4a70cb3cd81764ff68036713bb25abdc38993fe21403b71dcb84b90f33e4ec"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-562017/input_snapshot.xlsx",
+      "sha256": "138db0ef990d2c444098a39ee3cac6467ceea0d3d709b56873e868b2b9e22e25"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-562017/last_event.txt",
+      "sha256": "b80d7725f562157c140d7d188eda9223f7f7fd5b9d395bd29d717caf40ee140f"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-627849/01_before.png",
+      "sha256": "28b728f54fd361a422113b7df8f0c158a7c7c970885c4be0e65ea8e1a22a61d5"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-627849/02_filled.png",
+      "sha256": "d107d5acb4af33441ac402e3b44a7d7187d721551c02011c804cc31b2a3e1963"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-627849/03_confirmation.png",
+      "sha256": "8e0be811a4d487b3afbbaac0bdc4799f562951919c4e4a34a1246311b4469bbc"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-627849/case_id.txt",
+      "sha256": "7f934fe5ea57429315d1c0faca9069e528faa06baee2638393425b5beb5426c6"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-627849/events.csv",
+      "sha256": "99a46e79978c765f9dddad6043352b6c14d608d0ddf971c06b19575746d4bb2a"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-627849/input_snapshot.xlsx",
+      "sha256": "043d611d9595b6ec6482b0c12fcb3133dd51d5db86d2a8b5bd7da11993a9fb11"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-627849/last_event.txt",
+      "sha256": "9047406ffc8bac82c195a655116191180c6a06b213b74fa910ee8d8fd53df1ee"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-771205/01_before.png",
+      "sha256": "28b728f54fd361a422113b7df8f0c158a7c7c970885c4be0e65ea8e1a22a61d5"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-771205/02_filled.png",
+      "sha256": "dd5a7511f863086c830ab0222d14e8e649b4dd7d4ab4cc2694dce73d3b9e77b0"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-771205/03_confirmation.png",
+      "sha256": "857dc7fa304888644be5c42a759f438eab1f53558d3c6c44825e5ee73cdf8375"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-771205/case_id.txt",
+      "sha256": "293f9d88527e3fffae38de6fec6b91106a93b3c558155ca63894690ce0e5ce51"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-771205/events.csv",
+      "sha256": "05835205364aa8694adb595ed01fc73cf420e6062b6f74ae9ae849ad962fb202"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-771205/input_snapshot.xlsx",
+      "sha256": "72c872970c24035c0e0a409c29668335baa9e7b3351e6e8d832c7ebc87cc7e16"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-771205/last_event.txt",
+      "sha256": "8fe34a51a29c5bb4b7ad5cb67b0fd0b7afa3f83b8db508c4991b66954bb6d7bd"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-845290/01_before.png",
+      "sha256": "28b728f54fd361a422113b7df8f0c158a7c7c970885c4be0e65ea8e1a22a61d5"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-845290/02_filled.png",
+      "sha256": "6d3771e99666a757b463d972c359f87f693ab375fa6938b1b4502e41621c935c"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-845290/03_confirmation.png",
+      "sha256": "445641df2d6955f6e9ba17b094a55c740448a1015369f5058ae86f9698fe98a6"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-845290/case_id.txt",
+      "sha256": "6a587358eec29be89fe796f6e076a71bc96d3d84136b85114198614043b866f5"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-845290/events.csv",
+      "sha256": "8829ff59a2db09dc424f5332b218d048cb1dea75fa659300ddd1d4968c1d0192"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-845290/input_snapshot.xlsx",
+      "sha256": "e97c6ebb578078b0652136f2daeb1976711b2e5b0c509537f95a69f83402c3b6"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-845290/last_event.txt",
+      "sha256": "c59c38df03824062a86013adab40e1d9fabf8226835ab94ea8a85c6470f70c27"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-905324/01_before.png",
+      "sha256": "156466d686658567a7397cebaa2fccf80985d9cdfa8a884c41d2b5771db7099b"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-905324/02_filled.png",
+      "sha256": "800832e604194978825943a8d2f64c3d591ee923d1de2a814f512568ef21be5c"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-905324/03_confirmation.png",
+      "sha256": "d6e2ce0cfcd4d5cd9b2043ca2e4d6d8ba20880e95432aa06eb788a6addaa1a1d"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-905324/case_id.txt",
+      "sha256": "230d0abc3b3b44720d6cfe40cf0615472a3aed47a8c6b9fba2d4be3cfb748fee"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-905324/events.csv",
+      "sha256": "5b4d6a29322cb362d02e15b924078008142381f1eed3cfe5448194741ea6be25"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-905324/input_snapshot.xlsx",
+      "sha256": "89678eac5d3bbbb59ab405f9b7c0be08c32c7e5c4307b1b12adad13832f5b76c"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/TR-905324/last_event.txt",
+      "sha256": "e28d7b172ef0a63950ffa65d6c34acde60d28e14d06076e3d13eb25bf04add45"
+    },
+    {
+      "file": "PortalRobot/actual_batch_20261007/visual_review.json",
+      "sha256": "09c446dd824e35df5105a0a490c2d818187abf8201c28984625e6b0170ce063e"
+    },
+    {
+      "file": "PortalRobot/batch_result.json",
+      "sha256": "a8cb55e44b2ab71adf3fd1458544e936ef47367abb85ed6fd662ebd5ad66ad75"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/baseline_user_confirmation.json",
+      "sha256": "ae463b7bd24f019c28f671c9f57dbad337c0e806f9476c8ae3d8a6ecadff3c8c"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/evidence_manifest.json",
+      "sha256": "c3f43077cee5caee96a52329d44e4ce0514d7db8e71ed75b0edcfbc1c6f2c8da"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/final_reset_empty_form_review.json",
+      "sha256": "d296a68d55723f958dbdc85506b19a51511f1b33ffd7174a6476d28f1e7ef944"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/final_reset_empty_form_user.png",
+      "sha256": "59890cdf418c9ef51b4ae92fa87e056a8dcd463882a44cf32edb4a77f87ec8a6"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/final_reset_list_user.png",
+      "sha256": "f743dcf1222eb3b87ccf986c07f5f580183413b4cad61b672d11d01fae3c1605"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/final_reset_review.json",
+      "sha256": "c4cf7b59e8f063e2f6779b5cc0c90840c042adc585f1b42d3a0fc2665b14492f"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/form_values_retained_review.json",
+      "sha256": "92147cc0a9c4179bff88540421788637a32ef139ca1efdb28c45e03f08eb236b"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/form_values_retained_user.png",
+      "sha256": "74f0e80e7d5d0eca2394fb16bf196680052485546805cbe32ce94b31d33970e7"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/isolated_baseline_restored_review.json",
+      "sha256": "22cad5fa87a337e95af792d2a14572081aa1d5bbb8f9eed9daa8952b7cfe845f"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/isolated_baseline_restored_user.png",
+      "sha256": "2e93440a250ef1b9a55301c50911097fe7350f1c3e31f15f0d4c640a7269f8a3"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/manual_confirmation_review.json",
+      "sha256": "42b8e4823e5165fcb8c6469321d360b86b71732c09b1b869daf356b4ff7c938b"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/manual_confirmation_user.png",
+      "sha256": "00cdddce147958dfa43bd6a6ef5c4fd4a073e3aa7aa8e8ec9ea53db4b830151a"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/manual_export_verification.json",
+      "sha256": "b8f128ea03c0c63b39b495e722a184bf0712a8ee56b5419a9cd3051478b9b499"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/new_form_diagnostic.json",
+      "sha256": "ef083999004bf5b2e3c6dadfc0efc7d3114f8379d37ae4924e78c11a1664abce"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/new_record_clear_review.json",
+      "sha256": "0ad5aa74b8c457c99cd47d79df2c6f1b851c6071e64c8535b581a20a785dfb9d"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/new_record_cleared_user.png",
+      "sha256": "fbdf9f8dd2701aff0faeabf2e341d4f2c3364968ffbea2be5953440429338d2f"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/original_page_identity_review.json",
+      "sha256": "0b89429dfac20e8cdbcaa8215880a263591daf2572dc0ad334e0f75bce47650a"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/original_page_identity_user.png",
+      "sha256": "06f0ec5f8a385f33c4e0c2c8e46a8f2fb540bde0928f39f8dc53a7c051a86645"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/original_records_reconciliation.json",
+      "sha256": "bf08c84368b01fcf40b3c5e29c8d8255ec088d9136f4f91a367b5e87956c1a28"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/preparation.json",
+      "sha256": "04aff84e1190a2fc5f606d046e69601eb663d12f57f35e2002e67614e2fc7ee9"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/README.md",
+      "sha256": "6c6f114688c713d8ce98888134c93dd61ee1ef0eae49ef61fdb19cec02f4f845"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/recovery_reset_user_confirmation.json",
+      "sha256": "5f9cba3e82d2735669687ca9b4c6a1dd4f08c9a2846bc430b20bfc95a3ea30aa"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/replay_confirmation_review.json",
+      "sha256": "f429396ba08e483ea7c3adcb677eb92795d5c2f2d7490baad79773f010f01356"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/replay_confirmation_user.png",
+      "sha256": "8de679626a529715bbe6b731328f0a60a0559ef54473c091a58453f922d38f23"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/replay_duplicate_warning_review.json",
+      "sha256": "3e005ffdf6574e1a93a7a0f325c419f946d71f48a9770afca4a2b9c14fdbfbe2"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/replay_duplicate_warning_user.png",
+      "sha256": "30e946cf88c6b33aa3bf2a330ebfe8357dd9b43647229a887e3f715a169419c0"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/replay_export_verification.json",
+      "sha256": "b5b37426504aca2cadf26016d222dfa3ac9e46c4a9bcb0820865c56d136a10d4"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/sajat_karbejelentesek (5).csv",
+      "sha256": "a18c79f6f4bcbbc19f8c574e5601d7658ce453703e1252b52d423e0c81795641"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/sajat_karbejelentesek (6).csv",
+      "sha256": "49f433d5440e7ddc38b41b679d88b18892758f97e23f26e2a49004477ca33b1b"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/sajat_karbejelentesek (7).csv",
+      "sha256": "a18c79f6f4bcbbc19f8c574e5601d7658ce453703e1252b52d423e0c81795641"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/verify_manual_export.py",
+      "sha256": "e1be154d3fa49e09e48df78a3e3b1370e0f8824cd3855434de7988137df5256b"
+    },
+    {
+      "file": "PortalRobot/manual_reset_20261007/verify_original_reconciliation.py",
+      "sha256": "91941a2acfee7eb1fd1eea290a0dd35d57a7bbd56769cada48fe67859ea7b38a"
+    },
+    {
+      "file": "PortalRobot/PORTAL_BATCH_DETAILS.md",
+      "sha256": "a5c7cfbfaa7194949c630759b7775d143043f7bba069570496bf7d9bcbe392f6"
+    },
+    {
+      "file": "PortalRobot/PORTAL_BATCH_HANDOFF.md",
+      "sha256": "f2cc82a7dc2cacabad131501bba6263ccb7b31ef7e205dca24a277c4fd0d049c"
+    },
+    {
+      "file": "PortalRobot/portal_batch_preparation.json",
+      "sha256": "a8195faf6cfbe7f04133c3a428981f7d1ca5542f91381af686ba29c2914d9c01"
+    },
+    {
+      "file": "PortalRobot/portal_batch_ready.json",
+      "sha256": "25b08d3fcc5fac9592e359713f9661e2da654154d1f6905cc8effdcebd4103e7"
+    },
+    {
+      "file": "PortalRobot/portal_batch_ready_build.json",
+      "sha256": "4fc28b4932fc077d3a9f968289c0f223fb2f652dd236b2f873c4725942032be4"
+    },
+    {
+      "file": "PortalRobot/portal_batch_ready_validate.json",
+      "sha256": "a4ec63963dd5df888c6798d17558c0b35152eed3ac3660b70808c3b15b79cd07"
+    },
+    {
+      "file": "PortalRobot/readiness_2026-10-06/gyakorlo_karportal.html",
+      "sha256": "53a10f3fdcd33db635327af8e73d6d198fc3e5e1d95b5f091c1bd65803b6ec56"
+    },
+    {
+      "file": "PortalRobot/readiness_2026-10-06/karbejelentesek_input.xlsx",
+      "sha256": "76aa238dd5d3fbf481d1d7a1f59005834adf3e404e1cfc275f2ede58222473b2"
+    },
+    {
+      "file": "PortalRobot/README.md",
+      "sha256": "9312e534040b037bd7c188baf97ea9369e59993498ab4fe7d81354850660da2c"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.claude/rules/project-context.md",
+      "sha256": "b6f47c3a16b98a3876dc87eeff6921c35cb3b3565d669642af0b8f9998d484ed"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/.metadata",
+      "sha256": "77e412d77a2ee4f50f6679c1bf2901c0f565de79687eda00cf1b26cb50170e2a"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/.type",
+      "sha256": "dc20b3d5d2cddf82fad332821ca5e9a4efdcede4a273aa193d2b495bdcc92825"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/.data/ObjectSelectionName/.content",
+      "sha256": "e8fb0938cb3ce3307b0cc68d805169b27f57142e33c49f8e4ae4a1bd188a7f9d"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/.data/ObjectSelectionName/.hash",
+      "sha256": "c0e580e891235cc3ddb017e5bb07d5807c454a8043e20871b8cca9a6e23e484e"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/.metadata",
+      "sha256": "3df19122b8a1eed068ea37ed77f4f05c065fd4a5a421eb2c07c8c8eeeee954db"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/.type",
+      "sha256": "0d04bfeb7d64b71c74fc925cca93d683154e8cc7e6e5838faced498e34c9984d"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/.metadata",
+      "sha256": "a43abe31b097d01f9c434033ae538fbd8ec245b853bb0dac9d49292b7e9c0468"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/.type",
+      "sha256": "f86820a8a1a59fe11c90bcb80a4a302291f004d2a6eabac577f45b89981063b7"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/.data/ObjectRepositoryScreenData/.attributes/SearchHash",
+      "sha256": "61b3a59ab9675cebb93a996b79eabd4a7f3c6347da8c072a6e86bd252b8dd62f"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/.data/ObjectRepositoryScreenData/.content",
+      "sha256": "e4725267848038ae68feabdece634dbccd4f32fb5a942f7033f66874850354f1"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/.data/ObjectRepositoryScreenData/.hash",
+      "sha256": "b9fe68c5b921934fe25963ce3f17cb4d95212e4988676c6ebe4eb357e53b2009"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/.data/ObjectRepositoryScreenData/.images/.design/06wdbGvdqEkusm9uy1iEITw",
+      "sha256": "66fcbf09718f47cc4ef85bcc7c1531adef8fb9a32015d1a6f8d7e1e0c4ea967b"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/.metadata",
+      "sha256": "be36cb7e4f1b53df3968ef77eb40e3d67d56b8556393b9a7e69fa852ccfa9e2a"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/.type",
+      "sha256": "6e56137e21d3222a2e3135fc3458286fc3fb6b2e2c679e9ae28db268fe982af7"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/1u9Q/.data/ObjectRepositoryTargetData/.attributes/SearchHash",
+      "sha256": "64824e57e2381d3f70a6721197865c9391eed2bb8e84706945185445bdc4a931"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/1u9Q/.data/ObjectRepositoryTargetData/.content",
+      "sha256": "942867bd5979eb6c8a5c2d53b79ac3cb573e2d4cc70eb2ae1d69327c6e1558ac"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/1u9Q/.data/ObjectRepositoryTargetData/.hash",
+      "sha256": "ed0b2a1b8c2353ca172c971ad1358ae85a6aefff9ff7a7622e75eeae43c44bc6"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/1u9Q/.data/ObjectRepositoryTargetData/.images/.design/0BoANBwZHbkaTZnYSnZb-2w",
+      "sha256": "eec8756534124da4eabf429aa5cf8f4fd0e7f29ca78217123567ebc2bc58eeed"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/1u9Q/.metadata",
+      "sha256": "666bde763285785b37189f9aad32711cea85c223942e8da2c1a6ed042a52c74c"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/1u9Q/.type",
+      "sha256": "4e5b548d6d61f0006840aca106f7464a4b59e5a854317d5b57861b8423901bf6"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/beq6/.data/ObjectRepositoryTargetData/.attributes/DesignData",
+      "sha256": "e3cdaf3b625cf5fb6a1c0d090d45694a93ffd6086ba8d81ff760ffacc666862a"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/beq6/.data/ObjectRepositoryTargetData/.attributes/SearchHash",
+      "sha256": "5b3db18af3a1fde7ba3034a4e61e8adab6ba4c0d3879818a5c6cda8ef898f654"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/beq6/.data/ObjectRepositoryTargetData/.content",
+      "sha256": "989cd7b7685be8abc4ff7bf9d2da16517f180fac4d20fe4141c8b9f15d0db8b2"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/beq6/.data/ObjectRepositoryTargetData/.hash",
+      "sha256": "3413d0ae501858a59eb6eca23bbe6d759e6ceaef992d5dc3c16ad044ce9d6d26"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/beq6/.data/ObjectRepositoryTargetData/.images/.design/0n9Gq4DojE0aH2-EunltwIg",
+      "sha256": "acd7c29e62c343bbcf56e03c30857ac88751f4b8f7298b8f544f33f246190f04"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/beq6/.metadata",
+      "sha256": "5a23f88491fa33c619f55eeeee4d75638cb96c5a6844beab66f3d71a9affc7ea"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/beq6/.type",
+      "sha256": "4e5b548d6d61f0006840aca106f7464a4b59e5a854317d5b57861b8423901bf6"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/bY8s/.data/ObjectRepositoryTargetData/.attributes/SearchHash",
+      "sha256": "e4a0e6109ff57142637f3ce841328a615d302b4b0e711325859a306d79ad9d8f"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/bY8s/.data/ObjectRepositoryTargetData/.content",
+      "sha256": "e41167980bfcdf48feeea5c2245106105adba1ffda530fdb1e893dd19b39d110"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/bY8s/.data/ObjectRepositoryTargetData/.hash",
+      "sha256": "cdc31acc6441359461cebf4cd0fccb379e564cab896aad65073e19ef3f737b75"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/bY8s/.data/ObjectRepositoryTargetData/.images/.design/0gRMM0rUb3Emk3m1dlm74lQ",
+      "sha256": "42163d05e4e907b9838ee2c8d02a0983a03a11171ee4401bf6779eb65b2c2b20"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/bY8s/.metadata",
+      "sha256": "1239f9480ff19833091545a333f4b5002568dd6e5c659b05f9353a7229781196"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/bY8s/.type",
+      "sha256": "4e5b548d6d61f0006840aca106f7464a4b59e5a854317d5b57861b8423901bf6"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/kFS6/.data/ObjectRepositoryTargetData/.attributes/SearchHash",
+      "sha256": "016b4cbc80667b51d57a52a388ba8508dc2f19f8f729330a1ba141433a341719"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/kFS6/.data/ObjectRepositoryTargetData/.content",
+      "sha256": "b250d781b7c4fc5b82eba223b07a3d93cf80f7b4a9008bdb3b96ffcca8572665"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/kFS6/.data/ObjectRepositoryTargetData/.hash",
+      "sha256": "a037b2af8f91faf0d2d6e7d138650a496e3bb79225eeba74f81db1bdf99e6096"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/kFS6/.data/ObjectRepositoryTargetData/.images/.design/020r6bGn60kmiHLjRnB7wlw",
+      "sha256": "bc1f331258af20ee32523e8c4b26fffdfbfca845fe8b08377a47cd9f49bf8b75"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/kFS6/.metadata",
+      "sha256": "c4cfa2b54f4bea184928fcb5f1b4e85ddd42fb8b9b586672025dab881b6d8904"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/kFS6/.type",
+      "sha256": "4e5b548d6d61f0006840aca106f7464a4b59e5a854317d5b57861b8423901bf6"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/mvdK/.data/ObjectRepositoryTargetData/.attributes/SearchHash",
+      "sha256": "fb29b3e1eb150b26e43222429f9bfac43fc391e0786ee57891beb4ee09f362cc"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/mvdK/.data/ObjectRepositoryTargetData/.content",
+      "sha256": "c05293a653d2ba2aba9b89fe4c3c4b7071ac065c075901d86d39bee4cbc2ccd2"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/mvdK/.data/ObjectRepositoryTargetData/.hash",
+      "sha256": "abad2cd71953df43e32cd1eec22ed4944d55c561d675eb35e021285968a42250"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/mvdK/.data/ObjectRepositoryTargetData/.images/.design/0AoajRBYU-UKYio4y771bOQ",
+      "sha256": "eb2f85cc0cdfc252eccdc37af8491a7157c40e3032d230939a431f03e6581ceb"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/mvdK/.metadata",
+      "sha256": "e640a927d1641e92bac3fbae11dd1e932eaea52c0da8cb0f43f71a8ee532c18e"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/mvdK/.type",
+      "sha256": "4e5b548d6d61f0006840aca106f7464a4b59e5a854317d5b57861b8423901bf6"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/mXnn/.data/ObjectRepositoryTargetData/.attributes/SearchHash",
+      "sha256": "e9319169b83acd79d4fc7e87a34f5c01f2117673901c40e3cf13b50ec67823b7"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/mXnn/.data/ObjectRepositoryTargetData/.content",
+      "sha256": "71c35dec6972ef204a1649341796e9025a54630f0489776b8382e67d6458ec3a"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/mXnn/.data/ObjectRepositoryTargetData/.hash",
+      "sha256": "d34c7a2aaadd0fb84d0eb802d7ad6b15725f17abcc1a3550d0a933a7365a2e60"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/mXnn/.data/ObjectRepositoryTargetData/.images/.design/0w9RvmBybRke3Iomwuew7Qg",
+      "sha256": "2a8bddb15fb4bc9a4da914dc1404649a5dabc587b3036cc88dbc703062af9490"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/mXnn/.metadata",
+      "sha256": "5bef78c474de86f666b8ef8f197a902502aacccfb89fd2d7d9efdda8bb7443fb"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/mXnn/.type",
+      "sha256": "4e5b548d6d61f0006840aca106f7464a4b59e5a854317d5b57861b8423901bf6"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/OFhT/.data/ObjectRepositoryTargetData/.attributes/SearchHash",
+      "sha256": "93f2fbde87e40394f131456703eb341dd28025472c502b5040d9b91428400926"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/OFhT/.data/ObjectRepositoryTargetData/.content",
+      "sha256": "803136928ca26d7ccaef82829310cd83fe301a0ace26b176f6d8662e261cf352"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/OFhT/.data/ObjectRepositoryTargetData/.hash",
+      "sha256": "02d5f4070d9718c1a9a7e715d4bec64b7a9bfccf5d4260a15e47e56cba77b4f4"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/OFhT/.data/ObjectRepositoryTargetData/.images/.design/07vJTEGp_J0-TtokqG5rDoA",
+      "sha256": "4b93093dd60841276a0d3987e5c68c0e7c9e12ae005be2cedf9e6b23da58206a"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/OFhT/.metadata",
+      "sha256": "fe7b8a04a976a08b3334304c2e39ce73f17a490018c048f2a98305e1780608b0"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/OFhT/.type",
+      "sha256": "4e5b548d6d61f0006840aca106f7464a4b59e5a854317d5b57861b8423901bf6"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/pGCA/.data/ObjectRepositoryTargetData/.attributes/SearchHash",
+      "sha256": "98b64d42ab089731d222daded8d9ada82e43e6be16507af6471b0d2799b35e19"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/pGCA/.data/ObjectRepositoryTargetData/.content",
+      "sha256": "a9d7dd4364dca579b148976e05fa5c8829386b53e9c1684753bd41d3848f8e8b"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/pGCA/.data/ObjectRepositoryTargetData/.hash",
+      "sha256": "569eccb5430ec7db274befbf70de39742519eadd8dabf7202c061e8a0b8e85b1"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/pGCA/.data/ObjectRepositoryTargetData/.images/.design/0kD0Oe3IT5kyfSmFg5yxroA",
+      "sha256": "52cf7dac348031053ec9c3a17f666e738ba7203245f80070170e1ebb93d2e8cb"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/pGCA/.metadata",
+      "sha256": "ad1c53d0f6372f496b53efa795e54b6dba0639ac1743c776e24d77c0f4936bbd"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/pGCA/.type",
+      "sha256": "4e5b548d6d61f0006840aca106f7464a4b59e5a854317d5b57861b8423901bf6"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/UlAJ/.data/ObjectRepositoryTargetData/.attributes/SearchHash",
+      "sha256": "95eb99d1ac3682bd8c03288b70e6a75bde96519c48bae7aae25af9a07474313c"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/UlAJ/.data/ObjectRepositoryTargetData/.content",
+      "sha256": "c3bb20c504e4612effc24c5b8ead3b59e7eeaa33abadf0ba094aa7c084433e4e"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/UlAJ/.data/ObjectRepositoryTargetData/.hash",
+      "sha256": "29b9a51266187472a237478177b9afe7a463952d14be45c9a1e8430790aeea33"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/UlAJ/.data/ObjectRepositoryTargetData/.images/.design/0BRxsNN2m7US-E2y5xdEVsw",
+      "sha256": "6e93edd457acea1ca48e227e6608e4f617f432af7bdef32517fe209a867f0e1a"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/UlAJ/.metadata",
+      "sha256": "4a6a28768ea8df8e44455c6fdeb012249fa15046d698961523703d3e69f40561"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.objects/2lHC/39nh/Xj9_/UlAJ/.type",
+      "sha256": "4e5b548d6d61f0006840aca106f7464a4b59e5a854317d5b57861b8423901bf6"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.screenshots/2a8bddb15fb4bc9a4da914dc1404649a.jpg",
+      "sha256": "2a8bddb15fb4bc9a4da914dc1404649a5dabc587b3036cc88dbc703062af9490"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.screenshots/42163d05e4e907b9838ee2c8d02a0983.jpg",
+      "sha256": "42163d05e4e907b9838ee2c8d02a0983a03a11171ee4401bf6779eb65b2c2b20"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.screenshots/4b93093dd60841276a0d3987e5c68c0e.jpg",
+      "sha256": "4b93093dd60841276a0d3987e5c68c0e7c9e12ae005be2cedf9e6b23da58206a"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.screenshots/52cf7dac348031053ec9c3a17f666e73.jpg",
+      "sha256": "52cf7dac348031053ec9c3a17f666e738ba7203245f80070170e1ebb93d2e8cb"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.screenshots/66fcbf09718f47cc4ef85bcc7c1531ad.jpg",
+      "sha256": "66fcbf09718f47cc4ef85bcc7c1531adef8fb9a32015d1a6f8d7e1e0c4ea967b"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.screenshots/6e93edd457acea1ca48e227e6608e4f6.jpg",
+      "sha256": "6e93edd457acea1ca48e227e6608e4f617f432af7bdef32517fe209a867f0e1a"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.screenshots/acd7c29e62c343bbcf56e03c30857ac8.jpg",
+      "sha256": "acd7c29e62c343bbcf56e03c30857ac88751f4b8f7298b8f544f33f246190f04"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.screenshots/bc1f331258af20ee32523e8c4b26fffd.jpg",
+      "sha256": "bc1f331258af20ee32523e8c4b26fffdfbfca845fe8b08377a47cd9f49bf8b75"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.screenshots/eb2f85cc0cdfc252eccdc37af8491a71.jpg",
+      "sha256": "eb2f85cc0cdfc252eccdc37af8491a7157c40e3032d230939a431f03e6581ceb"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.screenshots/eec8756534124da4eabf429aa5cf8f4f.jpg",
+      "sha256": "eec8756534124da4eabf429aa5cf8f4fd0e7f29ca78217123567ebc2bc58eeed"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/AGENTS.md",
+      "sha256": "6af007cf9e4e076efd0de03750868c286f61811d43f692ce7e62a69b0867716d"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/Main.xaml",
+      "sha256": "fb1527c4f78a1c6bdd15b83d0c342880d9970ca9afd5719718c7397a83f13786"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/Portal_Batch_Resume.xaml",
+      "sha256": "e0f012e3be7fae29f55941fafe1fe8fd82caca33dcd1ae742f806822aac86483"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/Portal_Log.xaml",
+      "sha256": "9ee2cc2f8a398c30e9b18e1321bf26efa24e3000433fa4788ccdf62f895eecbd"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/Portal_Logged_Trial.xaml",
+      "sha256": "2dcad35ca995551566dbb9f423b24bf23b68c06264acd718a03afe0955d56d4e"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/project.json",
+      "sha256": "19223712610f3c76880b02846d4c18da9aa9507049ab2ee204ed2af9c1272a14"
+    },
+    {
+      "file": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/project.uiproj",
+      "sha256": "c7e7ab8eec18ae7fe61561a45c9067aad263b00fa04dc37c6fdf828454ddb909"
+    },
+    {
+      "file": "PortalRobot/verification/portal_batch_verifier_tests.txt",
+      "sha256": "c8c3dc90cd7b7d3b7012746b18d817bbfefbeccb459fac97ac3075606fadc5ce"
+    },
+    {
+      "file": "PortalRobot/verification/README.md",
+      "sha256": "cdc40d84124eb9dbd3c97ba04e91dc7a96956fef39d7d2b73bff36c1ea1894c5"
+    },
+    {
+      "file": "PortalRobot/verification/test_verify_portal_batch.py",
+      "sha256": "fb54a7d469025b258db4a482e81a957b49dfada05c1e0ea2ff53026eb51d7e15"
+    },
+    {
+      "file": "PortalRobot/verification/verify_portal_batch.py",
+      "sha256": "1022adc067d6ef00d4be7bf7b0eef8f91577e976317655534d5787cb9cbad83d"
+    },
+    {
+      "file": "PortalRobot/verification/verify_portal_run.py",
+      "sha256": "299409cfdfe760bad3b5c6278eb7ad9eb7596e8ab3a2dd994ecf4af2da0d6723"
+    },
+    {
+      "file": "README.md",
+      "sha256": "759d015b5c80433f93db4b82250c4414da1589df78af8d6d4c63e6a79c705080",
+      "source": "HANDOFF.md"
+    },
+    {
+      "file": "RiportRobot/Main.xaml",
+      "sha256": "bb01c24768181b038249671ec7941193c8d2e0476da1bc7d7713be35854bdb2b"
+    },
+    {
+      "file": "RiportRobot/package_verification.json",
+      "sha256": "b5dce52b0d059640c00b65d07a957317a5d247a7cd1af63a9284a20c5b6072a4"
+    },
+    {
+      "file": "RiportRobot/project.json",
+      "sha256": "4e4a1cf560dcada56668faa9981d7a682d7c2eb9c7d14c231d8245d9c203e186"
+    },
+    {
+      "file": "RiportRobot/project.uiproj",
+      "sha256": "35359f96b090acd96a0157aa0d52e76b7bdf1c56bbe1c820a9df0df0e65dc4f5"
+    },
+    {
+      "file": "RiportRobot/README.md",
+      "sha256": "49afd2356d1b3cee331f3e8eb1c51122ceab499f5aa000c3577e10804bd4e330"
+    },
+    {
+      "file": "RiportRobot/report_12_excel_reopened.jpg",
+      "sha256": "ae22d5ae5e3f1e2bc3e85605bfbb8d8f731f78515f45cc949585cad27cc00e63"
+    },
+    {
+      "file": "RiportRobot/report_12_ppt_reopened.jpg",
+      "sha256": "d7453ee46856b0f106cf4b6282ab3bed686dad3583186c8208be26a5e6d943c0"
+    },
+    {
+      "file": "RiportRobot/report_12_run.json",
+      "sha256": "136423dd347d02099288d85b6920164d6a3385ec7d4686eb174c72900428d546"
+    },
+    {
+      "file": "RiportRobot/report_12_validate.json",
+      "sha256": "d6c38e8b85d8e72416693a016538b11a98638662e3da64b3fbca64e0a8287191"
+    },
+    {
+      "file": "RiportRobot/Report_6.xaml",
+      "sha256": "d19d90774f1dc0d4d4e1a17d4dd29aad6209cc4545d46b88a962c91bb4c5df13"
+    },
+    {
+      "file": "RiportRobot/report_6_excel_reopened.jpg",
+      "sha256": "aa77e13f4fa3ef5641ca2a4d6c98d7fc34f61e73a447b0ba83f15f08faa2d9d2"
+    },
+    {
+      "file": "RiportRobot/report_6_ppt_reopened.jpg",
+      "sha256": "882a658dec6d751eb3776893df88b82922b337bfd5ab4013cecbd550a7a9583b"
+    },
+    {
+      "file": "RiportRobot/report_6_run.json",
+      "sha256": "a0b9707948bfd5c56eeaa02a84e16c942ae82317d68ddfcd43e2005af01e8081"
+    },
+    {
+      "file": "RiportRobot/report_6_validate.json",
+      "sha256": "89880737ea2b4bbf5cfd6ed829d42c99594ce9005e4d5b9518e272376a8ed146"
+    },
+    {
+      "file": "RiportRobot/reports_12/Riport_adatok.xlsx",
+      "sha256": "51ac4816a147ec611ddad8c594f54f7f196e6d05d0ac12fa65a42a5736bc4801"
+    },
+    {
+      "file": "RiportRobot/reports_12/Riport_eredmeny.pptx",
+      "sha256": "a72d53a22bcd7340fe0bdc370f822e0a212f6b079b9a0b46234d446521af482c"
+    },
+    {
+      "file": "RiportRobot/reports_12/run_started.lock",
+      "sha256": "72760d0a54e37aa83ad3c4a805d719747dba4b273d5a0c4e82ca45da822c624d"
+    },
+    {
+      "file": "RiportRobot/reports_12/verification.json",
+      "sha256": "6ba07578fd138c47a20c9e0d2c9a8401b5fbf675d5c1627980da4bb764e6159d"
+    },
+    {
+      "file": "RiportRobot/reports_6/Riport_adatok.xlsx",
+      "sha256": "dbad8639d461cad3f5743dc942b7fe47094fb65b5322390fe8656e8a988002b5"
+    },
+    {
+      "file": "RiportRobot/reports_6/Riport_eredmeny.pptx",
+      "sha256": "4015abc043b805d5575d546ea6f481cfd6ae7d5b3cc090bcba5b738ef1e14e19"
+    },
+    {
+      "file": "RiportRobot/reports_6/run_started.lock",
+      "sha256": "72760d0a54e37aa83ad3c4a805d719747dba4b273d5a0c4e82ca45da822c624d"
+    },
+    {
+      "file": "RiportRobot/reports_6/verification.json",
+      "sha256": "3297a3cb22c8e3ae481e3c6ed36e5e8dcdf746011cc068d37badaf5bc8070287"
+    },
+    {
+      "file": "RiportRobot/source_manifest.json",
+      "sha256": "d9f99e7963fabef4449556366af3fbff9403f34521a4895020f2df3d6f448b8e"
+    },
+    {
+      "file": "robot_api_ember.md",
+      "sha256": "575d2cc846de9667f52821ef504eade45d7998df8d98b22ebaf4049426ee10ac"
+    },
+    {
+      "file": "actual_run_evidence/excel_100000_dialog.jpg",
+      "sha256": "21d746b4fa53ba3017c96d0a11a55e4bfeb49afd226a1b11c1823d6607e72b51"
+    },
+    {
+      "file": "actual_run_evidence/excel_100000_run.json",
+      "sha256": "0fc52940ac27cd9a32f0c41047a163d47e1f62fb2b12c2d84a53c0edf2ff0a45"
+    },
+    {
+      "file": "actual_run_evidence/excel_150000_dialog.jpg",
+      "sha256": "d125a137156ec11f80843504e36d613dc1a3ed88cb42101d44d39170080dc46a"
+    },
+    {
+      "file": "actual_run_evidence/excel_150000_run.json",
+      "sha256": "1322c36cde4e7065f17c4b270943248e5df5e42e3684eaed2ccc9de94931dfa1"
+    },
+    {
+      "file": "actual_run_evidence/greeting_initial_20_result.jpg",
+      "sha256": "02043a5e889564c6161b1bf097a652613618da3370a59e0b8c05c323f0c5f999"
+    },
+    {
+      "file": "actual_run_evidence/greeting_initial_20_run.json",
+      "sha256": "b7a44f5b365f9ad14621a10d8a194b621617af0aaf3c43f44fe7f68fffdc42e7"
+    },
+    {
+      "file": "actual_run_evidence/greeting_initial_sok_run.json",
+      "sha256": "b9f38eb252e28fb93c8c9fdf65a88293077b473fc22030cfa03f031e3b61e5ac"
+    },
+    {
+      "file": "actual_run_evidence/greeting_repaired_5_result.jpg",
+      "sha256": "8e749a3faed0ccd85fdab3933492e35db27edd39c809bee4038af93985f3ec3d"
+    },
+    {
+      "file": "actual_run_evidence/greeting_repaired_5_run.json",
+      "sha256": "7fa8568a0716ac2b4c48c0afc3f37d391d9303399e4925fae8a7e906117a0517"
+    },
+    {
+      "file": "actual_run_evidence/greeting_validation_diagnostic_run.json",
+      "sha256": "1ff45c193c9993e8a73362b44ba693a102d8000c7ff017186aceeb19a72164ef"
+    },
+    {
+      "file": "actual_run_evidence/greeting_validation_fixed_run.json",
+      "sha256": "11051949c5050342f62c08517e7b4d8af25f534066df4e13e5265ab56836187c"
+    },
+    {
+      "file": "actual_run_evidence/greeting_validation_run.json",
+      "sha256": "a79810ea2fd5cf82c063612559378c3152bfd3f44a4c98da8a8a7b9d56a87f0f"
+    },
+    {
+      "file": "actual_run_evidence/nap04_main_dialog.jpg",
+      "sha256": "30c6c8b3a84898bbf3da1fa9016561f4752530c7fb5e969fe4f56bcebaf8b5eb"
+    },
+    {
+      "file": "actual_run_evidence/nap04_main_run.json",
+      "sha256": "af79b35b30e08559f910c2e521dc10e7261aba27b5018c1f5a9f025c5f3ddbaa"
+    },
+    {
+      "file": "actual_run_evidence/report_12_run.json",
+      "sha256": "136423dd347d02099288d85b6920164d6a3385ec7d4686eb174c72900428d546"
+    },
+    {
+      "file": "actual_run_evidence/report_6_run.json",
+      "sha256": "a0b9707948bfd5c56eeaa02a84e16c942ae82317d68ddfcd43e2005af01e8081"
+    },
+    {
+      "file": "actual_run_evidence/sorter_run.json",
+      "sha256": "d42b67ec9b2fb29cc18e62329a3453d0b297057f36d39949175556a8ce07754a"
+    }
+  ],
+  "excluded_transient_files": [
+    "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.local/.build-state",
+    "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.local/.jit/cache/GlobalVariables.BCC64E7E84BBC4D2C83EEA4E128B25983ECCEF991C553BD0D723A928D6EC1ABC.dll",
+    "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.local/.jit/pack-staging/GlobalVariablesT1PNoYwrqg.dll",
+    "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.local/AllDependencies.json",
+    "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.local/BPA_Setup_Smoke.nuget.props",
+    "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.local/content/applicationsMetadata.json",
+    "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.local/content/bindings_v2.json",
+    "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.local/content/entry-points.json",
+    "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.local/content/operate.json",
+    "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.local/content/package-descriptor.json",
+    "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.local/db/references-45dbe2b1.db",
+    "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.local/install/BPA_Setup_Smoke.dll",
+    "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.local/install/BPA_Setup_Smoke_Expressions.dll",
+    "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.local/nuget.cache",
+    "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.local/PackageCache.json",
+    "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.local/WorkflowFileValidator.cache",
+    "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke/.project/PackageBindingsMetadata.json",
+    "RiportRobot/reports_12/~$Riport_eredmeny.pptx"
+  ],
+  "original_files_deleted": false,
+  "portal_reservations_preserved": true
+}

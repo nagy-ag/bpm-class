@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "evidence_source": "Actual user-downloaded CSV(5), compared with supplied first input row",
+  "export_sha256": "a18c79f6f4bcbbc19f8c574e5601d7658ce453703e1252b52d423e0c81795641",
+  "preserved_export": "sajat_karbejelentesek (5).csv",
+  "own_records": 1,
+  "displayed_total_user_confirmed": 21,
+  "all_five_fields_exact": true,
+  "case_id_matches_confirmation_screenshot": true,
+  "record": {
+    "ugyszam": "K-GY-4147",
+    "kotvenyszam": "TR-402318",
+    "kartipus": "vízkár",
+    "karesemeny_datum": "2025-11-03",
+    "becsult_osszeg": "1850",
+    "karleiras": "Csőtörés a fürdőszobában, ázott parketta."
+  },
+  "new_form_action_verified": false,
+  "reset_verified": false,
+  "next": "Confirm new-record button returned empty form before isolated practice reset"
+}

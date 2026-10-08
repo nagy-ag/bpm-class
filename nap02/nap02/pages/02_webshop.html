@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Webshop: amikor az idő is dönt | második nap · Folyamatmodellezés és szimuláció</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="inner">
+    <div>
+      <div class="course">Business Process Automation · Második nap: Folyamatmodellezés és szimuláció</div>
+      <div class="module">2. blokk · Webshop</div>
+    </div>
+    <a href="../index.html" target="_blank" rel="noopener noreferrer">⌂ A nap kezdőlapja</a>
+  </div>
+</header>
+<main id="tartalom">
+  <div class="card">
+    <div class="crumb">2 / 6 blokk</div>
+    <h1>Webshop: várakozás és időkorlát modellezése</h1>
+    <p class="lead">Üzenet- és időzítő események, valamint eseményalapú kapu használata olyan helyzetekben, amikor a folyamat attól függően halad tovább, hogy egy esemény bekövetkezik-e a megadott időn belül.</p>
+    <div class="box goal">
+      <span class="t">A blokk végére</span>
+            <ul style="margin:6px 0 0">
+        <li>használtál időzítő (timer) és üzenet (message) köztes eseményt;</li>
+        <li>ismered az eseményalapú kaput: az elsőként bekövetkező esemény ágán folytatódik a folyamat;</li>
+        <li>láttad, milyen egy kidolgozott webshop-modell, és bővítettél egy egyszerűt.</li>
+      </ul>
+
+    </div>
+
+    <h2>Új helyzet: várakozás és időkorlát a folyamatban</h2>
+    <p>A kávézós modellben elsősorban a tevékenységek sorrendjét követtük. A webshop példájában viszont már a várakozás is a folyamat része: a rendelés rögzítése és a fizetési link elküldése után fizetési visszajelzésre várunk. Ha a visszajelzés 48 órán belül megérkezik, a rendelés feldolgozása folytatódik; ha nem, a rendelést töröljük. Az eseményalapú kapu után ezért két esemény következik: egy üzenetfogadó és egy időzítő köztes esemény. A folyamat azon az ágon halad tovább, amelyik esemény előbb bekövetkezik.</p>
+    <ol class="steps">
+      <li>Új diagram a bpmn.io-ban: <em>Rendelés beérkezik</em> (kezdő esemény) → <em>Rendelés rögzítése</em> → <em>Fizetési link küldése</em>.</li>
+      <li>Tedd le az eseményalapú kaput: húzz be egy kaput, kattints rá, és a csavarkulcs ikonnal váltsd át <em>Event based gateway</em> típusra (rombusz, benne ötszög).</li>
+      <li>Első ág: köztes <em>üzenet</em> esemény (kör, benne boríték): <em>Fizetés megérkezik</em>; utána <em>Csomag összekészítése</em> → <em>Futárnak átadás</em> → <em>Rendelés teljesítve</em> (záró).</li>
+      <li>Második ág: <strong>köztes, fogadó időzítő esemény</strong> (kettős kör, órajel): 48 óra letelt → Rendelés törlése → Rendelés lezárva fizetés nélkül.</li>
+      <li>Mentsd le <em>webshop_egyszeru.bpmn</em> néven.</li>
+    </ol>
+<figure class="shot"><img src="../img/webshop_rendeles_egyszeru.png" alt="Webshop-rendelés eseményalapú kapuval, üzenet- és időzítő-eseménnyel" loading="lazy"><figcaption>Referencia: a kapu után az megy tovább, amelyik esemény előbb bekövetkezik.</figcaption></figure>    <div class="box check">
+      <span class="t">Ellenőrzőpont: ezt kell látnod</span>
+      <p style="margin:4px 0">A kapud rombuszában ötszög van (nem X), és a két ág köztes eseménnyel indul, nem tevékenységgel.</p><p style="margin:4px 0"><strong>Ha mást látsz:</strong> ha X-es kaput használtál, az mást jelent: ott te döntesz adat alapján; itt a "világ" dönt (megjön vagy nem jön meg). A csavarkulccsal átválthatod.</p>
+    </div>
+    <div class="box task">
+      <span class="t">Bővítés önállóan</span>
+          <p>Gyakorlásként egészítsd ki a modellt a visszaküldéssel. A Futárnak átadás után először várj az <strong>Átvétel visszaigazolása</strong> üzenetre. Csak ezután induljon az új eseményalapú kapu: az egyik ágon <strong>14 nap letelt</strong> → Rendelés teljesítve; a másikon <strong>Visszaküldési igény érkezik</strong> → Visszáru kezelése → Rendelés lezárva visszaküldéssel. A 14 nap itt a feladat megadott üzleti szabálya; az időmérés az átvételtől indul, nem a futárnak átadástól.</p>
+
+    </div>
+    <div class="box term">
+      <span class="t">Hol használnád még?</span>
+            <ul style="margin:6px 0 0">
+        <li>Számla fizetési határideje és felszólítás: ugyanez az "üzenet vagy időzítő" minta.</li>
+        <li>Álláspályázat: válasz vagy határidő.</li>
+        <li>Automatizált folyamatokban is gyakori: egy rendszer vár egy beérkező adatra, és ha a határidő lejár, másik ágon folytatja.</li>
+      </ul>
+
+    </div>
+
+    <nav class="pn">
+      <a href="01_kavezo.html" target="_blank" rel="noopener noreferrer">◂ Kávézó</a>
+      <a class="next" href="03_karfelvetel.html" target="_blank" rel="noopener noreferrer">Következő: Kárfelvétel ▸</a>
+    </nav>
+  </div>
+</main>
+</body>
+</html>

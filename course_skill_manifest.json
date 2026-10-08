@@ -1,0 +1,1211 @@
+{
+  "reviewed_on": "2026-10-06",
+  "workspace": "BPA",
+  "policy": "Supplied nested bundles remain read-only. Re-read changed lessons before using skill parameters. No credentials are included.",
+  "days": {
+    "nap01": {
+      "skill": "bpa-nap01",
+      "entrypoint": ".agents/skills/bpa-nap01/SKILL.md",
+      "index": "nap01/nap01/index.html",
+      "chapters": [
+        "nap01/nap01/pages/01_folyamatabra.html",
+        "nap01/nap01/pages/02_coinmarketcap.html",
+        "nap01/nap01/pages/03_zoho.html",
+        "nap01/nap01/pages/04_uipath.html",
+        "nap01/nap01/pages/05_chatgpt.html"
+      ],
+      "assets": [
+        "nap01/nap01/docs/kave_rendeles_mini.bpmn"
+      ],
+      "files": [
+        {
+          "path": "nap01/nap01/docs/kave_rendeles_mini.bpmn",
+          "sha256": "4d30c2e2aefbd84a7a68c41a9ed4e19a2ae5b332a070c5e907bf4e4903c1c547",
+          "bytes": 2578
+        },
+        {
+          "path": "nap01/nap01/img/bpmn_01_nyito.png",
+          "sha256": "729e247e9f6dfe2bc86090c91465f872a9513a6c9d45868ac8309efcb834bfa4",
+          "bytes": 53673
+        },
+        {
+          "path": "nap01/nap01/img/bpmn_02_felulet.png",
+          "sha256": "a9c937e6e8d693a4d763936f7b7d4d6fae90641c7fbb3c27b935960d20eb0afc",
+          "bytes": 185987
+        },
+        {
+          "path": "nap01/nap01/img/bpmn_03_kontextpad.png",
+          "sha256": "a125af2b4beeb8d3af208d641919f76164c8ecf87d1983f511c35a6ec960e1db",
+          "bytes": 196795
+        },
+        {
+          "path": "nap01/nap01/img/bpmn_04_atnevezes.png",
+          "sha256": "12c4652f4171342865c7fb2ef7a49542767933dca7305ad955e97dc571996958",
+          "bytes": 184060
+        },
+        {
+          "path": "nap01/nap01/img/bpmn_05_elso_task.png",
+          "sha256": "2f6986954b4b4e6956e9fe330051866a60e2a9a17d0b4eb0ea7c4649da1d38d9",
+          "bytes": 153934
+        },
+        {
+          "path": "nap01/nap01/img/bpmn_06_kesz.png",
+          "sha256": "e502ba7eaa7c919dd52532580a8f7eaaa29fc1a1d10f579f26bc5a3208cc11de",
+          "bytes": 163534
+        },
+        {
+          "path": "nap01/nap01/img/bpmn_07_kontextpad_task.png",
+          "sha256": "bcff2c9284838870e7320a7abaeebffc921be5cd682188da4df13167440e8887",
+          "bytes": 170578
+        },
+        {
+          "path": "nap01/nap01/img/bpmn_08_mentes.png",
+          "sha256": "107a54b8d188e3018e14eda24f75709bcc226ea37e14be9521126ae5da99c955",
+          "bytes": 207823
+        },
+        {
+          "path": "nap01/nap01/img/bpmn_youtube.jpg",
+          "sha256": "a139555a0254a562ccbaf4a54e97f7f938855fd444bfda4bf7967369a0a968e9",
+          "bytes": 9553
+        },
+        {
+          "path": "nap01/nap01/img/chatgpt2026_01_kijelentkezve.png",
+          "sha256": "125d7b9f0e5d0bbf234a8e3e542efc51899ecbba8faaa5455e588aeb08b742bd",
+          "bytes": 57544
+        },
+        {
+          "path": "nap01/nap01/img/chatgpt2026_02_memory_felugro.png",
+          "sha256": "b089377026b223f7ad01dddd8bd967857796f544c59301fc3f897de4f1537f80",
+          "bytes": 85418
+        },
+        {
+          "path": "nap01/nap01/img/chatgpt2026_03_profil_settings.png",
+          "sha256": "d8816d23e67b2db15504514bf9086f5b9e14e80860599657cddb97ced5836f6b",
+          "bytes": 62785
+        },
+        {
+          "path": "nap01/nap01/img/chatgpt2026_04_personalization_memory.png",
+          "sha256": "acc5305b4e724d0ab9a0b70c73561da783a222c28004026e96ebe9b68465fc66",
+          "bytes": 105623
+        },
+        {
+          "path": "nap01/nap01/img/chatgpt2026_05_ci_szerkeszto.png",
+          "sha256": "01651c10d60078d35b519ec3935bbe693145aaf7d49a344b19fa3234461f53f2",
+          "bytes": 94027
+        },
+        {
+          "path": "nap01/nap01/img/chatgpt2026_06_data_controls.png",
+          "sha256": "61c43e01123bee0abdd44c864f89aec44c1e5d7d053fee09c09d2d2418fcd7a3",
+          "bytes": 80807
+        },
+        {
+          "path": "nap01/nap01/img/chatgpt2026_07_usage_sotet.png",
+          "sha256": "101a35592505209637b015b06c024359888cae7839ce81d8a8551b1f2a49a33b",
+          "bytes": 123731
+        },
+        {
+          "path": "nap01/nap01/img/chatgpt2026_08_usage_plus.png",
+          "sha256": "3f6e4e4cb333348d03c62b898f71ebb177cfecbd89f5f985342a961a929a671e",
+          "bytes": 70518
+        },
+        {
+          "path": "nap01/nap01/img/cmc2026_dashboard_alap.png",
+          "sha256": "a8282862d3896496642c728544296817e633f264946b264042b77865a2c0a89d",
+          "bytes": 86003
+        },
+        {
+          "path": "nap01/nap01/img/cmc2026_dashboard_copykey.png",
+          "sha256": "d5d8d23d8f187816c5ce4dd1c3a60ea89f873018b8ced3508857461c8944597b",
+          "bytes": 86195
+        },
+        {
+          "path": "nap01/nap01/img/cmc_10_json.png",
+          "sha256": "0d8a2fd8eff73b66dc64e0437b611eae5a115db664b011c49dcfea89e7ce4947",
+          "bytes": 28707
+        },
+        {
+          "path": "nap01/nap01/img/cmc_2026_portal.png",
+          "sha256": "32cd2b2a2d7683e1b930f061f3f0e71d3cac1a3d8686fad11e6e936eafcb28ad",
+          "bytes": 376775
+        },
+        {
+          "path": "nap01/nap01/img/cmc_2026_signup.png",
+          "sha256": "3ad06025ba1b418982f890b94be9618408321d368242b6f08533e180efe68044",
+          "bytes": 81617
+        },
+        {
+          "path": "nap01/nap01/img/uipath_01_login_suti.png",
+          "sha256": "47201481228cf0753a09db68770c1ae62a318dec5108d490b632c0f93301dfc8",
+          "bytes": 155122
+        },
+        {
+          "path": "nap01/nap01/img/uipath_03_register.png",
+          "sha256": "e97fbe2e55a0e32155d70397e4b5f64f41ea7a462a253fc5bb162f955f18ab95",
+          "bytes": 151819
+        },
+        {
+          "path": "nap01/nap01/img/uipath_06_signin_google.png",
+          "sha256": "9dd12167aa073c6ccb8fdc4426950be9729ef0c27cde0cd0870ae2dec6da243e",
+          "bytes": 25966
+        },
+        {
+          "path": "nap01/nap01/img/uipath_07_profil.png",
+          "sha256": "8ae0e216e9ca1da7e0eef898d93512630409d4ffc7951e18fa4a60263ee4a96e",
+          "bytes": 60317
+        },
+        {
+          "path": "nap01/nap01/img/uipath_08_szervezet.png",
+          "sha256": "0a2bc67d114e34d5e1d1877697b6e24259d89e310e54b11a30eaba854f9d01f4",
+          "bytes": 68338
+        },
+        {
+          "path": "nap01/nap01/img/uipath_09_home.png",
+          "sha256": "0c25ecad26ac3c5eab7cb2ebc641a22d96d925a36a7149e1540fba8faeda3876",
+          "bytes": 135418
+        },
+        {
+          "path": "nap01/nap01/img/uipath_10_menu.png",
+          "sha256": "9955b2f9c59ba1af5e10f88d07aff4996649a73f586bd406597cd1ded30733c9",
+          "bytes": 320647
+        },
+        {
+          "path": "nap01/nap01/img/uipath_11_admin.png",
+          "sha256": "01bc36796a303923beb36dccefcd73376bde7b17a91d1754ac02194a9d8df691",
+          "bytes": 97562
+        },
+        {
+          "path": "nap01/nap01/img/uipath_12_licenses.png",
+          "sha256": "3f85c93e3c8b5611e873e5a0d65043c5f6b205dd6c54a05b77e11381652017aa",
+          "bytes": 181743
+        },
+        {
+          "path": "nap01/nap01/img/uipath_13_download.png",
+          "sha256": "939fea6a2d3e49cd08591c38cadb13289a1002ee0fc88692ae48ec055a602bb7",
+          "bytes": 248089
+        },
+        {
+          "path": "nap01/nap01/img/uipath_14_letoltve.png",
+          "sha256": "0f356fe501564ddd6c939194f9797233f86f3c47016491b3a78e9e6dc05ac2d8",
+          "bytes": 257573
+        },
+        {
+          "path": "nap01/nap01/img/uipath_15_telepito.png",
+          "sha256": "1e6e96bc8c5295325a2f891639d0688e8e29fcc33430c1d0d60992d4da76fdd0",
+          "bytes": 130642
+        },
+        {
+          "path": "nap01/nap01/img/uipath_16_kivalasztva.png",
+          "sha256": "9b68b2d8fdc99ed74b685c5cea45811db680c8377ebcb13d696b75c66ebcf517",
+          "bytes": 133075
+        },
+        {
+          "path": "nap01/nap01/img/uipath_17_folyamat.png",
+          "sha256": "2d46a78e8b2c14f62fd932350f57e880ed5a0506339ddffce78b2efcccd2c68f",
+          "bytes": 94953
+        },
+        {
+          "path": "nap01/nap01/img/uipath_18_signin.png",
+          "sha256": "8ac3a9cb25331972ea2e5b492f021de128660603a95a56070e4fc1d7fa6239dd",
+          "bytes": 519945
+        },
+        {
+          "path": "nap01/nap01/img/uipath_19_start.png",
+          "sha256": "7759b21ea8193704858db85fc91606edf9cdd3b555e4fb7e91b5c547862f8011",
+          "bytes": 200849
+        },
+        {
+          "path": "nap01/nap01/img/uipath_20_newprocess.png",
+          "sha256": "5b4be6960638a723a12f84b039f1aa01b29186916353d85247c812652544856d",
+          "bytes": 501117
+        },
+        {
+          "path": "nap01/nap01/img/uipath_21_tervezo.png",
+          "sha256": "f05d2111dd501be69db31ffaabb60c8ed61a32a35867ec65afb36229b2f31822",
+          "bytes": 174016
+        },
+        {
+          "path": "nap01/nap01/img/uipath_22_futas.png",
+          "sha256": "9a74c69251ce16dcfb44e9b56f30bf129ab5264d25e5544b07817d3e8bdbcc3c",
+          "bytes": 187202
+        },
+        {
+          "path": "nap01/nap01/img/uipath_youtube.jpg",
+          "sha256": "acfcc0316e4005cecb34e0c83f7bfc7b9192674719490b9f2ce3b066b8eb9667",
+          "bytes": 30824
+        },
+        {
+          "path": "nap01/nap01/img/zoho2026_01_signup_ures.png",
+          "sha256": "d804ee5d09c80d19f01a81a7244ce4da9d1c9ea6a9fb5341a3848bd7843ee0b9",
+          "bytes": 650468
+        },
+        {
+          "path": "nap01/nap01/img/zoho2026_02_signup_kitoltve.png",
+          "sha256": "23b33a639f5a844549f7121c1aaed792ec9be29e8591f88d4206152304de360e",
+          "bytes": 652925
+        },
+        {
+          "path": "nap01/nap01/img/zoho2026_03_otp_ellenorzes.png",
+          "sha256": "c2c13d0fd80465c345f7a13f045313396fa6af675d2b87caa1931a80286c823a",
+          "bytes": 656605
+        },
+        {
+          "path": "nap01/nap01/img/zoho2026_04_megerosito_email.png",
+          "sha256": "3a98e18267c0e3bd083a13828a143ba7e26930e9eeef8380ada1ab58b42f2d3b",
+          "bytes": 28235
+        },
+        {
+          "path": "nap01/nap01/img/zoho2026_05_szervezetnev_ures.png",
+          "sha256": "4cc2d190cc8878d311b61c379565cb829544298d883358f964f6c15b520c5a92",
+          "bytes": 330791
+        },
+        {
+          "path": "nap01/nap01/img/zoho2026_06_szervezetnev_kitoltve.png",
+          "sha256": "136adc36e124bac71865dc0ce2fbe596c75ac552dfa6467c7edf79be473c30b4",
+          "bytes": 333323
+        },
+        {
+          "path": "nap01/nap01/img/zoho2026_07_crm_kezdokepernyo.png",
+          "sha256": "586d9289cc4691506ed546b5650ea37083948e7273d49d99cd49fc4ecbfd63fd",
+          "bytes": 372789
+        },
+        {
+          "path": "nap01/nap01/img/zoho2026_08_home_dashboard.png",
+          "sha256": "bd394c31831008404a3cf5844d085b11f390fab22fb5f5ce9f01724ed019fb47",
+          "bytes": 172293
+        },
+        {
+          "path": "nap01/nap01/img/zoho2026_09_leads_mintak.png",
+          "sha256": "12aa78d4322ebfb2f0a4ff25097325bb4cadcb3816d1abfbd9e91a43fa9d257c",
+          "bytes": 221619
+        },
+        {
+          "path": "nap01/nap01/img/zoho2026_11_newlead_ures.png",
+          "sha256": "14a0cce2147fa45790014ed231e8b643d0d023fba1e80fa9b20bafaeef64c274",
+          "bytes": 128702
+        },
+        {
+          "path": "nap01/nap01/img/zoho2026_12_newlead_kitoltve.png",
+          "sha256": "9e5fc761ab539b666cfe7bd251f49be3fe1697ac837a6786452365fe51e00d3b",
+          "bytes": 137379
+        },
+        {
+          "path": "nap01/nap01/img/zoho2026_13_leads_lista_sajattal.png",
+          "sha256": "29878f56c0260e10203fe0d106da0378b60ab84c196da2b3c2759e7e8e6034e9",
+          "bytes": 226748
+        },
+        {
+          "path": "nap01/nap01/img/zoho2026_14_lead_rekord.png",
+          "sha256": "dfe47329fa34ac96ae30f90c76b83fc0ec87a83acfa5b9f33ec9af04d5597aaf",
+          "bytes": 153885
+        },
+        {
+          "path": "nap01/nap01/index.html",
+          "sha256": "aacd90c8f7e6704cc54cf2ccf68dca431a2db3c8bd339d68a1ca4c959bec8707",
+          "bytes": 13979
+        },
+        {
+          "path": "nap01/nap01/pages/01_folyamatabra.html",
+          "sha256": "69b44a262317242a0f3503183d8329d4d2000531294a0f1fbaf1fddef50a2a87",
+          "bytes": 9727
+        },
+        {
+          "path": "nap01/nap01/pages/02_coinmarketcap.html",
+          "sha256": "c6e6a6e76d4cba5bc100159b766e1001a5ac729cea266178c43ff901ac484d20",
+          "bytes": 11240
+        },
+        {
+          "path": "nap01/nap01/pages/03_zoho.html",
+          "sha256": "852c7b10ff4b04a73cbd80ee04e9dfbc3b8edfe1270159e79e9e89829d97d8b8",
+          "bytes": 16367
+        },
+        {
+          "path": "nap01/nap01/pages/04_uipath.html",
+          "sha256": "86524ff639e26af41d92eb6c58eded8884248c625e3847f8e570bc86b3b80aec",
+          "bytes": 16671
+        },
+        {
+          "path": "nap01/nap01/pages/05_chatgpt.html",
+          "sha256": "59daf0d723a5d0510c02c4f23dd57d8d12cfcf80ba50041c79a2d612f0ea1053",
+          "bytes": 14610
+        },
+        {
+          "path": "nap01/nap01/style.css",
+          "sha256": "bc8efa2133071aa7f5e76a2f6abf7464b1f202a318fdaa9167edfff663218c08",
+          "bytes": 19507
+        },
+        {
+          "path": "nap01/nap01/tananyag.js",
+          "sha256": "d5546b0db0071eff797815657c0afa46e52f5ec0d52d1b0d43002e4b15a4d888",
+          "bytes": 876
+        }
+      ]
+    },
+    "nap02": {
+      "skill": "bpa-nap02",
+      "entrypoint": ".agents/skills/bpa-nap02/SKILL.md",
+      "index": "nap02/nap02/index.html",
+      "chapters": [
+        "nap02/nap02/pages/01_kavezo.html",
+        "nap02/nap02/pages/02_webshop.html",
+        "nap02/nap02/pages/03_karfelvetel.html",
+        "nap02/nap02/pages/04_szimulacio.html",
+        "nap02/nap02/pages/05_raktar.html",
+        "nap02/nap02/pages/06_hibavadaszat.html"
+      ],
+      "assets": [
+        "nap02/nap02/docs/atlas_raktar_alap.bpmn",
+        "nap02/nap02/docs/hibas_1.bpmn",
+        "nap02/nap02/docs/hibas_2.bpmn",
+        "nap02/nap02/docs/hibas_3.bpmn",
+        "nap02/nap02/docs/kave_rendeles_xor.bpmn",
+        "nap02/nap02/docs/meridian_karfelvetel.bpmn",
+        "nap02/nap02/docs/webshop_rendeles_egyszeru.bpmn"
+      ],
+      "files": [
+        {
+          "path": "nap02/nap02/docs/atlas_raktar_alap.bpmn",
+          "sha256": "1f7d93bef7bad468a7a18e212282f0b3b41e283af9ec30761dbdefb24a6fb8ca",
+          "bytes": 4854
+        },
+        {
+          "path": "nap02/nap02/docs/hibas_1.bpmn",
+          "sha256": "2c1e3e3dfe94873be7bb524311481bebf450bc443c8046e537f0fbea0d874e40",
+          "bytes": 3549
+        },
+        {
+          "path": "nap02/nap02/docs/hibas_2.bpmn",
+          "sha256": "f57e47a7a5ca7f9544572f409740434b2f1153f520290add05cc22e29265f167",
+          "bytes": 3475
+        },
+        {
+          "path": "nap02/nap02/docs/hibas_3.bpmn",
+          "sha256": "0988a9cc62ee252984feae34c7710f8603cbf22a5df72d5b48424f0fadc03c7a",
+          "bytes": 2867
+        },
+        {
+          "path": "nap02/nap02/docs/kave_rendeles_xor.bpmn",
+          "sha256": "6b44028c1de64c4675b06e9cf14b8a095f39141351233ea00eb26a0e8908743c",
+          "bytes": 4525
+        },
+        {
+          "path": "nap02/nap02/docs/meridian_karfelvetel.bpmn",
+          "sha256": "83cf1497a68c7d000cb6810fab247552f9e184f18e665392cf65f2e0bacab493",
+          "bytes": 7484
+        },
+        {
+          "path": "nap02/nap02/docs/webshop_rendeles_egyszeru.bpmn",
+          "sha256": "02a7ec264d3274c95915c84735386d2e514fd756d27d5f0ba7dfafd585caf92c",
+          "bytes": 5267
+        },
+        {
+          "path": "nap02/nap02/img/atlas_raktar_alap.png",
+          "sha256": "233fd2ee239e281f9905aaf41035b9a7504c44ce92f52282d8a2716384c0f4b6",
+          "bytes": 61026
+        },
+        {
+          "path": "nap02/nap02/img/bimp2026_04_scenario_kitoltve.png",
+          "sha256": "860962c693a8cae80491f8dc0de55840c176a4466946789d893183d516bfae76",
+          "bytes": 60071
+        },
+        {
+          "path": "nap02/nap02/img/bimp2026_05_resources_timetable.png",
+          "sha256": "e6145c659941999ccb0e22fa48dfc74172c48bc646f854a6c1446ff6f6fce314",
+          "bytes": 62857
+        },
+        {
+          "path": "nap02/nap02/img/bimp2026_06_tasks_fixed.png",
+          "sha256": "423c15612444cee2442296a8b0ed8ab84e13829900782346e650675413639e9e",
+          "bytes": 57436
+        },
+        {
+          "path": "nap02/nap02/img/bimp2026_07_tasks_normal.png",
+          "sha256": "a67017a05b8fce3d22f07f336e73fd9c6909ebc88210c707409776b20c21ab7a",
+          "bytes": 62722
+        },
+        {
+          "path": "nap02/nap02/img/bimp2026_08_gateways_start.png",
+          "sha256": "c796db39ea48525e228c6cb91a4da80f4a932b8dc064e5a37df8e63d26603b11",
+          "bytes": 60688
+        },
+        {
+          "path": "nap02/nap02/img/bimp2026_09_eredmeny_felso.png",
+          "sha256": "79981e881db7c18b72cd07df1fcf5695cc653bf54f963e80c19f8f7b2b5510fb",
+          "bytes": 61320
+        },
+        {
+          "path": "nap02/nap02/img/bimp2026_10_stat_es_tabla.png",
+          "sha256": "5b5c26497499479b9280feefef8e7120bc45ed2e4a7b8f7cfbb94af3b36665df",
+          "bytes": 69775
+        },
+        {
+          "path": "nap02/nap02/img/bimp2026_11_hoterkep_varakozas.png",
+          "sha256": "7bd5dd716b4916a309f19b003b8756d6f7b5b11531071ed6c27439302501245a",
+          "bytes": 40676
+        },
+        {
+          "path": "nap02/nap02/img/bimp2026_12_hoterkep_idotartam.png",
+          "sha256": "75251891efa550fde3eacd3bf89ff80d47fb7f21a6f30803a001e07f930fdce9",
+          "bytes": 40647
+        },
+        {
+          "path": "nap02/nap02/img/bimp2026_rossz_mertekegyseg.png",
+          "sha256": "66fdce8b34ed3f36034170597280512fe9c38536166c8484b148bfdf23676f80",
+          "bytes": 69733
+        },
+        {
+          "path": "nap02/nap02/img/bimp_01_nyito.png",
+          "sha256": "f54905807da5005eb8c3af24301469a765f47ce71ae313202f4b99fe05fb228a",
+          "bytes": 165668
+        },
+        {
+          "path": "nap02/nap02/img/bimp_02_betoltve.png",
+          "sha256": "7653b93e853411ce97758b8ba391899cde88753c88ad180792a71b3c1c500345",
+          "bytes": 163238
+        },
+        {
+          "path": "nap02/nap02/img/bimp_03_scenario_ures.png",
+          "sha256": "f89a3ae89098da0338e1519e3c43523a1ead3edd57a8aa6d4df809d55cf52875",
+          "bytes": 135661
+        },
+        {
+          "path": "nap02/nap02/img/bimp_08_hiba_100.png",
+          "sha256": "b803f5c0ab548faa78979dacf4a412c7a946a94b214b8b964be3c9fdcb6d56bd",
+          "bytes": 83647
+        },
+        {
+          "path": "nap02/nap02/img/bimp_10_eredmeny_grafikonok.png",
+          "sha256": "118993d42984e792724bca109aaf9438c4d2f83f557f2f4c42f869d8a1a0649c",
+          "bytes": 95670
+        },
+        {
+          "path": "nap02/nap02/img/bimp_11_eredmeny_kihasznaltsag.png",
+          "sha256": "38a0b58507b26864884b082cea6bca02bfc7bb4fa8aa04f37267a17eb2cbe4fb",
+          "bytes": 99558
+        },
+        {
+          "path": "nap02/nap02/img/hibas_1.png",
+          "sha256": "ad82a4198304bacd7273a9ed945b7a30e5c5aac0518d926642d00832d92935f0",
+          "bytes": 40179
+        },
+        {
+          "path": "nap02/nap02/img/hibas_2.png",
+          "sha256": "1f863c4042b32c181eaf4f21713dc769e2c3f79613f76b3c3dfcbd550ad9f702",
+          "bytes": 47690
+        },
+        {
+          "path": "nap02/nap02/img/hibas_3.png",
+          "sha256": "07896bcc023acab6c2bb1a652303cd22528b6bfea4385c4a2c2ec21f42a18444",
+          "bytes": 34824
+        },
+        {
+          "path": "nap02/nap02/img/HUNzj54HZ-E.jpg",
+          "sha256": "bd0d28c301a322ad26d05f45ab045fec57462e6725118e7d8de08fece305fe7e",
+          "bytes": 11290
+        },
+        {
+          "path": "nap02/nap02/img/j8kQVnZznBA.jpg",
+          "sha256": "0f5b85162f35362ab082e46847df00be2d7e204711e4c50014ec32ff9c1f017d",
+          "bytes": 12156
+        },
+        {
+          "path": "nap02/nap02/img/kave_rendeles_xor.png",
+          "sha256": "809edff7f7853856928ea7c3201f45477195b8694112a129e1be296e2500ccfe",
+          "bytes": 57386
+        },
+        {
+          "path": "nap02/nap02/img/kavezo_kezdetleges.png",
+          "sha256": "37f6a91d9922639b61400627b27c48ecd78e84f61526e68e6a65acac7fbafc7c",
+          "bytes": 98145
+        },
+        {
+          "path": "nap02/nap02/img/kavezo_teljes.png",
+          "sha256": "720be5ba5f630c609b82d0920e067dbebfcd8d49b75f118b5a5492a5bc8cb67c",
+          "bytes": 58809
+        },
+        {
+          "path": "nap02/nap02/img/meridian_karfelvetel.png",
+          "sha256": "12950eb9c25c2d14cc1a0ea022bb4c7e904bb7de56d1579805326674e0e53424",
+          "bytes": 77809
+        },
+        {
+          "path": "nap02/nap02/img/webshop_mukodes.png",
+          "sha256": "295f75e3ffe8e9a3f2a940d32c524efa0f337696c6deab85fde1fca76244471b",
+          "bytes": 93226
+        },
+        {
+          "path": "nap02/nap02/img/webshop_rendeles_egyszeru.png",
+          "sha256": "6b87037efc1769c0d9d3fec5005c01fc3fb29b1a6d7544fc365b0f4d2b2a3d4d",
+          "bytes": 84465
+        },
+        {
+          "path": "nap02/nap02/index.html",
+          "sha256": "bbf79af786073d00b3bf67206bd033b886c8f0e84f2b5bd6dad6d8673d9e8166",
+          "bytes": 4508
+        },
+        {
+          "path": "nap02/nap02/pages/01_kavezo.html",
+          "sha256": "7d415d4ffb628865c2a6dc61f2ff365e6dadb0fd86cbd75bc287727c66af35c4",
+          "bytes": 7999
+        },
+        {
+          "path": "nap02/nap02/pages/02_webshop.html",
+          "sha256": "579b3baaf4f27ec4f6c45931df2324b8f6d7b066c6c504a8fc231eef1dfd2920",
+          "bytes": 5115
+        },
+        {
+          "path": "nap02/nap02/pages/03_karfelvetel.html",
+          "sha256": "8e229b0c037e01f19e1706e51c7db1cfc434d4e81faad0112d183398f50bd3f7",
+          "bytes": 6283
+        },
+        {
+          "path": "nap02/nap02/pages/04_szimulacio.html",
+          "sha256": "4e7122d07dc963b8342aee044ea90c1a8f2afb2f1b6cdc717efa7c9adbb0620e",
+          "bytes": 21898
+        },
+        {
+          "path": "nap02/nap02/pages/05_raktar.html",
+          "sha256": "981ff1a22906fdcbcf46c105b7c5c6ab1f90dfd136a365a130c3ac2abafa40cc",
+          "bytes": 9601
+        },
+        {
+          "path": "nap02/nap02/pages/06_hibavadaszat.html",
+          "sha256": "93eb8b2328497633e3437173c761ef9ba2184ae7bf732d8b3630607180340bf5",
+          "bytes": 5077
+        },
+        {
+          "path": "nap02/nap02/style.css",
+          "sha256": "798ca65231f8d73d4df81948b32a7b23c286c89d65d9e168fb4ddb3c04bbdbd1",
+          "bytes": 19650
+        }
+      ]
+    },
+    "nap03": {
+      "skill": "bpa-nap03",
+      "entrypoint": ".agents/skills/bpa-nap03/SKILL.md",
+      "index": "nap03/nap03/index.html",
+      "chapters": [
+        "nap03/nap03/pages/01_api_alapok.html",
+        "nap03/nap03/pages/02_excel_power_query.html",
+        "nap03/nap03/pages/03_google_sheets.html",
+        "nap03/nap03/pages/04_zoho_crm.html",
+        "nap03/nap03/pages/05_zoho_api.html",
+        "nap03/nap03/pages/06_mini_lanc.html"
+      ],
+      "assets": [
+        "nap03/nap03/docs/arfolyam_riasztas.bpmn",
+        "nap03/nap03/docs/arfolyam_riasztas_colab.py",
+        "nap03/nap03/docs/cmc_pelda_valasz.json",
+        "nap03/nap03/docs/cmc_sheets_script.txt",
+        "nap03/nap03/docs/zoho_lead_colab.py",
+        "nap03/nap03/docs/zoho_refresh_colab.py",
+        "nap03/nap03/docs/zoho_token_colab.py"
+      ],
+      "files": [
+        {
+          "path": "nap03/nap03/docs/arfolyam_riasztas.bpmn",
+          "sha256": "639ab2b57eb74bbbc51243af60ba2918cea9fe7d3e5dd29da8ff02fc21bc3a10",
+          "bytes": 3308
+        },
+        {
+          "path": "nap03/nap03/docs/arfolyam_riasztas_colab.py",
+          "sha256": "1b31f366f88dceedc5341f825b24725a1ef77dd1566737cd11e9b75e27389b0d",
+          "bytes": 2809
+        },
+        {
+          "path": "nap03/nap03/docs/cmc_pelda_valasz.json",
+          "sha256": "13aee7fd800f3f208966f0611b1fbaffd1e89adb47f2ddf4ca244fd98f7c47e0",
+          "bytes": 454
+        },
+        {
+          "path": "nap03/nap03/docs/cmc_sheets_script.txt",
+          "sha256": "ebf295947ff36d02c711b8707509509b69019163b2dbd5228146277a2272bb5f",
+          "bytes": 1926
+        },
+        {
+          "path": "nap03/nap03/docs/zoho_lead_colab.py",
+          "sha256": "631555d1d7e5735ccebdab6b806c88c878756d4c64f0a507cd86bc6b8c55646e",
+          "bytes": 1614
+        },
+        {
+          "path": "nap03/nap03/docs/zoho_refresh_colab.py",
+          "sha256": "48ac25259a3067dc81c701bcc03ae45f7e9140acb284bf7f9e59420549de9e73",
+          "bytes": 1213
+        },
+        {
+          "path": "nap03/nap03/docs/zoho_token_colab.py",
+          "sha256": "03e5bda358008727deda6258db9f58fb6ae0b748965b027ad0048a76a099ac61",
+          "bytes": 1683
+        },
+        {
+          "path": "nap03/nap03/img/arfolyam_riasztas.png",
+          "sha256": "fa3085c8443d4650af4b24e9cbf76e82a3f6ef373d94db0136ffab32ac66f15c",
+          "bytes": 62644
+        },
+        {
+          "path": "nap03/nap03/img/cmc_12.png",
+          "sha256": "319c24d811d1b04c27c971345c768621bf5851f122bf23944c3fd03011515610",
+          "bytes": 135131
+        },
+        {
+          "path": "nap03/nap03/img/cmc_13.png",
+          "sha256": "e26de0764a28a18aeecdb21e93dff7357d0c4a17ac3e3ac222b7ca485b37ce58",
+          "bytes": 23437
+        },
+        {
+          "path": "nap03/nap03/img/cmc_14.png",
+          "sha256": "62e5de2c2ba4eca78c251f0b7d82f9e448e2cfb19b7295741d178471c72e37b0",
+          "bytes": 122358
+        },
+        {
+          "path": "nap03/nap03/img/cmc_15.png",
+          "sha256": "baaf261055113152232d5cdbd7068675fd980513c424ab0798abaf4978c75aa9",
+          "bytes": 80689
+        },
+        {
+          "path": "nap03/nap03/img/cmc_16.png",
+          "sha256": "3d8cc1fa3149b13b4d5eec2176458a719143c52c710bf45a640eaf6bb3fb3ef6",
+          "bytes": 219512
+        },
+        {
+          "path": "nap03/nap03/img/cmc_17.png",
+          "sha256": "8d19e43fa09b2c367599774cf48b5eb8ee1d8cb1d35334a16c3285b1898c6e0a",
+          "bytes": 251763
+        },
+        {
+          "path": "nap03/nap03/img/cmc_19.png",
+          "sha256": "cce64ed21305ab51cd473975efa2bd2d83b7a7d1b3b6a5e50579af694ecd7cd0",
+          "bytes": 95116
+        },
+        {
+          "path": "nap03/nap03/img/cmc_20.png",
+          "sha256": "8fd57da85a521a6fafcdef161f6ac8f0e7c35d6788c5c9514f73cc2427401cd0",
+          "bytes": 203009
+        },
+        {
+          "path": "nap03/nap03/img/cmc_21.png",
+          "sha256": "344d7901d0b50bc95ed5c8018e64e30e8dd842b685775644a2ba18966ca97386",
+          "bytes": 327431
+        },
+        {
+          "path": "nap03/nap03/img/cmc_anon.png",
+          "sha256": "ecda00f0aea7a268c69df79a924cfb9e99a3ac0eac782e188bbae03c2aee6e0f",
+          "bytes": 65205
+        },
+        {
+          "path": "nap03/nap03/img/colab2026_01_ures_notebook.png",
+          "sha256": "7e1ee0f644c9bb12d0e2af9d5c81dd51cc8974f27dcf0bf1821cb52a5b74c4d8",
+          "bytes": 165181
+        },
+        {
+          "path": "nap03/nap03/img/colab2026_02_atnevezes_elso_futtatas.png",
+          "sha256": "2784d0ab54cdc303916067a09b8d5b30e7467652f42fa2592c90bea5e3700372",
+          "bytes": 169273
+        },
+        {
+          "path": "nap03/nap03/img/colab2026_03_files_panel.png",
+          "sha256": "d56601471f8a78a1b66f1b08e262c82ba4ecdabc12bb60cc843d9f2e65a2372b",
+          "bytes": 69973
+        },
+        {
+          "path": "nap03/nap03/img/colab2026_04_zoho_relogin.png",
+          "sha256": "49a3e1a3fe3e703df232491e4181808779fb95810e8bd5208918e6ad01404997",
+          "bytes": 73317
+        },
+        {
+          "path": "nap03/nap03/img/colab2026_05_apiconsole_getstarted.png",
+          "sha256": "78367f3d33045eb4594ee81cbc048a35e16b881c3df9a7f4681d9bc1f35b6299",
+          "bytes": 90746
+        },
+        {
+          "path": "nap03/nap03/img/colab2026_06_client_type.png",
+          "sha256": "62f8dd7410d0751bd45ce394e197af5511c938ea990edcedb9a370126818ef49",
+          "bytes": 110866
+        },
+        {
+          "path": "nap03/nap03/img/colab2026_07_selfclient_create.png",
+          "sha256": "67376173e6c98bfdc23cd3959ae0ae954c89f9370f743ae022bb9e6daad89669",
+          "bytes": 51482
+        },
+        {
+          "path": "nap03/nap03/img/colab2026_08_client_id_secret.png",
+          "sha256": "4f4ae10c20245f4e813f9b2606e848effe75e84a1b74d8f3a1e5f7f688dd350d",
+          "bytes": 50840
+        },
+        {
+          "path": "nap03/nap03/img/colab2026_09_generate_code.png",
+          "sha256": "25bbbe86bfcccdb065ca96f0693d524ff00cab88969626594b66bccf38174897",
+          "bytes": 63534
+        },
+        {
+          "path": "nap03/nap03/img/colab2026_10_select_portal.png",
+          "sha256": "f3285b705ecd9b06575a3f7e62a3611c49bce5a3311c373896293c38e584d741",
+          "bytes": 31115
+        },
+        {
+          "path": "nap03/nap03/img/colab2026_11_generated_code.png",
+          "sha256": "186cf33d9615d0d14e159a880f8e64a87275c3b29064f32b8afa5896607a9ca7",
+          "bytes": 29856
+        },
+        {
+          "path": "nap03/nap03/img/colab2026_12_token_futtatas.png",
+          "sha256": "1bc80e815e51c1abea0e209111f409f041bc6b30c51a050a142c4c4c093a485f",
+          "bytes": 113307
+        },
+        {
+          "path": "nap03/nap03/img/colab2026_13_lead_201.png",
+          "sha256": "e5d53db5f468ffc4900b6ea081ad260d040bfe7d4033af1091d3c310ce05a529",
+          "bytes": 123418
+        },
+        {
+          "path": "nap03/nap03/img/colab2026_14_api_lead_lista.png",
+          "sha256": "6bf18c11a74e423ceacf73a35897131e288696f52c5e485ea2274b11e6ca222c",
+          "bytes": 228440
+        },
+        {
+          "path": "nap03/nap03/img/colab2026_15_api_lead_timeline.png",
+          "sha256": "199bc486cf3518a9fe8acab3761574599cc7d222ba4e698ddff50befc4ac5fc1",
+          "bytes": 136379
+        },
+        {
+          "path": "nap03/nap03/img/sheets_1.png",
+          "sha256": "6014d7bb7ecbe933765f833fe5220225cb9dd180bca592067634c01093114c40",
+          "bytes": 34240
+        },
+        {
+          "path": "nap03/nap03/img/sheets_4.png",
+          "sha256": "93ca0d4d17a0132bfe906fc9eba72905c1505eb2350df326b93e398426ff5db0",
+          "bytes": 41017
+        },
+        {
+          "path": "nap03/nap03/img/zoho2026_13_leads_lista_sajattal.png",
+          "sha256": "29878f56c0260e10203fe0d106da0378b60ab84c196da2b3c2759e7e8e6034e9",
+          "bytes": 226748
+        },
+        {
+          "path": "nap03/nap03/img/zoho2026_14_lead_rekord.png",
+          "sha256": "dfe47329fa34ac96ae30f90c76b83fc0ec87a83acfa5b9f33ec9af04d5597aaf",
+          "bytes": 153885
+        },
+        {
+          "path": "nap03/nap03/img/zoho2026_15_convert_ablak.png",
+          "sha256": "edd409ee0643046cd793f4ad4f163b909a8360fdd468474cd0ebe28b95dad364",
+          "bytes": 113088
+        },
+        {
+          "path": "nap03/nap03/img/zoho2026_16_convert_eredmeny.png",
+          "sha256": "04b29f02a79c5e82df0134ba97e80a7201bb0d26078d3edaebc0e851837ea8d4",
+          "bytes": 101435
+        },
+        {
+          "path": "nap03/nap03/img/zoho2026_17_convert_deallel.png",
+          "sha256": "3e082225ab3a8a18659b96af68bece68451a48ea625ebf057aa4ecec0587bfe5",
+          "bytes": 141094
+        },
+        {
+          "path": "nap03/nap03/img/zoho2026_18_pipeline_kanban.png",
+          "sha256": "bc6f1ea9a26d9aff851299eb723153c9be028029b382e04a8a5b00f91aebede7",
+          "bytes": 182596
+        },
+        {
+          "path": "nap03/nap03/img/zoho2026_19_deal_rekord.png",
+          "sha256": "63e2b031c5fb34b125c6b5da2bcb835f94d62790dfa3f0a8fde81c4c4ca8702d",
+          "bytes": 182411
+        },
+        {
+          "path": "nap03/nap03/img/zoho2026_20_account_oldal.png",
+          "sha256": "71e89b96d0b0cced618e3db6dd3fdb59488453c079ae3455653bd1e85c4c107c",
+          "bytes": 155472
+        },
+        {
+          "path": "nap03/nap03/img/zoho2026_27_pipeline_athuzva.png",
+          "sha256": "ae234b8e600a304b41707e351e79cde0d38afeaa559ecf9e23c27ccd3f1a6d15",
+          "bytes": 191012
+        },
+        {
+          "path": "nap03/nap03/img/zoho2026_29_accounts_lista_duplaval.png",
+          "sha256": "a47676c887a42b73c9c51f8ddaa776530329a5f1cd14ae3b9bc6360e7f0fd44b",
+          "bytes": 232311
+        },
+        {
+          "path": "nap03/nap03/img/zoho2026_30_account_urlap_nev.png",
+          "sha256": "8a74a8d59cb711368d859f2c122ba1a8a49525b30fa1e5cafdc088b4886ba0e3",
+          "bytes": 139702
+        },
+        {
+          "path": "nap03/nap03/img/zoho2026_31_account_urlap_varos.png",
+          "sha256": "f3eddfbe813bad642655a66266fe1e9e6ef7b2fecfce90d3dc9909aee39f043d",
+          "bytes": 153201
+        },
+        {
+          "path": "nap03/nap03/img/zoho2026_33_account_contact_add.png",
+          "sha256": "906d76e2e99d4012ef497741a5fea96064ebbda714b81e8b4bdcac12fa373e69",
+          "bytes": 154849
+        },
+        {
+          "path": "nap03/nap03/img/zoho2026_34_contact_urlap_ures.png",
+          "sha256": "463e4bc4bdb19080a164c083e1b1a82c9c78fe4241001fc4b3cce94b519dde42",
+          "bytes": 134821
+        },
+        {
+          "path": "nap03/nap03/img/zoho2026_35_contact_urlap_kitoltve.png",
+          "sha256": "8f43fab234a3d2531d805d587a5d6c7294b177efa032ca498900f9d3e6a4dc28",
+          "bytes": 141871
+        },
+        {
+          "path": "nap03/nap03/img/zoho2026_36_account_kesz_contacttal.png",
+          "sha256": "38dfd148350d6b99561f32794b9de3b06c0d96177e6d4110fc126b78150311f3",
+          "bytes": 153443
+        },
+        {
+          "path": "nap03/nap03/index.html",
+          "sha256": "fcda0f3969b63598e686e8ba19172755a6ef75bc1928f22b34cd3fd3bff47305",
+          "bytes": 3417
+        },
+        {
+          "path": "nap03/nap03/pages/01_api_alapok.html",
+          "sha256": "545a8c89de4c19d79dfa43f895ef72570d0ab2108383697ac106d1963568ed77",
+          "bytes": 5132
+        },
+        {
+          "path": "nap03/nap03/pages/02_excel_power_query.html",
+          "sha256": "edc89708e4d4d87faf43a9ea2990a774324bb8c2b3bf498abc9f46e47b7e5a18",
+          "bytes": 10318
+        },
+        {
+          "path": "nap03/nap03/pages/03_google_sheets.html",
+          "sha256": "4e101da5fa2378706ab887d24995120bc3e04073769042a9890d6ac72a1f988f",
+          "bytes": 5890
+        },
+        {
+          "path": "nap03/nap03/pages/04_zoho_crm.html",
+          "sha256": "12558d75e6d57fc6feeefe436e22410c79770bdd1427cffca61c209b20172eb6",
+          "bytes": 12737
+        },
+        {
+          "path": "nap03/nap03/pages/05_zoho_api.html",
+          "sha256": "64e306f278976ec24e20417f7818d1ef11f9d1453e972635048ccfe3edd523c2",
+          "bytes": 13257
+        },
+        {
+          "path": "nap03/nap03/pages/06_mini_lanc.html",
+          "sha256": "5ac6e0759754f178e81a4d404319ffcc14888107cb2a3e5b01d546f9c957a6bb",
+          "bytes": 5138
+        },
+        {
+          "path": "nap03/nap03/style.css",
+          "sha256": "806a3c42aa33a24fbfa5ec3ceb511eaeff4b9cd6849638c227053b5880785d3e",
+          "bytes": 18748
+        },
+        {
+          "path": "nap03/nap03/tananyag.js",
+          "sha256": "d5546b0db0071eff797815657c0afa46e52f5ec0d52d1b0d43002e4b15a4d888",
+          "bytes": 876
+        }
+      ]
+    },
+    "nap04": {
+      "skill": "bpa-nap04",
+      "entrypoint": ".agents/skills/bpa-nap04/SKILL.md",
+      "index": "nap04/nap04/index.html",
+      "chapters": [
+        "nap04/nap04/pages/01_studio_terkep.html",
+        "nap04/nap04/pages/02_elso_robot.html",
+        "nap04/nap04/pages/03_excel_robot.html",
+        "nap04/nap04/pages/04_excel_ppt.html",
+        "nap04/nap04/pages/05_fajlrendezo.html",
+        "nap04/nap04/pages/06_urlap_robot.html",
+        "nap04/nap04/pages/07_zaras.html"
+      ],
+      "assets": [
+        "nap04/nap04/docs/Dickinson_Sample_Slides.pptx",
+        "nap04/nap04/docs/gyakorlo_karportal.html",
+        "nap04/nap04/docs/gyakorlo_mappa.zip",
+        "nap04/nap04/docs/karbejelentesek_input.xlsx",
+        "nap04/nap04/docs/Raw_data.xlsx",
+        "nap04/nap04/docs/ugyfelek.xlsx"
+      ],
+      "files": [
+        {
+          "path": "nap04/nap04/docs/Dickinson_Sample_Slides.pptx",
+          "sha256": "ac7f2627645042190df3244cc25929f4b006d144fc2cac520e79ab376197bbbf",
+          "bytes": 647237
+        },
+        {
+          "path": "nap04/nap04/docs/gyakorlo_karportal.html",
+          "sha256": "53a10f3fdcd33db635327af8e73d6d198fc3e5e1d95b5f091c1bd65803b6ec56",
+          "bytes": 15083
+        },
+        {
+          "path": "nap04/nap04/docs/gyakorlo_mappa.zip",
+          "sha256": "3ae0afac36ae1f2736dee3ebee90d87f87d599e7b83a5a21816c1124aac88068",
+          "bytes": 4273
+        },
+        {
+          "path": "nap04/nap04/docs/karbejelentesek_input.xlsx",
+          "sha256": "76aa238dd5d3fbf481d1d7a1f59005834adf3e404e1cfc275f2ede58222473b2",
+          "bytes": 5839
+        },
+        {
+          "path": "nap04/nap04/docs/Raw_data.xlsx",
+          "sha256": "4818ee243799f94918f07a318b8ed3c0399cd699a5cbc53240fc3e63ead8404f",
+          "bytes": 17065
+        },
+        {
+          "path": "nap04/nap04/docs/ugyfelek.xlsx",
+          "sha256": "fde91c4eb136216ef5748fea2960ac04497226a730a5cd3986bf07a96c5b9b60",
+          "bytes": 5415
+        },
+        {
+          "path": "nap04/nap04/img/karportal_eredmeny.png",
+          "sha256": "25b65a03a00423ad62d8fdf482d057f9470a2b68f854ed79a47491e79292d537",
+          "bytes": 232621
+        },
+        {
+          "path": "nap04/nap04/img/karportal_urlap.png",
+          "sha256": "def0fb511a6413022b608a1cd473ea4b99228666ceff16bec61998de5539d74b",
+          "bytes": 57153
+        },
+        {
+          "path": "nap04/nap04/img/nap04_dtcount_futas.png",
+          "sha256": "a680d65a10b227bd2a8657d07a097c5671459ff1f66a2b14754c29728b7a7571",
+          "bytes": 320988
+        },
+        {
+          "path": "nap04/nap04/img/nap04_eredmeny_excel.png",
+          "sha256": "ea514d9e856ae646417058187311d817f4f506872aaa99c10754ca633d068f56",
+          "bytes": 413455
+        },
+        {
+          "path": "nap04/nap04/img/nap04_fajlrendezo_teljes.png",
+          "sha256": "e5cfc60cc6de1ae1c072431289ef0ba5090f776226e1dfd393e22084c3f7a02d",
+          "bytes": 185309
+        },
+        {
+          "path": "nap04/nap04/img/nap04_foreachfile.png",
+          "sha256": "c9c70fc31350dd2eaee644e8c6366fb6a551d06033d19262afff8c7386ad3284",
+          "bytes": 24570
+        },
+        {
+          "path": "nap04/nap04/img/nap04_foreachrow_assign.png",
+          "sha256": "2438f9cb022b73a21ace6719e7a14059a06123a6466eddf1f35b6e84062bcb68",
+          "bytes": 277728
+        },
+        {
+          "path": "nap04/nap04/img/nap04_futas_interaktiv.png",
+          "sha256": "91dc77eb0f3b2f867e702b4320dec40a8fdc020aafe9ae4790bde57f1e43b7d0",
+          "bytes": 332887
+        },
+        {
+          "path": "nap04/nap04/img/nap04_futas_szamolos.png",
+          "sha256": "4c9da2a4a55b2e718739e2bdb74d5e6aab6914b533945f604b92104f2fa8112f",
+          "bytes": 342862
+        },
+        {
+          "path": "nap04/nap04/img/nap04_if_movefile.png",
+          "sha256": "267252dd2fcd482bf2147c04c28f4bf042ee70fa79aa293723aba89fd082fc25",
+          "bytes": 45331
+        },
+        {
+          "path": "nap04/nap04/img/nap04_inputdialog_kartya.png",
+          "sha256": "2c826f5b8ac6ae93cff04a880f6d2d8cf6fc957c39e8cad0a54e71843dd84654",
+          "bytes": 37047
+        },
+        {
+          "path": "nap04/nap04/img/nap04_kereso_messagebox.png",
+          "sha256": "3cd77ebb41ef68cefe08039e6e3ce1b556429fac1335c9392889654c636d346c",
+          "bytes": 318776
+        },
+        {
+          "path": "nap04/nap04/img/nap04_pdf_mozgatas_utan.png",
+          "sha256": "d3e736e2ae33ab25f24ee0a8eaadc3b5c2edf41c9deb0efe275c477869ac2aaf",
+          "bytes": 187906
+        },
+        {
+          "path": "nap04/nap04/img/nap04_readrange_kartya.png",
+          "sha256": "ab8ea691f8ac790d9ebf02150cd1d3c7c93ac9b4bbd1296501023d854cd06526",
+          "bytes": 316050
+        },
+        {
+          "path": "nap04/nap04/img/nap04_rendezes_futas.png",
+          "sha256": "c6903171121fb45fa14dd11d7cd57f94037944d45bc0e6da039e0d5bcf2b3e2a",
+          "bytes": 252998
+        },
+        {
+          "path": "nap04/nap04/img/nap04_result_valtozo.png",
+          "sha256": "5f166c7f5e3e7efafa503cb55921e9b8e1fd91c8c4f1a5c4798d8836478ac379",
+          "bytes": 313323
+        },
+        {
+          "path": "nap04/nap04/img/nap04_szia_bela_futas.png",
+          "sha256": "d263f31478c7cad98fe318e300d1c4e880ea1fd543309a62375e1d8b040d7979",
+          "bytes": 310608
+        },
+        {
+          "path": "nap04/nap04/img/nap04_terkep_annotalt.png",
+          "sha256": "70938b895eaac7f48a3d14c37de0ebfb25ee78faee282ea51643053b0fec570d",
+          "bytes": 218305
+        },
+        {
+          "path": "nap04/nap04/img/nap04_tools_extension.png",
+          "sha256": "ab18fc5255c9a1a453f084077cf7227b8afca8a4e721f8c340cdc080aedbc851",
+          "bytes": 344903
+        },
+        {
+          "path": "nap04/nap04/img/nap04_tools_extension_telepitve.png",
+          "sha256": "7559dcaa725ac34ed359670e0e774071512705c6ba8a6f71d098751000e68dac",
+          "bytes": 344122
+        },
+        {
+          "path": "nap04/nap04/img/PLJX3HavtDUrAeCnzldDrh4oJx1FBqI_Ce.jpg",
+          "sha256": "f1aea25ab8943839bb6cddd4c05cf9f62262b515eea5b8e54831f5f78baf38f1",
+          "bytes": 6011
+        },
+        {
+          "path": "nap04/nap04/img/PLJX3HavtDUrDtn70XckmjUd5ajBapc4hQ.jpg",
+          "sha256": "acfcc0316e4005cecb34e0c83f7bfc7b9192674719490b9f2ce3b066b8eb9667",
+          "bytes": 30824
+        },
+        {
+          "path": "nap04/nap04/img/ppt_1.png",
+          "sha256": "5586098c63a986cd27f12213f1f477c70aaa725cc73f547557ad3d520f94f7fa",
+          "bytes": 153067
+        },
+        {
+          "path": "nap04/nap04/img/ppt_10.png",
+          "sha256": "89a3e33b58a60f7af681c1a8e97386105c8b8e5f4c2d46465a178ed744facd3a",
+          "bytes": 198024
+        },
+        {
+          "path": "nap04/nap04/img/ppt_11.png",
+          "sha256": "87cbeb9ba6afaea863cb00d6d001ef35b6e2bf929357ad2ee000fe8cb64cb6e8",
+          "bytes": 183460
+        },
+        {
+          "path": "nap04/nap04/img/ppt_12.png",
+          "sha256": "014359280bc60b8cc76e6f02af6b31e1b52e7334d25b06a979a329cf0b55f4ae",
+          "bytes": 186638
+        },
+        {
+          "path": "nap04/nap04/img/ppt_13.png",
+          "sha256": "bd8ffb8c42c25bff5033142e2979a68f7f0b84d57fa50b294bdb72e0e3e5c5f4",
+          "bytes": 60517
+        },
+        {
+          "path": "nap04/nap04/img/ppt_2.png",
+          "sha256": "b49183b372d42b5550a1f70fe94305d2918b4093c22673a7764a67763b2bbfa0",
+          "bytes": 92724
+        },
+        {
+          "path": "nap04/nap04/img/ppt_3.png",
+          "sha256": "d68b973ea7afb5c78b167db68dc515adfd3443098786896c9ee64c414ab4847b",
+          "bytes": 140091
+        },
+        {
+          "path": "nap04/nap04/img/ppt_4.png",
+          "sha256": "231e815e62dfba8174383d8e9b2945afe58d50412cf30a1cb49b90c5b4a76bf6",
+          "bytes": 192456
+        },
+        {
+          "path": "nap04/nap04/img/ppt_5a.png",
+          "sha256": "a9d9e3ef5eaafd29c24a5dd2f51a037ca627610c6c4ca27b47cf93ff358ef2ee",
+          "bytes": 200457
+        },
+        {
+          "path": "nap04/nap04/img/ppt_5b.png",
+          "sha256": "4d48b07eb0c0211500bb8b9a028ad30b2bc1bfa9ecbc7d3a09a5b32b321a91ea",
+          "bytes": 199484
+        },
+        {
+          "path": "nap04/nap04/img/ppt_6.png",
+          "sha256": "80e71dd8fa9f909482866f88b1af6e0897482c6160649e40e7f894bc58d71a36",
+          "bytes": 81718
+        },
+        {
+          "path": "nap04/nap04/img/ppt_7.png",
+          "sha256": "a9b9cf44d688df7d0e3e53421ee928aba853359051b58367a7b888aa59c07cc0",
+          "bytes": 203041
+        },
+        {
+          "path": "nap04/nap04/img/ppt_8.png",
+          "sha256": "52b53c5b4dcd5cb7bcae352a0aadacfd41fa04f92fd3094d1628197b426ce0da",
+          "bytes": 206341
+        },
+        {
+          "path": "nap04/nap04/img/ppt_9.png",
+          "sha256": "d26f48747b43415dbfe92e46f41a001f438f4805c105653ab508c358c040d2bf",
+          "bytes": 196440
+        },
+        {
+          "path": "nap04/nap04/img/uipath_19_start.png",
+          "sha256": "59cf39f2f3828b1a3ce0b3ab686aa8be63f478c77388d264f1e4e7780c94e65a",
+          "bytes": 458002
+        },
+        {
+          "path": "nap04/nap04/img/uipath_20_newprocess.png",
+          "sha256": "3bbbe46c357558027c1b774c1416b22b08e0e52a50868f4f4e76bcfa7cfec8dc",
+          "bytes": 402127
+        },
+        {
+          "path": "nap04/nap04/img/uipath_21_tervezo.png",
+          "sha256": "aa1cb67d3a8800cedc7a0f84c6d9aa9d893fee9ea13f92172dc35b915a0d84ee",
+          "bytes": 229943
+        },
+        {
+          "path": "nap04/nap04/img/uipath_22_futas.png",
+          "sha256": "fb052f746baef49ef76b6d984d241e7493cf1d14b4dfe59e0f910ae5617a1d93",
+          "bytes": 269129
+        },
+        {
+          "path": "nap04/nap04/index.html",
+          "sha256": "caeef84d1aa33c0334ad001e27b70520deb1e1b26ced3f07faaaf50eee2a53a9",
+          "bytes": 3896
+        },
+        {
+          "path": "nap04/nap04/pages/01_studio_terkep.html",
+          "sha256": "d92f650d0b93d339a3e64241c10b6a52fe74bf3e5c9a8d4f85ca79a55dfea7dc",
+          "bytes": 7461
+        },
+        {
+          "path": "nap04/nap04/pages/02_elso_robot.html",
+          "sha256": "f2aad0e5f2b19316c09db12afb9256e0225ec47ace1c6bef86abce9b3d27137a",
+          "bytes": 7809
+        },
+        {
+          "path": "nap04/nap04/pages/03_excel_robot.html",
+          "sha256": "51d01bcf12587071e1dd73e118908db3381686f056955769c94ffad125152584",
+          "bytes": 9566
+        },
+        {
+          "path": "nap04/nap04/pages/04_excel_ppt.html",
+          "sha256": "732b526fbd47cc00299b78dd068eed4bf9687be76c73eb7c9110f3addd7da329",
+          "bytes": 11772
+        },
+        {
+          "path": "nap04/nap04/pages/05_fajlrendezo.html",
+          "sha256": "a565692c7cd5bce037d9b647cb1b9be4095221aa9d91c1957ed9f037c8fe8595",
+          "bytes": 7217
+        },
+        {
+          "path": "nap04/nap04/pages/06_urlap_robot.html",
+          "sha256": "682a88f03a05e8dcae1706c4c636171d03325fa857d122054cf0ec87c3e97e99",
+          "bytes": 10486
+        },
+        {
+          "path": "nap04/nap04/pages/07_zaras.html",
+          "sha256": "a59f4c5fce8b8e76ca745419692502e173c00df54102d63025b5b7a0daedbd43",
+          "bytes": 6573
+        },
+        {
+          "path": "nap04/nap04/style.css",
+          "sha256": "1c2e140a6bb5e115188ed17922beb7f29177402cc3a89488f9f64fab5bc16b92",
+          "bytes": 19831
+        },
+        {
+          "path": "nap04/nap04/tananyag.js",
+          "sha256": "d5546b0db0071eff797815657c0afa46e52f5ec0d52d1b0d43002e4b15a4d888",
+          "bytes": 876
+        }
+      ]
+    }
+  }
+}

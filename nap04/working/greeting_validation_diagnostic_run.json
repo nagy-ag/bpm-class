@@ -1,0 +1,162 @@
+{
+  "Result": "Success",
+  "Code": "ToolResult",
+  "Data": {
+    "output": "Execution aborted. See attached errors for more information",
+    "errors": [
+      {
+        "errorName": "System.InvalidOperationException",
+        "errorMessage": "Regression mismatch",
+        "lineNumber": ""
+      }
+    ],
+    "logEntries": [
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Setting up environment"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Restoring nuget packages"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Generating JIT assemblies"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "JitServiceProvider created: StoreVersion=AutoDetect, AutoUpgrade=False, Language=VisualBasic, InProcessCache=True, WorkspaceCache=True, HasMetadataReferenceProvider=True, HasAssemblyLoadContext=True."
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "No V3 or V4 entity store detected, using V3."
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Disk cache hit for 'GlobalVariables'."
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Storing 'GlobalVariables' \u2192 'GlobalVariablesT1PNoYwrqg' in cache."
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Loading assemblies with XML namespaces"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Registering activities metadata"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Update Xaml files with references to discarded entity assemblies."
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Initializing database"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Analyzing project"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Project analysis was skipped."
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "ST-ANA-003 - Expand to see details"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "ST-ANA-009 - Expand to see details"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "ST-ANA-009 - Expand to see details"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Generating workflows from execution templates"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Generate tests based on data variation file."
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Processing Forms"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Processing triggers."
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Staging JIT assemblies for execution"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Compiling files"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Execution completed"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Project built successfully."
+      },
+      {
+        "source": "Debug",
+        "level": "Information",
+        "message": "Nap04_gyakorlas execution started"
+      },
+      {
+        "source": "Debug",
+        "level": "Information",
+        "message": "ACTUAL|\u00c9vente kb. 0 e-mail."
+      },
+      {
+        "source": "Debug",
+        "level": "Error",
+        "message": "Throw: Regression mismatch\r\nin Validation_Regression.xaml\r\n    at Throw \"Throw\"\r\n    at Sequence \"Teszt hiba\"\r\n    at If \"Elv\u00e1rt eredm\u00e9ny ellen\u0151rz\u00e9se\"\r\n    at Sequence \"Val\u00f3di sz\u00e1mol\u00f3 workflow regresszi\u00f3s teszt\"\r\n    at Validation_Regression \"Validation_Regression\"\r\n\r\n--- .NET stack trace ---\r\nSystem.InvalidOperationException\r\n   at System.Activities.Statements.Throw.Execute(CodeActivityContext context)\r\n   at System.Activities.CodeActivity.InternalExecute(ActivityInstance instance, ActivityExecutor executor, BookmarkManager bookmarkManager)\r\n   at System.Activities.Runtime.ActivityExecutor.ExecuteActivityWorkItem.ExecuteBody(ActivityExecutor executor, BookmarkManager bookmarkManager, Location resultLocation)"
+      },
+      {
+        "source": "Debug",
+        "level": "Information",
+        "message": "Nap04_gyakorlas execution ended in: 00:00:00"
+      },
+      {
+        "source": "Debug",
+        "level": "Error",
+        "message": "in Validation_Regression.xaml\r\n    at Throw \"Throw\"\r\n    at Sequence \"Teszt hiba\"\r\n    at If \"Elv\u00e1rt eredm\u00e9ny ellen\u0151rz\u00e9se\"\r\n    at Sequence \"Val\u00f3di sz\u00e1mol\u00f3 workflow regresszi\u00f3s teszt\"\r\n    at Validation_Regression \"Validation_Regression\"\r\n\r\nSystem.InvalidOperationException: Regression mismatch\r\n   at System.Activities.Statements.Throw.Execute(CodeActivityContext context)\r\n   at System.Activities.CodeActivity.InternalExecute(ActivityInstance instance, ActivityExecutor executor, BookmarkManager bookmarkManager)\r\n   at System.Activities.Runtime.ActivityExecutor.ExecuteActivityWorkItem.ExecuteBody(ActivityExecutor executor, BookmarkManager bookmarkManager, Location resultLocation)"
+      }
+    ],
+    "debugState": "Completed"
+  }
+}

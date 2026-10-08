@@ -1,0 +1,24 @@
+{
+  "type": "offline_boundary_test",
+  "actual_colab_execution": true,
+  "cell": 15,
+  "checks": [
+    [
+      100,
+      99,
+      true
+    ],
+    [
+      100,
+      100,
+      false
+    ],
+    [
+      100,
+      101,
+      false
+    ]
+  ],
+  "network_calls": 0,
+  "passed": true
+}

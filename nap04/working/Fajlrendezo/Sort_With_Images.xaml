@@ -1,0 +1,92 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sort_With_Images" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+<Sequence DisplayName="Gyakorlófájlok rendezése"><Sequence.Variables><Variable x:TypeArguments="x:String" Name="exerciseRoot"/><Variable x:TypeArguments="x:Int32" Name="moved" Default="0"/></Sequence.Variables>
+<Assign DisplayName="Gyakorlómappa abszolút útvonala"><Assign.To><OutArgument x:TypeArguments="x:String">[exerciseRoot]</OutArgument></Assign.To><Assign.Value><InArgument x:TypeArguments="x:String">[System.IO.Path.GetFullPath("exercise/gyakorlo_mappa")]</InArgument></Assign.Value></Assign>
+<If DisplayName="Létező elszigetelt forrás ellenőrzése" Condition="[Not System.IO.Directory.Exists(exerciseRoot)]"><If.Then><Sequence><Throw Exception="[New System.IO.DirectoryNotFoundException(&quot;Extract the lesson ZIP into this project exercise folder first.&quot;)]"/></Sequence></If.Then></If>
+<TryCatch DisplayName="PDF mappa létrehozása"><TryCatch.Try><Sequence DisplayName="PDF mappa létrehozása – művelet"><ui:CreateDirectory DisplayName="PDF mappa" Path='[System.IO.Path.Combine(exerciseRoot, "PDF")]' ContinueOnError="False"/></Sequence></TryCatch.Try><TryCatch.Catches><Catch x:TypeArguments="s:Exception"><ActivityAction x:TypeArguments="s:Exception"><ActivityAction.Argument><DelegateInArgument x:TypeArguments="s:Exception" Name="exception"/></ActivityAction.Argument><Sequence DisplayName="Hiba rögzítése"><ui:LogMessage DisplayName="Fájlrendezési hiba" Level="Error" Message="[exception.ToString()]"/><Rethrow/></Sequence></ActivityAction></Catch></TryCatch.Catches></TryCatch><TryCatch DisplayName="Excel mappa létrehozása"><TryCatch.Try><Sequence DisplayName="Excel mappa létrehozása – művelet"><ui:CreateDirectory DisplayName="Excel mappa" Path='[System.IO.Path.Combine(exerciseRoot, "Excel")]' ContinueOnError="False"/></Sequence></TryCatch.Try><TryCatch.Catches><Catch x:TypeArguments="s:Exception"><ActivityAction x:TypeArguments="s:Exception"><ActivityAction.Argument><DelegateInArgument x:TypeArguments="s:Exception" Name="exception"/></ActivityAction.Argument><Sequence DisplayName="Hiba rögzítése"><ui:LogMessage DisplayName="Fájlrendezési hiba" Level="Error" Message="[exception.ToString()]"/><Rethrow/></Sequence></ActivityAction></Catch></TryCatch.Catches></TryCatch><TryCatch DisplayName="Word mappa létrehozása"><TryCatch.Try><Sequence DisplayName="Word mappa létrehozása – művelet"><ui:CreateDirectory DisplayName="Word mappa" Path='[System.IO.Path.Combine(exerciseRoot, "Word")]' ContinueOnError="False"/></Sequence></TryCatch.Try><TryCatch.Catches><Catch x:TypeArguments="s:Exception"><ActivityAction x:TypeArguments="s:Exception"><ActivityAction.Argument><DelegateInArgument x:TypeArguments="s:Exception" Name="exception"/></ActivityAction.Argument><Sequence DisplayName="Hiba rögzítése"><ui:LogMessage DisplayName="Fájlrendezési hiba" Level="Error" Message="[exception.ToString()]"/><Rethrow/></Sequence></ActivityAction></Catch></TryCatch.Catches></TryCatch><TryCatch DisplayName="Kepek mappa létrehozása"><TryCatch.Try><Sequence DisplayName="Kepek mappa létrehozása – művelet"><ui:CreateDirectory DisplayName="Kepek mappa" Path='[System.IO.Path.Combine(exerciseRoot, "Kepek")]' ContinueOnError="False"/></Sequence></TryCatch.Try><TryCatch.Catches><Catch x:TypeArguments="s:Exception"><ActivityAction x:TypeArguments="s:Exception"><ActivityAction.Argument><DelegateInArgument x:TypeArguments="s:Exception" Name="exception"/></ActivityAction.Argument><Sequence DisplayName="Hiba rögzítése"><ui:LogMessage DisplayName="Fájlrendezési hiba" Level="Error" Message="[exception.ToString()]"/><Rethrow/></Sequence></ActivityAction></Catch></TryCatch.Catches></TryCatch><ui:ForEachFileX DisplayName="Csak felső mappa fájljai" Folder="[exerciseRoot]" Filter="*" IncludeSubDirectories="False" SkipFolderWithoutPermission="False" OrderBy="NameAscFirst"><ui:ForEachFileX.Body><ActivityAction x:TypeArguments="si:FileInfo, x:Int32"><ActivityAction.Argument1><DelegateInArgument x:TypeArguments="si:FileInfo" Name="CurrentFile"/></ActivityAction.Argument1><ActivityAction.Argument2><DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex"/></ActivityAction.Argument2><Sequence DisplayName="Kiterjesztések vizsgálata"><If DisplayName=".pdf szabály" Condition='[CurrentFile.Extension.ToLower() = ".pdf"]'><If.Then><Sequence DisplayName="PDF áthelyezés">
+<TryCatch DisplayName="PDF fájlmozgatás"><TryCatch.Try><Sequence DisplayName="PDF fájlmozgatás – művelet"><ui:MoveFile DisplayName="PDF fájl áthelyezése" Path="[CurrentFile.FullName]" Destination='[System.IO.Path.Combine(exerciseRoot, "PDF", CurrentFile.Name)]' Overwrite="False" ContinueOnError="False"/></Sequence></TryCatch.Try><TryCatch.Catches><Catch x:TypeArguments="s:Exception"><ActivityAction x:TypeArguments="s:Exception"><ActivityAction.Argument><DelegateInArgument x:TypeArguments="s:Exception" Name="exception"/></ActivityAction.Argument><Sequence DisplayName="Hiba rögzítése"><ui:LogMessage DisplayName="Fájlrendezési hiba" Level="Error" Message="[exception.ToString()]"/><Rethrow/></Sequence></ActivityAction></Catch></TryCatch.Catches></TryCatch>
+<Assign DisplayName="Mozgatások számlálása"><Assign.To><OutArgument x:TypeArguments="x:Int32">[moved]</OutArgument></Assign.To><Assign.Value><InArgument x:TypeArguments="x:Int32">[moved+1]</InArgument></Assign.Value></Assign>
+<ui:LogMessage DisplayName="PDF mozgatás naplója" Level="Info" Message='["MOVED|PDF|" &amp; CurrentFile.Name]'/>
+</Sequence></If.Then></If><If DisplayName=".xlsx szabály" Condition='[CurrentFile.Extension.ToLower() = ".xlsx"]'><If.Then><Sequence DisplayName="Excel áthelyezés">
+<TryCatch DisplayName="Excel fájlmozgatás"><TryCatch.Try><Sequence DisplayName="Excel fájlmozgatás – művelet"><ui:MoveFile DisplayName="Excel fájl áthelyezése" Path="[CurrentFile.FullName]" Destination='[System.IO.Path.Combine(exerciseRoot, "Excel", CurrentFile.Name)]' Overwrite="False" ContinueOnError="False"/></Sequence></TryCatch.Try><TryCatch.Catches><Catch x:TypeArguments="s:Exception"><ActivityAction x:TypeArguments="s:Exception"><ActivityAction.Argument><DelegateInArgument x:TypeArguments="s:Exception" Name="exception"/></ActivityAction.Argument><Sequence DisplayName="Hiba rögzítése"><ui:LogMessage DisplayName="Fájlrendezési hiba" Level="Error" Message="[exception.ToString()]"/><Rethrow/></Sequence></ActivityAction></Catch></TryCatch.Catches></TryCatch>
+<Assign DisplayName="Mozgatások számlálása"><Assign.To><OutArgument x:TypeArguments="x:Int32">[moved]</OutArgument></Assign.To><Assign.Value><InArgument x:TypeArguments="x:Int32">[moved+1]</InArgument></Assign.Value></Assign>
+<ui:LogMessage DisplayName="Excel mozgatás naplója" Level="Info" Message='["MOVED|Excel|" &amp; CurrentFile.Name]'/>
+</Sequence></If.Then></If><If DisplayName=".docx szabály" Condition='[CurrentFile.Extension.ToLower() = ".docx"]'><If.Then><Sequence DisplayName="Word áthelyezés">
+<TryCatch DisplayName="Word fájlmozgatás"><TryCatch.Try><Sequence DisplayName="Word fájlmozgatás – művelet"><ui:MoveFile DisplayName="Word fájl áthelyezése" Path="[CurrentFile.FullName]" Destination='[System.IO.Path.Combine(exerciseRoot, "Word", CurrentFile.Name)]' Overwrite="False" ContinueOnError="False"/></Sequence></TryCatch.Try><TryCatch.Catches><Catch x:TypeArguments="s:Exception"><ActivityAction x:TypeArguments="s:Exception"><ActivityAction.Argument><DelegateInArgument x:TypeArguments="s:Exception" Name="exception"/></ActivityAction.Argument><Sequence DisplayName="Hiba rögzítése"><ui:LogMessage DisplayName="Fájlrendezési hiba" Level="Error" Message="[exception.ToString()]"/><Rethrow/></Sequence></ActivityAction></Catch></TryCatch.Catches></TryCatch>
+<Assign DisplayName="Mozgatások számlálása"><Assign.To><OutArgument x:TypeArguments="x:Int32">[moved]</OutArgument></Assign.To><Assign.Value><InArgument x:TypeArguments="x:Int32">[moved+1]</InArgument></Assign.Value></Assign>
+<ui:LogMessage DisplayName="Word mozgatás naplója" Level="Info" Message='["MOVED|Word|" &amp; CurrentFile.Name]'/>
+</Sequence></If.Then></If><If DisplayName=".png szabály" Condition='[CurrentFile.Extension.ToLower() = ".png"]'><If.Then><Sequence DisplayName="Kepek áthelyezés">
+<TryCatch DisplayName="Kepek fájlmozgatás"><TryCatch.Try><Sequence DisplayName="Kepek fájlmozgatás – művelet"><ui:MoveFile DisplayName="Kepek fájl áthelyezése" Path="[CurrentFile.FullName]" Destination='[System.IO.Path.Combine(exerciseRoot, "Kepek", CurrentFile.Name)]' Overwrite="False" ContinueOnError="False"/></Sequence></TryCatch.Try><TryCatch.Catches><Catch x:TypeArguments="s:Exception"><ActivityAction x:TypeArguments="s:Exception"><ActivityAction.Argument><DelegateInArgument x:TypeArguments="s:Exception" Name="exception"/></ActivityAction.Argument><Sequence DisplayName="Hiba rögzítése"><ui:LogMessage DisplayName="Fájlrendezési hiba" Level="Error" Message="[exception.ToString()]"/><Rethrow/></Sequence></ActivityAction></Catch></TryCatch.Catches></TryCatch>
+<Assign DisplayName="Mozgatások számlálása"><Assign.To><OutArgument x:TypeArguments="x:Int32">[moved]</OutArgument></Assign.To><Assign.Value><InArgument x:TypeArguments="x:Int32">[moved+1]</InArgument></Assign.Value></Assign>
+<ui:LogMessage DisplayName="Kepek mozgatás naplója" Level="Info" Message='["MOVED|Kepek|" &amp; CurrentFile.Name]'/>
+</Sequence></If.Then></If></Sequence></ActivityAction></ui:ForEachFileX.Body></ui:ForEachFileX>
+<ui:LogMessage DisplayName="Összes mozgatás" Level="Info" Message="[&quot;SORT_COMPLETE|moved=&quot; &amp; moved.ToString()]"/>
+</Sequence></Activity>

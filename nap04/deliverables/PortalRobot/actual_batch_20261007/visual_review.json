@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "review_method": "Visually inspected saved before/filled/confirmation screenshot crops; all27original PNG files retained",
+  "row_count": 9,
+  "screenshots_reviewed": 27,
+  "before": "Each row begins at empty new-claim form; placeholder text is not field input",
+  "filled": "All five visible fields agree with source/snapshot and CSV; exported descriptions verified exactly",
+  "confirmations": {
+    "TR-118264": "K-GY-7151",
+    "TR-771205": "K-GY-3461",
+    "TR-390162": "K-GY-1330",
+    "TR-627849": "K-GY-7345",
+    "TR-204531": "K-GY-2404",
+    "TR-845290": "K-GY-7487",
+    "TR-562017": "K-GY-7540",
+    "TR-138476": "K-GY-2148",
+    "TR-905324": "K-GY-4302"
+  },
+  "page_total": 33,
+  "page_total_provenance": "User replied yes to what total is displayed now, expected33",
+  "execution_provenance": "User reported done, CSV(4); actual saved parent/per-row logs inspected",
+  "normalization": "Only blank unused ugyszam None/empty string normalized; five operational values remain exact",
+  "no_browser_action": true
+}

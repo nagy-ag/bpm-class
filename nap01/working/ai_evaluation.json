@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-07",
+  "tool": "current authenticated Codex session",
+  "global_settings_tested": false,
+  "checks": {
+    "explanation_3_sentences": true,
+    "summary_2_paragraphs": true,
+    "mini_5_explanation_sentences": true,
+    "mini_3_numbered_examples": true,
+    "one_sentence_per_example": true,
+    "no_em_dash": true,
+    "english_equivalents_present": true
+  },
+  "semantic_review": "Hungarian prose, clear process input/activity/output concept; insurer examples are distinct fictional policy issuance, claims settlement and premium collection. No external factual figures or invented citations. Counts verified by code independently of model self-assessment.",
+  "passed": true
+}

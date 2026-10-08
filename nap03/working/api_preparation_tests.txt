@@ -1,0 +1,22 @@
+test_bad_readback_preserves_created_reservation (test_api_exercises.ExercisesTests.test_bad_readback_preserves_created_reservation) ... ok
+test_conflicting_or_duplicate_identity_stops_before_write (test_api_exercises.ExercisesTests.test_conflicting_or_duplicate_identity_stops_before_write) ... ok
+test_create_success_exact_readback_then_reuse (test_api_exercises.ExercisesTests.test_create_success_exact_readback_then_reuse) ... ok
+test_http_status_captured_on_shared_transport (test_api_exercises.ExercisesTests.test_http_status_captured_on_shared_transport) ... ok
+test_invalid_prices_and_thresholds_rejected (test_api_exercises.ExercisesTests.test_invalid_prices_and_thresholds_rejected) ... ok
+test_memory_refresh_keeps_refresh_token_and_never_reads_env (test_api_exercises.ExercisesTests.test_memory_refresh_keeps_refresh_token_and_never_reads_env) ... ok
+test_non_fictional_address_refused (test_api_exercises.ExercisesTests.test_non_fictional_address_refused) ... ok
+test_positive_negative_and_equality (test_api_exercises.ExercisesTests.test_positive_negative_and_equality) ... ok
+test_token_error_suppresses_provider_body_and_no_retry (test_api_exercises.ExercisesTests.test_token_error_suppresses_provider_body_and_no_retry) ... ok
+test_uncertain_write_cannot_be_retried (test_api_exercises.ExercisesTests.test_uncertain_write_cannot_be_retried) ... ok
+test_cmc_key_stays_out_of_url (test_bpa_access.AccessTests.test_cmc_key_stays_out_of_url) ... ok
+test_env_values_are_literal_and_duplicates_are_rejected (test_bpa_access.AccessTests.test_env_values_are_literal_and_duplicates_are_rejected) ... ok
+test_expired_token_refreshes_without_secrets_in_arguments (test_bpa_access.AccessTests.test_expired_token_refreshes_without_secrets_in_arguments) ... ok
+test_http_error_does_not_echo_response_secrets (test_bpa_access.AccessTests.test_http_error_does_not_echo_response_secrets) ... ok
+test_redirects_and_non_crm_resources_are_rejected (test_bpa_access.AccessTests.test_redirects_and_non_crm_resources_are_rejected) ... ok
+test_rejected_read_refreshes_once (test_bpa_access.AccessTests.test_rejected_read_refreshes_once) ... ok
+test_write_is_never_automatically_retried (test_bpa_access.AccessTests.test_write_is_never_automatically_retried) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.917s
+
+OK

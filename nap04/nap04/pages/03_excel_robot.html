@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Excelből Excelbe: beolvas, dönt, visszaír | negyedik nap · UiPath: az első robotjaid</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="inner">
+    <div>
+      <div class="course">Business Process Automation · Negyedik nap: UiPath-alapok és az első szoftverrobotok</div>
+      <div class="module">3. blokk · Excel-robot: olvasás és írás</div>
+    </div>
+    <a href="../index.html" target="_blank" rel="noopener noreferrer">⌂ A nap kezdőlapja</a>
+  </div>
+</header>
+<main id="tartalom">
+  <div class="card">
+    <div class="crumb">3 / 7 blokk</div>
+    <h1>Excelből Excelbe: beolvas, dönt, visszaír</h1>
+    <p class="lead">Read Range, For Each Row, Assign, Write Range: a vállalati robotok leggyakoribb mintája, végig a te gépeden.</p>
+    <div class="box goal">
+      <span class="t">A blokk végére</span>
+            <ul style="margin:6px 0 0">
+        <li>a robotod beolvas egy Excel-táblát, soronként dönt, és az eredményt visszaírja egy új Excel-fájlba;</li>
+        <li>ismered a DataTable fogalmát: így él egy tábla a robot memóriájában;</li>
+        <li>a hetedik és a nyolcadik nap feladatainak is ez a minta a gerince.</li>
+      </ul>
+
+    </div>
+
+    <h2>A leggyakoribb irodai automatizálás: Excelből Excelbe</h2>
+    <p>A vállalati robotok kenyere az Excel: lista jön valahonnan, soronként kell vele csinálni valamit, és az eredményt Excelben várják vissza. A gyakorlatunk: a Meridian 12 ügyfelének listájából a robot kiszámolja, ki számít kiemelt ügyfélnek, és minősített listát ír ki.</p>
+    <p>Töltsd le a munkafájlt a BPA_kurzus mappádba:</p>
+    <div class="dls">
+      <a class="dl" href="../docs/ugyfelek.xlsx" download target="_blank" rel="noopener noreferrer">ugyfelek.xlsx (12 ügyfél: név, város, éves díj)</a>
+    </div>
+    <div class="box term">
+      <span class="t">Két út Excelhez, és most melyiket használjuk</span>
+            <ul style="margin:6px 0 0">
+        <li><strong>Workbook-aktivitások</strong> (Read Range Workbook, Write Range Workbook): magát a fájlt olvassák, nem kell hozzá telepített Excel. Ma ezeket használjuk, mert mindenki gépén működnek.</li>
+        <li><strong>Use Excel File</strong> aktivitás-család: a telepített Excelt vezérli (látod is megnyílni); akkor kell, ha élő Excel-funkciókat (képlet-újraszámolás, diagram) használnál. A következő blokk sablonja ezt használja.</li>
+      </ul>
+
+    </div>
+    <ol class="steps">
+      <li>Új projekt: a kezdőképernyőn <kbd>Process</kbd>, név: <em>ExcelRobot</em>, <kbd>Create</kbd>.</li>
+      <li>Add hozzá (Ctrl+Shift+T): <em>Read Range Workbook</em> (a találatlistában: Read Range Workbook, UiPath.Excel.Activities; ha a csomag hiányzik, telepítsd a Manage Packages ablakban). A kártyán a <em>File</em> mező végén kattints a plusz jelre, válaszd a <kbd>Use Local File</kbd> lehetőséget, és add meg a letöltött <em>ugyfelek.xlsx</em> teljes útvonalát idézőjelben (vagy tallózd ki a mappa-ikonnal); <em>SheetName</em>: <code>"Ugyfelek"</code>; a <em>Range</em> maradjon üres (<code>""</code>): ez a teljes táblát jelenti.<figure class="shot"><img src="../img/nap04_readrange_kartya.png" alt="A Read Range Workbook kártya kitöltve: File (local path) az ugyfelek.xlsx útvonalával, SheetName Ugyfelek, üres Range; a Properties-ben a dt kimenet" loading="lazy"><figcaption>A Read Range Workbook kártya kitöltve: File (local path) az ugyfelek.xlsx útvonalával, SheetName Ugyfelek, üres Range; a Properties-ben a dt kimenet</figcaption></figure></li>
+      <li>A Properties / Data Manager panelen az Output → DataTable mezőben hozz létre <code>dt</code> nevű, <code>System.Data.DataTable</code> típusú változót. A <strong>Add headers</strong> kapcsoló legyen bekapcsolva: az első sor oszlopneveket ad, nem ügyféladat. A mellékletben már létezik az üres <code>Minosites</code> oszlop.</li>
+      <li>Ellenőrizzük, mit olvastunk: adj hozzá egy <em>Message Box</em>-ot, Text: <code>dt.Rows.Count.ToString + " ügyfelet olvastam be."</code>, és futtasd (Ctrl+F5). 12-t kell írnia. Ha megvan, a Message Boxot töröld (kattints a kártya fejlécére, Delete).<figure class="shot"><img src="../img/nap04_dtcount_futas.png" alt="Az ellenőrző futás: 12 ügyfelet olvastam be" loading="lazy"><figcaption>Az ellenőrző futás: 12 ügyfelet olvastam be</figcaption></figure></li>
+      <li>Most a döntés. Add hozzá: <em>For Each Row in Data Table</em>, és a kártya <em>Data Table</em> mezőjébe írd: <em>dt</em>. Ez soronként végigmegy a táblán; az aktuális sort a <em>CurrentRow</em> névvel éred el (Item name mező).</li>
+      <li>A cikluson belülre (Body) add hozzá: <em>Assign</em> (értékadás). A <em>To variable</em> mezőbe: <code>CurrentRow("Minosites")</code>, a <em>Set value</em> mezőbe: <code>If(CDbl(CurrentRow("EvesDij")) &gt;= 100000, "kiemelt", "normál")</code>. Magyarul: ha az éves díj legalább 100 000, a Minosites oszlopba az kerül, hogy kiemelt, különben normál.<figure class="shot"><img src="../img/nap04_foreachrow_assign.png" alt="A For Each Row in Data Table (Data Table: dt, Item name: CurrentRow), a Body-ban az Assign a két kifejezéssel" loading="lazy"><figcaption>A For Each Row in Data Table (Data Table: dt, Item name: CurrentRow), a Body-ban az Assign a két kifejezéssel</figcaption></figure></li>
+      <li>A ciklus után add hozzá a <kbd>Write Range Workbook</kbd> aktivitást. A Workbook path / File mezőben add meg az új fájl teljes útvonalát kifejezésként, például <code>"C:\Users\Te\Documents\BPA_kurzus\ugyfelek_minositve.xlsx"</code>; a mappa előbb létezzen. Új fájlhoz nem kell meglévő fájlt tallózni. SheetName: <code>"Ugyfelek"</code>, StartingCell: <code>"A1"</code>, DataTable: <code>dt</code>, <strong>Add headers: bekapcsolva</strong>. Az eredeti ugyfelek.xlsx fájlt hagyd meg.</li>
+      <li>A végére egy <em>Message Box</em>: <code>"Kész: ugyfelek_minositve.xlsx"</code>. Futtasd.</li>
+    </ol>
+    <div class="box check">
+      <span class="t">Ellenőrzőpont: ezt kell látnod</span>
+      <p style="margin:4px 0">A futás után a BPA_kurzus mappádban ott az ugyfelek_minositve.xlsx, benne a Minosites oszlop kitöltve: a 12-ből 6 ügyfél kiemelt. (Képen lent; ellenőrizd a sajátodban is.)</p><p style="margin:4px 0"><strong>Ha mást látsz:</strong> ha a Minosites oszlop üres maradt, az Assign a cikluson kívülre került, vagy az oszlopnév elgépelt (a fejléceknek betűre egyezniük kell).</p>
+    </div>
+<figure class="shot"><img src="../img/nap04_eredmeny_excel.png" alt="Az eredmény: ugyfelek_minositve.xlsx Excelben, a Minosites oszlopban 6 kiemelt és 6 normál" loading="lazy"><figcaption>Az eredmény: ugyfelek_minositve.xlsx Excelben, a Minosites oszlopban 6 kiemelt és 6 normál</figcaption></figure>    <div class="box task">
+      <span class="t">Mini-feladat</span>
+          <p>Először a kimenet teljes útvonalában cseréld a fájlnevet <code>ugyfelek_minositve_v2.xlsx</code>-re. Ezután emeld a feltételben a határt 150 000-re, és futtasd újra a robotot. Így az eredeti, 100 000-es határral készült fájl is megmarad. Ellenőrizd, hány kiemelt ügyfél lett az új változatban.</p>
+
+    <details><summary>Eredményellenőrzés a két határhoz</summary><p>100 000-es határnál 6, 150 000-es határnál 3 ügyfél kiemelt. Az utóbbi három éves díja 152 000, 231 000 és 187 300. Mindkét fájlban 12 adatsor és egy fejlécsor maradjon.</p></details></div>
+    <div class="box warn">
+      <span class="t">Tipikus hibák ennél a gyakorlatnál</span>
+            <ul style="margin:6px 0 0">
+        <li>Fájlnév-elgépelés vagy hiányzó idézőjel a Workbook path mezőben: a hibaüzenet file not found lesz.</li>
+        <li>Az EvesDij oszlopban szöveg van szám helyett: a CDbl elszáll; nézd meg az Excelben, nem maradt-e szóköz vagy szöveges cella.</li>
+        <li>A kimeneti fájl nyitva van Excelben futtatás közben: a robot nem tudja írni; zárd be, és futtasd újra.</li>
+        <li>Az Assign a For Each Row testében legyen. A cikluson kívül a <code>CurrentRow</code> többnyire nem érhető el, ezért kifejezés- vagy hatókörhibát kapsz. Nem az utolsó sor önálló minősítése a kívánt működés.</li>
+      </ul>
+
+    </div>
+    <div class="box term">
+      <span class="t">Hol használnád még?</span>
+            <ul style="margin:6px 0 0">
+        <li>Ártáblák, készletlisták vagy HR-listák soronkénti minősítése is erre a mintára épülhet; az oszlopneveket, adattípusokat és üzleti feltételt az adott feladathoz kell igazítani.</li>
+        <li>A hetedik napon számla-adatokat gyűjtünk így táblába; a nyolcadik napon a 18 000 soros kárlistát szűrjük ugyanezzel a párossal.</li>
+        <li>A DataTable sorokat és típusos oszlopokat tárol a memóriában. Nem Excel-munkafüzet: a cellaformázást, diagramokat és az Excel minden funkcióját nem viszi magával.</li>
+      </ul>
+
+    </div>
+
+    <nav class="pn">
+      <a href="02_elso_robot.html" target="_blank" rel="noopener noreferrer">◂ Első robot</a>
+      <a class="next" href="04_excel_ppt.html" target="_blank" rel="noopener noreferrer">Következő: Excel + PowerPoint ▸</a>
+    </nav>
+  </div>
+</main>
+</body>
+</html>

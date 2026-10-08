@@ -1,0 +1,12 @@
+{
+  "scope": "Offline user-run preparation only; no agent portal execution",
+  "prepared_utc": "2026-10-07T09:01:22.449118+00:00",
+  "workflow_sha256": "2dcad35ca995551566dbb9f423b24bf23b68c06264acd718a03afe0955d56d4e",
+  "targetsConfigured": true,
+  "only_change_since_captured_target_build": "Boolean guard False to True through Studio Data Manager; semantic comparison passed",
+  "pre_run_csv_review": "portal_baselines/pre_robot_20261007_085655/pre_robot_review.json",
+  "first_policy": "TR-402318",
+  "range": "bejelentesek!A1:F2",
+  "actual_run": "pending user action",
+  "resume": "User returns portal to empty new-claim form; Studio Run File once; wait for execution ended; reply done or error without retry"
+}

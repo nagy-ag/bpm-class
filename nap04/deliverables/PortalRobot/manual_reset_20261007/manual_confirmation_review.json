@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-07",
+  "evidence_source": "User-supplied screenshot visually reviewed",
+  "screenshot": "manual_confirmation_user.png",
+  "address_matches_isolated_copy": true,
+  "visible_badge": "MANUAL RESET TEST",
+  "visible_success": "A bejelentést rögzítettük",
+  "case_id": "K-GY-4147",
+  "visible_values": {
+    "kotvenyszam": "TR-402318",
+    "kartipus": "vízkár",
+    "karesemeny_datum": "2025-11-03",
+    "becsult_osszeg": 1850
+  },
+  "four_visible_fields_match_supplied_first_row": true,
+  "description_not_displayed_on_confirmation": true,
+  "description_verification": "Passed: actual CSV(5) description exactly matches supplied workbook row",
+  "new_form_action_verified": false,
+  "reset_verified": false,
+  "agent_portal_action": false,
+  "case_id_scope": "Same deterministic ID as earlier robot trial, in a separate verified storage namespace; does not modify or duplicate the original portal records.",
+  "next": "User clicks Új bejelentés rögzítése, confirms empty form, then list and CSV export; do not reset yet.",
+  "all_five_saved_fields_verified": true
+}

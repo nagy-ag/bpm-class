@@ -1,0 +1,970 @@
+{
+  "status": "passed",
+  "scope": "Cumulative user-operated batch; preserves existing fixtures, not a clean20+10 run",
+  "previously_verified": {
+    "policy": "TR-402318",
+    "case_id": "K-GY-4147"
+  },
+  "new_cases": 9,
+  "matching_input_cases": 10,
+  "own_count_before": 4,
+  "own_count_after": 13,
+  "page_total_before_user_reported": 24,
+  "page_total_after_user_reported": 33,
+  "baseline_sha256": "8f81b312e8f69b24235443c540f2a9acffefa1b798a222516bb0a4fa7952ab4e",
+  "export_sha256": "49f433d5440e7ddc38b41b679d88b18892758f97e23f26e2a49004477ca33b1b",
+  "source_sha256": "76aa238dd5d3fbf481d1d7a1f59005834adf3e404e1cfc275f2ede58222473b2",
+  "checks": [
+    {
+      "check": "Ten unique source policies",
+      "passed": true
+    },
+    {
+      "check": "All original case-ID cells remain empty",
+      "passed": true
+    },
+    {
+      "check": "First source policy is the previously verified trial",
+      "passed": true
+    },
+    {
+      "check": "Baseline schema and unique case IDs",
+      "passed": true
+    },
+    {
+      "check": "Post-run export schema and unique case IDs",
+      "passed": true
+    },
+    {
+      "check": "Baseline preserves the exact first case once",
+      "passed": true
+    },
+    {
+      "check": "Baseline contains no pending input policies",
+      "passed": true
+    },
+    {
+      "check": "Current full source snapshot agrees with supplied ten rows",
+      "passed": true
+    },
+    {
+      "check": "Parent checkpoint sequence complete without failure",
+      "passed": true
+    },
+    {
+      "check": "Exactly nine expected row evidence directories",
+      "passed": true
+    },
+    {
+      "check": "Row evidence is for expected policy TR-118264",
+      "passed": true
+    },
+    {
+      "check": "Row snapshot exactly matches source TR-118264",
+      "passed": true
+    },
+    {
+      "check": "Row evidence is for expected policy TR-771205",
+      "passed": true
+    },
+    {
+      "check": "Row snapshot exactly matches source TR-771205",
+      "passed": true
+    },
+    {
+      "check": "Row evidence is for expected policy TR-390162",
+      "passed": true
+    },
+    {
+      "check": "Row snapshot exactly matches source TR-390162",
+      "passed": true
+    },
+    {
+      "check": "Row evidence is for expected policy TR-627849",
+      "passed": true
+    },
+    {
+      "check": "Row snapshot exactly matches source TR-627849",
+      "passed": true
+    },
+    {
+      "check": "Row evidence is for expected policy TR-204531",
+      "passed": true
+    },
+    {
+      "check": "Row snapshot exactly matches source TR-204531",
+      "passed": true
+    },
+    {
+      "check": "Row evidence is for expected policy TR-845290",
+      "passed": true
+    },
+    {
+      "check": "Row snapshot exactly matches source TR-845290",
+      "passed": true
+    },
+    {
+      "check": "Row evidence is for expected policy TR-562017",
+      "passed": true
+    },
+    {
+      "check": "Row snapshot exactly matches source TR-562017",
+      "passed": true
+    },
+    {
+      "check": "Row evidence is for expected policy TR-138476",
+      "passed": true
+    },
+    {
+      "check": "Row snapshot exactly matches source TR-138476",
+      "passed": true
+    },
+    {
+      "check": "Row evidence is for expected policy TR-905324",
+      "passed": true
+    },
+    {
+      "check": "Row snapshot exactly matches source TR-905324",
+      "passed": true
+    },
+    {
+      "check": "All earlier own records preserved byte-for-field",
+      "passed": true
+    },
+    {
+      "check": "Exactly nine new saved cases agree with row evidence",
+      "passed": true
+    },
+    {
+      "check": "One exact saved record for TR-402318",
+      "passed": true
+    },
+    {
+      "check": "One exact saved record for TR-118264",
+      "passed": true
+    },
+    {
+      "check": "One exact saved record for TR-771205",
+      "passed": true
+    },
+    {
+      "check": "One exact saved record for TR-390162",
+      "passed": true
+    },
+    {
+      "check": "One exact saved record for TR-627849",
+      "passed": true
+    },
+    {
+      "check": "One exact saved record for TR-204531",
+      "passed": true
+    },
+    {
+      "check": "One exact saved record for TR-845290",
+      "passed": true
+    },
+    {
+      "check": "One exact saved record for TR-562017",
+      "passed": true
+    },
+    {
+      "check": "One exact saved record for TR-138476",
+      "passed": true
+    },
+    {
+      "check": "One exact saved record for TR-905324",
+      "passed": true
+    },
+    {
+      "check": "Own-record count increases by nine",
+      "passed": true
+    },
+    {
+      "check": "User-reported page totals increase by nine",
+      "passed": true
+    },
+    {
+      "check": "User-reported seed count stays20",
+      "passed": true
+    }
+  ],
+  "per_row": [
+    {
+      "status": "passed",
+      "scope": "one-row user-operated UiPath trial; not ten-row coursework",
+      "case_id": "K-GY-7151",
+      "policy": "TR-118264",
+      "export_sha256": "49f433d5440e7ddc38b41b679d88b18892758f97e23f26e2a49004477ca33b1b",
+      "checks": [
+        {
+          "check": "Evidence directory exists",
+          "passed": true
+        },
+        {
+          "check": "No logged failure or uncertainty",
+          "passed": true
+        },
+        {
+          "check": "All required checkpoints occurred once and in order",
+          "passed": true
+        },
+        {
+          "check": "Five field activities occurred in expected order",
+          "passed": true
+        },
+        {
+          "check": "Actual input snapshot contains one row",
+          "passed": true
+        },
+        {
+          "check": "Actual case ID has expected format",
+          "passed": true
+        },
+        {
+          "check": "Case-ID event agrees with saved file",
+          "passed": true
+        },
+        {
+          "check": "Submission event identifies the actual input policy",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 01_before.png",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 02_filled.png",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 03_confirmation.png",
+          "passed": true
+        },
+        {
+          "check": "Export has expected schema",
+          "passed": true
+        },
+        {
+          "check": "Export contains exactly one row for this case ID",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: kotvenyszam",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: kartipus",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: karesemeny_datum",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: karleiras",
+          "passed": true
+        },
+        {
+          "check": "Saved estimated amount agrees",
+          "passed": true
+        },
+        {
+          "check": "Policy occurs once in own-record export",
+          "passed": true
+        }
+      ],
+      "screenshots_require_visual_review": true
+    },
+    {
+      "status": "passed",
+      "scope": "one-row user-operated UiPath trial; not ten-row coursework",
+      "case_id": "K-GY-3461",
+      "policy": "TR-771205",
+      "export_sha256": "49f433d5440e7ddc38b41b679d88b18892758f97e23f26e2a49004477ca33b1b",
+      "checks": [
+        {
+          "check": "Evidence directory exists",
+          "passed": true
+        },
+        {
+          "check": "No logged failure or uncertainty",
+          "passed": true
+        },
+        {
+          "check": "All required checkpoints occurred once and in order",
+          "passed": true
+        },
+        {
+          "check": "Five field activities occurred in expected order",
+          "passed": true
+        },
+        {
+          "check": "Actual input snapshot contains one row",
+          "passed": true
+        },
+        {
+          "check": "Actual case ID has expected format",
+          "passed": true
+        },
+        {
+          "check": "Case-ID event agrees with saved file",
+          "passed": true
+        },
+        {
+          "check": "Submission event identifies the actual input policy",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 01_before.png",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 02_filled.png",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 03_confirmation.png",
+          "passed": true
+        },
+        {
+          "check": "Export has expected schema",
+          "passed": true
+        },
+        {
+          "check": "Export contains exactly one row for this case ID",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: kotvenyszam",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: kartipus",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: karesemeny_datum",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: karleiras",
+          "passed": true
+        },
+        {
+          "check": "Saved estimated amount agrees",
+          "passed": true
+        },
+        {
+          "check": "Policy occurs once in own-record export",
+          "passed": true
+        }
+      ],
+      "screenshots_require_visual_review": true
+    },
+    {
+      "status": "passed",
+      "scope": "one-row user-operated UiPath trial; not ten-row coursework",
+      "case_id": "K-GY-1330",
+      "policy": "TR-390162",
+      "export_sha256": "49f433d5440e7ddc38b41b679d88b18892758f97e23f26e2a49004477ca33b1b",
+      "checks": [
+        {
+          "check": "Evidence directory exists",
+          "passed": true
+        },
+        {
+          "check": "No logged failure or uncertainty",
+          "passed": true
+        },
+        {
+          "check": "All required checkpoints occurred once and in order",
+          "passed": true
+        },
+        {
+          "check": "Five field activities occurred in expected order",
+          "passed": true
+        },
+        {
+          "check": "Actual input snapshot contains one row",
+          "passed": true
+        },
+        {
+          "check": "Actual case ID has expected format",
+          "passed": true
+        },
+        {
+          "check": "Case-ID event agrees with saved file",
+          "passed": true
+        },
+        {
+          "check": "Submission event identifies the actual input policy",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 01_before.png",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 02_filled.png",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 03_confirmation.png",
+          "passed": true
+        },
+        {
+          "check": "Export has expected schema",
+          "passed": true
+        },
+        {
+          "check": "Export contains exactly one row for this case ID",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: kotvenyszam",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: kartipus",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: karesemeny_datum",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: karleiras",
+          "passed": true
+        },
+        {
+          "check": "Saved estimated amount agrees",
+          "passed": true
+        },
+        {
+          "check": "Policy occurs once in own-record export",
+          "passed": true
+        }
+      ],
+      "screenshots_require_visual_review": true
+    },
+    {
+      "status": "passed",
+      "scope": "one-row user-operated UiPath trial; not ten-row coursework",
+      "case_id": "K-GY-7345",
+      "policy": "TR-627849",
+      "export_sha256": "49f433d5440e7ddc38b41b679d88b18892758f97e23f26e2a49004477ca33b1b",
+      "checks": [
+        {
+          "check": "Evidence directory exists",
+          "passed": true
+        },
+        {
+          "check": "No logged failure or uncertainty",
+          "passed": true
+        },
+        {
+          "check": "All required checkpoints occurred once and in order",
+          "passed": true
+        },
+        {
+          "check": "Five field activities occurred in expected order",
+          "passed": true
+        },
+        {
+          "check": "Actual input snapshot contains one row",
+          "passed": true
+        },
+        {
+          "check": "Actual case ID has expected format",
+          "passed": true
+        },
+        {
+          "check": "Case-ID event agrees with saved file",
+          "passed": true
+        },
+        {
+          "check": "Submission event identifies the actual input policy",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 01_before.png",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 02_filled.png",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 03_confirmation.png",
+          "passed": true
+        },
+        {
+          "check": "Export has expected schema",
+          "passed": true
+        },
+        {
+          "check": "Export contains exactly one row for this case ID",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: kotvenyszam",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: kartipus",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: karesemeny_datum",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: karleiras",
+          "passed": true
+        },
+        {
+          "check": "Saved estimated amount agrees",
+          "passed": true
+        },
+        {
+          "check": "Policy occurs once in own-record export",
+          "passed": true
+        }
+      ],
+      "screenshots_require_visual_review": true
+    },
+    {
+      "status": "passed",
+      "scope": "one-row user-operated UiPath trial; not ten-row coursework",
+      "case_id": "K-GY-2404",
+      "policy": "TR-204531",
+      "export_sha256": "49f433d5440e7ddc38b41b679d88b18892758f97e23f26e2a49004477ca33b1b",
+      "checks": [
+        {
+          "check": "Evidence directory exists",
+          "passed": true
+        },
+        {
+          "check": "No logged failure or uncertainty",
+          "passed": true
+        },
+        {
+          "check": "All required checkpoints occurred once and in order",
+          "passed": true
+        },
+        {
+          "check": "Five field activities occurred in expected order",
+          "passed": true
+        },
+        {
+          "check": "Actual input snapshot contains one row",
+          "passed": true
+        },
+        {
+          "check": "Actual case ID has expected format",
+          "passed": true
+        },
+        {
+          "check": "Case-ID event agrees with saved file",
+          "passed": true
+        },
+        {
+          "check": "Submission event identifies the actual input policy",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 01_before.png",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 02_filled.png",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 03_confirmation.png",
+          "passed": true
+        },
+        {
+          "check": "Export has expected schema",
+          "passed": true
+        },
+        {
+          "check": "Export contains exactly one row for this case ID",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: kotvenyszam",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: kartipus",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: karesemeny_datum",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: karleiras",
+          "passed": true
+        },
+        {
+          "check": "Saved estimated amount agrees",
+          "passed": true
+        },
+        {
+          "check": "Policy occurs once in own-record export",
+          "passed": true
+        }
+      ],
+      "screenshots_require_visual_review": true
+    },
+    {
+      "status": "passed",
+      "scope": "one-row user-operated UiPath trial; not ten-row coursework",
+      "case_id": "K-GY-7487",
+      "policy": "TR-845290",
+      "export_sha256": "49f433d5440e7ddc38b41b679d88b18892758f97e23f26e2a49004477ca33b1b",
+      "checks": [
+        {
+          "check": "Evidence directory exists",
+          "passed": true
+        },
+        {
+          "check": "No logged failure or uncertainty",
+          "passed": true
+        },
+        {
+          "check": "All required checkpoints occurred once and in order",
+          "passed": true
+        },
+        {
+          "check": "Five field activities occurred in expected order",
+          "passed": true
+        },
+        {
+          "check": "Actual input snapshot contains one row",
+          "passed": true
+        },
+        {
+          "check": "Actual case ID has expected format",
+          "passed": true
+        },
+        {
+          "check": "Case-ID event agrees with saved file",
+          "passed": true
+        },
+        {
+          "check": "Submission event identifies the actual input policy",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 01_before.png",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 02_filled.png",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 03_confirmation.png",
+          "passed": true
+        },
+        {
+          "check": "Export has expected schema",
+          "passed": true
+        },
+        {
+          "check": "Export contains exactly one row for this case ID",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: kotvenyszam",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: kartipus",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: karesemeny_datum",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: karleiras",
+          "passed": true
+        },
+        {
+          "check": "Saved estimated amount agrees",
+          "passed": true
+        },
+        {
+          "check": "Policy occurs once in own-record export",
+          "passed": true
+        }
+      ],
+      "screenshots_require_visual_review": true
+    },
+    {
+      "status": "passed",
+      "scope": "one-row user-operated UiPath trial; not ten-row coursework",
+      "case_id": "K-GY-7540",
+      "policy": "TR-562017",
+      "export_sha256": "49f433d5440e7ddc38b41b679d88b18892758f97e23f26e2a49004477ca33b1b",
+      "checks": [
+        {
+          "check": "Evidence directory exists",
+          "passed": true
+        },
+        {
+          "check": "No logged failure or uncertainty",
+          "passed": true
+        },
+        {
+          "check": "All required checkpoints occurred once and in order",
+          "passed": true
+        },
+        {
+          "check": "Five field activities occurred in expected order",
+          "passed": true
+        },
+        {
+          "check": "Actual input snapshot contains one row",
+          "passed": true
+        },
+        {
+          "check": "Actual case ID has expected format",
+          "passed": true
+        },
+        {
+          "check": "Case-ID event agrees with saved file",
+          "passed": true
+        },
+        {
+          "check": "Submission event identifies the actual input policy",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 01_before.png",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 02_filled.png",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 03_confirmation.png",
+          "passed": true
+        },
+        {
+          "check": "Export has expected schema",
+          "passed": true
+        },
+        {
+          "check": "Export contains exactly one row for this case ID",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: kotvenyszam",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: kartipus",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: karesemeny_datum",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: karleiras",
+          "passed": true
+        },
+        {
+          "check": "Saved estimated amount agrees",
+          "passed": true
+        },
+        {
+          "check": "Policy occurs once in own-record export",
+          "passed": true
+        }
+      ],
+      "screenshots_require_visual_review": true
+    },
+    {
+      "status": "passed",
+      "scope": "one-row user-operated UiPath trial; not ten-row coursework",
+      "case_id": "K-GY-2148",
+      "policy": "TR-138476",
+      "export_sha256": "49f433d5440e7ddc38b41b679d88b18892758f97e23f26e2a49004477ca33b1b",
+      "checks": [
+        {
+          "check": "Evidence directory exists",
+          "passed": true
+        },
+        {
+          "check": "No logged failure or uncertainty",
+          "passed": true
+        },
+        {
+          "check": "All required checkpoints occurred once and in order",
+          "passed": true
+        },
+        {
+          "check": "Five field activities occurred in expected order",
+          "passed": true
+        },
+        {
+          "check": "Actual input snapshot contains one row",
+          "passed": true
+        },
+        {
+          "check": "Actual case ID has expected format",
+          "passed": true
+        },
+        {
+          "check": "Case-ID event agrees with saved file",
+          "passed": true
+        },
+        {
+          "check": "Submission event identifies the actual input policy",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 01_before.png",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 02_filled.png",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 03_confirmation.png",
+          "passed": true
+        },
+        {
+          "check": "Export has expected schema",
+          "passed": true
+        },
+        {
+          "check": "Export contains exactly one row for this case ID",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: kotvenyszam",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: kartipus",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: karesemeny_datum",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: karleiras",
+          "passed": true
+        },
+        {
+          "check": "Saved estimated amount agrees",
+          "passed": true
+        },
+        {
+          "check": "Policy occurs once in own-record export",
+          "passed": true
+        }
+      ],
+      "screenshots_require_visual_review": true
+    },
+    {
+      "status": "passed",
+      "scope": "one-row user-operated UiPath trial; not ten-row coursework",
+      "case_id": "K-GY-4302",
+      "policy": "TR-905324",
+      "export_sha256": "49f433d5440e7ddc38b41b679d88b18892758f97e23f26e2a49004477ca33b1b",
+      "checks": [
+        {
+          "check": "Evidence directory exists",
+          "passed": true
+        },
+        {
+          "check": "No logged failure or uncertainty",
+          "passed": true
+        },
+        {
+          "check": "All required checkpoints occurred once and in order",
+          "passed": true
+        },
+        {
+          "check": "Five field activities occurred in expected order",
+          "passed": true
+        },
+        {
+          "check": "Actual input snapshot contains one row",
+          "passed": true
+        },
+        {
+          "check": "Actual case ID has expected format",
+          "passed": true
+        },
+        {
+          "check": "Case-ID event agrees with saved file",
+          "passed": true
+        },
+        {
+          "check": "Submission event identifies the actual input policy",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 01_before.png",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 02_filled.png",
+          "passed": true
+        },
+        {
+          "check": "PNG evidence exists: 03_confirmation.png",
+          "passed": true
+        },
+        {
+          "check": "Export has expected schema",
+          "passed": true
+        },
+        {
+          "check": "Export contains exactly one row for this case ID",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: kotvenyszam",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: kartipus",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: karesemeny_datum",
+          "passed": true
+        },
+        {
+          "check": "Saved value agrees: karleiras",
+          "passed": true
+        },
+        {
+          "check": "Saved estimated amount agrees",
+          "passed": true
+        },
+        {
+          "check": "Policy occurs once in own-record export",
+          "passed": true
+        }
+      ],
+      "screenshots_require_visual_review": true
+    }
+  ],
+  "screenshots_require_visual_review": false,
+  "completion_requires": "Completed for cumulative preserved-baseline adaptation; clean manual/reset variant remains separate.",
+  "visual_review": "visual_review.json"
+}

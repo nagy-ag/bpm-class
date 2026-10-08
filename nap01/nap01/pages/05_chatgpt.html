@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChatGPT: fiók és fontos beállítások | Első nap: Bevezetés és környezetbeállítás</title>
+<link rel="stylesheet" href="../style.css">
+<script src="../tananyag.js" defer></script></head>
+<body>
+<a href="#tartalom" class="skip-link">Ugrás a tartalomra</a><header class="topbar">
+  <div class="inner">
+    <div>
+      <div class="course">Business Process Automation · Első nap: Bevezetés és környezetbeállítás</div>
+      <div class="module">5. fejezet · ChatGPT-fiók és beállítások</div>
+    </div>
+    <a href="../index.html" target="_blank" rel="noopener noreferrer">A nap kezdőlapja</a>
+  </div>
+</header>
+<main id="tartalom">
+  <div class="card">
+    <div class="crumb">5 / 5 fejezet</div>
+    <h1>ChatGPT: fiók és fontos beállítások</h1>
+    <p class="lead">Fiókot hozol létre, megadod a válaszadási preferenciáidat, megismered a memória és az adatkezelés beállításait, majd rövid feladattal kipróbálod az AI-t.</p>
+    <div class="box goal">
+      <span class="t">A fejezet végére</span>
+            <ul style="margin:6px 0 0">
+        <li>van működő ChatGPT-fiókod;</li>
+        <li>beállítottad az állandó instrukcióidat (custom instructions), és teszttel ellenőrizted, hogy érvényesülnek;</li>
+        <li>tudod, mire való a Memory, és hol találod az adatkezelési beállításokat (Data controls);</li>
+        <li>tudod, hogyan különítsd el a chatbeszélgetések és a Work/Codex használati korlátait;</li>
+        <li>megtapasztaltad az első fontos AI-tanulságot: ugyanarra a promptra nem mindig ugyanaz a válasz.</li>
+      </ul>
+
+    </div>
+
+    <h2>Miért kell ez a kurzushoz?</h2>
+    <p>A félév során AI-eszközökkel folyamatleírást értelmezünk, adatot állítunk elő, kódot készítünk és kutatási feladatokat támogatunk. Ez az útmutató a ChatGPT beállításait mutatja be; a feladatokhoz más AI-eszközt is használhatsz. A képernyőképek a 2026. októberi webes felületet mutatják. A fióktól és a felületváltozásoktól függően egyes menüpontok más helyen vagy néven jelenhetnek meg.</p>
+
+    <h2>Fiók és belépés</h2>
+    <ol class="steps">
+      <li>Nyisd meg ezt az oldalt: <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">https://chatgpt.com</a>. Ha még nincs fiókod, kattints a jobb felső <kbd>Sign up for free</kbd> gombra: regisztrálhatsz e-mail-címmel vagy Google-fiókkal, és a rendszer végigvezet a megerősítésen. Ha már van fiókod, lépj be, és ugorj a következő lépésre. (A süti-kérdésnél a nem kötelező sütik elutasítása a jó választás.) A kurzushoz az ingyenes, Free fiók is elég.<figure class="shot"><img src="../img/chatgpt2026_01_kijelentkezve.png" alt="A chatgpt.com nyitóoldala kijelentkezve; a piros keretben a Sign up for free gomb" loading="lazy"><figcaption>A chatgpt.com nyitóoldala kijelentkezve; a piros keretben a Sign up for free gomb</figcaption></figure></li>
+      <li>Első belépéskor a rendszer rákérdezhet a memória használatára. A <kbd>Use memory</kbd> bekapcsolja, a <kbd>Don’t use memory</kbd> kikapcsolva hagyja. <strong>Bármelyiket választhatod</strong>: a kurzusfeladatokhoz nem kötelező a memória használata. Később a <kbd>Settings → Personalization</kbd> oldalon módosíthatod.<figure class="shot"><img src="../img/chatgpt2026_02_memory_felugro.png" alt="Az első belépés utáni kérdés a keretben: Use memory vagy Don't use memory" loading="lazy"><figcaption>Ha nálad nem jelenik meg ez az ablak, semmi gond: ugyanezt a Settings, Personalization oldalon bármikor beállíthatod.</figcaption></figure></li>
+    </ol>
+    <div class="box check">
+      <span class="t">Ellenőrzőpont: ezt kell látnod</span>
+      <p style="margin:4px 0">Bejelentkezés után bal oldalon a beszélgetéslistát (Recents), középen a kérdezőmezőt látod.</p><p style="margin:4px 0"><strong>Ha mást látsz:</strong> ha a felület nyelve zavar, a Settings alatt átválthatod, de a kurzus képei az angol felülethez igazodnak, mert a legtöbb leírást angolul találod meg.</p>
+    </div>
+
+    <h2>A beállítások elérése</h2>
+    <ol class="steps">
+      <li>Kattints a bal alsó profilodra, és a megnyíló menüben válaszd a <kbd>Settings</kbd> pontot.<figure class="shot"><img src="../img/chatgpt2026_03_profil_settings.png" alt="A profilmenü lenyitva; a piros keretben a Settings menüpont" loading="lazy"><figcaption>A képen a fióknév és a beszélgetéscímek ki vannak takarva; nálad ott a saját neved és a saját beszélgetéseid lesznek.</figcaption></figure></li>
+      <li>A kurzushoz elsősorban a <kbd>Personalization</kbd> és a <kbd>Data controls</kbd> menüpont kell. Ha a fiókodban <kbd>Usage</kbd> menüpont is megjelenik, az ott mutatott Work/Codex-keretet a fejezet végén külön magyarázzuk el. A <kbd>Back to app</kbd> felirattal térhetsz vissza a beszélgetésekhez.</li>
+    </ol>
+
+    <h2>Állandó instrukciók (custom instructions)</h2>
+    <p>Az állandó instrukciókban megadhatod, milyen nyelven, stílusban és részletességgel szeretnél választ kapni. Ezeket a ChatGPT figyelembe veheti a későbbi beszélgetéseidben is, így nem kell minden kérésnél újra leírnod a preferenciáidat. A beállítás segít, de nem garantálja, hogy minden válasz pontosan megfelel minden kérésnek.</p>
+    <ol class="steps">
+      <li>A Settings bal menüjében kattints a <kbd>Personalization</kbd> pontra. Két rész kell majd erről az oldalról: fent a <em>ChatGPT memory</em> (mindjárt visszatérünk rá), alatta a <kbd>Custom instructions</kbd> sor. Kattints a Custom instructions sorra.<figure class="shot"><img src="../img/chatgpt2026_04_personalization_memory.png" alt="A Personalization oldal; a két piros keretben a memória-kapcsoló és a Custom instructions sor" loading="lazy"><figcaption>A Personalization oldal; a két piros keretben a memória-kapcsoló és a Custom instructions sor</figcaption></figure></li>
+      <li>A szerkesztőben egyetlen nagy szövegmező van, alatta kiegészítő mezők (<em>Nickname</em>, <em>Occupation</em>, <em>More about you</em>). A nagy mezőbe másold be az alábbi mintát, igazítsd magadra, majd kattints a <kbd>Save</kbd> gombra (csak akkor válik aktívvá, ha változtattál).<figure class="shot"><img src="../img/chatgpt2026_05_ci_szerkeszto.png" alt="A Custom instructions szerkesztő; a keretben a szövegmező és a Save gomb" loading="lazy"><figcaption>A képen egy másik példaszöveg szerepel: te a lenti kurzus-mintát másold be. Az Occupation mezőbe beírhatod: közgazdász mesterszakos hallgató.</figcaption></figure></li>
+    </ol>
+    <pre class="codeblock"><code>Rólam:
+Közgazdász mesterszakos hallgató vagyok a kolozsvári BBTE-n (FSEGA).
+Üzleti folyamatokkal, automatizálással és adatelemzéssel foglalkozom.
+Magyarul dolgozom; a szakkifejezéseket magyarul használom, zárójelben
+az angol megfelelővel.
+
+Így válaszolj:
+Tömören, áttekinthető szerkezetben válaszolj: először a lényeg, aztán a részletek.
+Hosszú gondolatjel helyett használj vesszőt vagy kettőspontot.
+Ha egy tényben bizonytalan vagy, jelezd, és ne találj ki forrást.
+Számításnál mutasd a lépéseket.</code></pre>
+    <ol class="steps">
+      <li>Mentés után nyiss egy új beszélgetést, és kérj egy rövid, magyar nyelvű magyarázatot egy üzleti folyamatról. Ellenőrizd a tényleges válasz nyelvét és szerkezetét; a beállítás működését ne csak abból ítéld meg, mit állít magáról a modell.</li>
+      <li>Második teszt: kérj egy rövid összefoglalót bármilyen témáról, és ellenőrizd, hogy a formai szabályaidat betartja-e (tömör szerkezet, magyar szakkifejezések az angol megfelelővel, központozás a kérésed szerint). Ha valamit nem tart be, pontosítsd az instrukciót: ez a prompt-hangolás első köre.</li>
+    </ol>
+    <div class="box check"><span class="t">Ellenőrzőpont: a válasz megfelel-e a kérésednek?</span><p>A válasz magyarul, követhető szerkezetben jelenik meg, és több megadott preferenciádat követi. Ha eltérést látsz, ellenőrizd a mentést, pontosítsd az instrukciót vagy add meg a fontos feltételt közvetlenül a feladat promptjában. A modell hibázhat; az instrukciók használata nem váltja ki az ellenőrzést.</p></div>
+    <div class="box warn">
+      <span class="t">Így használd az AI-t: ellenőrzés, nem vakhit</span>
+            <ul style="margin:6px 0 0">
+        <li>Minden tényt, számot és hivatkozást ellenőrizz, mielőtt felhasználod: egy hivatkozás attól még lehet nem létező, hogy meggyőzően néz ki. Erre épül a tizenegyedik nap (nem létező hivatkozások szűrése).</li>
+        <li>Érzékeny adatot (valódi ügyféladat, jelszó, API-kulcs, token) soha ne írj be AI-felületre; a kurzusban mindig fiktív vagy oktatási célú adattal dolgozunk.</li>
+        <li>Ha a modell bizonytalan lehet egy tényben, kérd, hogy jelezze; és ne engedd, hogy hiányzó adatot kitaláljon.</li>
+        </ul>
+
+    </div>
+
+    <h2>Memory: mit jegyez meg rólad a ChatGPT?</h2>
+    <p>A <strong>Memory</strong> személyre szabási funkció: korábbi beszélgetésekből és más engedélyezett kontextusból származó információkat használhat fel. Az állandó instrukciókat te fogalmazod meg; a memória más módon is gyűjthet személyes kontextust. A <kbd>Personalization</kbd> oldalon az <kbd>Enable memory</kbd> kapcsolóval ki- vagy bekapcsolhatod, a <kbd>Manage</kbd> gombbal áttekintheted a tárolt információkat. A memória választható; a gyakorlatok kikapcsolt memóriával is elvégezhetők.</p>
+
+    <h2>Adatkezelés (Data controls)</h2>
+    <ol class="steps">
+      <li>A Settings bal menüjében kattints a <kbd>Data controls</kbd> pontra. A legfontosabb kapcsoló az <kbd>Improve the model for everyone</kbd>: ez dönti el, hogy a beszélgetéseid felhasználhatók-e a modell tanítására. Munkahelyi és kutatási környezetben ezt jellemzően kikapcsolják; a saját fiókodban te döntesz, a lényeg, hogy tudd, hol van.<figure class="shot"><img src="../img/chatgpt2026_06_data_controls.png" alt="A Data controls oldal; a piros keretben a modelltanítási kapcsoló" loading="lazy"><figcaption>Ugyanitt kezeled a megosztott linkeket (Shared links), kérhetsz adatexportot (Export data), és törölheted az összes beszélgetést. A Delete all chats végleges, óvatosan vele.</figcaption></figure></li>
+    </ol>
+
+    <h2>Használati korlátok: Chat és Work/Codex</h2>
+    <p>A használati keretek a csomagtól és a választott funkciótól függenek. <strong>A szokásos Chat-beszélgetések korlátai és a Work/Codex keretei különböznek.</strong> A Chatban a modellválasztó és a limit elérésekor megjelenő értesítés ad tájékoztatást. Az alábbi <kbd>Settings → Usage</kbd> képek a Work/Codex használatát mutatják, nem az összes chatüzenet közös keretét.</p>
+<figure class="shot"><img src="../img/chatgpt2026_07_usage_sotet.png" alt="Egy másik fiók Work/Codex Usage oldala, havi kerettel és visszaállási idővel" loading="lazy"><figcaption>Egy másik fiók Work/Codex Usage oldala, havi kerettel és visszaállási idővel</figcaption></figure><figure class="shot"><img src="../img/chatgpt2026_08_usage_plus.png" alt="Plus-fiók Work/Codex Usage oldala: 5 órás és heti keret, sötét megjelenítésben" loading="lazy"><figcaption>Plus-fiók példája: a Work/Codex ötórás és heti kerete. A <em>Chat conversations are not included</em> felirat jelzi, hogy a chatbeszélgetések nem tartoznak ezekhez a keretekhez. A <em>Resets in</em> a keret visszaállásáig hátralévő idő.</figcaption></figure>    <div class="box term">
+      <span class="t">Free vagy Plus?</span>
+            <ul style="margin:6px 0 0">
+        <li>A kurzus AI-feladataihoz nem szükséges Plus-előfizetés. A későbbi asszisztensépítő gyakorlatnál a fizetős funkcióhoz külön ingyenes megoldási út tartozik.</li>
+        <li>Az elérhető modellek, funkciók és keretek a fiókodtól és az aktuális kínálattól függnek. A saját felületed jelzéseit kövesd; a képernyőképek példák, nem mindenkire érvényes keretek.</li>
+        <li>Ha elérsz egy limitet, olvasd el a felület értesítését: megmutathatja a visszaállás idejét vagy a választható másik modellt. A feladatot más, engedélyezett AI-eszközzel is folytathatod. Fizetős előfizetést emiatt nem kell vásárolnod.</li>
+      </ul>
+
+    </div>
+    <div class="box task">
+      <span class="t">Mini-feladat: az első munkapromptod</span>
+          <p>Kérd meg a ChatGPT-t, hogy foglalja össze 5 mondatban, mi az az üzleti folyamat, és mondjon 3 példát egy biztosító működéséből. Figyeld meg, hogy pontosan a te szabályaid szerint ír-e; ha nem, pontosítsd az instrukciókat, és próbáld újra.</p>
+
+    </div>
+    <div class="box term">
+      <span class="t">Hol használnád még?</span>
+            <ul style="margin:6px 0 0">
+        <li>Az állandó instrukciók mintájára a munkahelyeden is készíthetsz közös beállítás-sablont bármilyen AI-eszközhöz.</li>
+        <li>A "ne találj ki forrást" szabály a szakdolgozatodnál lesz életbevágó (tizenegyedik nap: nem létező hivatkozások szűrése).</li>
+        <li>A változó kimenet kérdése minden AI-ra épülő üzleti folyamat tervezésénél előkerül: ezért lesznek az AI-s lépések után mindig ellenőrzőpontok.</li>
+      </ul>
+
+    </div>
+    <div class="box term">
+      <span class="t">További olvasnivaló (nem kötelező)</span>
+            <ul style="margin:6px 0 0">
+        <li>A ChatGPT hivatalos súgója, benne a Memory és a Data controls leírása: <a href="https://help.openai.com/en/collections/3742473-chatgpt" target="_blank" rel="noopener noreferrer">help.openai.com</a>.</li>
+        <li>OpenAI: a hatékony promptírás hivatalos útmutatója: <a href="https://developers.openai.com/api/docs/guides/prompt-engineering" target="_blank" rel="noopener noreferrer">developers.openai.com: Prompt engineering</a>.</li>
+      </ul>
+
+    </div>
+
+    <nav class="pn">
+      <a href="04_uipath.html" target="_blank" rel="noopener noreferrer">Előző: UiPath Studio</a>
+      <a class="next" href="../index.html" target="_blank" rel="noopener noreferrer">Vissza a nap kezdőlapjára </a>
+    </nav>
+  </div>
+</main>
+</body>
+</html>

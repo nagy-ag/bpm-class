@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Excel-diagram a PowerPointban | negyedik nap · UiPath: az első robotjaid</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="inner">
+    <div>
+      <div class="course">Business Process Automation · Negyedik nap: UiPath-alapok és az első szoftverrobotok</div>
+      <div class="module">4. blokk · Excel-diagram a PowerPointba</div>
+    </div>
+    <a href="../index.html" target="_blank" rel="noopener noreferrer">⌂ A nap kezdőlapja</a>
+  </div>
+</header>
+<main id="tartalom">
+  <div class="card">
+    <div class="crumb">4 / 7 blokk</div>
+    <h1>Excel-diagram a PowerPointban</h1>
+    <p class="lead">Sablonból indulva a robotod Excel-adatból diagramot készít és diára illeszti: az első bemutatható irodai automatizmusod.</p>
+    <div class="box goal">
+      <span class="t">A blokk végére</span>
+            <ul style="margin:6px 0 0">
+        <li>a robotod Excel-adatokból diagramot készít, és beilleszti egy PowerPoint-diára;</li>
+        <li>sablonból indultál ki: ez a leggyorsabb út működő automatizmushoz;</li>
+        <li>van egy kézzelfogható eredményed, amit bárkinek meg tudsz mutatni.</li>
+      </ul>
+
+    </div>
+
+    <h2>A klasszikus irodai feladat</h2>
+    <p>Egy ismétlődő riportban az Excel adataiból diagram kerül a prezentációba. Először a képekkel bemutatott sablonos utat nézzük meg; ha a sablon nincs a telepített verzióban, az alább leírt aktivitásokból is felépítheted. Ehhez helyi Excel és PowerPoint kell. A két eredeti munkafájlról készíts munkapéldányt <code>Riport_adatok.xlsx</code> és <code>Riport_eredmeny.pptx</code> néven a BPA_kurzus mappában.</p>
+    <p>Töltsd le a két munkafájlt, és tedd őket a BPA_kurzus mappádba:</p>
+    <div class="dls">
+      <a class="dl" href="../docs/Raw_data.xlsx" download target="_blank" rel="noopener noreferrer">Raw_data.xlsx (az adatok)</a>
+      <a class="dl" href="../docs/Dickinson_Sample_Slides.pptx" download target="_blank" rel="noopener noreferrer">Dickinson_Sample_Slides.pptx (a prezentáció-sablon)</a>
+    </div>
+    <ol class="steps">
+      <li>Indíts a Studio kezdőképernyőjéről: válaszd a <kbd>More Templates</kbd> lehetőséget.<figure class="shot"><img src="../img/ppt_1.png" alt="A Studio kezdőképernyője a More Templates lehetőséggel" loading="lazy"><figcaption>A Studio kezdőképernyője a More Templates lehetőséggel</figcaption></figure></li>
+      <li>A keresőbe írd: <em>PowerPoint</em>, és nyisd meg az <em>Add Chart To PowerPoint Presentation From Excel</em> sablont.<figure class="shot"><img src="../img/ppt_2.png" alt="A sablonkereső a PowerPoint sablonnal" loading="lazy"><figcaption>A sablonkereső a PowerPoint sablonnal</figcaption></figure></li>
+      <li>A sablon egy előre felépített munkafolyamatot ad: ezt igazítjuk a fájljainkra.<figure class="shot"><img src="../img/ppt_3.png" alt="A sablon megnyitott munkafolyamata a tervezőben" loading="lazy"><figcaption>A sablon megnyitott munkafolyamata a tervezőben</figcaption></figure></li>
+      <li>Add meg az Excel-munkapéldány, <code>Riport_adatok.xlsx</code> teljes útvonalát.<figure class="shot"><img src="../img/ppt_4.png" alt="Az Excel-fájl helyének megadása a sablonban" loading="lazy"><figcaption>Az Excel-fájl helyének megadása a sablonban</figcaption></figure></li>
+      <li>A munkalap neve <code>us-500</code>, a tábla tartománya <code>A1:D244</code> (243 adatsor). Elsőre válassz oszlopdiagramot, és csak <code>A1:B13</code> tartományt: State és Quantity, az első 12 rekord. Ez áttekinthető gyakorlódiagram; az ismétlődő államkódokat nem összesíti automatikusan.<figure class="shot"><img src="../img/ppt_5a.png" alt="Diagramtípus és tartomány: teljes munkalap" loading="lazy"><figcaption>Diagramtípus és tartomány: teljes munkalap</figcaption></figure></li>
+      <li>A tartományt a munkalapon is kijelölheted: az <kbd>Indicate in Excel</kbd> gombbal magában az Excelben jelölöd ki a cellákat, és a Confirm gombbal hagyod jóvá.<figure class="shot"><img src="../img/ppt_5b.png" alt="Tartomány kijelölése Indicate in Excel módban" loading="lazy"><figcaption>Tartomány kijelölése Indicate in Excel módban</figcaption></figure><figure class="shot"><img src="../img/ppt_6.png" alt="A kijelölés jóváhagyása az Excelben a Confirm gombbal" loading="lazy"><figcaption>A kijelölés jóváhagyása az Excelben a Confirm gombbal</figcaption></figure></li>
+      <li>Add meg, melyik munkalapra kerüljön a diagram az Excelben.<figure class="shot"><img src="../img/ppt_7.png" alt="A diagram cél-munkalapjának kiválasztása" loading="lazy"><figcaption>A diagram cél-munkalapjának kiválasztása</figcaption></figure></li>
+      <li>Add meg a PowerPoint-munkapéldány, <code>Riport_eredmeny.pptx</code> teljes útvonalát.<figure class="shot"><img src="../img/ppt_8.png" alt="A PowerPoint-fájl helyének megadása" loading="lazy"><figcaption>A PowerPoint-fájl helyének megadása</figcaption></figure></li>
+      <li>A mellékelt prezentáció 9 diát tartalmaz. A sablonban válassz nagy tartalom-helyőrzővel rendelkező diát, és a felkínált elemek közül jelöld ki annak tartalom-helyőrzőjét. Az elemek listáját a saját példányodban ellenőrizd; a GraphTitle szöveg címet jelöl, nem a diagram helyét.<figure class="shot"><img src="../img/ppt_9.png" alt="A cél-dia kiválasztása" loading="lazy"><figcaption>A cél-dia kiválasztása</figcaption></figure></li>
+      <li>Jelöld ki, a dián melyik helyőrző elemet cserélje a diagramra.<figure class="shot"><img src="../img/ppt_10.png" alt="A lecserélendő diaelem kijelölése" loading="lazy"><figcaption>A lecserélendő diaelem kijelölése</figcaption></figure></li>
+      <li>Futtasd a folyamatot, és várd végig: a robot megnyitja az Excelt, elkészíti a diagramot, majd beteszi a diára.<figure class="shot"><img src="../img/ppt_11.png" alt="A folyamat futtatása" loading="lazy"><figcaption>A folyamat futtatása</figcaption></figure></li>
+      <li>Ellenőrizd az Output panelen, hogy hibátlanul futott-e le.<figure class="shot"><img src="../img/ppt_12.png" alt="Hibamentes futás az Output panelen" loading="lazy"><figcaption>Hibamentes futás az Output panelen</figcaption></figure></li>
+      <li>Nyisd meg az Excel-fájlt: a diagramnak ott kell lennie a megadott lapon.<figure class="shot"><img src="../img/ppt_13.png" alt="Az elkészült diagram az Excelben" loading="lazy"><figcaption>Az elkészült diagram az Excelben</figcaption></figure></li>
+      <li>Nyisd meg a PowerPointot is: a dián ott a friss diagram. Kész az első valódi irodai automatizmusod.</li>
+    </ol>
+    <div class="box check">
+      <span class="t">Ellenőrzőpont: ezt kell látnod</span>
+      <p style="margin:4px 0">A PPT kijelölt diáján a kiválasztott Excel-tartományból készült diagram áll. A sablon helyőrzőt cserélhet; a sablon nélküli egyszerű változat beilleszti a diagramot, ezért ismétléshez tiszta munkapéldányt használj.</p><p style="margin:4px 0"><strong>Ha mást látsz:</strong> a két leggyakoribb hiba: az Excel vagy a PPT nyitva maradt (zárd be, és futtasd újra), vagy elgépelt fájl-útvonal (másold be a teljes utat a fájlkezelőből).</p>
+    </div>
+    <p class="note">A képek korábbi Studio-verziót mutatnak. A More Templates kínálata és a mezők neve változhat; ha a megnevezett sablont nem találod, használd a következő, sablon nélküli útvonalat. A két utat nem kell egymás után külön is elkészítened.</p>
+    <h2>Útvonal sablon nélkül</h2><ol class="steps"><li>Hozz létre <strong>Windows + Visual Basic</strong> Process projektet <code>RiportRobot</code> néven. Manage Packages: telepítsd a <code>UiPath.Excel.Activities</code> és <code>UiPath.Presentations.Activities</code> csomagot.</li><li>Add hozzá a <kbd>Use Excel File</kbd> aktivitást, fájlja a Riport_adatok.xlsx munkapéldány. A Reference as név legyen <code>Excel</code>. A kártyán belül add hozzá az <kbd>Insert Chart</kbd> aktivitást: Data range → Excel → us-500 → <strong>Indicate in Excel</strong> → A1:B13; válaszd a fejléceket használó oszlopdiagramot. Insert into sheet: <code>us-500</code>. A <strong>Save chart to</strong> mezőben válaszd a <strong>Save for Later Use</strong> lehetőséget, neve legyen <code>diagram</code>. A beállításoknál a tartomány első oszlopa adja a kategóriákat.</li><li>Az Insert Chart után, még a Use Excel File belsejében add hozzá a <kbd>Get Excel Chart</kbd> aktivitást. Chart: az előző lépésben eltett <code>diagram</code> (a mentett érték kiválasztásával vagy Open in Advanced Editor → diagram), Action: <strong>Copy to clipboard</strong>.</li><li>A Get Excel Chart után, még ugyanabban az Excel-kártyában adj hozzá <kbd>Use PowerPoint Presentation</kbd> aktivitást. Presentation file: Riport_eredmeny.pptx, Reference as: <code>PowerPoint</code>. Ezen belül legyen <kbd>Paste Item Into Slide</kbd>. Presentation: PowerPoint, Slide number: 9. A munkapéldány 9. diájának elrendezését előbb állítsd PowerPointban <strong>Home → Layout → Title and Content</strong> értékre, és mentsd. A Content placeholder menüben válaszd e dia nagy tartalom-helyőrzőjét, ne a címét. A 9. dián a címet kézzel átírhatod „Az első 12 rekord mennyisége” szövegre.</li><li>Futtasd <kbd>Ctrl+F5</kbd>-tel. Ellenőrizd a diagram 12 oszlopát Excelben és a 9. dián. Ezután zárd be az Office-fájlokat. Új próbához készíts friss munkapéldányokat az eredetiekből: ez az egyszerű változat új diagramot adhat hozzá, nem garantálja a korábbi felülírását.</li></ol><p class="note">A tevékenységek hivatalos útmutatói: <a href="https://docs.uipath.com/activities/other/latest/productivity/insert-excel-chart-x" target="_blank" rel="noopener noreferrer">Insert Chart</a>, <a href="https://docs.uipath.com/activities/other/latest/productivity/copy-chart-to-clipboard-x" target="_blank" rel="noopener noreferrer">Get Excel Chart</a>, <a href="https://docs.uipath.com/activities/other/latest/productivity/paste-into-slide" target="_blank" rel="noopener noreferrer">Paste Item Into Slide</a>. A vágólapos lépések között ne másolj kézzel más adatot.</p><div class="box task">
+      <span class="t">Mini-feladat</span>
+          <p>Készíts új munkapéldányokat, és változtasd a tartományt <code>A1:B7</code>-re: így az első hat rekordot mutatod meg. A melléklet nem negyedéves adatokat tartalmaz, ezért negyedéves összehasonlítást ebből nem állítunk elő. Ellenőrizd, hogy valóban hat oszlop jelenik meg.</p>
+
+    </div>
+    <div class="box warn">
+      <span class="t">Tipikus hibák ennél a gyakorlatnál</span>
+            <ul style="margin:6px 0 0">
+        <li>Nyitva maradt Excel vagy PowerPoint: a sablon nem fér hozzá a fájlhoz; minden futtatás előtt zárd be őket.</li>
+        <li>OneDrive-os elérési út: ha a fájl felhőben van és nincs lent a gépen, a robot nem éri el; tedd a BPA_kurzus helyi mappába.</li>
+        <li>Rossz helyőrzőt jelöltél ki a dián: a diagram máshova kerül; futtasd újra, és a 10. lépésben a nagy tartalom-helyőrzőt válaszd.</li>
+      </ul>
+
+    </div>
+    <nav class="pn">
+      <a href="03_excel_robot.html" target="_blank" rel="noopener noreferrer">◂ Excel-robot</a>
+      <a class="next" href="05_fajlrendezo.html" target="_blank" rel="noopener noreferrer">Következő: Fájlrendező ▸</a>
+    </nav>
+  </div>
+</main>
+</body>
+</html>

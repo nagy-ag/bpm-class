@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "date": "2026-10-07",
+  "scope": "Original readiness portal, actual fresh user-exported CSV(6)",
+  "displayed_total_user_confirmed": 33,
+  "own_records": 13,
+  "all_prior_records_and_all_six_fields_unchanged": true,
+  "new_or_missing_records": 0,
+  "fresh_sha256": "49f433d5440e7ddc38b41b679d88b18892758f97e23f26e2a49004477ca33b1b",
+  "prior_sha256": "49f433d5440e7ddc38b41b679d88b18892758f97e23f26e2a49004477ca33b1b",
+  "byte_identical": true,
+  "preserved_fresh_export": "sajat_karbejelentesek (6).csv",
+  "original_data_loss_observed": false,
+  "agent_portal_action": false,
+  "next": "Leave original unchanged; user returns to manual_reset_20261007/manual_reset_portal.html and confirms MANUAL RESET TEST badge/current count before any submission."
+}

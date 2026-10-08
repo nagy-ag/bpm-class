@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Árfolyamjelzés: API-k összekapcsolása | harmadik nap · API-k a gyakorlatban</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="inner">
+    <div>
+      <div class="course">Business Process Automation · Harmadik nap: API-k és CRM a gyakorlatban</div>
+      <div class="module">6. blokk · Mini-lánc: olvasás + döntés + írás</div>
+    </div>
+    <a href="../index.html" target="_blank" rel="noopener noreferrer">⌂ A nap kezdőlapja</a>
+  </div>
+</header>
+<main id="tartalom">
+  <div class="card">
+    <div class="crumb">6 / 6 blokk</div>
+    <h1>Árfolyamjelzés: API-k összekapcsolása</h1>
+    <p class="lead">A CoinMarketCap API-jából árfolyamot kérsz le, feltétel alapján döntesz, és a Zoho CRM-ben jelzőrekordot hozol létre.</p>
+    <div class="box goal">
+      <span class="t">A blokk végére</span>
+            <ul style="margin:6px 0 0">
+        <li>összekötötted a nap két felét: az egyik API-ból olvasol, a másikba írsz, feltétellel;</li>
+        <li>ez az első teljes, működő automatizmusod: adat, döntés, akció;</li>
+        <li>pontosan tudod, mi lesz a hatodik napi beadandó.</li>
+      </ul>
+
+    </div>
+
+    <h2>Rakjuk össze, amit ma tanultál</h2>
+    <p>Fiktív gyakorló eset: az ügyintéző egy árfolyamküszöb túllépéséről szeretne értesülni. A szkript lekéri az árat, összehasonlítja a küszöbbel, és találat esetén <strong>jelzőrekordot hoz létre a Leads modulban</strong>. Ez nem CRM-feladat (Task) és nem küld értesítést; a rekordot kézzel ellenőrizzük. Valódi üzleti megoldásban a megfelelő feladat- vagy értesítési funkciót is hozzá kellene kötni.</p>
+<figure class="shot"><img src="../img/arfolyam_riasztas.png" alt="A mini-lánc folyamatmodellje: lekérés, döntés, CRM-rekord" loading="lazy"><figcaption>A folyamatábra a második napról ismert elemeket használja: kezdőesemény, szolgáltatásfeladatok (fogaskerék: program végzi) és XOR-döntés. Az időzített indítás itt tervezett működést jelöl; a szkriptet ebben a gyakorlatban kézzel, egyszer futtatod.</figcaption></figure>    <ol class="steps">
+      <li>Töltsd le a lánc-szkriptet: <a class="dl" href="../docs/arfolyam_riasztas_colab.py" download target="_blank" rel="noopener noreferrer">arfolyam_riasztas_colab.py</a>, és illeszd be egy új Colab-cellába.</li>
+      <li>Futtasd ugyanabban a Colabban, ahol a Zoho-tokened van. A szkript bemeneti mezőben kéri a CMC-kulcsot; a Zoho-tokenhez az ACCESS_TOKEN változót használja. Lejárt tokennél először a tokenfrissítő cellát futtasd.</li>
+      <li>Állítsd be a küszöböt úgy, hogy a mai árnál kiváltódjon (nézd meg az aktuális árat, és írj alá egy kicsivel kisebb számot), és futtasd.</li>
+      <li>Futtasd le még egyszer olyan küszöbbel, ami nem váltódik ki, és figyeld meg a másik ágat.</li>
+    </ol>
+    <div class="box check">
+      <span class="t">Ellenőrzőpont: ezt kell látnod</span>
+      <p style="margin:4px 0">Első futásban az ár meghaladja a beállított küszöböt: a kimenet jelzi a sikeres jelzőrekord azonosítóját, és a CRM-ben megtalálod az ÁRJELZÉS kezdetű rekordot. Második futásban az ár nem haladja meg a küszöböt, ezért nem jön létre új CRM-rekord. A feltétel szigorúan nagyobb (<code>&gt;</code>); egyenlőség esetén sincs új rekord.</p><p style="margin:4px 0"><strong>Ha hiba van:</strong> a szkript külön jelzi a CMC- és a CRM-hibát. Nem elegendő, hogy az ár kiíródott: a CRM-válaszban is sikert kell kapnod. Lejárt hozzáférésnél frissítsd a tokent; az érvénytelen scope vagy a kötelező mező hiánya külön javítást igényel.</p>
+    </div>
+    <div class="box check">
+      <span class="t">Állj meg egy pillanatra: mit csináltál ma?</span>
+          <p>A nap elején kézzel rögzítettél érdeklődőt. Most egy szkript külső adatot kér le, egy megadott szabály alapján dönt, és másik rendszerbe ír. A szkript egyszer fut le; a folyamatábrán jelzett rendszeres, időzített indítást ma nem állítjuk be. Ha később automatizáljuk az indítást, az ismételt jelzések és a duplikátumok kezelését is meg kell tervezni.</p>
+
+    </div>
+    <h2>Előretekintés: a hatodik napi beadandó</h2>
+    <p>A hatodik napi beadandóban 40 fiktív, megadott szabályoknak megfelelő érdeklődőt készítesz, ellenőrzöd az adatminőséget, és betöltöd a saját CRM-edbe. Az import és az API is választható útvonal. A lead-létrehozás logikáját ma megismerted; a tömeges betöltés, az ellenőrzés és a bizonyítékok részletes lépéseit a hatodik nap csomagja tartalmazza.</p>
+
+    <nav class="pn">
+      <a href="05_zoho_api.html" target="_blank" rel="noopener noreferrer">◂ Zoho API</a>
+      <a class="next" href="../index.html" target="_blank" rel="noopener noreferrer">Vissza a nap kezdőlapjára ⌂</a>
+    </nav>
+  </div>
+</main>
+</body>
+</html>

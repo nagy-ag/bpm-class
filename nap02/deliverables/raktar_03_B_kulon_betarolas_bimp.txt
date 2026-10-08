@@ -1,0 +1,455 @@
+- navigation "main-navigation":
+  - link "BIMP powered by QBP Simulator":
+    - /url: /
+    - generic: BIMP
+    - generic: powered by QBP Simulator
+- paragraph: BIMP is a fast and simple web-based user interface to simulate business process models using the QBP Simulator.
+- paragraph:
+  - text: See the
+  - link "getting started guide":
+    - /url: /simulator/get-started
+  - text: "to read more about the features. BIMP can be used for free for academic and trial purposes. Choose the version below:"
+- link "Academic":
+  - /url: /simulator
+- link "Trial":
+  - /url: /simulator/trial
+- link "Members":
+  - /url: /simulator/members
+- heading "BIMP - Academic" [level=2]
+- paragraph: Academic version of BIMP is supported by University of Tartu and the Estonian Research Council.
+- generic "Select one of the uploaded BPMN files to edit.":
+  - generic: Active BPMN file
+  - button "raktar_01_alap_szimulacio.bpmn" [disabled]
+- button "BPMN Diagram with results heat map"
+- button "Save results"
+- button "Back to edit data"
+- button "Save scenario"
+- button "Download CSV"
+- paragraph: Simulation Results
+- paragraph: General information
+- table:
+  - rowgroup:
+    - row "Completed process instances 135":
+      - cell "Completed process instances 135":
+        - text: Completed process instances
+        - text: "135"
+    - row "Total cost 2721.9 EUR":
+      - cell "Total cost 2721.9 EUR":
+        - text: Total cost
+        - text: 2721.9 EUR
+    - row "Total simulation time 1.1 days":
+      - cell "Total simulation time 1.1 days":
+        - text: Total simulation time
+        - text: 1.1 days
+- paragraph: Charts
+- generic "A chart.":
+  - img "A chart.":
+    - generic: Process cycle times including off-timetable hours
+    - generic: "0"
+    - generic: "25"
+    - generic: "50"
+    - generic: "75"
+    - generic: 54.6 m - 1.9 h
+    - generic: 1.9 h - 2.8 h
+    - generic: 2.8 h - 3.8 h
+    - generic: 3.8 h - 4.7 h
+    - generic: 4.7 h - 5.6 h
+    - generic: 5.6 h - 6.6 h
+    - generic: 6.6 h - 7.5 h
+    - generic: 7.5 h - 8.5 h
+    - generic: 8.5 h - 9.4 h
+    - generic: 9.4 h - 10.4 h
+  - generic "A tabular representation of the data in the chart.":
+    - table:
+      - rowgroup:
+        - row "Interval Count":
+          - columnheader "Interval"
+          - columnheader "Count"
+      - rowgroup:
+        - row "54.6 m - 1.9 h 40":
+          - cell "54.6 m - 1.9 h"
+          - cell "40"
+        - row "1.9 h - 2.8 h 75":
+          - cell "1.9 h - 2.8 h"
+          - cell "75"
+        - row "2.8 h - 3.8 h 8":
+          - cell "2.8 h - 3.8 h"
+          - cell "8"
+        - row "3.8 h - 4.7 h 0":
+          - cell "3.8 h - 4.7 h"
+          - cell "0"
+        - row "4.7 h - 5.6 h 0":
+          - cell "4.7 h - 5.6 h"
+          - cell "0"
+        - row "5.6 h - 6.6 h 0":
+          - cell "5.6 h - 6.6 h"
+          - cell "0"
+        - row "6.6 h - 7.5 h 0":
+          - cell "6.6 h - 7.5 h"
+          - cell "0"
+        - row "7.5 h - 8.5 h 0":
+          - cell "7.5 h - 8.5 h"
+          - cell "0"
+        - row "8.5 h - 9.4 h 1":
+          - cell "8.5 h - 9.4 h"
+          - cell "1"
+        - row "9.4 h - 10.4 h 11":
+          - cell "9.4 h - 10.4 h"
+          - cell "11"
+- generic "A chart.":
+  - img "A chart.":
+    - generic: Process cycle times excluding off-timetable hours
+    - generic: "0"
+    - generic: "10"
+    - generic: "20"
+    - generic: "30"
+    - generic: 54.6 m - 1.1 h
+    - generic: 1.1 h - 1.4 h
+    - generic: 1.4 h - 1.6 h
+    - generic: 1.6 h - 1.8 h
+    - generic: 1.8 h - 2.1 h
+    - generic: 2.1 h - 2.3 h
+    - generic: 2.3 h - 2.6 h
+    - generic: 2.6 h - 2.8 h
+    - generic: 2.8 h - 3 h
+    - generic: 3 h - 3.3 h
+  - generic "A tabular representation of the data in the chart.":
+    - table:
+      - rowgroup:
+        - row "Interval Count":
+          - columnheader "Interval"
+          - columnheader "Count"
+      - rowgroup:
+        - row "54.6 m - 1.1 h 2":
+          - cell "54.6 m - 1.1 h"
+          - cell "2"
+        - row "1.1 h - 1.4 h 7":
+          - cell "1.1 h - 1.4 h"
+          - cell "7"
+        - row "1.4 h - 1.6 h 6":
+          - cell "1.4 h - 1.6 h"
+          - cell "6"
+        - row "1.6 h - 1.8 h 29":
+          - cell "1.6 h - 1.8 h"
+          - cell "29"
+        - row "1.8 h - 2.1 h 26":
+          - cell "1.8 h - 2.1 h"
+          - cell "26"
+        - row "2.1 h - 2.3 h 30":
+          - cell "2.1 h - 2.3 h"
+          - cell "30"
+        - row "2.3 h - 2.6 h 14":
+          - cell "2.3 h - 2.6 h"
+          - cell "14"
+        - row "2.6 h - 2.8 h 13":
+          - cell "2.6 h - 2.8 h"
+          - cell "13"
+        - row "2.8 h - 3 h 7":
+          - cell "2.8 h - 3 h"
+          - cell "7"
+        - row "3 h - 3.3 h 1":
+          - cell "3 h - 3.3 h"
+          - cell "1"
+- generic "A chart.":
+  - img "A chart.":
+    - generic: Process waiting times
+    - generic: "0"
+    - generic: "20"
+    - generic: "40"
+    - generic: "60"
+    - generic: 0 s - 6.2 m
+    - generic: 6.2 m - 12.5 m
+    - generic: 12.5 m - 18.7 m
+    - generic: 18.7 m - 24.9 m
+    - generic: 24.9 m - 31.2 m
+    - generic: 31.2 m - 37.4 m
+    - generic: 37.4 m - 43.6 m
+    - generic: 43.6 m - 49.9 m
+    - generic: 49.9 m - 56.1 m
+    - generic: 56.1 m - 1 h
+  - generic "A tabular representation of the data in the chart.":
+    - table:
+      - rowgroup:
+        - row "Interval Count":
+          - columnheader "Interval"
+          - columnheader "Count"
+      - rowgroup:
+        - row "0 s - 6.2 m 47":
+          - cell "0 s - 6.2 m"
+          - cell "47"
+        - row "6.2 m - 12.5 m 12":
+          - cell "6.2 m - 12.5 m"
+          - cell "12"
+        - row "12.5 m - 18.7 m 13":
+          - cell "12.5 m - 18.7 m"
+          - cell "13"
+        - row "18.7 m - 24.9 m 10":
+          - cell "18.7 m - 24.9 m"
+          - cell "10"
+        - row "24.9 m - 31.2 m 5":
+          - cell "24.9 m - 31.2 m"
+          - cell "5"
+        - row "31.2 m - 37.4 m 13":
+          - cell "31.2 m - 37.4 m"
+          - cell "13"
+        - row "37.4 m - 43.6 m 14":
+          - cell "37.4 m - 43.6 m"
+          - cell "14"
+        - row "43.6 m - 49.9 m 6":
+          - cell "43.6 m - 49.9 m"
+          - cell "6"
+        - row "49.9 m - 56.1 m 9":
+          - cell "49.9 m - 56.1 m"
+          - cell "9"
+        - row "56.1 m - 1 h 6":
+          - cell "56.1 m - 1 h"
+          - cell "6"
+- generic "A chart.":
+  - img "A chart.":
+    - generic: Process costs (EUR)
+    - generic: "0"
+    - generic: "10"
+    - generic: "20"
+    - generic: "30"
+    - generic: 10.4 - 12.4
+    - generic: 12.4 - 14.4
+    - generic: 14.4 - 16.4
+    - generic: 16.4 - 18.4
+    - generic: 18.4 - 20.4
+    - generic: 20.4 - 22.4
+    - generic: 22.4 - 24.4
+    - generic: 24.4 - 26.4
+    - generic: 26.4 - 28.4
+    - generic: 28.4 - 30.4
+  - generic "A tabular representation of the data in the chart.":
+    - table:
+      - rowgroup:
+        - row "Interval Count":
+          - columnheader "Interval"
+          - columnheader "Count"
+      - rowgroup:
+        - row "10.4 - 12.4 5":
+          - cell "10.4 - 12.4"
+          - cell "5"
+        - row "12.4 - 14.4 5":
+          - cell "12.4 - 14.4"
+          - cell "5"
+        - row "14.4 - 16.4 14":
+          - cell "14.4 - 16.4"
+          - cell "14"
+        - row "16.4 - 18.4 17":
+          - cell "16.4 - 18.4"
+          - cell "17"
+        - row "18.4 - 20.4 29":
+          - cell "18.4 - 20.4"
+          - cell "29"
+        - row "20.4 - 22.4 24":
+          - cell "20.4 - 22.4"
+          - cell "24"
+        - row "22.4 - 24.4 23":
+          - cell "22.4 - 24.4"
+          - cell "23"
+        - row "24.4 - 26.4 12":
+          - cell "24.4 - 26.4"
+          - cell "12"
+        - row "26.4 - 28.4 5":
+          - cell "26.4 - 28.4"
+          - cell "5"
+        - row "28.4 - 30.4 1":
+          - cell "28.4 - 30.4"
+          - cell "1"
+- generic "A chart.":
+  - img "A chart.":
+    - generic: Resource utilization %
+    - generic: "0"
+    - generic: "50"
+    - generic: "100"
+    - generic: Raktáros
+    - generic: Targoncás
+    - generic: Adminisztrátor
+  - generic "A tabular representation of the data in the chart.":
+    - table:
+      - rowgroup:
+        - row "Resource % of time occupied":
+          - columnheader "Resource"
+          - columnheader "% of time occupied"
+      - rowgroup:
+        - row "Raktáros 17.85":
+          - cell "Raktáros"
+          - cell "17.85"
+        - row "Targoncás 61.15":
+          - cell "Targoncás"
+          - cell "61.15"
+        - row "Adminisztrátor 66.82":
+          - cell "Adminisztrátor"
+          - cell "66.82"
+- paragraph: Scenario Statistics
+- table:
+  - rowgroup:
+    - row "Minimum Maximum Average":
+      - cell
+      - cell "Minimum"
+      - cell "Maximum"
+      - cell "Average"
+    - row "Process instance cycle times including off-timetable hours 54.6 minutes 10.4 hours 2.8 hours":
+      - cell "Process instance cycle times including off-timetable hours"
+      - cell "54.6 minutes"
+      - cell "10.4 hours"
+      - cell "2.8 hours"
+    - row "Process instance cycle times excluding off-timetable hours 54.6 minutes 3.3 hours 2.1 hours":
+      - cell "Process instance cycle times excluding off-timetable hours"
+      - cell "54.6 minutes"
+      - cell "3.3 hours"
+      - cell "2.1 hours"
+    - row "Process instance costs 10.4 EUR 29.2 EUR 20.2 EUR":
+      - cell "Process instance costs"
+      - cell "10.4 EUR"
+      - cell "29.2 EUR"
+      - cell "20.2 EUR"
+- paragraph: Activity Durations, Costs, Waiting times, Deviations from Thresholds
+- table:
+  - rowgroup:
+    - row "Name Waiting time Duration Duration over threshold Cost Cost over threshold":
+      - columnheader "Name"
+      - columnheader
+      - columnheader "Waiting time"
+      - columnheader "Duration"
+      - columnheader "Duration over threshold"
+      - columnheader "Cost"
+      - columnheader "Cost over threshold"
+    - row "Count Min Avg Max Min Avg Max Min Avg Max Min Avg Max Min Avg Max":
+      - cell
+      - cell "Count"
+      - cell "Min"
+      - cell "Avg"
+      - cell "Max"
+      - cell "Min"
+      - cell "Avg"
+      - cell "Max"
+      - cell "Min"
+      - cell "Avg"
+      - cell "Max"
+      - cell "Min"
+      - cell "Avg"
+      - cell "Max"
+      - cell "Min"
+      - cell "Avg"
+      - cell "Max"
+    - row "Betárolás 135 0 s 3.1 m 25 m 0 s 3.1 m 25 m 0 s 0 s 0 s 0 0 0 0 0 0":
+      - cell "Betárolás"
+      - cell "135"
+      - cell "0 s"
+      - cell "3.1 m"
+      - cell "25 m"
+      - cell "0 s"
+      - cell "3.1 m"
+      - cell "25 m"
+      - cell "0 s"
+      - cell "0 s"
+      - cell "0 s"
+      - cell "0"
+      - cell "0"
+      - cell "0"
+      - cell "0"
+      - cell "0"
+      - cell "0"
+    - row "Kapuregisztráció 135 0 s 7.6 m 31.3 m 37.7 s 11.5 m 33.7 m 0 s 0 s 0 s 0.1 0.8 1.4 0 0 0":
+      - cell "Kapuregisztráció"
+      - cell "135"
+      - cell "0 s"
+      - cell "7.6 m"
+      - cell "31.3 m"
+      - cell "37.7 s"
+      - cell "11.5 m"
+      - cell "33.7 m"
+      - cell "0 s"
+      - cell "0 s"
+      - cell "0 s"
+      - cell "0.1"
+      - cell "0.8"
+      - cell "1.4"
+      - cell "0"
+      - cell "0"
+      - cell "0"
+    - row "Kárjegyzőkönyv és félretétel 8 0 s 0 s 0 s 14 m 24 m 34.3 m 0 s 0 s 0 s 2.3 4 5.7 0 0 0":
+      - cell "Kárjegyzőkönyv és félretétel"
+      - cell "8"
+      - cell "0 s"
+      - cell "0 s"
+      - cell "0 s"
+      - cell "14 m"
+      - cell "24 m"
+      - cell "34.3 m"
+      - cell "0 s"
+      - cell "0 s"
+      - cell "0 s"
+      - cell "2.3"
+      - cell "4"
+      - cell "5.7"
+      - cell "0"
+      - cell "0"
+      - cell "0"
+    - row "Készletrögzítés 135 0 s 7.8 m 31.3 m 3.7 m 14.9 m 36.3 m 0 s 0 s 0 s 0.3 1.4 2.3 0 0 0":
+      - cell "Készletrögzítés"
+      - cell "135"
+      - cell "0 s"
+      - cell "7.8 m"
+      - cell "31.3 m"
+      - cell "3.7 m"
+      - cell "14.9 m"
+      - cell "36.3 m"
+      - cell "0 s"
+      - cell "0 s"
+      - cell "0 s"
+      - cell "0.3"
+      - cell "1.4"
+      - cell "2.3"
+      - cell "0"
+      - cell "0"
+      - cell "0"
+    - row "Lerakodás 135 0 s 2.7 m 23 m 15.5 m 42.5 m 1.3 h 0 s 0 s 0 s 1.7 9.3 14.5 0 0 0":
+      - cell "Lerakodás"
+      - cell "135"
+      - cell "0 s"
+      - cell "2.7 m"
+      - cell "23 m"
+      - cell "15.5 m"
+      - cell "42.5 m"
+      - cell "1.3 h"
+      - cell "0 s"
+      - cell "0 s"
+      - cell "0 s"
+      - cell "1.7"
+      - cell "9.3"
+      - cell "14.5"
+      - cell "0"
+      - cell "0"
+      - cell "0"
+    - row "Áruátvételi ellenőrzés 135 0 s 0 s 0 s 2.4 m 50.8 m 1.5 h 0 s 0 s 0 s 0.4 8.5 15 0 0 0":
+      - cell "Áruátvételi ellenőrzés"
+      - cell "135"
+      - cell "0 s"
+      - cell "0 s"
+      - cell "0 s"
+      - cell "2.4 m"
+      - cell "50.8 m"
+      - cell "1.5 h"
+      - cell "0 s"
+      - cell "0 s"
+      - cell "0 s"
+      - cell "0.4"
+      - cell "8.5"
+      - cell "15"
+      - cell "0"
+      - cell "0"
+      - cell "0"
+- contentinfo:
+  - text: © 2020
+  - link "QBP Simulator":
+    - /url: https://www.qbp-simulator.com
+  - link "Facebook":
+    - /url: https://www.facebook.com/bimpsimulator/
+    - img "Facebook"
+  - iframe [id="fb-iframe"]
+- text: This website uses cookies to enhance your site experience and for analytical purposes. By proceeding on this website you are OK with this.
+- button "Close"

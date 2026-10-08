@@ -1,0 +1,21 @@
+{
+  "marker": "BPA_READINESS_2a20475cdd4d",
+  "checked_utc": "2026-10-06T15:35:15.123145+00:00",
+  "completed": [
+    "Leads_read_access",
+    "Accounts_read_access",
+    "Contacts_read_access",
+    "Deals_read_access",
+    "fictional_lead_create",
+    "exact_create_readback",
+    "update_and_exact_readback",
+    "delete_verified"
+  ],
+  "cleanup": "deleted_from_active_crm",
+  "test_lead_id": "1037931000000641001",
+  "conditional_fixtures": {
+    "above": true,
+    "below": true,
+    "equal_no_create": true
+  }
+}

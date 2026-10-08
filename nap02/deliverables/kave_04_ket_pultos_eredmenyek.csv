@@ -1,0 +1,68 @@
+﻿table,0
+Completed process instances 100
+Total cost 88.7 EUR
+Total simulation time 6.3 hours
+
+table,1
+Interval,Count
+7.4 m - 20 m,5
+20 m - 32.5 m,21
+32.5 m - 45.1 m,5
+45.1 m - 57.7 m,5
+57.7 m - 1.2 h,6
+1.2 h - 1.4 h,6
+1.4 h - 1.6 h,14
+1.6 h - 1.8 h,7
+1.8 h - 2 h,10
+2 h - 2.2 h,21
+
+table,2
+Interval,Count
+7.4 m - 20 m,5
+20 m - 32.5 m,21
+32.5 m - 45.1 m,5
+45.1 m - 57.7 m,5
+57.7 m - 1.2 h,6
+1.2 h - 1.4 h,6
+1.4 h - 1.6 h,14
+1.6 h - 1.8 h,7
+1.8 h - 2 h,10
+2 h - 2.2 h,21
+
+table,3
+Interval,Count
+3 m - 15.4 m,5
+15.4 m - 27.8 m,23
+27.8 m - 40.2 m,3
+40.2 m - 52.6 m,6
+52.6 m - 1.1 h,5
+1.1 h - 1.3 h,6
+1.3 h - 1.5 h,15
+1.5 h - 1.7 h,7
+1.7 h - 1.9 h,8
+1.9 h - 2.1 h,22
+
+table,4
+Interval,Count
+0.5 - 1.5,100
+
+table,5
+Resource,% of time occupied
+Pultos,32.55
+Barista,99.24
+
+table,6
+,Minimum,Maximum,Average
+Process instance cycle times including off-timetable hours,7.4 minutes,2.2 hours,1.3 hours
+Process instance cycle times excluding off-timetable hours,7.4 minutes,2.2 hours,1.3 hours
+Process instance costs,0.5 EUR,1.3 EUR,0.9 EUR
+
+table,7
+Name,,Waiting time,Duration,Duration over threshold,Cost,Cost over threshold
+,Count,Min,Avg,Max,Min,Avg,Max,Min,Avg,Max,Min,Avg,Max,Min,Avg,Max
+Csészébe kiöntés,62,3 m,40.7 m,1.2 h,3.6 m,41.3 m,1.2 h,0 s,0 s,0 s,0.1,0.1,0.1,0,0,0
+Elviteles pohárba töltés,38,36 s,30 m,1.1 h,1.2 m,30.6 m,1.2 h,0 s,0 s,0 s,0.1,0.1,0.1,0,0,0
+Fizetés,100,0 s,2.9 s,1.3 m,11.2 s,1 m,2.6 m,0 s,0 s,0 s,0,0.1,0.2,0,0,0
+Kávé elkészítése,100,0 s,34.4 m,1.1 h,1.6 m,37.6 m,1.2 h,0 s,0 s,0 s,0.2,0.5,0.7,0,0,0
+Rendelés felvétele,100,0 s,3.5 s,47.9 s,24 s,1.5 m,2.9 m,0 s,0 s,0 s,0.1,0.2,0.4,0,0,0
+

@@ -1,0 +1,28 @@
+{
+  "verified": true,
+  "checks": [
+    "status.error_code=0",
+    "null error_message is normal",
+    "Both expected IDs and EUR JSON paths exist",
+    "Both prices numeric, finite and positive",
+    "Observation matches saved actual response"
+  ],
+  "retrieved_utc": "2026-10-07T09:26:29.176988+00:00",
+  "currency": "EUR",
+  "authentication": "HTTP header; key loaded from ignored local store",
+  "public_demo": "In-app browser attempt returned net::ERR_BLOCKED_BY_CLIENT",
+  "quotes": [
+    {
+      "id": 1,
+      "symbol": "BTC",
+      "price": 74902.68393311542,
+      "json_path": "data.1.quote.EUR.price"
+    },
+    {
+      "id": 1027,
+      "symbol": "ETH",
+      "price": 2328.532061121165,
+      "json_path": "data.1027.quote.EUR.price"
+    }
+  ]
+}

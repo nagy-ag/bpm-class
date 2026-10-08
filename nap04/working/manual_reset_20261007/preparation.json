@@ -1,0 +1,25 @@
+{
+  "status": "prepared_offline_not_executed",
+  "source_sha256": "53a10f3fdcd33db635327af8e73d6d198fc3e5e1d95b5f091c1bd65803b6ec56",
+  "copy_sha256": "abd6ecbd0e1340f5d5f3412cff46272a5e3f1981e16cceaf3b0e572a1672b3de",
+  "exact_changes": [
+    "added-case storage namespace",
+    "window title",
+    "visible practice badge"
+  ],
+  "restoring_three_changes_recovers_original": true,
+  "seed_count": 20,
+  "original_storage_key": "bpa_nap04_sajat_ugyek_v1",
+  "isolated_storage_key": "bpa_nap04_manual_reset_20261007_v1",
+  "first_input_row": {
+    "kotvenyszam": "TR-402318",
+    "kartipus": "vízkár",
+    "karesemeny_datum": "2025-11-03",
+    "becsult_osszeg": 1850,
+    "karleiras": "Csőtörés a fürdőszobában, ázott parketta.",
+    "ugyszam": null
+  },
+  "browser_opened_by_agent": false,
+  "portal_executed_by_agent": false,
+  "resume": "User opens copy privately, confirms visible MANUAL RESET TEST and20total/0own before entering anything. Never reset original completed portal."
+}

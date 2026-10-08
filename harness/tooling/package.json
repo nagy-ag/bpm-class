@@ -1,0 +1,10 @@
+{
+  "name": "bpa-uipath-authoring-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Optional official UiPath authoring tools; Studio remains required for actual runs.",
+  "dependencies": {
+    "@uipath/cli": "1.202.1",
+    "@uipath/rpa-tool": "1.202.1"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-07",
+  "evidence_source": "User screenshot visually reviewed after isolated20baseline and manual replay instructions",
+  "screenshot": "replay_confirmation_user.png",
+  "visible_badge": "MANUAL RESET TEST",
+  "visible_success": "A bejelentést rögzítettük",
+  "case_id": "K-GY-4147",
+  "visible_values": {
+    "kotvenyszam": "TR-402318",
+    "kartipus": "vízkár",
+    "karesemeny_datum": "2025-11-03",
+    "becsult_osszeg": 1850
+  },
+  "four_visible_fields_match_first_input_row": true,
+  "description_not_displayed": true,
+  "earlier_same_first_row_all_five_fields_csv_verification": "manual_export_verification.json; applies to initial manual entry, not fresh replay export",
+  "confirmation_new_record_button_visible": true,
+  "new_record_button_action_verified": false,
+  "agent_portal_action": false,
+  "next": "User clicks visible green Új bejelentés rögzítése button and supplies resulting form screenshot before any top-tab action.",
+  "description_verification": "Passed: actual CSV(7) description exactly matches supplied workbook row",
+  "all_five_saved_fields_verified": true
+}

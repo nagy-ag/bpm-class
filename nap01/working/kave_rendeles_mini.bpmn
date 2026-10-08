@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+  id="Defs_1" targetNamespace="http://fsega.ubbcluj.ro/bpa">
+  <bpmn:process id="Process_1" isExecutable="false">
+    <bpmn:startEvent id="n0" name="Vendég rendel"/>
+    <bpmn:task id="n1" name="Rendelés felvétele"/>
+    <bpmn:task id="n2" name="Kávé elkészítése"/>
+    <bpmn:task id="n3" name="Fizetés"/>
+    <bpmn:endEvent id="n4" name="Vendég kiszolgálva"/>
+    <bpmn:sequenceFlow id="f0" sourceRef="n0" targetRef="n1"/>
+    <bpmn:sequenceFlow id="f1" sourceRef="n1" targetRef="n2"/>
+    <bpmn:sequenceFlow id="f2" sourceRef="n2" targetRef="n3"/>
+    <bpmn:sequenceFlow id="f3" sourceRef="n3" targetRef="n4"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="D1">
+    <bpmndi:BPMNPlane id="P1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="s_n0" bpmnElement="n0">
+        <dc:Bounds x="170" y="182" width="36" height="36"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="146" y="226" width="84" height="20"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_n1" bpmnElement="n1">
+        <dc:Bounds x="356" y="167" width="110" height="66"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_n2" bpmnElement="n2">
+        <dc:Bounds x="616" y="167" width="110" height="66"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_n3" bpmnElement="n3">
+        <dc:Bounds x="876" y="167" width="110" height="66"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_n4" bpmnElement="n4">
+        <dc:Bounds x="1136" y="182" width="36" height="36"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="1112" y="226" width="84" height="20"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="e_f0" bpmnElement="f0">
+        <di:waypoint x="206" y="200"/>
+        <di:waypoint x="356" y="200"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f1" bpmnElement="f1">
+        <di:waypoint x="466" y="200"/>
+        <di:waypoint x="616" y="200"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f2" bpmnElement="f2">
+        <di:waypoint x="726" y="200"/>
+        <di:waypoint x="876" y="200"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f3" bpmnElement="f3">
+        <di:waypoint x="986" y="200"/>
+        <di:waypoint x="1136" y="200"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

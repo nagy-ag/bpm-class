@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "date": "2026-10-07",
+  "actual_native_excel_runs": 2,
+  "fetched_utc": [
+    "2026-10-07T15:49:20.983856+00:00",
+    "2026-10-07T15:51:18.620359+00:00"
+  ],
+  "provider_timestamp": [
+    "2026-10-07T15:49:21.454Z",
+    "2026-10-07T15:51:19.097Z"
+  ],
+  "provider_and_fetched_timestamps_advanced": true,
+  "numeric_prices_changed": true,
+  "rows_each": 3,
+  "credential_scan": "passed; workbook decoded mashup scanned by verify_cmc_workbook.py",
+  "original_workbook_sha256": "692936626934c9b7a3deb526bf228e653af57a42bd5c4044815a72608aec064b",
+  "cli_runtime_shape": "Actual CLI returned hasErrors=false/errorMessage=null with output={} and streamed execution-ended log. No Session ended string was returned; this version differs from the current skill flat-envelope example.",
+  "first_run_filter_limit": "First run filter retained output only; actual workbook/quote equality independently verified. Second run preserves complete actual hasErrors verdict.",
+  "scheduler_installed": false,
+  "unattended_limits": "Finite local execution only. Needs installed licensed Office/UiPath, local Windows session, network/API access and existing secure env. No logged-out/locked-host service test."
+}

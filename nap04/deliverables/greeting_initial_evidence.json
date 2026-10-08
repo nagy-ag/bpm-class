@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-07",
+  "name": "Béla (fictional)",
+  "valid": {
+    "input": "20",
+    "observed_output": "Évente kb. 5000 e-mail.",
+    "run": "../working/greeting_initial_20_run.json",
+    "screenshot": "../working/greeting_initial_20_result.jpg"
+  },
+  "invalid": {
+    "input": "sok",
+    "expected_error": {
+      "errorName": "System.InvalidCastException",
+      "errorMessage": "Conversion from string \"sok\" to type 'Integer' is not valid.",
+      "lineNumber": ""
+    },
+    "run": "../working/greeting_initial_sok_run.json"
+  },
+  "lesson_assumption_workdays": 250,
+  "method": "actual interactive UiPath desktop executions"
+}

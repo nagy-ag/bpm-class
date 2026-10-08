@@ -1,0 +1,698 @@
+Browser tab: 9, Title: "BIMP and QBP Simulator - Ultimate Business Process Simulator for BPMN", URL: "https://bimp.cs.ut.ee/simulator/".
+0 AXWebArea BIMP and QBP Simulator - Ultimate Business Process Simulator for BPMN, URL: bimp.cs.ut.ee/simulator/
+	1 container
+		2 container gatsby-focus-wrapper
+			3 container main-navigation
+				4 container
+					5 link Description: BIMP powered by QBP Simulator, Value: bimp.cs.ut.ee/
+					6 container navMenu
+						7 link Description: Online Simulator, Value: bimp.cs.ut.ee/simulator
+						8 link Description: Products, Value: bimp.cs.ut.ee/products
+						9 link Description: Features, Value: bimp.cs.ut.ee/features/
+						10 link Description: News, Value: bimp.cs.ut.ee/news
+						11 link Description: Contact, Value: bimp.cs.ut.ee/contact
+			12 container
+				13 text BIMP is a fast and simple web-based user interface to simulate business process models using the QBP Simulator. See the 
+				14 link Description: getting started guide, Value: bimp.cs.ut.ee/simulator/get-started
+				15 text  to read more about the features. BIMP can be used for free for academic and trial purposes. Choose the version below:
+				16 link Description: Academic, Value: bimp.cs.ut.ee/simulator
+				17 link Description: Trial, Value: bimp.cs.ut.ee/simulator/trial
+				18 link Description: Members, Value: bimp.cs.ut.ee/simulator/members
+				19 heading BIMP - Academic, Value: 2
+					20 text BIMP - Academic
+				21 text Academic version of BIMP is supported by University of Tartu and the Estonian Research Council.
+				22 container
+					59 container Select one of the uploaded BPMN files to edit.
+						60 text Active BPMN file
+						61 container
+							62 pop up button (disabled) native_results.bpmn
+					63 container
+						64 button BPMN Diagram with results heat map, ID: viewModelHeatmapButton
+						65 button Save results, Help: Save the current simulation results with simulation information to your computer, ID: saveResultsButton
+						66 button Back to edit data, Help: Go back and modify the simulation specific information, ID: backToEditData
+						67 button Save scenario, Help: Save the current model with simulation information to your computer, ID: saveFileButton2
+					68 text Simulation Results
+					69 text General information
+					70 table
+						71 row
+							72 cell
+								73 text Completed process instances  100
+						74 row
+							75 cell
+								76 text Total cost  91.1 EUR
+						77 row
+							78 cell
+								79 text Total simulation time  1.1 days
+					80 text Charts
+					341 container
+						342 container A chart.
+							343 image A chart.
+								344 text Process cycle times including off-timetable hours
+								345 text 0
+								346 text 50
+								347 text 100
+								348 text 4.2 m - 1.7 h
+								349 text 1.7 h - 3.3 h
+							350 container A tabular representation of the data in the chart.
+								351 table
+									352 row
+										353 cell
+											354 text Interval
+										355 cell
+											356 text Count
+									357 row
+										358 cell
+											359 text 4.2 m - 1.7 h
+										360 cell
+											361 text 98
+									362 row
+										363 cell
+											364 text 1.7 h - 3.3 h
+										365 cell
+											366 text 2
+							367 container A tabular representation of the data in the chart.
+								368 table
+									369 row
+										370 cell
+											371 text Interval
+										372 cell
+											373 text Count
+									374 row
+										375 cell
+											376 text 4.2 m - 1.7 h
+										377 cell
+											378 text 98
+									379 row
+										380 cell
+											381 text 1.7 h - 3.3 h
+										382 cell
+											383 text 2
+					384 container
+						385 container A chart.
+							386 image A chart.
+								387 text Process cycle times excluding off-timetable hours
+								388 text 0
+								389 text 10
+								390 text 20
+								391 text 4.2 m - 6.3 m
+								392 text 6.3 m - 8.4 m
+								393 text 8.4 m - 10.5 m
+								394 text 10.5 m - 12.6 m
+								395 text 12.6 m - 14.7 m
+								396 text 14.7 m - 16.8 m
+								397 text 16.8 m - 18.9 m
+								398 text 18.9 m - 21 m
+								399 text 21 m - 23.1 m
+								400 text 23.1 m - 25.2 m
+							401 container A tabular representation of the data in the chart.
+								402 table
+									403 row
+										404 cell
+											405 text Interval
+										406 cell
+											407 text Count
+									408 row
+										409 cell
+											410 text 4.2 m - 6.3 m
+										411 cell
+											412 text 8
+									413 row
+										414 cell
+											415 text 6.3 m - 8.4 m
+										416 cell
+											417 text 18
+									418 row
+										419 cell
+											420 text 8.4 m - 10.5 m
+										421 cell
+											422 text 15
+									423 row
+										424 cell
+											425 text 10.5 m - 12.6 m
+										426 cell
+											427 text 13
+									428 row
+										429 cell
+											430 text 12.6 m - 14.7 m
+										431 cell
+											432 text 17
+									433 row
+										434 cell
+											435 text 14.7 m - 16.8 m
+										436 cell
+											437 text 8
+									438 row
+										439 cell
+											440 text 16.8 m - 18.9 m
+										441 cell
+											442 text 12
+									443 row
+										444 cell
+											445 text 18.9 m - 21 m
+										446 cell
+											447 text 3
+									448 row
+										449 cell
+											450 text 21 m - 23.1 m
+										451 cell
+											452 text 4
+									453 row
+										454 cell
+											455 text 23.1 m - 25.2 m
+										456 cell
+											457 text 2
+							458 container A tabular representation of the data in the chart.
+								459 table
+									460 row
+										461 cell
+											462 text Interval
+										463 cell
+											464 text Count
+									465 row
+										466 cell
+											467 text 4.2 m - 6.3 m
+										468 cell
+											469 text 8
+									470 row
+										471 cell
+											472 text 6.3 m - 8.4 m
+										473 cell
+											474 text 18
+									475 row
+										476 cell
+											477 text 8.4 m - 10.5 m
+										478 cell
+											479 text 15
+									480 row
+										481 cell
+											482 text 10.5 m - 12.6 m
+										483 cell
+											484 text 13
+									485 row
+										486 cell
+											487 text 12.6 m - 14.7 m
+										488 cell
+											489 text 17
+									490 row
+										491 cell
+											492 text 14.7 m - 16.8 m
+										493 cell
+											494 text 8
+									495 row
+										496 cell
+											497 text 16.8 m - 18.9 m
+										498 cell
+											499 text 12
+									500 row
+										501 cell
+											502 text 18.9 m - 21 m
+										503 cell
+											504 text 3
+									505 row
+										506 cell
+											507 text 21 m - 23.1 m
+										508 cell
+											509 text 4
+									510 row
+										511 cell
+											512 text 23.1 m - 25.2 m
+										513 cell
+											514 text 2
+					515 container
+						516 container A chart.
+							517 image A chart.
+								518 text Process waiting times
+								519 text 0
+								520 text 10
+								521 text 20
+								522 text 30
+								523 text 0 s - 1.9 m
+								524 text 1.9 m - 3.7 m
+								525 text 3.7 m - 5.6 m
+								526 text 5.6 m - 7.4 m
+								527 text 7.4 m - 9.3 m
+								528 text 9.3 m - 11.1 m
+								529 text 11.1 m - 13 m
+								530 text 13 m - 14.8 m
+								531 text 14.8 m - 16.7 m
+								532 text 16.7 m - 18.5 m
+							533 container A tabular representation of the data in the chart.
+								534 table
+									535 row
+										536 cell
+											537 text Interval
+										538 cell
+											539 text Count
+									540 row
+										541 cell
+											542 text 0 s - 1.9 m
+										543 cell
+											544 text 21
+									545 row
+										546 cell
+											547 text 1.9 m - 3.7 m
+										548 cell
+											549 text 15
+									550 row
+										551 cell
+											552 text 3.7 m - 5.6 m
+										553 cell
+											554 text 10
+									555 row
+										556 cell
+											557 text 5.6 m - 7.4 m
+										558 cell
+											559 text 18
+									560 row
+										561 cell
+											562 text 7.4 m - 9.3 m
+										563 cell
+											564 text 11
+									565 row
+										566 cell
+											567 text 9.3 m - 11.1 m
+										568 cell
+											569 text 7
+									570 row
+										571 cell
+											572 text 11.1 m - 13 m
+										573 cell
+											574 text 10
+									575 row
+										576 cell
+											577 text 13 m - 14.8 m
+										578 cell
+											579 text 4
+									580 row
+										581 cell
+											582 text 14.8 m - 16.7 m
+										583 cell
+											584 text 2
+									585 row
+										586 cell
+											587 text 16.7 m - 18.5 m
+										588 cell
+											589 text 2
+							590 container A tabular representation of the data in the chart.
+								591 table
+									592 row
+										593 cell
+											594 text Interval
+										595 cell
+											596 text Count
+									597 row
+										598 cell
+											599 text 0 s - 1.9 m
+										600 cell
+											601 text 21
+									602 row
+										603 cell
+											604 text 1.9 m - 3.7 m
+										605 cell
+											606 text 15
+									607 row
+										608 cell
+											609 text 3.7 m - 5.6 m
+										610 cell
+											611 text 10
+									612 row
+										613 cell
+											614 text 5.6 m - 7.4 m
+										615 cell
+											616 text 18
+									617 row
+										618 cell
+											619 text 7.4 m - 9.3 m
+										620 cell
+											621 text 11
+									622 row
+										623 cell
+											624 text 9.3 m - 11.1 m
+										625 cell
+											626 text 7
+									627 row
+										628 cell
+											629 text 11.1 m - 13 m
+										630 cell
+											631 text 10
+									632 row
+										633 cell
+											634 text 13 m - 14.8 m
+										635 cell
+											636 text 4
+									637 row
+										638 cell
+											639 text 14.8 m - 16.7 m
+										640 cell
+											641 text 2
+									642 row
+										643 cell
+											644 text 16.7 m - 18.5 m
+										645 cell
+											646 text 2
+					647 container
+						648 container A chart.
+							649 image A chart.
+								650 text Process costs (EUR)
+								651 text 99
+								652 text 100
+								653 text 101
+								654 text 0.6 - 1.6
+							655 container A tabular representation of the data in the chart.
+								656 table
+									657 row
+										658 cell
+											659 text Interval
+										660 cell
+											661 text Count
+									662 row
+										663 cell
+											664 text 0.6 - 1.6
+										665 cell
+											666 text 100
+							667 container A tabular representation of the data in the chart.
+								668 table
+									669 row
+										670 cell
+											671 text Interval
+										672 cell
+											673 text Count
+									674 row
+										675 cell
+											676 text 0.6 - 1.6
+										677 cell
+											678 text 100
+					679 container
+						680 container A chart.
+							681 image A chart.
+								682 text Resource utilization %
+								683 text 40
+								684 text 50
+								685 text 60
+								686 text 70
+								687 text Barista
+								688 text Pultos
+							689 container A tabular representation of the data in the chart.
+								690 table
+									691 row
+										692 cell
+											693 text Resource
+										694 cell
+											695 text % of time occupied
+									696 row
+										697 cell
+											698 text Barista
+										699 cell
+											700 text 66.06
+									701 row
+										702 cell
+											703 text Pultos
+										704 cell
+											705 text 42.61
+							706 container A tabular representation of the data in the chart.
+								707 table
+									708 row
+										709 cell
+											710 text Resource
+										711 cell
+											712 text % of time occupied
+									713 row
+										714 cell
+											715 text Barista
+										716 cell
+											717 text 66.06
+									718 row
+										719 cell
+											720 text Pultos
+										721 cell
+											722 text 42.61
+					81 text Scenario Statistics
+					82 table
+						83 row
+							84 cell
+								85 text Minimum
+							86 cell
+								87 text Maximum
+							88 cell
+								89 text Average
+						90 row
+							91 cell
+								92 text Process instance cycle times including off-timetable hours
+							93 cell
+								94 text 4.2 minutes
+							95 cell
+								96 text 16.3 hours
+							97 cell
+								98 text 31.6 minutes
+						99 row
+							100 cell
+								101 text Process instance cycle times excluding off-timetable hours
+							102 cell
+								103 text 4.2 minutes
+							104 cell
+								105 text 25.2 minutes
+							106 cell
+								107 text 12.4 minutes
+						108 row
+							109 cell
+								110 text Process instance costs
+							111 cell
+								112 text 0.6 EUR
+							113 cell
+								114 text 1.2 EUR
+							115 cell
+								116 text 0.9 EUR
+					117 container result-table
+						118 text Activity Durations, Costs, Waiting times, Deviations from Thresholds
+						119 table
+							120 row
+								121 cell
+									122 text Name
+								123 cell
+									124 text Waiting time
+								125 cell
+									126 text Duration
+								127 cell
+									128 text Duration over threshold
+								129 cell
+									130 text Cost
+								131 cell
+									132 text Cost over threshold
+							133 row
+								134 cell
+									135 text Count
+								136 cell
+									137 text Min
+								138 cell
+									139 text Avg
+								140 cell
+									141 text Max
+								142 cell
+									143 text Min
+								144 cell
+									145 text Avg
+								146 cell
+									147 text Max
+								148 cell
+									149 text Min
+								150 cell
+									151 text Avg
+								152 cell
+									153 text Max
+								154 cell
+									155 text Min
+								156 cell
+									157 text Avg
+								158 cell
+									159 text Max
+								160 cell
+									161 text Min
+								162 cell
+									163 text Avg
+								164 cell
+									165 text Max
+							166 row
+								167 cell
+									168 text Csészébe kiöntés
+								169 cell
+									170 text 61
+								171 cell
+									172 text 0 s
+								173 cell
+									174 text 2.9 m
+								175 cell
+									176 text 9.5 m
+								177 cell
+									178 text 36 s
+								179 cell
+									180 text 3.5 m
+								181 cell
+									182 text 10.1 m
+								183 cell
+									184 text 0 s
+								185 cell
+									186 text 0 s
+								187 cell
+									188 text 0 s
+								189 cell
+									190 text 0.1
+								191 cell
+									192 text 0.1
+								193 cell
+									194 text 0.1
+								195 cell
+									196 text 0
+								197 cell
+									198 text 0
+								199 cell
+									200 text 0
+							201 row
+								202 cell
+									203 text Elviteles pohárba töltés
+								204 cell
+									205 text 39
+								206 cell
+									207 text 0 s
+								208 cell
+									209 text 3.3 m
+								210 cell
+									211 text 10.9 m
+								212 cell
+									213 text 36 s
+								214 cell
+									215 text 3.9 m
+								216 cell
+									217 text 11.5 m
+								218 cell
+									219 text 0 s
+								220 cell
+									221 text 0 s
+								222 cell
+									223 text 0 s
+								224 cell
+									225 text 0.1
+								226 cell
+									227 text 0.1
+								228 cell
+									229 text 0.1
+								230 cell
+									231 text 0
+								232 cell
+									233 text 0
+								234 cell
+									235 text 0
+							236 row
+								237 cell
+									238 text Fizetés
+								239 cell
+									240 text 100
+								241 cell
+									242 text 0 s
+								243 cell
+									244 text 28.4 s
+								245 cell
+									246 text 5.2 m
+								247 cell
+									248 text 16.6 s
+								249 cell
+									250 text 1.5 m
+								251 cell
+									252 text 5.9 m
+								253 cell
+									254 text 0 s
+								255 cell
+									256 text 0 s
+								257 cell
+									258 text 0 s
+								259 cell
+									260 text 0
+								261 cell
+									262 text 0.1
+								263 cell
+									264 text 0.2
+								265 cell
+									266 text 0
+								267 cell
+									268 text 0
+								269 cell
+									270 text 0
+							271 row
+								272 cell
+									273 text Kávé elkészítése
+								274 cell
+									275 text 100
+								276 cell
+									277 text 0 s
+								278 cell
+									279 text 2 m
+								280 cell
+									281 text 7.5 m
+								282 cell
+									283 text 1.5 m
+								284 cell
+									285 text 5.2 m
+								286 cell
+									287 text 11 m
+								288 cell
+									289 text 0 s
+								290 cell
+									291 text 0 s
+								292 cell
+									293 text 0 s
+								294 cell
+									295 text 0.2
+								296 cell
+									297 text 0.5
+								298 cell
+									299 text 0.8
+								300 cell
+									301 text 0
+								302 cell
+									303 text 0
+								304 cell
+									305 text 0
+							306 row
+								307 cell
+									308 text Rendelés felvétele
+								309 cell
+									310 text 100
+								311 cell
+									312 text 0 s
+								313 cell
+									314 text 34.8 s
+								315 cell
+									316 text 5.4 m
+								317 cell
+									318 text 32.6 s
+								319 cell
+									320 text 2.1 m
+								321 cell
+									322 text 7.3 m
+								323 cell
+									324 text 0 s
+								325 cell
+									326 text 0 s
+								327 cell
+									328 text 0 s
+								329 cell
+									330 text 0.1
+								331 cell
+									332 text 0.2
+								333 cell
+									334 text 0.4
+								335 cell
+									336 text 0
+								337 cell
+									338 text 0
+								339 cell
+									340 text 0
+			51 container
+				52 text © 2020
+				53 link Description: QBP Simulator, Value: qbp-simulator.com/
+				54 link Description: Facebook, Help: BIMP Business Process Simulator on Facebook, Value: facebook.com/bimpsimulator/, ID: fb-image-link
+				55 AXWebArea facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fbimpsimulator%2F&width=450&layout=standard&action=like&size=small&share=false&height=20&colorscheme=dark
+			56 container
+				57 text This website uses cookies to enhance your site experience and for analytical purposes. By proceeding on this website you are OK with this.
+				58 button Close
+
+The focused UI element is 0 AXWebArea BIMP and QBP Simulator - Ultimate Business Process Simulator for BPMN, URL: bimp.cs.ut.ee/simulator/

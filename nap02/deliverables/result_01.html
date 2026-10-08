@@ -1,0 +1,20 @@
+<!doctype html><html lang="hu"><head><meta charset="utf-8"><base href="../notes/"><meta name="viewport" content="width=device-width,initial-scale=1"><title>nap02 01 · Kávézó</title><style>body{font:16px/1.65 system-ui;margin:32px auto;max-width:1200px;padding:0 24px;color:#172b3b;background:#f5f7f9}main{background:white;padding:30px;border-radius:12px}img{max-width:100%;height:auto;border:1px solid #ccd5dc}figure{margin:24px 0}table{border-collapse:collapse;width:100%;display:block;overflow:auto}td,th{border:1px solid #ccd5dc;padding:8px;text-align:left}th{background:#edf3f7}a{color:#006caa}.label{color:#526674}</style></head><body><main><p class="label">BPA · nap02 · 01 · Mentett, ellenőrzött eredmények (2026-10-05)</p><h1>Kávézó</h1><figure><img src="../deliverables/kave_xor_preview.jpg" alt="Mentett eredmény: kave_xor_preview.jpg"></figure><h1 id="kavezo-xor-folyamat-lepesrol-lepesre">Kávézó – XOR-folyamat, lépésről lépésre</h1>
+<ol>
+<li>Nyisd meg a <a href="https://demo.bpmn.io/">https://demo.bpmn.io/</a> szerkesztőt. Új rajzhoz válaszd a create lehetőséget.</li>
+<li>A kezdő esemény neve: <strong>Vendég rendel</strong>. Fűzd hozzá: <strong>Rendelés felvétele</strong> → <strong>Kávé elkészítése</strong>.</li>
+<li>A kávé elkészítése után helyezz el XOR-kaput: <strong>Helyben fogyasztja?</strong></li>
+<li>Az <strong>igen</strong> ág: <strong>Csészébe kiöntés</strong>. A <strong>nem</strong> ág: <strong>Elviteles pohárba töltés</strong>. Mindkét nyíl kapjon címkét.</li>
+<li>Vezesd össze a két ágat egy második XOR-kapuval. Ez nem vár mindkét ágra: az adott rendeléshez kiválasztott ág után folytatja a folyamatot.</li>
+<li>Fűzd hozzá: <strong>Fizetés</strong> → <strong>Vendég kiszolgálva</strong> (záró esemény). Mentsd <strong>kave_xor.bpmn</strong> néven.</li>
+</ol>
+<h2 id="elkeszult-fajl-es-ellenorzes">Elkészült fájl és ellenőrzés</h2>
+<ul>
+<li>Kimenet: <a href="../deliverables/kave_xor.bpmn">kave_xor.bpmn</a>.</li>
+<li>A mellékelt oktatói referenciamodell szerkeszthető másolatából készült; az eredeti változatlan maradt. A modellben a bejövő és kimenő kapcsolat-hivatkozások is szerepelnek.</li>
+<li>Egy kezdő esemény, öt tevékenység, két XOR-kapu, egy záró esemény, kilenc sorrendáramlás.</li>
+<li>Igen út: Vendég rendel → Rendelés felvétele → Kávé elkészítése → Helyben fogyasztja? → Csészébe kiöntés → XOR-összevezetés → Fizetés → Vendég kiszolgálva.</li>
+<li>Nem út: ugyanez, a Csészébe kiöntés helyett Elviteles pohárba töltés.</li>
+<li>A munkapéldány megnyitása sikerült a bpmn.io-ban. A böngészős letöltés időtúllépéssel végződött; a végleges fájl helyben mentve.</li>
+<li>Ez az 1. blokk modellezési eredménye. A szimuláció a 4. blokkban következik.</li>
+</ul>
+<p><a href="../deliverables/README.md">Minden eredmény és fájl</a> · <a href="01_kavezo_lepesek.md">Eredeti jegyzet</a></p></main></body></html>

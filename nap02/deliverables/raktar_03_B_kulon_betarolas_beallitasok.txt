@@ -1,0 +1,352 @@
+- navigation "main-navigation":
+  - link "BIMP powered by QBP Simulator":
+    - /url: /
+    - generic: BIMP
+    - generic: powered by QBP Simulator
+- paragraph: BIMP is a fast and simple web-based user interface to simulate business process models using the QBP Simulator.
+- paragraph:
+  - text: See the
+  - link "getting started guide":
+    - /url: /simulator/get-started
+  - text: "to read more about the features. BIMP can be used for free for academic and trial purposes. Choose the version below:"
+- link "Academic":
+  - /url: /simulator
+- link "Trial":
+  - /url: /simulator/trial
+- link "Members":
+  - /url: /simulator/members
+- heading "BIMP - Academic" [level=2]
+- paragraph: Academic version of BIMP is supported by University of Tartu and the Estonian Research Council.
+- generic "Select one of the uploaded BPMN files to edit.":
+  - generic: Active BPMN file
+  - button "raktar_01_alap_szimulacio.bpmn" [disabled]
+- button "View BPMN Diagram"
+- button "Save scenario"
+- button "Upload a new model"
+- paragraph: Scenario Specification
+- generic "Inter arrival time specifies the interval between two new process instances.":
+  - generic: Inter arrival time
+  - button "Exponential"
+- text: Mean
+- generic: "*"
+- spinbutton: "7"
+- generic "Time unit for the values":
+  - generic: Time unit
+  - button "Minutes"
+- generic "Specifies the number of how many process instances will be created during the simulation. Positive integer should be used.":
+  - text: Total number of process instances
+  - generic: "*"
+  - spinbutton: "135"
+- generic "Specifies the percentage of process instance performance stats to exclude from the start and the end of the simulation scenario. Use to exclude statistics from process instances when simulation scenario is 'warming up' or 'cooling down'.":
+  - generic: "% to exclude from stats"
+  - spinbutton: "0"
+- generic "If checked, then the same percentage of process instance performance stats is excluded at the end of the scenario.":
+  - checkbox "Use the same % for tail" [checked]
+  - generic: Use the same % for tail
+- generic "Specify the date when the scenario will started":
+  - generic: Scenario start date and time
+  - textbox: October 5th 06:00
+  - button:
+- generic "Currency is information only. Used in the simulation results page.":
+  - generic: Currency
+  - button "EUR"
+- paragraph:
+  - text: Resources
+  - button "Add a new resource":
+- table:
+  - rowgroup:
+    - 'row "Name # of Resources Cost per Hour Timetable Remove"':
+      - columnheader "Name"
+      - columnheader "# of Resources"
+      - columnheader "Cost per Hour"
+      - columnheader "Timetable"
+      - columnheader "Remove"
+  - rowgroup:
+    - row "Adminisztrátor 2 12 Default":
+      - cell "Adminisztrátor":
+        - generic: "*"
+        - textbox: Adminisztrátor
+      - cell "2":
+        - generic: "*"
+        - spinbutton: "2"
+      - cell "12":
+        - spinbutton: "12"
+      - cell "Default":
+        - button "Default"
+      - cell:
+        - button "Remove resource":
+    - row "Targoncás 8 14 Default":
+      - cell "Targoncás":
+        - generic: "*"
+        - textbox: Targoncás
+      - cell "8":
+        - generic: "*"
+        - spinbutton: "8"
+      - cell "14":
+        - spinbutton: "14"
+      - cell "Default":
+        - button "Default"
+      - cell:
+        - button "Remove resource":
+    - row "Raktáros 36 10 Default":
+      - cell "Raktáros":
+        - generic: "*"
+        - textbox: Raktáros
+      - cell "36":
+        - generic: "*"
+        - spinbutton: "36"
+      - cell "10":
+        - spinbutton: "10"
+      - cell "Default":
+        - button "Default"
+      - cell:
+        - button "Remove resource":
+- paragraph:
+  - text: Timetables / Work schedules
+  - button "Add a new timetable":
+- table:
+  - rowgroup:
+    - row "Name Begin day End day Begin time End time Remove":
+      - columnheader "Name"
+      - columnheader "Begin day"
+      - columnheader "End day"
+      - columnheader "Begin time"
+      - columnheader "End time"
+      - columnheader "Remove"
+  - rowgroup:
+    - row "Default Monday Sunday 06:00 22:00":
+      - cell "Default":
+        - generic: "*"
+        - textbox: Default
+      - cell "Monday":
+        - button "Monday"
+      - cell "Sunday":
+        - button "Sunday"
+      - cell "06:00":
+        - generic "Begin time":
+          - textbox: 06:00
+          - button:
+      - cell "22:00":
+        - generic "End time":
+          - textbox: 22:00
+          - button:
+      - cell:
+        - button "Remove timetable":
+    - row "24/7 Monday Sunday 00:00 23:59":
+      - cell "24/7"
+      - cell "Monday":
+        - button "Monday"
+      - cell "Sunday":
+        - button "Sunday"
+      - cell "00:00":
+        - generic "Begin time":
+          - textbox: 00:00
+          - button:
+      - cell "23:59":
+        - generic "End time":
+          - textbox: 23:59
+          - button:
+      - cell
+- paragraph: Tasks
+- paragraph: Kapuregisztráció
+- generic "Resource / worker for the task":
+  - generic: Resource
+  - button "Adminisztrátor"
+- paragraph: Duration
+- generic "Distribution of duration":
+  - generic: Distribution
+  - button "Normal"
+- generic: Mean
+- spinbutton: "4"
+- generic: Std deviation
+- spinbutton: "1"
+- generic "Time unit for the values":
+  - generic: Time unit
+  - button "Minutes"
+- paragraph: Fixed cost and thresholds
+- generic "Fixed cost of task. For decimal place, point should be used.":
+  - generic: Fixed cost
+  - textbox: "0"
+- generic "If set, then additional statistics will be generated for the tasks exceeding threshold value. Includes fixed cost. For decimal place, point should be used.":
+  - generic: Cost threshold
+  - textbox
+- generic "If set, then additional statistics will be generated for the tasks exceeding threshold value. For decimal place, point should be used.":
+  - generic: Duration threshold
+  - textbox
+- generic "Time unit for the values":
+  - generic: Time unit
+  - button
+- paragraph: Lerakodás
+- generic "Resource / worker for the task":
+  - generic: Resource
+  - button "Targoncás"
+- paragraph: Duration
+- generic "Distribution of duration":
+  - generic: Distribution
+  - button "Normal"
+- generic: Mean
+- spinbutton: "40"
+- generic: Std deviation
+- spinbutton: "10"
+- generic "Time unit for the values":
+  - generic: Time unit
+  - button "Minutes"
+- paragraph: Fixed cost and thresholds
+- generic "Fixed cost of task. For decimal place, point should be used.":
+  - generic: Fixed cost
+  - textbox: "0"
+- generic "If set, then additional statistics will be generated for the tasks exceeding threshold value. Includes fixed cost. For decimal place, point should be used.":
+  - generic: Cost threshold
+  - textbox
+- generic "If set, then additional statistics will be generated for the tasks exceeding threshold value. For decimal place, point should be used.":
+  - generic: Duration threshold
+  - textbox
+- generic "Time unit for the values":
+  - generic: Time unit
+  - button
+- paragraph: Áruátvételi ellenőrzés
+- generic "Resource / worker for the task":
+  - generic: Resource
+  - button "Raktáros"
+- paragraph: Duration
+- generic "Distribution of duration":
+  - generic: Distribution
+  - button "Normal"
+- generic: Mean
+- spinbutton: "50"
+- generic: Std deviation
+- spinbutton: "15"
+- generic "Time unit for the values":
+  - generic: Time unit
+  - button "Minutes"
+- paragraph: Fixed cost and thresholds
+- generic "Fixed cost of task. For decimal place, point should be used.":
+  - generic: Fixed cost
+  - textbox: "0"
+- generic "If set, then additional statistics will be generated for the tasks exceeding threshold value. Includes fixed cost. For decimal place, point should be used.":
+  - generic: Cost threshold
+  - textbox
+- generic "If set, then additional statistics will be generated for the tasks exceeding threshold value. For decimal place, point should be used.":
+  - generic: Duration threshold
+  - textbox
+- generic "Time unit for the values":
+  - generic: Time unit
+  - button
+- paragraph: Kárjegyzőkönyv és félretétel
+- generic "Resource / worker for the task":
+  - generic: Resource
+  - button "Raktáros"
+- paragraph: Duration
+- generic "Distribution of duration":
+  - generic: Distribution
+  - button "Normal"
+- generic: Mean
+- spinbutton: "25"
+- generic: Std deviation
+- spinbutton: "10"
+- generic "Time unit for the values":
+  - generic: Time unit
+  - button "Minutes"
+- paragraph: Fixed cost and thresholds
+- generic "Fixed cost of task. For decimal place, point should be used.":
+  - generic: Fixed cost
+  - textbox: "0"
+- generic "If set, then additional statistics will be generated for the tasks exceeding threshold value. Includes fixed cost. For decimal place, point should be used.":
+  - generic: Cost threshold
+  - textbox
+- generic "If set, then additional statistics will be generated for the tasks exceeding threshold value. For decimal place, point should be used.":
+  - generic: Duration threshold
+  - textbox
+- generic "Time unit for the values":
+  - generic: Time unit
+  - button
+- paragraph: Betárolás
+- generic "Resource / worker for the task":
+  - generic: Resource
+  - button "Targoncás"
+- paragraph: Duration
+- generic "Distribution of duration":
+  - generic: Distribution
+  - button "Fixed"
+- generic: to
+- spinbutton [active]: "0"
+- generic "Time unit for the values":
+  - generic: Time unit
+  - button "Minutes"
+- paragraph: Fixed cost and thresholds
+- generic "Fixed cost of task. For decimal place, point should be used.":
+  - generic: Fixed cost
+  - textbox: "0"
+- generic "If set, then additional statistics will be generated for the tasks exceeding threshold value. Includes fixed cost. For decimal place, point should be used.":
+  - generic: Cost threshold
+  - textbox
+- generic "If set, then additional statistics will be generated for the tasks exceeding threshold value. For decimal place, point should be used.":
+  - generic: Duration threshold
+  - textbox
+- generic "Time unit for the values":
+  - generic: Time unit
+  - button
+- paragraph: Készletrögzítés
+- generic "Resource / worker for the task":
+  - generic: Resource
+  - button "Adminisztrátor"
+- paragraph: Duration
+- generic "Distribution of duration":
+  - generic: Distribution
+  - button "Normal"
+- generic: Mean
+- spinbutton: "7"
+- generic: Std deviation
+- spinbutton: "2"
+- generic "Time unit for the values":
+  - generic: Time unit
+  - button "Minutes"
+- paragraph: Fixed cost and thresholds
+- generic "Fixed cost of task. For decimal place, point should be used.":
+  - generic: Fixed cost
+  - textbox: "0"
+- generic "If set, then additional statistics will be generated for the tasks exceeding threshold value. Includes fixed cost. For decimal place, point should be used.":
+  - generic: Cost threshold
+  - textbox
+- generic "If set, then additional statistics will be generated for the tasks exceeding threshold value. For decimal place, point should be used.":
+  - generic: Duration threshold
+  - textbox
+- generic "Time unit for the values":
+  - generic: Time unit
+  - button
+- paragraph: Gateways
+- paragraph: Sérült tétel van?
+- paragraph: "Type: Exclusive (XOR)"
+- generic "The next step after this gateway.": nem (92%)
+- generic "The probability of executing this step next (0 - 100)":
+  - text: Probability
+  - generic: "*"
+  - spinbutton: "92"
+- generic "The next step after this gateway.": Kárjegyzőkönyv és félretétel
+- generic "The probability of executing this step next (0 - 100)":
+  - text: Probability
+  - generic: "*"
+  - spinbutton: "8"
+- generic "Generates simulation logs in MXML format. Simulation takes much more time if selected. MXML is a format to store event logs using an XML-based syntax. The logs could be analyzed with other process mining tools.":
+  - checkbox "Generate a MXML log"
+  - generic: Generate a MXML log
+- button "Start Simulation"
+- contentinfo:
+  - text: © 2020
+  - link "QBP Simulator":
+    - /url: https://www.qbp-simulator.com
+  - link "Facebook":
+    - /url: https://www.facebook.com/bimpsimulator/
+    - img "Facebook"
+  - iframe [id="fb-iframe"]
+- text: This website uses cookies to enhance your site experience and for analytical purposes. By proceeding on this website you are OK with this.
+- button "Close"
+- listbox:
+  - option [selected]: Fixed
+  - option: Normal
+  - option: Exponential
+  - option: Uniform
+  - option: Triangular
+  - option: Log-Normal
+  - option: Gamma
+  - option: Histogram

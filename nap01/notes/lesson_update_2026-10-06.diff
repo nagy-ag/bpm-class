@@ -1,0 +1,119 @@
+--- before/nap01/pages/01_folyamatabra.html
++++ updated/nap01/pages/01_folyamatabra.html
+@@ -10,7 +10,7 @@
+ <a href="#tartalom" class="skip-link">Ugrás a tartalomra</a><header class="topbar">
+   <div class="inner">
+     <div>
+-      <div class="course">Business Process Automation · Első nap: Bevezetés és környezetbeállítás</div>
++      <div class="course">Business Process Automation · Bevezetés és környezetbeállítás</div>
+       <div class="module">1. fejezet · Az első folyamatábrád</div>
+     </div>
+     <a href="../index.html" target="_blank" rel="noopener noreferrer">A nap kezdőlapja</a>
+@@ -47,10 +47,10 @@
+       <p style="margin:4px 0">A letöltések közt megjelent a kave_rendeles.bpmn fájl, és a neve végén tényleg .bpmn áll.</p><p style="margin:4px 0"><strong>Ha mást látsz:</strong> ha .svg lett a vége, a kép ikont választottad a lefelé nyíl helyett; töltsd le újra BPMN-ként.</p>
+     </div>
+ 
+-    <h2>A próba másik fele: megnyitás</h2>
++    <h2>Próbáld ki ezt is:</h2>
+     <ol class="steps">
+-      <li>Töltsd le a mi mintafájlunkat: <a class="dl" href="../docs/kave_rendeles_mini.bpmn" download target="_blank" rel="noopener noreferrer">kave_rendeles_mini.bpmn</a></li>
+-      <li>A demo.bpmn.io nyitóoldalán válaszd az <kbd>Open</kbd> lehetőséget (vagy a szerkesztőben a bal alsó mappa ikont), és nyisd meg a letöltött fájlt. Ugyanazt a folyamatot kell látnod, amit az előbb építettél.</li>
++      <li>Keresd meg a kave_rendeles_mini.bpmn állományt a Moodleről letöltött dokumentumok között (a docs mappában kell lennie).</li>
++      <li>A demo.bpmn.io nyitóoldalán válaszd az <kbd>Open</kbd> lehetőséget (vagy a szerkesztőben a bal alsó mappa ikont), és nyisd meg a fent azonosított állományt. Ugyanazt a folyamatot kell látnod, amit az előbb építettél.</li>
+     </ol>
+     <div class="box task">
+       <span class="t">Önálló mini-feladat: az első saját folyamatod</span>
+--- before/nap01/pages/02_coinmarketcap.html
++++ updated/nap01/pages/02_coinmarketcap.html
+@@ -3,15 +3,15 @@
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+-<title>CoinMarketCap: fiók és az első API-kulcsod | Első nap: Bevezetés és környezetbeállítás</title>
++<title>CoinMarketCap: fiók létrehozása és az első API-kulcsod | Első nap: Bevezetés és környezetbeállítás</title>
+ <link rel="stylesheet" href="../style.css">
+ <script src="../tananyag.js" defer></script></head>
+ <body>
+ <a href="#tartalom" class="skip-link">Ugrás a tartalomra</a><header class="topbar">
+   <div class="inner">
+     <div>
+-      <div class="course">Business Process Automation · Első nap: Bevezetés és környezetbeállítás</div>
+-      <div class="module">2. fejezet · CoinMarketCap: API-kulcs</div>
++      <div class="course">Business Process Automation · Bevezetés és környezetbeállítás</div>
++      <div class="module">2. fejezet · CoinMarketCap fiók és API</div>
+     </div>
+     <a href="../index.html" target="_blank" rel="noopener noreferrer">A nap kezdőlapja</a>
+   </div>
+@@ -19,13 +19,13 @@
+ <main id="tartalom">
+   <div class="card">
+     <div class="crumb">2 / 5 fejezet</div>
+-    <h1>CoinMarketCap: fiók és az első API-kulcsod</h1>
++    <h1>CoinMarketCap fiók létrehozása és az első API-kulcsod</h1>
+     <p class="lead">Kipróbálsz egy nyílt API-hívást, regisztrálsz a fejlesztői portálra, kulcsot generálsz, és lekéred vele a Bitcoin árfolyamát.</p>
+     <div class="box goal">
+       <span class="t">A fejezet végére</span>
+             <ul style="margin:6px 0 0">
+-        <li>kipróbáltál egy valódi API-hívást (először még fiók nélkül is);</li>
+-        <li>van CoinMarketCap fejlesztői fiókod és saját API-kulcsod;</li>
++        <li>kipróbáltál egy valódi API-hívást;</li>
++        <li>lesz CoinMarketCap fejlesztői fiókod és saját API-kulcsod;</li>
+         <li>a kulcsot ki is próbáltad: a böngésződben lekérted a Bitcoin árfolyamát;</li>
+         <li>tudod, mit szabad és mit nem szabad csinálni egy API-kulccsal.</li>
+       </ul>
+@@ -33,12 +33,12 @@
+     </div>
+ 
+     <h2>Mire lesz ez jó?</h2>
+-    <p>A harmadik napon azt tanuljuk, hogyan beszélnek egymással a rendszerek ember nélkül: ehhez kell az API. Egy valódi, ingyenes szolgáltatást használunk, a CoinMarketCap kriptoárfolyam-adatbázisát. Ebben az útmutatóban a fiókot és a saját kulcsodat készítjük el, és két gyors próbát is lefuttatunk; a feldolgozás (Excel, üzleti folyamat) a harmadik napon következik.</p>
++    <p>A harmadik napon azt tanuljuk, hogyan "beszélnek" egymással a rendszerek ember nélkül: ehhez kell az API. Ebben az útmutatóban egy CoinMarketCap fiókot hozunk létre, egy saját kulcsot generálunk, és két gyors próbát is lefuttatunk. Az API-on keresztül lekért adatok komplexebb feldolgozása a harmadik napon következik.</p>
+     <div class="box term">
+       <span class="t">API-hívás fiók nélkül</span>
+           <p>A CoinMarketCap egyes végpontjai fiók és API-kulcs nélkül is kipróbálhatók. Másold ezt a címet a böngésző címsorába, majd nyomj Entert:</p>
+     <pre class="codeblock"><code>https://pro-api.coinmarketcap.com/public-api/v1/cryptocurrency/listings/latest?start=1&amp;limit=10&amp;convert=USD</code></pre>
+-    <p>A válasz JSON-formátumú adat a piaci rangsor első tíz kriptovalutájáról. Az <strong>API</strong> (<em>Application Programming Interface</em>) olyan programozási felület, amelyen keresztül rendszerek adatot kérhetnek le vagy műveletet indíthatnak. A böngésző most HTTP-kérést küld egy konkrét címre, az <strong>API-végpontra</strong>, a szerver pedig strukturált adatot ad vissza. A következő gyakorlatokhoz saját kulcsot készítünk. Ha a nyilvános végpont átmenetileg nem válaszol, folytasd a regisztrációval és a lenti kulcsos próbával.</p>
++    <p>A válasz JSON-formátumú adat a piaci rangsor első tíz kriptovalutájáról. Az <strong>API</strong> (<em>Application Programming Interface</em>) olyan programozási felület, amelyen keresztül rendszerek adatot kérhetnek le vagy műveletet indíthatnak. A böngésző most HTTP-kérést küld egy konkrét címre, az <strong>API-végpontra</strong>, a szerver pedig strukturált adatot ad vissza. A következő gyakorlatokhoz saját kulcsra lesz szükségetek, ezért első lépésként saját API kulcsot kérünk.</p>
+ 
+     </div>
+     <ol class="steps">
+--- before/nap01/pages/03_zoho.html
++++ updated/nap01/pages/03_zoho.html
+@@ -10,8 +10,8 @@
+ <a href="#tartalom" class="skip-link">Ugrás a tartalomra</a><header class="topbar">
+   <div class="inner">
+     <div>
+-      <div class="course">Business Process Automation · Első nap: Bevezetés és környezetbeállítás</div>
+-      <div class="module">3. fejezet · Zoho CRM-fiók</div>
++      <div class="course">Business Process Automation · Bevezetés és környezetbeállítás</div>
++      <div class="module">3. fejezet · Zoho CRM</div>
+     </div>
+     <a href="../index.html" target="_blank" rel="noopener noreferrer">A nap kezdőlapja</a>
+   </div>
+@@ -24,15 +24,15 @@
+     <div class="box goal">
+       <span class="t">A fejezet végére</span>
+             <ul style="margin:6px 0 0">
+-        <li>van saját Zoho CRM-fiókod (ingyenes kiadás), EU-s adatközponttal;</li>
+-        <li>megismered az érdeklődő (lead), a kapcsolattartó (contact), az ügyfélcég (account) és az értékesítési lehetőség (deal) fogalmát;</li>
++        <li>lesz saját Zoho CRM-fiókod (ingyenes kiadás), EU-s adatközponttal;</li>
++        <li>megismered az érdeklődő (lead), a kapcsolattartó (contact), az ügyfél (account) és az értékesítési lehetőség (deal) fogalmát;</li>
+         <li>létrehoztad kézzel az első lead-rekordodat.</li>
+       </ul>
+ 
+     </div>
+ 
+     <h2>Mi az a CRM, egy mondatban?</h2>
+-    <p>A CRM (Customer Relationship Management) a vállalat ügyfélkapcsolati nyilvántartása: itt tartják nyilván az érdeklődőket, az ügyfeleket, az ajánlatokat és az üzletkötéseket. A legtöbb cégnél központi rendszer: az automatizálások jellemzően ebből olvasnak, és ebbe írnak; ezért a félévben többször visszatérünk hozzá: itt kézzel használod, a harmadik napon API-n keresztül, a hatodik napon tömeges adatbetöltéssel, a nyolcadik napon robottal.</p>
++    <p>A CRM (Customer Relationship Management) a vállalat ügyfélkapcsolati nyilvántartása: itt tartják nyilván az érdeklődőket, az ügyfeleket, az ajánlatokat és az üzletkötéseket. A legtöbb cégnél központi rendszer: az automatizálások jellemzően ebből olvasnak, és ebbe írnak; ezért a félévben többször visszatérünk hozzá. Ma a kézi adatbevitelt használod majd, a harmadik napon API-n keresztül viszünk be adatokat, a hatodik napon a tömeges adatbetöltést nézzük meg, míg a nyolcadik napon robottal módosítjuk a CRM tartalmát.</p>
+     <div class="box warn">
+       <span class="t">A legfontosabb ellenőrzés: az adatközpont</span>
+           <p>A regisztrációnál ellenőrizd az <strong>EU data center</strong> jelzést. A kurzus API-példái az EU-s címeket használják: <code>accounts.zoho.eu</code> és <code>www.zohoapis.eu</code>. Más adatközpontban létrehozott fiókhoz a későbbi példák címeit is hozzá kell igazítani. Az első belépés után a <code>crm.zoho.eu</code> címet ellenőrizd.</p>
+@@ -45,7 +45,7 @@
+       <li>Közben az e-mail-fiókodba is érkezik egy levél a Zoho-tól. Nyisd meg, és kattints a <kbd>CONFIRM YOUR ACCOUNT</kbd> gombra: ez az e-mail-címed megerősítése, később (például a harmadik nap API-fejlesztői felületénél) is szükség lesz rá.<figure class="shot"><img src="../img/zoho2026_04_megerosito_email.png" alt="A megerősítő levél a CONFIRM YOUR ACCOUNT gombbal" loading="lazy"><figcaption>A megerősítő levél a CONFIRM YOUR ACCOUNT gombbal</figcaption></figure></li>
+       <li>A sikeres ellenőrzés után egyből a CRM-ben találod magad: a címsorban már <code>crm.zoho.eu</code> áll (ez az EU-s adatközpont címe). Egy <em>Getting Started with Zoho CRM</em> ablak fogad. A <em>Company Name</em> mezőbe írd: a vezetékneved + <em>Learning Kft</em> (például <em>Kovacs Learning Kft</em>; a képen példaként <em>Transport Co</em> szerepel). Az <em>Employee Count</em>-hoz egy kis szám is jó. Az időzónát, a nyelvet és a pénznemet hagyd, ahogy felajánlja. A <strong>Load Sample data</strong> pipa maradjon bekapcsolva: így a rendszer mintaadatokkal indul, és nem üres képernyőket látsz majd. Végül <kbd>Get Started</kbd>.<figure class="shot"><img src="../img/zoho2026_05_szervezetnev_ures.png" alt="A Getting Started ablak; a piros keretben a bekapcsolva hagyandó Load Sample data pipa" loading="lazy"><figcaption>A Getting Started ablak; a piros keretben a bekapcsolva hagyandó Load Sample data pipa</figcaption></figure><figure class="shot"><img src="../img/zoho2026_06_szervezetnev_kitoltve.png" alt="Kitöltve: cégnév és létszám; a Get Started gombbal zárod" loading="lazy"><figcaption>Kitöltve: cégnév és létszám; a Get Started gombbal zárod</figcaption></figure></li>
+       <li>A kezdőképernyő jobb alsó sarkában megjelenik a <em>SAMPLE DATA POPULATION</em> értesítés. Várd meg, amíg azt írja: <strong>Sample data added successfully</strong> (nagyjából fél perc). Utána a jobb felső <kbd>Skip</kbd> gombbal lépj túl az üdvözlő beállítás-listán (csapattag-meghívás, e-mail-bekötés): ezekre a kurzusban nem lesz szükség.<figure class="shot"><img src="../img/zoho2026_07_crm_kezdokepernyo.png" alt="A kezdőképernyő: keretben a Skip gomb és a kész mintaadat-betöltés értesítése" loading="lazy"><figcaption>Az értesítés azt is elárulja, hol lehet a mintaadatokat később eltávolítani (Settings, Data Administration, Remove Sample Data). Most ne távolítsd el őket.</figcaption></figure></li>
+-      <li>A <strong>Home</strong> irányítópulton a mintaadatok miatt nyitott értékesítési lehetőségeket, feladatokat és érdeklődőket látsz. A bal oldali <strong>Sales</strong> csoportban keresd a <kbd>Leads</kbd> (érdeklődők), <kbd>Contacts</kbd> (kapcsolattartók), <kbd>Accounts</kbd> (ügyfélcégek) és <kbd>Deals</kbd> (értékesítési lehetőségek) modulokat. Az <strong>Activities</strong> csoportban a feladatok, találkozók és hívások vannak.<figure class="shot"><img src="../img/zoho2026_08_home_dashboard.png" alt="A Home irányítópult a mintaadatokkal; balra a modullista (Sales: Leads, Contacts, Accounts, Deals)" loading="lazy"><figcaption>A Home irányítópult a mintaadatokkal; balra a modullista (Sales: Leads, Contacts, Accounts, Deals)</figcaption></figure></li>
++      <li>A <strong>Home</strong> irányítópulton a mintaadatok miatt nyitott értékesítési lehetőségeket, feladatokat és érdeklődőket látsz. A bal oldali <strong>Sales</strong> csoportban keresd a <kbd>Leads</kbd> (érdeklődők), <kbd>Contacts</kbd> (kapcsolattartók), <kbd>Accounts</kbd> (ügyfelek) és <kbd>Deals</kbd> (értékesítési lehetőségek) modulokat. Az <strong>Activities</strong> csoportban a feladatok, találkozók és hívások vannak.<figure class="shot"><img src="../img/zoho2026_08_home_dashboard.png" alt="A Home irányítópult a mintaadatokkal; balra a modullista (Sales: Leads, Contacts, Accounts, Deals)" loading="lazy"><figcaption>A Home irányítópult a mintaadatokkal; balra a modullista (Sales: Leads, Contacts, Accounts, Deals)</figcaption></figure></li>
+       <li>A regisztráció a fizetős kiadás 15 napos próbájával indul: ez normális, nem kell hozzá bankkártya, és lejáratkor a fiók magától a nem lejáró <strong>Free</strong> kiadásra vált, az adataid megmaradnak. A bemutatott alapműveletekhez a Free kiadás elegendő; a fiókodban ellenőrizd az elérhető funkciókat.</li>
+       <li>Nyisd meg a bal oldali <kbd>Leads</kbd> modult. A mintarekordok neve mellett <em>(Sample)</em> jelzés szerepel. Ezeket hagyd meg; a következő gyakorlatban egy saját érdeklődőt hozol létre. A hatodik napon külön kampányjelöléssel töltöd be a saját partnerlistádat.<figure class="shot"><img src="../img/zoho2026_09_leads_mintak.png" alt="A Leads modul mintarekordjai és a Create Lead gomb." loading="lazy"><figcaption>A Leads modul mintarekordjai és a Create Lead gomb.</figcaption></figure></li>
+     </ol>

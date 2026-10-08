@@ -1,0 +1,10 @@
+{
+  "record_id": "1037931000000661001",
+  "outcome": "created_and_verified",
+  "http_status": 201,
+  "platform": "Actual Google Colab cell9",
+  "checked_at": "2026-10-07T12:41:26.785504+00:00",
+  "exact_fields_readback": true,
+  "crm_ui_verified": true,
+  "screenshot": "../../working/api_mini_lead.png"
+}

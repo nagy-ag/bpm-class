@@ -1,0 +1,19 @@
+[Information] Validating project...
+[Information] Building for execution...
+[Information] Starting execution...
+[Information] ExcelRobot execution started
+[Information] 12 ügyfelet olvastam be.
+[Information] Kész: ugyfelek_minositve_v2.xlsx; threshold=150000; rows=12
+[Information] ExcelRobot execution ended in: 00:00:17
+{
+  "Result": "Success",
+  "Code": "ToolResult",
+  "Data": {
+    "output": "{}",
+    "hasErrors": false,
+    "errorMessage": null,
+    "profiling": null,
+    "debugState": null,
+    "debugDetails": null
+  }
+}

@@ -1,0 +1,16 @@
+[Information] Starting execution...
+[Information] Fajlrendezo execution started
+[Information] SORT_COMPLETE|moved=0
+[Information] Fajlrendezo execution ended in: 00:00:00
+{
+  "Result": "Success",
+  "Code": "ToolResult",
+  "Data": {
+    "output": "{}",
+    "hasErrors": false,
+    "errorMessage": null,
+    "profiling": null,
+    "debugState": null,
+    "debugDetails": null
+  }
+}

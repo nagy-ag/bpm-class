@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kávézó: térképtől a részletes modellig | második nap · Folyamatmodellezés és szimuláció</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="inner">
+    <div>
+      <div class="course">Business Process Automation · Második nap: Folyamatmodellezés és szimuláció</div>
+      <div class="module">1. blokk · Kávézó: az alap elemkészlet</div>
+    </div>
+    <a href="../index.html" target="_blank" rel="noopener noreferrer">⌂ A nap kezdőlapja</a>
+  </div>
+</header>
+<main id="tartalom">
+  <div class="card">
+    <div class="crumb">1 / 6 blokk</div>
+    <h1>Kávézó: térképtől a részletes modellig</h1>
+    <p class="lead">Valódi példán tanulod meg az esemény, tevékenység és XOR-kapu használatát, és megépíted az első elágazó folyamatodat.</p>
+    <div class="box goal">
+      <span class="t">A blokk végére</span>
+            <ul style="margin:6px 0 0">
+        <li>felrajzoltál egy valódi, elágazásokat is tartalmazó folyamatot bpmn.io-ban;</li>
+        <li>használtad az alap elemkészletet: esemény, tevékenység, XOR-kapu, címkézett ágak;</li>
+        <li>láttad, hogyan néz ki ugyanaz a kávézó folyamattérképként és részletes modellként.</li>
+      </ul>
+
+    </div>
+
+    <h2>Két nézet ugyanarra a kávézóra - ezt még nem kell megcsinálnod, csak nézd át alaposan</h2>
+    <p>Az első ábra a kávézó működését négy nagy területre bontja. A kis pluszjel összecsukott alfolyamatot jelöl; a részletes tartalom az alfolymat megnyítása után lesz látható. A második ábra az ügyfélkiszolgálás részletesebb nézete, pincér- és konyhai sávval, döntésekkel és visszacsatolással.</p>
+<figure class="shot"><img src="../img/kavezo_teljes.png" alt="A kávézó folyamattérképe négy alfolyamattal" loading="lazy"><figcaption>Folyamattérkép: nem részletez, hanem területekre bont. Ilyet rajzolsz először egy vállalatnál.</figcaption></figure><figure class="shot"><img src="../img/kavezo_kezdetleges.png" alt="Az ügyfélkiszolgálás részletes modellje két sávval" loading="lazy"><figcaption>Ugyanennek egy szelete kibontva: pincérek és konyha, kérdésekkel (XOR) és címkézett ágakkal.</figcaption></figure>    <div class="box term">
+      <span class="t">A mai minimális szótár</span>
+            <ul style="margin:6px 0 0">
+        <li><strong>Esemény</strong> (kör): valami történik; vékony = kezdő, vastag = záró.</li>
+        <li><strong>Tevékenység</strong> (lekerekített téglalap): valaki csinál valamit.</li>
+        <li><strong>XOR-kapu</strong> (rombusz, X): döntési pont, egy ág megy tovább; a kapun kérdés, az ágakon válasz-címke.</li>
+        <li><strong>Sáv (lane)</strong>: ki csinálja; egy medencén (pool) belüli felelősök.</li>
+      </ul>
+
+    </div>
+
+    <div class="box term"><span class="t">Két eltérő kapu: XOR és AND</span><p>Az <strong>XOR</strong> elágazás egyetlen útvonalat választ; az XOR összevezetés a kiválasztott ágat vezeti tovább, nem vár mindkét ágra. Az <strong>AND</strong> (pluszjel a rombuszban) minden kimenő ágat elindít; az AND összevezetés minden bejövő ágra vár.</p><p>Példa: a számla kiállítása és az áru kiszedése párhuzamosan történhet. AND elágazás után két tevékenység, majd AND összevezetés következik; a csomagot csak ezután adjuk fel. A hatodik blokkban ilyen modellt is látsz majd.</p></div><h2>Építsd meg a kávérendelés elvitellel folyamatábrát</h2>
+    <ol class="steps">
+      <li>Nyisd meg a <a href="https://demo.bpmn.io/" target="_blank" rel="noopener noreferrer">demo.bpmn.io</a> szerkesztőt, és a nyitóoldalon válaszd a <kbd>create</kbd> lehetőséget (vagy a szerkesztő bal alsó <kbd>+</kbd> ikonját). Új diagram létrehozása előtt mentsd a korábbi munkádat. A kezdő eseményre duplán kattintva adhatsz nevet; a kijelölt elem melletti helyi eszköztár téglalapjával új tevékenységet fűzhetsz hozzá. Egy elem típusát a csavarkulccsal válthatod át.</li>
+      <li>Rajzold meg a törzset: <em>Vendég rendel</em> (kezdő esemény) → <em>Rendelés felvétele</em> → <em>Kávé elkészítése</em>.</li>
+      <li>Tegyél a folyamatba döntést: a <em>Kávé elkészítése</em> után XOR-kaput (rombusz a palettáról), a kapura írd rá a kérdést: <em>Helyben fogyasztja?</em></li>
+      <li>A kapuból indíts két folyamatágat két új tevékenységhez: <strong>igen</strong> → Csészébe kiöntés; <strong>nem</strong> → Elviteles pohárba töltés. A nyilat kijelölve, majd duplán kattintva írd be az ág címkéjét. A következő lépéseket a helyi eszköztárral fűzheted hozzá, meglévő elemeket pedig az összekötő nyíl ikonnal kapcsolhatsz össze.</li>
+      <li>Zárd össze a két ágat egy második XOR-kapuval (ennek nem kell kérdés, mivel csak összeköti a két ágat), majd <em>Fizetés</em> → <em>Vendég kiszolgálva</em> (záró esemény).</li>
+      <li>Mentsd le <em>kave_xor.bpmn</em> néven a BPA_kurzus mappádba; a 4. blokkban ezt fogjuk szimulálni.</li>
+    </ol>
+<figure class="shot"><img src="../img/kave_rendeles_xor.png" alt="A kész referenciamodell: kávérendelés XOR-elágazással" loading="lazy"><figcaption>Referencia. Ha a tiéd szerkezetre ugyanez, tökéletes; az elrendezés (mi hol van a vásznon) nem számít.</figcaption></figure>    <div class="box check">
+      <span class="t">Ellenőrzőpont: ezt kell látnod</span>
+      <p style="margin:4px 0">A kapun kérdés van, mindkét kimenő ágon címke (igen/nem), és a két ág újra összezár, mielőtt a fizetéshez ér.</p><p style="margin:4px 0"><strong>Ha mást látsz:</strong> ha a nyíl nem oda mutat, ahova akartad: fogd meg a nyíl végét és húzd át; ha egy elem árván lóg, a bpmn.io halványan jelzi is.</p>
+    </div>
+    <h2>Gyakorlati példa folyamatmodellezésre</h2>
+    <p>A folyamatmodellezés nem csak egy kávézó esetében működik, alkalmazható szinte bármilyen környzetben. Nézd meg az alábbi videót és gondold végig, milyen lehet egy a videóban látható üzem folyamatábrájának komplexitása.</p>
+    <a class="video-card" href="https://www.youtube.com/watch?v=obO7c86ObIg" target="_blank" rel="noopener noreferrer"><span class="video-cover"><img src="../img/HUNzj54HZ-E.jpg" alt="A videó borítóképe"><span class="video-play" aria-hidden="true">▶</span></span><span class="video-description"><span class="video-label">YouTube · Videó</span><strong>Zöldségek mosása és csomagolása</strong><span>Videó megnyitása új lapon →</span></span></a>
+    <div class="box term">
+      <span class="t">Hol használnád még?</span>
+            <ul style="margin:6px 0 0">
+        <li>Reklamációkezelés az ügyfélszolgálaton: ugyanez, csak a "kávé" helyett "panasz".</li>
+        <li>Bármely jóváhagyási folyamat: kérdés a kapun, címkék az ágakon.</li>
+        <li>A 3. blokkban: biztosítói kárfelvétel, több szereplővel.</li>
+      </ul>
+
+    </div>
+    <div class="box term">
+      <span class="t">További olvasnivaló (nem kötelező)</span>
+            <ul style="margin:6px 0 0">
+        <li>M. Dumas, M. La Rosa, J. Mendling, H. Reijers: <em>Fundamentals of Business Process Management</em>, 2. kiadás, Springer, 2018: 3. fejezet (Essential Process Modeling): a mai elemkészlet tankönyvi mélységben.</li>
+        <li>BPMN 2.0 jelöléskártya és specifikáció: <a href="https://www.omg.org/spec/BPMN/2.0.2/" target="_blank" rel="noopener noreferrer">omg.org/spec/BPMN/2.0.2</a>.</li>
+      </ul>
+
+    </div>
+
+    <nav class="pn">
+      <span></span>
+      <a class="next" href="02_webshop.html" target="_blank" rel="noopener noreferrer">Következő: Webshop ▸</a>
+    </nav>
+  </div>
+</main>
+</body>
+</html>

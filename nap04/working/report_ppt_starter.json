@@ -1,0 +1,7 @@
+{
+  "Result": "Success",
+  "Code": "ToolResult",
+  "Data": {
+    "message": "<Activity x:Class=\"PowerPointApplicationScope\" xmlns=\"http://schemas.microsoft.com/netfx/2009/xaml/activities\" xmlns:ui=\"http://schemas.uipath.com/workflow/activities\" xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\">\r\n  <ui:PowerPointApplicationScope Password=\"{x:Null}\" PresentationPath=\"{x:Null}\">\r\n    <ui:PowerPointApplicationScope.Body>\r\n      <ActivityAction x:TypeArguments=\"ui:IPresentationQuickHandle\">\r\n        <ActivityAction.Argument>\r\n          <DelegateInArgument x:TypeArguments=\"ui:IPresentationQuickHandle\" Name=\"PowerPoint\" />\r\n        </ActivityAction.Argument>\r\n        <Sequence DisplayName=\"Do\" />\r\n      </ActivityAction>\r\n    </ui:PowerPointApplicationScope.Body>\r\n  </ui:PowerPointApplicationScope>\r\n</Activity>"
+  }
+}

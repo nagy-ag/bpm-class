@@ -1,0 +1,16 @@
+[Information] Starting execution...
+[Information] CMC_Auto_Refresh execution started
+[Information] CMC fetch and native Excel refresh saved
+[Information] CMC_Auto_Refresh execution ended in: 00:01:02
+{
+  "Result": "Success",
+  "Code": "ToolResult",
+  "Data": {
+    "output": "{}",
+    "hasErrors": false,
+    "errorMessage": null,
+    "profiling": null,
+    "debugState": null,
+    "debugDetails": null
+  }
+}

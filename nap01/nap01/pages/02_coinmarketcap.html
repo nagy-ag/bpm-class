@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CoinMarketCap: fiók létrehozása és az első API-kulcsod | Első nap: Bevezetés és környezetbeállítás</title>
+<link rel="stylesheet" href="../style.css">
+<script src="../tananyag.js" defer></script></head>
+<body>
+<a href="#tartalom" class="skip-link">Ugrás a tartalomra</a><header class="topbar">
+  <div class="inner">
+    <div>
+      <div class="course">Business Process Automation · Bevezetés és környezetbeállítás</div>
+      <div class="module">2. fejezet · CoinMarketCap fiók és API</div>
+    </div>
+    <a href="../index.html" target="_blank" rel="noopener noreferrer">A nap kezdőlapja</a>
+  </div>
+</header>
+<main id="tartalom">
+  <div class="card">
+    <div class="crumb">2 / 5 fejezet</div>
+    <h1>CoinMarketCap fiók létrehozása és az első API-kulcsod</h1>
+    <p class="lead">Kipróbálsz egy nyílt API-hívást, regisztrálsz a fejlesztői portálra, kulcsot generálsz, és lekéred vele a Bitcoin árfolyamát.</p>
+    <div class="box goal">
+      <span class="t">A fejezet végére</span>
+            <ul style="margin:6px 0 0">
+        <li>kipróbáltál egy valódi API-hívást;</li>
+        <li>lesz CoinMarketCap fejlesztői fiókod és saját API-kulcsod;</li>
+        <li>a kulcsot ki is próbáltad: a böngésződben lekérted a Bitcoin árfolyamát;</li>
+        <li>tudod, mit szabad és mit nem szabad csinálni egy API-kulccsal.</li>
+      </ul>
+
+    </div>
+
+    <h2>Mire lesz ez jó?</h2>
+    <p>A harmadik napon azt tanuljuk, hogyan "beszélnek" egymással a rendszerek ember nélkül: ehhez kell az API. Ebben az útmutatóban egy CoinMarketCap fiókot hozunk létre, egy saját kulcsot generálunk, és két gyors próbát is lefuttatunk. Az API-on keresztül lekért adatok komplexebb feldolgozása a harmadik napon következik.</p>
+    <div class="box term">
+      <span class="t">API-hívás fiók nélkül</span>
+          <p>A CoinMarketCap egyes végpontjai fiók és API-kulcs nélkül is kipróbálhatók. Másold ezt a címet a böngésző címsorába, majd nyomj Entert:</p>
+    <pre class="codeblock"><code>https://pro-api.coinmarketcap.com/public-api/v1/cryptocurrency/listings/latest?start=1&amp;limit=10&amp;convert=USD</code></pre>
+    <p>A válasz JSON-formátumú adat a piaci rangsor első tíz kriptovalutájáról. Az <strong>API</strong> (<em>Application Programming Interface</em>) olyan programozási felület, amelyen keresztül rendszerek adatot kérhetnek le vagy műveletet indíthatnak. A böngésző most HTTP-kérést küld egy konkrét címre, az <strong>API-végpontra</strong>, a szerver pedig strukturált adatot ad vissza. A következő gyakorlatokhoz saját kulcsra lesz szükségetek, ezért első lépésként saját API kulcsot kérünk.</p>
+
+    </div>
+    <ol class="steps">
+      <li>Nyisd meg ezt az oldalt: <a href="https://coinmarketcap.com/api/" target="_blank" rel="noopener noreferrer">https://coinmarketcap.com/api/</a> és kattints a <kbd>Get API Key</kbd> gombra.<figure class="shot"><img src="../img/cmc_2026_portal.png" alt="A CoinMarketCap API oldala a Get API Key gombbal (2026-os felület)" loading="lazy"><figcaption>A fejlesztői portál nyitóoldala. A kék Get API Key gomb visz a regisztrációhoz.</figcaption></figure></li>
+      <li>A regisztrációs űrlapon add meg az e-mail-címedet, a nevedet és egy jelszót. A <kbd>Plan</kbd> mezőben válaszd a <strong>Basic (Explore for free)</strong> lehetőséget. Ha nem kérsz hírlevelet, vedd ki a hozzá tartozó pipát. Fogadd el a feltételeket, majd kattints a <kbd>Create my account</kbd> gombra.<figure class="shot"><img src="../img/cmc_2026_signup.png" alt="A regisztrációs űrlap: Email, Name, Password, Plan: Basic - Explore for free" loading="lazy"><figcaption>A regisztrációs űrlap. A Plan maradjon Basic (ingyenes); a hírlevelet nem kérjük.</figcaption></figure></li>
+      <li>A megadott címre megerősítő e-mail érkezik a CoinMarketCaptől: nyisd meg, kattints a benne lévő megerősítő gombra, majd lépj be a fiókodba.</li>
+      <li>Belépés után a fejlesztői irányítópult (Developers, Overview) fogad: <a href="https://pro.coinmarketcap.com/account" target="_blank" rel="noopener noreferrer">https://pro.coinmarketcap.com/account</a>. Bal oldalt az <strong>API Key</strong> kártyán a kulcsod csillagokkal takarva áll: vidd fölé az egeret, és a megjelenő <kbd>COPY KEY</kbd> gombbal másold vágólapra, majd mentsd el egy jegyzetfájlba a BPA_kurzus mappádba. Jobbra fent a <strong>BASIC PLAN</strong> jelvény igazolja, hogy az ingyenes csomagon vagy; mellette a kreditszámlálók mutatják a felhasználásodat.<figure class="shot"><img src="../img/cmc2026_dashboard_copykey.png" alt="A 2026-os irányítópult: takart API-kulcs a COPY KEY gombbal (keretben), jobbra fent a BASIC PLAN jelvény" loading="lazy"><figcaption>Lent az API Request Log minden hívásodat listázza; a mini-feladat lekérése (id=1,1027) pontosan így jelenik majd meg benne. A képen a kulcs és az IP-cím ki van takarva: a saját kulcsodat te se mutasd meg senkinek.</figcaption></figure></li>
+    </ol>
+    <div class="box warn">
+      <span class="t">Az API-kulcs a saját fiókodhoz tartozik</span>
+            <ul style="margin:6px 0 0">
+        <li>Ne oszd meg senkivel, és ne tedd közzé (fórum, GitHub, közös dokumentum).</li>
+        <li>A kurzusfeladatokban a saját kulcsodat mindig te írod be; a beadandókba soha nem kerül bele.</li>
+        <li>Ha véletlenül kiszivárgott, a portálon bármikor tudsz új kulcsot generálni.</li>
+      </ul>
+
+    </div>
+
+    <h2>Az első kulcsos lekérdezésed</h2>
+    <p>Másold be az alábbi címet a böngésződbe, és az <em>IDE_A_KULCSOD</em> részt cseréld ki a saját kulcsodra:</p>
+    <pre class="codeblock"><code>https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?id=1&amp;convert=EUR&amp;CMC_PRO_API_KEY=IDE_A_KULCSOD</code></pre>
+    <p>Az <code>id=1</code> a Bitcoin azonosítója a rendszerükben, a <code>convert=EUR</code> pedig azt kéri, hogy euróban kapd az árat.</p>
+    <div class="box check"><span class="t">Ellenőrzőpont: az ár megtalálása</span><p>Sikeres kérésnél a <code>status.error_code</code> értéke <code>0</code>. Az <code>error_message</code> mező ilyenkor üres vagy <code>null</code>; a mező puszta jelenléte nem jelent hibát.</p><p>A Bitcoin euróban kifejezett ára ebben a példában ezen az útvonalon található: <code>data → 1 → quote → EUR → price</code>. A <code>1</code> a Bitcoin azonosítója; a <code>price</code> értéke egy szám.</p><pre class="codeblock"><code>{
+  "status": {"error_code": 0, "error_message": null},
+  "data": {
+    "1": {
+      "symbol": "BTC",
+      "quote": {"EUR": {"price": 50000.12}}
+    }
+  }
+}</code></pre><p class="note">Rövidített, szemléltető példa. A fenti ár kitalált; a saját lekérdezésed aktuális adatot ad.</p><figure class="shot"><img src="../img/cmc_10_json.png" alt="Kulcsos lekérés válasza a böngésző JSON-nézetében" loading="lazy"><figcaption>Egy valódi válasz a böngésző JSON-nézetében (Firefoxban ilyen, más böngészőben egyszerűbb szövegként jelenhet meg). A keretben a status alatti <code>error_code: 0</code> és a data alatti <code>1</code> kulcs, vagyis a Bitcoin. Az ár ennél lejjebb, a <code>quote</code> blokkban található.</figcaption></figure><h3>Ha a kérés nem sikerül</h3><ul><li><strong>401 vagy érvénytelen kulcs:</strong> ellenőrizd, hogy a teljes saját kulcsot másoltad be, szóköz nélkül, az IDE_A_KULCSOD helyére.</li><li><strong>429 vagy kerettúllépés:</strong> várj a következő próbával; a fejlesztői portálon ellenőrizd a felhasználást.</li><li><strong>400 vagy hibás paraméter:</strong> ellenőrizd az id és convert értékét, valamint a kérdőjelet és az &amp; elválasztókat.</li><li><strong>Hálózati hiba:</strong> ellenőrizd az internetkapcsolatot. Ha a választ csak egyetlen hosszú sorban látod, használd a böngésző keresését a price mezőhöz.</li></ul></div>
+    <div class="box warn">
+      <span class="t">Oktatási megjegyzés: ez a böngészős mód csak demó</span>
+          <p>A kulcsos hívást azért próbáljuk ki a böngészőben, mert így a leggyorsabb megérteni a működését. Valós alkalmazásban az API-kulcsot nem helyezzük az URL-be és nem építjük kliensoldali kódba: ott a kulcs konfigurációban vagy biztonságos tárolóban marad, és a kérést a szerver vagy a robot küldi; a harmadik és a nyolcadik napon mi is így dolgozunk majd. Az ilyen URL ráadásul a böngésző előzményeibe is bekerül, ezért a próbák után érdemes onnan törölni.</p>
+
+    </div>
+    <div class="box task">
+      <span class="t">Mini-feladat</span>
+          <p>Kérd le egyszerre a Bitcoin és az Ethereum árfolyamát: az <code>id=1</code> helyére írj <code>id=1,1027</code>-et. Keresd meg a válaszban mindkét árat. Melyik mennyit ér most euróban?</p>
+
+    </div>
+    <h2>Az ingyenes (Basic) csomag keretei</h2>
+    <div class="table-scroll"><table class="t">
+      <tr><th scope="col">Keret</th><th scope="col">Ingyenes (Basic) csomag</th></tr>
+      <tr><td>Havi keret</td><td>15 000 kredit (egy egyszerű lekérés jellemzően 1 kredit)</td></tr>
+      <tr><td>Sebesség</td><td>legfeljebb 50 lekérés percenként</td></tr>
+      <tr><td>Felhasználás</td><td>A kurzusban oktatási célra használjuk. Egy későbbi üzleti alkalmazásnál az aktuális licenc- és felhasználási feltételeket külön ellenőrizni kell.</td></tr>
+    </table>
+    </div><p class="note">A kurzus összes feladata bőven belefér ebbe a keretbe; napi pár tucat lekérésnél többre nem lesz szükség. A keretek időnként változnak: az aktuális állapotot a portál Plan and Billing oldalán látod.</p>
+    <div class="box term">
+      <span class="t">Hol használnád még?</span>
+            <ul style="margin:6px 0 0">
+        <li>Ugyanígy működik szinte minden üzleti adatszolgáltatás: tőzsdei árak, devizaárfolyamok, időjárás, szállítási díjak.</li>
+        <li>A nyolcadik napon ugyanezt a lekérést a robotod végzi majd el.</li>
+      </ul>
+
+    </div>
+    <div class="box term">
+      <span class="t">További olvasnivaló (nem kötelező)</span>
+            <ul style="margin:6px 0 0">
+        <li>A CoinMarketCap API hivatalos dokumentációja: <a href="https://coinmarketcap.com/api/documentation/" target="_blank" rel="noopener noreferrer">coinmarketcap.com/api/documentation</a>: a végpontok és a kreditszámítás referenciája.</li>
+        <li>A fejlesztői portál súgója (kulcs, csomagok, számlálók): <a href="https://coinmarketcap.com/api/faq/" target="_blank" rel="noopener noreferrer">coinmarketcap.com/api/faq</a>.</li>
+      </ul>
+
+    </div>
+
+    <nav class="pn">
+      <a href="01_folyamatabra.html" target="_blank" rel="noopener noreferrer">Előző: Folyamatábra</a>
+      <a class="next" href="03_zoho.html" target="_blank" rel="noopener noreferrer">Következő: Zoho CRM</a>
+    </nav>
+  </div>
+</main>
+</body>
+</html>

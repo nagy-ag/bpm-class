@@ -1,0 +1,13 @@
+{
+  "verified": true,
+  "rows": 12,
+  "classifications": {
+    "normál": 6,
+    "kiemelt": 6
+  },
+  "input_sha256": "fde91c4eb136216ef5748fea2960ac04497226a730a5cd3986bf07a96c5b9b60",
+  "output_sha256": "3c72e8023bdba87f07f26cbb392f9eee4b4666c58478f611855eec70f7ac82b5",
+  "first_three_columns_preserved": true,
+  "actual_run": "../excel_100000_run.json",
+  "duration": "00:00:34"
+}

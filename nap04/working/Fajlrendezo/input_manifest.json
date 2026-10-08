@@ -1,0 +1,33 @@
+{
+  "root": "exercise/gyakorlo_mappa",
+  "files": {
+    "arajanlat_atlas.docx": "d6dd3b3d2b28890600c0c0c5f865c43c7f403fe4353487ec188b59b33456c7a3",
+    "arajanlat_meridian.docx": "4c528732a03194151787e128d588f1443edcdec9d89b6dd154a481d2ded271d5",
+    "arajanlat_northbridge.docx": "e1238b442db91846617e11bd1d7ae7a9202379dd06f1a24ff848fa5e2784d39e",
+    "jegyzet_atlas.txt": "4ae96f384a3b8cc87b757261ee4955c530a3e82a565974c35f45e4d6b3d94478",
+    "jegyzet_meridian.txt": "79987643d85f58f7ff2bf584a4cec02e4017505b996e122ae25aba13df1062fe",
+    "logo_verzio1.png": "c7ba51d3908c43fd85ea3a8410cb4159456f765a504a8fa54f448fc043607091",
+    "logo_verzio2.png": "d764f8e2db3295a187e1602b5bb3512ad1302567af154ce5a5af261786e32b6e",
+    "logo_verzio3.png": "3bab384d5e5ff31b2393ad5bb9c2be94e529d600524dcf26cc8db8ab41307fee",
+    "riport_Q1.xlsx": "4bca357df463160fe665599dae41f25070271789107ea129d141cec1c8a0b22a",
+    "riport_Q2.xlsx": "753a9197ec044a25b7b6dd1536af4b2afc7c16a793c88fd1e9a3ca5ffe21a677",
+    "riport_Q3.xlsx": "7da96cc22aa43de205f172f603bcd1aa06ea7c906dfe4b07750652b42d493592",
+    "riport_Q4.xlsx": "ca1bfb92a2a621c76fcd15083726e54bd35340d9d8a7c78d6a54d2a2c6579b4c",
+    "szamla_2026_100.pdf": "564b23f9cb29099474989c227ba453cd6b666dd487f99868531c3d8cf029f43c",
+    "szamla_2026_107.pdf": "97ec5eb567ae003ee7d6f94704fb0ca880bd30813ecf056131786edb0d3b5caa",
+    "szamla_2026_114.pdf": "bf57dc9f9ba4b4e328cc0ea8029aa016a601184fba151b2070c1d323b89d2b22",
+    "szamla_2026_121.pdf": "22d4e90a436ddff1b94511009a8b79a6fe8f9efc07083763f8fb7583c95ea11b",
+    "szamla_2026_128.pdf": "a05aa0f8276878173194214b3e7bf591705500a78f209e1027c56cd58a0d3cc4",
+    "szamla_2026_135.pdf": "848d7de88d0c626dd9fc49fa43e80450bfcbb5c5690bdc22339ee7ac3da43a3e",
+    "szerzodes_terv_atlas.docx": "5b962e70af99d634039738b013c9365a2684e290089c7a2d138b46155e1f3157",
+    "szerzodes_terv_meridian.docx": "7e48aec2d6476916503614f508b47fe9d9f8a34616bf03feccd0a93fdc988468"
+  },
+  "counts": {
+    ".docx": 5,
+    ".txt": 2,
+    ".png": 3,
+    ".xlsx": 4,
+    ".pdf": 6
+  },
+  "source_zip_sha256": "3ae0afac36ae1f2736dee3ebee90d87f87d599e7b83a5a21816c1124aac88068"
+}

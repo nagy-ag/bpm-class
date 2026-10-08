@@ -1,0 +1,15 @@
+{
+  "Result": "Success",
+  "Code": "ToolResult",
+  "Data": {
+    "success": true,
+    "projectDirectory": "C:\\Users\\nagya\\dev\\school\\BPA\\nap04\\working\\RiportRobot",
+    "errorMessage": null,
+    "templatePackageVersion": null,
+    "solutionRegistration": {
+      "Status": "NotInSolution",
+      "Message": "Project created in standalone mode; no parent .uipx solution found.",
+      "Instructions": "No parent solution was found by walking ancestor directories.\nStudio Web upload, `flow debug`, and packaging require an enclosing solution.\nTo link this project to a solution, run 'uip solution init \"<SolutionName>\"' then 'uip solution projects add \"C:\\Users\\nagya\\dev\\school\\BPA\\nap04\\working\\RiportRobot\" <SolutionName>.uipx'."
+    }
+  }
+}

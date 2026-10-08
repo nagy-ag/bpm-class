@@ -1,0 +1,24 @@
+<!doctype html><html lang="hu"><head><meta charset="utf-8"><base href="../notes/"><meta name="viewport" content="width=device-width,initial-scale=1"><title>nap02 06 · Hibavadászat</title><style>body{font:16px/1.65 system-ui;margin:32px auto;max-width:1200px;padding:0 24px;color:#172b3b;background:#f5f7f9}main{background:white;padding:30px;border-radius:12px}img{max-width:100%;height:auto;border:1px solid #ccd5dc}figure{margin:24px 0}table{border-collapse:collapse;width:100%;display:block;overflow:auto}td,th{border:1px solid #ccd5dc;padding:8px;text-align:left}th{background:#edf3f7}a{color:#006caa}.label{color:#526674}</style></head><body><main><p class="label">BPA · nap02 · 06 · Mentett, ellenőrzött eredmények (2026-10-05)</p><h1>Hibavadászat</h1><figure><img src="../deliverables/06_hibas_1_javitva_preview.jpg" alt="Mentett eredmény: 06_hibas_1_javitva_preview.jpg"></figure>
+<figure><img src="../deliverables/06_hibas_2_javitva_preview.jpg" alt="Mentett eredmény: 06_hibas_2_javitva_preview.jpg"></figure>
+<figure><img src="../deliverables/06_hibas_3_javitva_preview.jpg" alt="Mentett eredmény: 06_hibas_3_javitva_preview.jpg"></figure><h1 id="blokk-hibavadaszat-es-nyolcpontos-ellenorzes">6. blokk – Hibavadászat és nyolcpontos ellenőrzés</h1>
+<h2 id="talalt-hibak-es-javitasok">Talált hibák és javítások</h2>
+<ol>
+<li><strong>hibas_1:</strong> AND elágazás után XOR összevezetés állt. Mindkét ág külön tokent engedhetett a feladásra. Az összevezetés AND lett: a csomag feladása csak a számla és az áru elkészülte után indul, egyszer.</li>
+<li><strong>hibas_2:</strong> hiányzott az XOR kérdése, mindkét ág címkéje és az egyik feladat neve; a fedezetértékbecslés árva volt. Az értékbecslés az adatrögzítés és a döntés közé került. Kérdés: Hitel jóváhagyható? Igen → Hitel folyósítása; nem → Elutasító levél küldése. Mindkét ágnak elnevezett záró eseménye van. Az értékbecslés minden kérelemhez való elhelyezése a gyakorló javítás modellezési feltevése; tényleges banki szabályt nem állít.</li>
+<li><strong>hibas_3:</strong> nem volt záró esemény vagy kilépés; a döntés kérdés és címkék nélkül állt, a jóváhagyási lépés pedig visszaküldött a levélíráshoz. Most: vizsgálat → levél írása/javítása → vezetői jóváhagyás → Jóváhagyta a vezető? Igen → jóváhagyott válasz elküldése → Panasz lezárva. Nem → vissza a levél javításához. A vezetői jóváhagyás minden javítás után megismétlődik.</li>
+</ol>
+<h2 id="ellenorzolista">Ellenőrzőlista</h2>
+<ul>
+<li>Elnevezett kezdő esemény van.</li>
+<li>Minden út elérhet elnevezett záró eseményt.</li>
+<li>Nincs árva elem; a kezdő kivételével van bejövő, a záró kivételével van kimenő kapcsolat.</li>
+<li>Minden tevékenység cselekvést megnevező nevet kapott.</li>
+<li>Minden elágazó XOR kérdésként elnevezett.</li>
+<li>Minden elágazó XOR ág címkézett.</li>
+<li>A párhuzamos ágak AND összevezetésben zárulnak.</li>
+<li>Az AND ágak nem döntési címkéket kaptak.</li>
+</ul>
+<p>Mindhárom javított modellre teljesül a lista, és mindhárom megnyílt bpmn.io-ban. Az elérhetőség ellenőrzése nem bizonyítja, hogy egy üzleti jóváhagyási ciklus valaha pozitív választ kap; a panaszfolyamatnak van helyes kilépési útja, de a külső döntés továbbra is szükséges.</p>
+<p>Fájlok: <a href="../deliverables/hibas_1_javitva.bpmn">hibas_1_javitva.bpmn</a>, <a href="../deliverables/hibas_2_javitva.bpmn">hibas_2_javitva.bpmn</a>, <a href="../deliverables/hibas_3_javitva.bpmn">hibas_3_javitva.bpmn</a>. Képernyőképek és gépi szerkezeti ellenőrzés a deliverables mappában.</p>
+<p>Az 5. napi első beadandó banki modell, BIMP-szimuláció, változatok összevetése és üzleti javaslat lesz. A konkrét paraméterek, leadási fájlok és határidő az 5. napi csomagból/Moodle-ből jönnek; ezt a nap02 csomag nem tartalmazza.</p>
+<p><a href="../deliverables/README.md">Minden eredmény és fájl</a> · <a href="06_hibavadaszat.md">Eredeti jegyzet</a></p></main></body></html>

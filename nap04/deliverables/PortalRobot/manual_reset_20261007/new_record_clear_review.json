@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-07",
+  "evidence_source": "User screenshot immediately following explicit confirmation-screen new-record-button instruction",
+  "screenshot": "new_record_cleared_user.png",
+  "prior_success_screenshot": "replay_confirmation_user.png",
+  "visible_badge": "MANUAL RESET TEST",
+  "form_visually_empty": true,
+  "visible_state": {
+    "policy_placeholder": "TR-123456",
+    "claim_type": "- válassz -",
+    "date_placeholder": "2025-07-14",
+    "amount_placeholder": "pl. 2500",
+    "description": "empty",
+    "policy_field_focused": true
+  },
+  "confirmation_then_new_record_then_empty_form_verified_from_user_evidence": true,
+  "manual_initial_five_fields_exact_csv_check": "manual_export_verification.json",
+  "replay_four_summary_fields_verified": "replay_confirmation_review.json",
+  "fresh_replay_export_verified": false,
+  "final_reset_verified": false,
+  "agent_portal_action": false,
+  "next": "User exports current isolated own records; verify fresh replay row before deleting only that disposable case and checking20baseline/empty form."
+}

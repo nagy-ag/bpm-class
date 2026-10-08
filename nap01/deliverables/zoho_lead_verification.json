@@ -1,0 +1,26 @@
+{
+  "verified_date": "2026-10-07",
+  "task": "D1-04",
+  "method": "Manual CRM UI through authenticated Codex in-app browser",
+  "record_id": "1037931000000654026",
+  "record_url": "https://crm.zoho.eu/crm/orgREDACTED_AUTHOR_CRM_ORG/tab/Leads/1037931000000654026",
+  "fictional_course_data": {
+    "First_Name": "Márta",
+    "Last_Name": "Kiss",
+    "Company": "Corner Shop Kft",
+    "Email": "marta.kiss@cornershop.example",
+    "Phone": "+40 740 111 222",
+    "Lead_Source": "Phone"
+  },
+  "checks": {
+    "fresh_all_leads_had_10_samples_and_no_course_identity": true,
+    "phone_added_with_explicit_user_authorization": true,
+    "prior_16_picklist_options_retained": true,
+    "default_unchanged": true,
+    "single_save_and_saved_detail_fields_verified": true,
+    "timeline_lead_created": "07.10.2026 02:50 PM",
+    "no_calls_messages_or_sample_modifications": true
+  },
+  "evidence": ["../working/zoho_lead_overview.png", "../working/zoho_lead_timeline.png"],
+  "resume": "Reuse this record for D3-08 conversion; do not create a duplicate."
+}

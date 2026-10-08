@@ -1,0 +1,108 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Portal_Brave_Check" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Portal_Brave_Check_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Portal_Brave_Check" sap:VirtualizedContainerService.HintSize="645.6,336.4566666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Meridian Biztosító  Kárrendszer (gyakorló pél" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,231.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="94a1b742-7fa5-4bf5-ba06-15cbd3924690" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 15, 1905, 1005" ContentHash="9xxCA0-NHkef9B_EU_UiVg" FilePath="C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" IconBase64="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" InformativeScreenshot="66fcbf09718f47cc4ef85bcc7c1531ad.jpg" Reference="O2OegXa4uUmX-8tf3FY-ug/Xj9_CwQOT0SozIJq-StUnA" Selector="&lt;html app='brave.exe' title='Meridian Biztosító | Kárrendszer (gyakorló példány)' /&gt;" Version="V3" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

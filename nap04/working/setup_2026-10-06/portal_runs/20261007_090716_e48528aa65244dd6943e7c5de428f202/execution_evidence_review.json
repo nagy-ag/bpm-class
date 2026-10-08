@@ -1,0 +1,28 @@
+{
+  "scope": "Actual user-started one-row UiPath run; logs, input snapshot and screenshots reviewed offline; saved-record CSV verification pending",
+  "reviewed_utc": "2026-10-07T09:08:39.700878+00:00",
+  "ordered_events": true,
+  "event_count": 13,
+  "five_fields_in_order": true,
+  "no_failure_event": true,
+  "case_id": "K-GY-4147",
+  "policy": "TR-402318",
+  "snapshot_matches_input": true,
+  "last_event_agrees": true,
+  "reservation_retained": true,
+  "files_sha256": {
+    "01_before.png": "cd09d51822aa88733eaa47e8bbca11274c55496d1dcf981639cd475cb279bf1b",
+    "02_filled.png": "5bc6ba76d92796771153a03faffad2dabc75fd9e843586206bb133da22f417e6",
+    "03_confirmation.png": "47692c6b3557e4c52c54f2db7ef46e56cc6f0a313afb06091beb9de4701ba892",
+    "case_id.txt": "48dcd84a7be2b2cebae87356252eb90f992fa07d6d55bd1ca7a8ef9ed291e1be",
+    "events.csv": "38a29c11eecb4b8ed16b604581c1dd76577e3cbe10f5e4c6c3690d621e196c25",
+    "input_snapshot.xlsx": "87de262678c7a126d23ace88a60c459dd4ae15c17f9b8115909e0f05435e4847",
+    "last_event.txt": "8e6e64a45905674e463fa60b17eb6ac9021bf59c6f3fea3d28baa8e4ca41fe82"
+  },
+  "screenshots_visually_reviewed": {
+    "01_before.png": "Empty new-claim form before filling",
+    "02_filled.png": "All five input values visibly match first-row snapshot, including Hungarian description",
+    "03_confirmation.png": "Success heading, case K-GY-4147 and TR-402318 / type / date / amount match"
+  },
+  "saved_record_csv_pending": true
+}

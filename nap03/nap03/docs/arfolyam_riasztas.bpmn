@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Defs_1" targetNamespace="http://fsega.ubbcluj.ro/bpa">
+  <bpmn:process id="Process_1" isExecutable="false">
+    <bpmn:startEvent id="s" name="Időzítés: óránként"><bpmn:timerEventDefinition id="s_def"/></bpmn:startEvent>
+    <bpmn:serviceTask id="t1" name="Árfolyam lekérése (CoinMarketCap API)"/>
+    <bpmn:exclusiveGateway id="g1" name="Ár a küszöb fölött?"/>
+    <bpmn:serviceTask id="t2" name="Riasztás-lead létrehozása (Zoho API)"/>
+    <bpmn:endEvent id="e1" name="Riasztás rögzítve"/>
+    <bpmn:endEvent id="e2" name="Nincs teendő"/>
+    <bpmn:sequenceFlow id="f0" sourceRef="s" targetRef="t1"/>
+    <bpmn:sequenceFlow id="f1" sourceRef="t1" targetRef="g1"/>
+    <bpmn:sequenceFlow id="f2" name="igen" sourceRef="g1" targetRef="t2"/>
+    <bpmn:sequenceFlow id="f3" name="nem" sourceRef="g1" targetRef="e2"/>
+    <bpmn:sequenceFlow id="f4" sourceRef="t2" targetRef="e1"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="D1">
+    <bpmndi:BPMNPlane id="P1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="s_s" bpmnElement="s"><dc:Bounds x="150" y="182" width="36" height="36"/><bpmndi:BPMNLabel><dc:Bounds x="120" y="224" width="96" height="27"/></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_t1" bpmnElement="t1"><dc:Bounds x="250" y="167" width="170" height="66"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_g1" bpmnElement="g1"><dc:Bounds x="480" y="175" width="50" height="50"/><bpmndi:BPMNLabel><dc:Bounds x="450" y="231" width="110" height="27"/></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_t2" bpmnElement="t2"><dc:Bounds x="610" y="97" width="180" height="66"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_e1" bpmnElement="e1"><dc:Bounds x="860" y="112" width="36" height="36"/><bpmndi:BPMNLabel><dc:Bounds x="830" y="154" width="96" height="27"/></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_e2" bpmnElement="e2"><dc:Bounds x="610" y="252" width="36" height="36"/><bpmndi:BPMNLabel><dc:Bounds x="580" y="294" width="96" height="27"/></bpmndi:BPMNLabel></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="e_f0" bpmnElement="f0"><di:waypoint x="186" y="200"/><di:waypoint x="250" y="200"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f1" bpmnElement="f1"><di:waypoint x="420" y="200"/><di:waypoint x="480" y="200"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f2" bpmnElement="f2"><di:waypoint x="505" y="175"/><di:waypoint x="505" y="130"/><di:waypoint x="610" y="130"/><bpmndi:BPMNLabel><dc:Bounds x="511" y="106" width="90" height="20"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f3" bpmnElement="f3"><di:waypoint x="505" y="225"/><di:waypoint x="505" y="270"/><di:waypoint x="628" y="252"/><bpmndi:BPMNLabel><dc:Bounds x="511" y="228" width="90" height="20"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f4" bpmnElement="f4"><di:waypoint x="790" y="130"/><di:waypoint x="860" y="130"/></bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

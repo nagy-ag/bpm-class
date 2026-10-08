@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-06",
+  "authoring": "Native UiPath Studio Windows/VisualBasic UI",
+  "workflow": "BPA_Setup_Smoke/Workbook_Roundtrip.xaml",
+  "observed_run": "Run File; Output: Execution started for file Workbook_Roundtrip; execution ended in 00:00:08; no errors",
+  "input_range": "refresh_input!A1:C4",
+  "output_sheet": "VerifiedData",
+  "rows": [
+    [
+      "Category",
+      "Amount",
+      "Revision"
+    ],
+    [
+      "Alpha",
+      15,
+      2
+    ],
+    [
+      "Beta",
+      25,
+      2
+    ],
+    [
+      "Gamma",
+      30,
+      2
+    ]
+  ],
+  "data_rows": 3,
+  "headers_preserved": true,
+  "matches_input": true,
+  "dependencies": {
+    "UiPath.Excel.Activities": "[3.6.1]",
+    "UiPath.Presentations.Activities": "[2.6.1]",
+    "UiPath.System.Activities": "[26.8.2]",
+    "UiPath.UIAutomation.Activities": "[26.10.5]"
+  },
+  "output_sha256": "3873792e54a835d55f8ab7567b35fa3e798ecefe16eb6e17ddbdc17c933a8ba5"
+}

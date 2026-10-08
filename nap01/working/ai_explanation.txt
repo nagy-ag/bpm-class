@@ -1,0 +1,3 @@
+Az üzleti folyamat (business process) egymáshoz kapcsolódó tevékenységek sora, amely meghatározott bemenetből értékes eredményt hoz létre.
+Egy rendelés teljesítése például a kérés rögzítésétől az áru átadásáig tart.
+A folyamat javítását a lépések, felelősök és mérhető eredmények egyértelmű leírása segíti.

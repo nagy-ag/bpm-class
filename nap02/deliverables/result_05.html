@@ -1,0 +1,54 @@
+<!doctype html><html lang="hu"><head><meta charset="utf-8"><base href="../notes/"><meta name="viewport" content="width=device-width,initial-scale=1"><title>nap02 05 · Atlas raktár</title><style>body{font:16px/1.65 system-ui;margin:32px auto;max-width:1200px;padding:0 24px;color:#172b3b;background:#f5f7f9}main{background:white;padding:30px;border-radius:12px}img{max-width:100%;height:auto;border:1px solid #ccd5dc}figure{margin:24px 0}table{border-collapse:collapse;width:100%;display:block;overflow:auto}td,th{border:1px solid #ccd5dc;padding:8px;text-align:left}th{background:#edf3f7}a{color:#006caa}.label{color:#526674}</style></head><body><main><p class="label">BPA · nap02 · 05 · Mentett, ellenőrzött eredmények (2026-10-05)</p><h1>Atlas raktár</h1><figure><img src="../deliverables/05_raktar_bimp_eredmeny.jpg" alt="Mentett eredmény: 05_raktar_bimp_eredmeny.jpg"></figure><h1 id="blokk-atlas-market-raktar-meres-es-javaslat">5. blokk – Atlas Market raktár, mérés és javaslat</h1>
+<p>Három valódi BIMP Academic futás 2026-10-05-én, mindegyikben 135 befejezett eset. Hétfői kezdés 06:00, napi hétfő–vasárnap 06:00–22:00 rendelkezésre állás, exponenciális érkezésköz 7 perc. Warm-up és tail kizárás 0%. Éjszakai túlóra nincs az alapmodellben; a fennmaradó feladatok a következő napon folytatódnak.</p>
+<p>Erőforrások: Adminisztrátor 2 fő, 12 EUR/óra; Targoncás 8 vagy 10 fő, 14 EUR/óra; Raktáros 36 fő, 10 EUR/óra. A megadott létszám egyidejű kapacitás; műszakbeosztás és szünet külön nincs modellezve.</p>
+<p>Feladatok Normal átlag/szórás, mindenütt perc: Kapuregisztráció 4/1, Lerakodás 40/10, Áruátvételi ellenőrzés 50/15, Kárjegyzőkönyv és félretétel 25/10, Betárolás 20/5, Készletrögzítés 7/2. Sérült tétel: igen 8%, nem 92%. B változatban kizárólag a nappali Betárolás lesz Fixed 0 perc; az éjszakai munka külön költség.</p>
+<h2 id="kapacitasbecsles">Kapacitásbecslés</h2>
+<p>Alap: 135 × (40+20) = 8100 targonca-perc igény; 8 × 16 × 60 = 7680 perc kapacitás. Hiány 420 perc; igény/kapacitás 105.47%. A változat: 9600 perc kapacitás, 84.38% terhelés. B: nappal 135 × 40 = 5400 perc, 70.31% terhelés, plusz 2700 perc éjszakai betárolás.</p>
+<table>
+<thead>
+<tr>
+<th>Forgatókönyv</th>
+<th>Átlag munkaidőben</th>
+<th>Átlag naptári</th>
+<th>Kihasználtság</th>
+<th>Legnagyobb átlagos várakozás</th>
+<th>Futás hossza</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>raktar_01_alap</td>
+<td>3.1 hours</td>
+<td>5.2 hours</td>
+<td>Raktáros: 15.91%; Targoncás: 82.01%; Adminisztrátor: 62.5%</td>
+<td>Betárolás: 29.7 m</td>
+<td>1.2 days</td>
+</tr>
+<tr>
+<td>raktar_02_A_tiz_targoncas</td>
+<td>2.2 hours</td>
+<td>3 hours</td>
+<td>Raktáros: 18.56%; Targoncás: 76.85%; Adminisztrátor: 73.22%</td>
+<td>Lerakodás: 3.8 m</td>
+<td>1.1 days</td>
+</tr>
+<tr>
+<td>raktar_03_B_kulon_betarolas</td>
+<td>2.1 hours</td>
+<td>2.8 hours</td>
+<td>Raktáros: 17.85%; Targoncás: 61.15%; Adminisztrátor: 66.82%</td>
+<td>Készletrögzítés: 7.8 m</td>
+<td>1.1 days</td>
+</tr>
+</tbody>
+</table>
+<h2 id="az-utolso-kamion-befejezese">Az utolsó kamion befejezése</h2>
+<p>A BIMP a teljes futás hosszát ezen a nézeten kerekítve mutatja: alap 1.2 nap; A és B 1.1 nap. A kezdés 2026-10-05 06:00, ezért mindhárom futás utolsó kamionfolyamata a következő nap reggelén/délelőttjén fejeződött be. A kerekített értékek alapján az alapváltozat kb. 2026-10-06 10:48, A és B kb. 2026-10-06 08:24; ezek becslések, nem percre pontos időbélyegek. Egy tized nap kerekítési pontossága önmagában körülbelül ±72 percet jelent. A 135 exponenciális érkezés nem garantáltan esik egy napra; az utolsó befejezésben az érkezési mintázatnak is szerepe van.</p>
+<h2 id="koltseg-es-uzleti-javaslat">Költség és üzleti javaslat</h2>
+<p>Első lépésként az A változatot javaslom: a két további nappali targoncakapacitás megszünteti a számított tartós hiányt, és a mért munkaidős átlagot 3.1 óráról 2.2 órára csökkentette. A gépek és a kezelők egyidejű rendelkezésre állása egyaránt szükséges. Tervezett többlet munkaerőköltség az egyszerű 16 órás kapacitásfeltevéssel: 2 × 16 × 14 = 448 EUR/nap, gép- és egyéb költségek nélkül.</p>
+<p>B 2.1 órás munkaidős átfutást adott, de az áru végleges betárolásának munkája nem tűnik el. 2700 perc = 45 munkaóra, 14 EUR/órával legalább 630 EUR közvetlen munkaköltség. Négyórás ablakban 45/4 = 11.25, tehát legalább 12 egyidejű targoncakapacitás kell. Tizenkét teljes négyórás kapacitás költsége 672 EUR, ami még nem tartalmaz éjszakai pótlékot, gépköltséget és biztonsági tartalékot. A B-ben mért 2721.9 EUR nappali feladatköltséghez az áthelyezett munkát külön hozzá kell számítani. A készletrögzítés ekkor előzetes átvételi rögzítés; a készlet fizikai hozzáférhetősége csak a későbbi betárolással teljes.</p>
+<p>A BIMP összköltsége az elvégzett feladatok erőforrásköltségét mutatja (alap 3353 EUR, A 3304.8 EUR, B nappal 2721.9 EUR), nem a teljes rendelkezésre álló műszak bérét. A kisebb A futásköltség ezért nem bizonyít olcsóbb személyzetet; a feladatidők és ágak véletlenszerűen is változnak.</p>
+<p>A raktárosok mért átlagos kihasználtsága 15.91–18.56%; ebből önmagában létszámcsökkentést nem javaslok. Vizsgálni kell az egyéb feladatokat, csúcsterhelést és a beosztást. A változatok külön véletlen minták, ezért a pontos üzleti döntéshez további ismétlések és valós időadatok szükségesek.</p>
+<h2 id="fajlok">Fájlok</h2>
+<p>Az alapmodell mellett három külön paraméterezett BPMN, három megjelenített eredményoldal, három JSON-tábla és három CSV készült. A paraméterekből generált BPMN-t a BIMP betöltötte; ellenőriztük a 06:00 kezdést, a napi munkarendet, a perceket, a létszámokat és a 92/8 ágakat. A Download CSV / Save scenario export helyett a látható táblák és a dokumentált QBP paraméterek helyben mentett példánya áll rendelkezésre.</p>
+<p><a href="../deliverables/README.md">Minden eredmény és fájl</a> · <a href="05_raktar_elemzes.md">Eredeti jegyzet</a></p></main></body></html>

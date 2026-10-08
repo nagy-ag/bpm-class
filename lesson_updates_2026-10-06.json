@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-06",
+  "bundles": [
+    {
+      "day": "nap01",
+      "source_zip": "nap01.zip",
+      "source_zip_sha256": "917690c7efc92eb1ac78c597010c9980a06400a706157167b3aaafd7d00cef03",
+      "files": 64,
+      "changed": [
+        "pages/01_folyamatabra.html",
+        "pages/02_coinmarketcap.html",
+        "pages/03_zoho.html"
+      ],
+      "backup": "nap01/working/source-backups/2026-10-06/nap01-before-update.zip",
+      "diff": "nap01/notes/lesson_update_2026-10-06.diff",
+      "verified": "all files match new ZIP"
+    },
+    {
+      "day": "nap02",
+      "source_zip": "nap02.zip",
+      "source_zip_sha256": "6c47fd35699e1d07a226ae84f11b14b7db9d24d8db1c553d57d8be4c0baf324e",
+      "files": 43,
+      "changed": [
+        "img/meridian_karfelvetel.png",
+        "index.html",
+        "pages/01_kavezo.html",
+        "pages/02_webshop.html",
+        "pages/03_karfelvetel.html",
+        "pages/04_szimulacio.html",
+        "pages/05_raktar.html",
+        "pages/06_hibavadaszat.html"
+      ],
+      "backup": "nap02/working/source-backups/2026-10-06/nap02-before-update.zip",
+      "diff": "nap02/notes/lesson_update_2026-10-06.diff",
+      "verified": "all files match new ZIP"
+    },
+    {
+      "day": "nap03",
+      "source_zip": "nap03.zip",
+      "source_zip_sha256": "85a8ebad3287bb7c825f1aa7df79ebd1df8f6681dfa08277d07e38b048f16751",
+      "files": 60,
+      "changed": [
+        "index.html",
+        "pages/01_api_alapok.html"
+      ],
+      "backup": "nap03/working/source-backups/2026-10-06/nap03-before-update.zip",
+      "diff": "nap03/notes/lesson_update_2026-10-06.diff",
+      "verified": "all files match new ZIP"
+    },
+    {
+      "day": "nap04",
+      "source_zip": "nap04.zip",
+      "source_zip_sha256": "457376517932561e5df3130d28df53ff8163e1864b81fdc8bcc804770c263580",
+      "files": 56,
+      "changed": [],
+      "backup": null,
+      "diff": null,
+      "verified": "all files match new ZIP"
+    }
+  ],
+  "existing_work_files_preserved": 82,
+  "credentials_preserved": true
+}

@@ -1,0 +1,33 @@
+{
+  "scope": "User-exported baseline before manual target-capture fixture; not a robot run",
+  "source": "C:\\Users\\nagya\\Downloads\\sajat_karbejelentesek.csv",
+  "source_modified_utc": "2026-10-07T08:30:51.037406+00:00",
+  "sha256": "ae39f4396e5a684b43cabc4657699e1f21e12f3c2f9f15a39cd4300d63fe3cbd",
+  "headers": [
+    "ugyszam",
+    "kotvenyszam",
+    "kartipus",
+    "karesemeny_datum",
+    "becsult_osszeg",
+    "karleiras"
+  ],
+  "own_record_count": 2,
+  "existing_case_ids": [
+    "K-GY-9610",
+    "K-GY-1660"
+  ],
+  "existing_policies": [
+    "TR-123456",
+    "TR-654321"
+  ],
+  "first_robot_policy": "TR-402318",
+  "first_robot_policy_present": false,
+  "manual_capture_fixture": {
+    "kotvenyszam": "TR-900007",
+    "kartipus": "vízkár",
+    "karesemeny_datum": "2025-11-03",
+    "becsult_osszeg": 1850,
+    "karleiras": "UiPath target capture test."
+  },
+  "fixture_absent_from_baseline_and_input": true
+}

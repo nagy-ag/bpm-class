@@ -1,0 +1,11 @@
+{
+  "scope": "Preparation only; actual Colab/CRM creation remains pending",
+  "source_sha256": {
+    "bpa_access.py": "860bfacd89766e8b0818934f15e807717a9ef1ed34e72d35326544e2fdba4330",
+    "api_exercises.py": "5cb6ee23c12ae2a5c7722aa9284afc94716350a244627a86632035b717d5f3b7",
+    "colab_runtime.py": "698218e49d948a4879aca5075b57b8efc8ece8db93de740cb29af63b933d408e"
+  },
+  "notebook_sha256": "afe533aea86894673babc1ac32ca213c85aa1b86f70f97f3bcaf506e91e7fa82",
+  "cells": 19,
+  "stored_outputs": 0
+}

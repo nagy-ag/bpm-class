@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-07",
+  "evidence_source": "User screenshot visually reviewed plus user report20cases",
+  "screenshot": "isolated_baseline_restored_user.png",
+  "visible_badge": "MANUAL RESET TEST",
+  "address_bar_in_screenshot": false,
+  "form_visually_empty": true,
+  "visible_empty_state": {
+    "policy_placeholder": "TR-123456",
+    "type": "- válassz -",
+    "date_placeholder": "2025-07-14",
+    "amount_placeholder": "pl. 2500",
+    "description": "empty"
+  },
+  "displayed_total_user_reported": 20,
+  "count_visible_in_screenshot": false,
+  "original_records_reconciliation": "CSV(6) byte-identical to verified CSV(4),13own records and user-reported33total",
+  "new_record_button_action_verified": false,
+  "agent_portal_action": false,
+  "next": "One manual first-row submission in this isolated copy, immediately followed by confirmation new-record button before tab navigation; obtain empty-form screenshot."
+}

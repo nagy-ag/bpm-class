@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-07",
+  "evidence_source": "User-supplied post-reset list screenshot visually reviewed",
+  "screenshot": "final_reset_list_user.png",
+  "visible_badge": "MANUAL RESET TEST",
+  "visible_counter": "20 mintaügy + 0 saját rögzítés = 20 ügy.",
+  "sample_cases": 20,
+  "own_records": 0,
+  "total_cases": 20,
+  "isolated_disposable_reset_verified": true,
+  "preserved_pre_reset_replay_export": "sajat_karbejelentesek (7).csv",
+  "pre_reset_export_verification": "replay_export_verification.json",
+  "original_records_unchanged_verification": "original_records_reconciliation.json",
+  "post_reset_form_verified": false,
+  "agent_portal_action": false,
+  "next": "User clicks top Új kárbejelentés tab in this same copy and supplies final empty-form screenshot. No submission or robot rerun."
+}

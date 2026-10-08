@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meridian Biztosító | Kárrendszer (gyakorló példány) – MANUAL RESET TEST</title>
+<style>
+  :root { --navy:#1f3a5f; --teal:#0e7c72; --line:#d5dbe2; --bg:#eef1f5; --red:#c62828; --green:#2e7d32; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:"Segoe UI", Arial, sans-serif; background:var(--bg); color:#22303e; font-size:15px; }
+  header { background:var(--navy); color:#fff; padding:12px 26px; display:flex; align-items:center; justify-content:space-between; }
+  header .logo { font-weight:700; font-size:17px; letter-spacing:.3px; }
+  header .logo span { color:#7fd1c8; }
+  header .env { font-size:12px; background:#e0a800; color:#3a2f00; border-radius:6px; padding:3px 10px; font-weight:700; }
+  main { max-width:880px; margin:30px auto; padding:0 18px; }
+  .panel { background:#fff; border:1px solid var(--line); border-radius:10px; padding:26px 30px; box-shadow:0 1px 4px rgba(31,58,95,.08); }
+  h1 { font-size:21px; color:var(--navy); margin:0 0 14px; }
+  label { display:block; font-weight:600; margin:14px 0 4px; font-size:14px; }
+  input, select, textarea { width:100%; padding:9px 12px; border:1px solid var(--line); border-radius:7px; font-size:15px; font-family:inherit; background:#fff; }
+  input:focus, select:focus, textarea:focus { outline:2px solid #9ec5e8; }
+  .row { display:flex; gap:18px; } .row > div { flex:1; }
+  .btns { margin-top:20px; display:flex; gap:12px; }
+  button { border:none; border-radius:8px; padding:11px 22px; font-size:15px; font-weight:600; cursor:pointer; font-family:inherit; }
+  .primary { background:var(--teal); color:#fff; } .primary:hover { background:#0a5f57; }
+  .secondary { background:#fff; color:var(--navy); border:1.5px solid var(--navy); }
+  .error { display:none; background:#fdecea; border:1px solid var(--red); color:var(--red); border-radius:8px; padding:10px 14px; margin-top:14px; font-weight:600; }
+  .success { background:#e8f5e9; border:1px solid var(--green); border-radius:10px; padding:20px 24px; }
+  .success h2 { margin:0 0 8px; color:var(--green); font-size:18px; }
+  .ugyszam { font-size:26px; font-weight:800; color:var(--navy); letter-spacing:1px; }
+  nav.tabs { display:flex; gap:6px; margin:0 0 16px; }
+  nav.tabs button { background:#dfe6ee; color:var(--navy); border-radius:8px 8px 0 0; }
+  nav.tabs button.active { background:#fff; border:1px solid var(--line); border-bottom:2px solid #fff; }
+  table { border-collapse:collapse; width:100%; font-size:14px; }
+  th { background:var(--navy); color:#fff; text-align:left; padding:8px 12px; }
+  td { border:1px solid var(--line); padding:7px 12px; }
+  tr:nth-child(even) td { background:#f6f8fa; }
+  footer { text-align:center; color:#7a8794; font-size:12.5px; margin:26px 0; }
+  .hint { font-size:12.5px; color:#7a8794; margin-top:4px; }
+  [hidden] { display:none !important; }
+@media(max-width:600px){header{flex-wrap:wrap;gap:8px;padding:12px 18px}.row{flex-direction:column;gap:0}.panel{padding:20px 16px}.btns{flex-wrap:wrap}nav.tabs{flex-wrap:wrap}main{margin:20px auto}.table-scroll{overflow-x:auto}} .table-scroll{overflow-x:auto} .storage-note{color:#8a4d10;font-size:13px} </style>
+</head>
+<body>
+<header>
+  <div class="logo">Meridian <span>Biztosító</span> · Kárrendszer</div>
+  <div class="env">MANUAL RESET TEST</div>
+</header>
+<main>
+
+  <!-- ================= BEJELENTKEZÉS ================= -->
+  <div class="panel" id="login-panel">
+    <h1>Bejelentkezés</h1>
+    <label for="felhasznalonev">Felhasználónév</label>
+    <input id="felhasznalonev" name="felhasznalonev" autocomplete="off">
+    <label for="jelszo">Jelszó</label>
+    <input id="jelszo" name="jelszo" type="password" autocomplete="off">
+    <div class="hint">Gyakorló belépés: <b>gyakorlo</b> / <b>Meridian2026</b></div>
+    <div class="btns">
+      <button class="primary" id="belepes-gomb" type="button">Belépés</button>
+    </div>
+    <div class="error" id="login-hiba">Hibás felhasználónév vagy jelszó.</div>
+  </div>
+
+  <!-- ================= ALKALMAZÁS ================= -->
+  <div id="app" hidden>
+    <nav class="tabs">
+      <button id="tab-uj" class="active" type="button">Új kárbejelentés</button>
+      <button id="tab-lista" type="button">Kárügyek listája</button>
+    </nav>
+
+    <!-- Új kárbejelentés -->
+    <div class="panel" id="uj-panel">
+      <h1>Új kárbejelentés rögzítése</h1>
+      <form id="karbejelento-urlap" onsubmit="return false;">
+        <div class="row">
+          <div>
+            <label for="kotvenyszam">Kötvényszám</label>
+            <input id="kotvenyszam" name="kotvenyszam" placeholder="TR-123456" autocomplete="off">
+            <div class="hint">Formátum: TR-hat számjegy</div>
+          </div>
+          <div>
+            <label for="kartipus">Kár típusa</label>
+            <select id="kartipus" name="kartipus">
+              <option value="">- válassz -</option>
+              <option>vízkár</option>
+              <option>viharkár</option>
+              <option>üvegkár</option>
+              <option>betöréses lopás</option>
+              <option>tűzkár</option>
+              <option>felelősségi kár</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label for="karesemeny-datum">Káresemény dátuma</label>
+            <input id="karesemeny-datum" name="karesemeny-datum" placeholder="2025-07-14" autocomplete="off">
+          </div>
+          <div>
+            <label for="becsult-osszeg">Becsült összeg (lej)</label>
+            <input id="becsult-osszeg" name="becsult-osszeg" placeholder="pl. 2500" autocomplete="off">
+          </div>
+        </div>
+        <label for="karleiras">A kár rövid leírása</label>
+        <textarea id="karleiras" name="karleiras" rows="3"></textarea>
+        <div class="btns">
+          <button class="primary" id="bejelentes-rogzites" type="button">Bejelentés rögzítése</button>
+          <button class="secondary" type="button">Piszkozat mentése</button>
+        </div>
+        <div class="error" id="urlap-hiba"></div>
+      </form>
+    </div>
+
+    <!-- Visszaigazolás -->
+    <div class="panel success" id="visszaigazolas" hidden>
+      <h2>✓ A bejelentést rögzítettük</h2>
+      <p>A kárügy azonosítója:</p>
+      <div class="ugyszam" id="ugyszam-ertek">K-GY-0000</div>
+      <p id="osszegzes" style="margin-top:10px"></p>
+      <div class="btns">
+        <button class="primary" id="uj-bejelentes" type="button">Új bejelentés rögzítése</button>
+      </div>
+    </div>
+
+    <!-- Lista -->
+    <div class="panel" id="lista-panel" hidden>
+      <h1>Kárügyek listája</h1>
+      <p id="lista-darabszam"></p><div class="table-scroll"><table id="karugyek-tabla">
+        <thead><tr><th>Ügyszám</th><th>Kötvényszám</th><th>Típus</th><th>Becsült összeg</th><th>Státusz</th></tr></thead>
+        <tbody id="lista-torzs"></tbody>
+      </table></div><div class="btns"><button type="button" class="secondary" id="sajat-export">Saját rögzítések exportálása CSV-be</button><button type="button" class="secondary" id="sajat-torles">Saját rögzítések törlése</button></div><p class="hint">A 20 mintaügy változatlan marad. Az új bejelentések ebben a böngészőben, ennél a helyi fájlnál érhetők el. A portál áthelyezése vagy a böngészőadatok törlése új tárolási helyet eredményezhet.</p>
+    </div>
+  </div>
+</main>
+<p class="storage-note" id="tarolas-jelzes" hidden>A böngésző nem engedélyezi a helyi tárolást. Az új ügyek most csak a megnyitott lapon maradnak meg; exportáld őket bezárás előtt.</p><footer>Fiktív gyakorlórendszer az „Üzleti folyamatok modellezése és automatizálása” kurzushoz · lokálisan fut, adatot nem küld sehová</footer>
+<script>
+(function () {
+  "use strict";
+  // --- szándékosan instabil elem: a Piszkozat gomb minden betöltéskor más azonosítót kap (szelektor-lecke!)
+  var draftBtn = document.querySelector("#karbejelento-urlap .secondary");
+  draftBtn.id = "btn-" + Math.floor(Math.random() * 900000 + 100000);
+
+  function $(id) { return document.getElementById(id); }
+
+  var STORAGE_KEY = "bpa_nap04_manual_reset_20261007_v1", ADDED = [];
+  try { var stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]"); if (Array.isArray(stored)) ADDED = stored.filter(function(r){return r && typeof r.k === "string" && typeof r.id === "string";}); }
+  catch(e) { $("tarolas-jelzes").hidden = false; }
+  function saveAdded() { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(ADDED)); } catch(e) { $("tarolas-jelzes").hidden = false; } }
+  draftBtn.addEventListener("click", function(){ alert("A piszkozat mentése későbbi szelektorgyakorlat célja. Ma a Bejelentés rögzítése gombot használd."); });
+  function validDate(s) { if (!/^\d{4}-\d{2}-\d{2}$/.test(s)) return false; var a=s.split("-").map(Number), dt=new Date(Date.UTC(a[0],a[1]-1,a[2])); return dt.getUTCFullYear()===a[0] && dt.getUTCMonth()===a[1]-1 && dt.getUTCDate()===a[2]; }
+  // --- belépés
+  $("belepes-gomb").addEventListener("click", function () {
+    var ok = $("felhasznalonev").value.trim() === "gyakorlo" && $("jelszo").value === "Meridian2026";
+    $("login-hiba").style.display = ok ? "none" : "block";
+    if (ok) { $("login-panel").hidden = true; $("app").hidden = false; }
+  });
+  $("jelszo").addEventListener("keydown", function (e) { if (e.key === "Enter") $("belepes-gomb").click(); });
+
+  // --- fülek
+  function showTab(uj) {
+    $("tab-uj").classList.toggle("active", uj);
+    $("tab-lista").classList.toggle("active", !uj);
+    $("uj-panel").hidden = !uj || !$("visszaigazolas").hidden;
+    $("lista-panel").hidden = uj;
+    if (!uj) $("visszaigazolas").hidden = true;
+    if (uj && $("visszaigazolas").hidden) $("uj-panel").hidden = false;
+  }
+  $("tab-uj").addEventListener("click", function () { $("visszaigazolas").hidden = true; showTab(true); });
+  $("tab-lista").addEventListener("click", function () { showTab(false); });
+
+  // --- determinisztikus ügyszám a kötvényszámból (a megoldókulcs erre épül)
+  function ugyszam(kotveny) {
+    var h = 0;
+    for (var i = 0; i < kotveny.length; i++) { h = (h * 31 + kotveny.charCodeAt(i)) >>> 0; }
+    return "K-GY-" + (1000 + h % 9000);
+  }
+
+  // --- rögzítés
+  $("bejelentes-rogzites").addEventListener("click", function () {
+    var k = $("kotvenyszam").value.trim();
+    var t = $("kartipus").value;
+    var d = $("karesemeny-datum").value.trim();
+    var o = $("becsult-osszeg").value.trim();
+    var hibak = [];
+    if (!/^TR-\d{6}$/.test(k)) hibak.push("a kötvényszám formátuma TR-hat számjegy legyen (pl. TR-123456)");
+    if (!t) hibak.push("válassz kártípust");
+    if (!validDate(d)) hibak.push("a dátum formátuma ÉÉÉÉ-HH-NN legyen");
+    if (!/^\d+$/.test(o) || parseInt(o, 10) <= 0) hibak.push("a becsült összeg pozitív egész szám legyen");
+    if (ADDED.some(function(r){return r.k===k && r.t===t && r.d===d;})) hibak.push("ezt a kötvény-kártípus-dátum kombinációt már rögzítetted; ellenőrizd a listát");
+    var err = $("urlap-hiba");
+    if (hibak.length) {
+      err.textContent = "Javítsd a következőket: " + hibak.join("; ") + ".";
+      err.style.display = "block";
+      return;
+    }
+    err.style.display = "none";
+    var caseId=ugyszam(k), seq=Number(caseId.slice(5));
+    while (LISTA.some(function(r){return r[0]===caseId;}) || ADDED.some(function(r){return r.id===caseId;})) { seq++;caseId="K-GY-"+seq; }
+    ADDED.push({id:caseId,k:k,t:t,d:d,o:Number(o),l:$("karleiras").value.trim()});saveAdded();renderList();
+    $("ugyszam-ertek").textContent = caseId;
+    $("osszegzes").textContent = "Kötvény: " + k + " · " + t + " · " + d + " · " + o + " lej.";
+    $("uj-panel").hidden = true;
+    $("visszaigazolas").hidden = false;
+  });
+
+  // --- új bejelentés
+  $("uj-bejelentes").addEventListener("click", function () {
+    ["kotvenyszam", "karesemeny-datum", "becsult-osszeg", "karleiras"].forEach(function (id) { $(id).value = ""; });
+    $("kartipus").value = "";
+    $("visszaigazolas").hidden = true;
+    $("uj-panel").hidden = false;
+    $("kotvenyszam").focus();
+  });
+
+  // --- lista (rögzített minta-adatok)
+  var LISTA = [
+    ["K-GY-4211","TR-402318","vízkár",1850,"elbírálás alatt"],["K-GY-7532","TR-118264","viharkár",3200,"lezárva"],
+    ["K-GY-2914","TR-771205","üvegkár",640,"lezárva"],["K-GY-8127","TR-390162","betöréses lopás",5400,"szemlére vár"],
+    ["K-GY-5468","TR-627849","vízkár",1200,"hiánypótlásra vár"],["K-GY-3390","TR-204531","felelősségi kár",980,"lezárva"],
+    ["K-GY-6741","TR-845290","tűzkár",12400,"elbírálás alatt"],["K-GY-1856","TR-562017","viharkár",2750,"lezárva"],
+    ["K-GY-9203","TR-138476","üvegkár",720,"lezárva"],["K-GY-4577","TR-905324","vízkár",2100,"szemlére vár"],
+    ["K-GY-8865","TR-317608","felelősségi kár",1500,"elbírálás alatt"],["K-GY-2038","TR-480951","viharkár",4100,"lezárva"],
+    ["K-GY-7314","TR-256783","betöréses lopás",6800,"hiánypótlásra vár"],["K-GY-5629","TR-693140","vízkár",950,"lezárva"],
+    ["K-GY-3982","TR-871426","üvegkár",580,"lezárva"],["K-GY-6157","TR-149857","tűzkár",8900,"szemlére vár"],
+    ["K-GY-9440","TR-528369","felelősségi kár",1250,"lezárva"],["K-GY-1723","TR-364912","vízkár",1675,"elbírálás alatt"],
+    ["K-GY-8096","TR-792045","viharkár",2980,"lezárva"],["K-GY-2561","TR-615378","betöréses lopás",4550,"lezárva"]
+  ];
+  function renderList() {
+    var tb=$("lista-torzs");tb.textContent="";
+    var rows=LISTA.concat(ADDED.map(function(r){return [r.id,r.k,r.t,r.o,"rögzítve"]; }));
+    rows.forEach(function(r){var tr=document.createElement("tr");r.forEach(function(c,i){var td=document.createElement("td");td.textContent=i===3 ? c+" lej" : c;tr.appendChild(td);});tb.appendChild(tr);});
+    $("lista-darabszam").textContent="20 mintaügy + "+ADDED.length+" saját rögzítés = "+rows.length+" ügy.";
+  }
+  $("sajat-torles").addEventListener("click",function(){if(confirm("Törlöd a saját gyakorló bejelentéseidet? A 20 mintaügy megmarad.")){ADDED=[];saveAdded();renderList();$("visszaigazolas").hidden=true;$("urlap-hiba").style.display="none";}});
+  $("sajat-export").addEventListener("click",function(){
+    function csv(v){return '"'+String(v).replace(/"/g,'""')+'"';}
+    var rows=[["ugyszam","kotvenyszam","kartipus","karesemeny_datum","becsult_osszeg","karleiras"]].concat(ADDED.map(function(r){return [r.id,r.k,r.t,r.d,r.o,r.l];}));
+    var data="\uFEFF"+rows.map(function(r){return r.map(csv).join(";");}).join("\r\n");
+    var url=URL.createObjectURL(new Blob([data],{type:"text/csv;charset=utf-8"})),a=document.createElement("a");a.href=url;a.download="sajat_karbejelentesek.csv";a.target="_blank";a.rel="noopener noreferrer";document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(url);},1000);
+  });
+  renderList();
+})();
+</script>
+</body>
+</html>

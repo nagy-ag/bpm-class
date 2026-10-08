@@ -1,0 +1,47 @@
+{
+  "task": "D3-11",
+  "date": "2026-10-07",
+  "notebook_url": "https://colab.research.google.com/drive/1zAqcv-ZlpD0r-Xg9FKjUNbjdNlJn4HLW",
+  "runtime": "Python 3 Google Compute Engine backend",
+  "actual_execution": [
+    {
+      "cell": 1,
+      "output": "Szia, BPA!",
+      "verified": true
+    },
+    {
+      "cell": 3,
+      "output": "Közös kliens betöltve; még nem történt API-kérés.",
+      "verified": true
+    },
+    {
+      "cell": 5,
+      "output": "EU token kész a runtime memóriájában; titkos érték nincs kiírva.",
+      "verified": true
+    }
+  ],
+  "cell5": "Completed: EU token ready in runtime memory; masked user inputs observed",
+  "credential_input_type_observed": "password",
+  "env_file_uploaded": false,
+  "credentials_transferred_by_agent": false,
+  "token_access_verified": true,
+  "api_exercise_writes_executed": true,
+  "resume": "Actual Colab exercises and user-operated clean notebook download verified. Additional Sheets route tracked separately.",
+  "api_record_ids": [
+    "1037931000000660001",
+    "1037931000000661001",
+    "1037931000000662001"
+  ],
+  "positive_verified": true,
+  "negative_verified": true,
+  "runtime_credentials_cleared": true,
+  "cloud_save_verified": true,
+  "download_verified": true,
+  "clean_notebook_url": "https://colab.research.google.com/drive/REDACTED_AUTHOR_NOTEBOOK_ID",
+  "clean_cloud_copy_outputs_empty": true,
+  "clean_cloud_save_signal": "All changes saved",
+  "clean_cloud_output_regions": 11,
+  "clean_cloud_all_outputs_empty": true,
+  "clean_cloud_screenshot": "../../working/colab_clean_saved.png",
+  "download_verification": "notebook_download_verification.json"
+}

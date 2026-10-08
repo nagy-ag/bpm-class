@@ -1,0 +1,122 @@
+[
+  {
+    "file": "baseline_user_confirmation.json",
+    "sha256": "ae463b7bd24f019c28f671c9f57dbad337c0e806f9476c8ae3d8a6ecadff3c8c"
+  },
+  {
+    "file": "final_reset_empty_form_review.json",
+    "sha256": "d296a68d55723f958dbdc85506b19a51511f1b33ffd7174a6476d28f1e7ef944"
+  },
+  {
+    "file": "final_reset_empty_form_user.png",
+    "sha256": "59890cdf418c9ef51b4ae92fa87e056a8dcd463882a44cf32edb4a77f87ec8a6"
+  },
+  {
+    "file": "final_reset_list_user.png",
+    "sha256": "f743dcf1222eb3b87ccf986c07f5f580183413b4cad61b672d11d01fae3c1605"
+  },
+  {
+    "file": "final_reset_review.json",
+    "sha256": "c4cf7b59e8f063e2f6779b5cc0c90840c042adc585f1b42d3a0fc2665b14492f"
+  },
+  {
+    "file": "form_values_retained_review.json",
+    "sha256": "92147cc0a9c4179bff88540421788637a32ef139ca1efdb28c45e03f08eb236b"
+  },
+  {
+    "file": "form_values_retained_user.png",
+    "sha256": "74f0e80e7d5d0eca2394fb16bf196680052485546805cbe32ce94b31d33970e7"
+  },
+  {
+    "file": "isolated_baseline_restored_review.json",
+    "sha256": "22cad5fa87a337e95af792d2a14572081aa1d5bbb8f9eed9daa8952b7cfe845f"
+  },
+  {
+    "file": "isolated_baseline_restored_user.png",
+    "sha256": "2e93440a250ef1b9a55301c50911097fe7350f1c3e31f15f0d4c640a7269f8a3"
+  },
+  {
+    "file": "manual_confirmation_review.json",
+    "sha256": "42b8e4823e5165fcb8c6469321d360b86b71732c09b1b869daf356b4ff7c938b"
+  },
+  {
+    "file": "manual_confirmation_user.png",
+    "sha256": "00cdddce147958dfa43bd6a6ef5c4fd4a073e3aa7aa8e8ec9ea53db4b830151a"
+  },
+  {
+    "file": "manual_export_verification.json",
+    "sha256": "b8f128ea03c0c63b39b495e722a184bf0712a8ee56b5419a9cd3051478b9b499"
+  },
+  {
+    "file": "new_form_diagnostic.json",
+    "sha256": "ef083999004bf5b2e3c6dadfc0efc7d3114f8379d37ae4924e78c11a1664abce"
+  },
+  {
+    "file": "new_record_cleared_user.png",
+    "sha256": "fbdf9f8dd2701aff0faeabf2e341d4f2c3364968ffbea2be5953440429338d2f"
+  },
+  {
+    "file": "new_record_clear_review.json",
+    "sha256": "0ad5aa74b8c457c99cd47d79df2c6f1b851c6071e64c8535b581a20a785dfb9d"
+  },
+  {
+    "file": "original_page_identity_review.json",
+    "sha256": "0b89429dfac20e8cdbcaa8215880a263591daf2572dc0ad334e0f75bce47650a"
+  },
+  {
+    "file": "original_page_identity_user.png",
+    "sha256": "06f0ec5f8a385f33c4e0c2c8e46a8f2fb540bde0928f39f8dc53a7c051a86645"
+  },
+  {
+    "file": "original_records_reconciliation.json",
+    "sha256": "bf08c84368b01fcf40b3c5e29c8d8255ec088d9136f4f91a367b5e87956c1a28"
+  },
+  {
+    "file": "preparation.json",
+    "sha256": "04aff84e1190a2fc5f606d046e69601eb663d12f57f35e2002e67614e2fc7ee9"
+  },
+  {
+    "file": "recovery_reset_user_confirmation.json",
+    "sha256": "5f9cba3e82d2735669687ca9b4c6a1dd4f08c9a2846bc430b20bfc95a3ea30aa"
+  },
+  {
+    "file": "replay_confirmation_review.json",
+    "sha256": "f429396ba08e483ea7c3adcb677eb92795d5c2f2d7490baad79773f010f01356"
+  },
+  {
+    "file": "replay_confirmation_user.png",
+    "sha256": "8de679626a529715bbe6b731328f0a60a0559ef54473c091a58453f922d38f23"
+  },
+  {
+    "file": "replay_duplicate_warning_review.json",
+    "sha256": "3e005ffdf6574e1a93a7a0f325c419f946d71f48a9770afca4a2b9c14fdbfbe2"
+  },
+  {
+    "file": "replay_duplicate_warning_user.png",
+    "sha256": "30e946cf88c6b33aa3bf2a330ebfe8357dd9b43647229a887e3f715a169419c0"
+  },
+  {
+    "file": "replay_export_verification.json",
+    "sha256": "b5b37426504aca2cadf26016d222dfa3ac9e46c4a9bcb0820865c56d136a10d4"
+  },
+  {
+    "file": "sajat_karbejelentesek (5).csv",
+    "sha256": "a18c79f6f4bcbbc19f8c574e5601d7658ce453703e1252b52d423e0c81795641"
+  },
+  {
+    "file": "sajat_karbejelentesek (6).csv",
+    "sha256": "49f433d5440e7ddc38b41b679d88b18892758f97e23f26e2a49004477ca33b1b"
+  },
+  {
+    "file": "sajat_karbejelentesek (7).csv",
+    "sha256": "a18c79f6f4bcbbc19f8c574e5601d7658ce453703e1252b52d423e0c81795641"
+  },
+  {
+    "file": "verify_manual_export.py",
+    "sha256": "e1be154d3fa49e09e48df78a3e3b1370e0f8824cd3855434de7988137df5256b"
+  },
+  {
+    "file": "verify_original_reconciliation.py",
+    "sha256": "91941a2acfee7eb1fd1eea290a0dd35d57a7bbd56769cada48fe67859ea7b38a"
+  }
+]

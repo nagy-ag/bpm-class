@@ -1,0 +1,19 @@
+{
+  "verified": true,
+  "rows": 12,
+  "classifications": {
+    "kiemelt": 3,
+    "normal": 9
+  },
+  "highlighted_amounts": [
+    152000,
+    187300,
+    231000
+  ],
+  "first_output_preserved": true,
+  "original_columns_preserved": true,
+  "input_unchanged": true,
+  "actual_run": "../excel_150000_run.json",
+  "duration": "00:00:17",
+  "output_sha256": "18575018377e3b380cddfbf9c6b157ddb1680633c1df7cbffd7b4ebb6822a3d2"
+}

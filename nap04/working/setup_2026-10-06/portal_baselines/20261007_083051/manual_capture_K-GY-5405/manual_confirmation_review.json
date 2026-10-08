@@ -1,0 +1,22 @@
+{
+  "scope": "User-performed manual setup fixture; not a UiPath robot run",
+  "case_id": "K-GY-5405",
+  "policy": "TR-900007",
+  "claim_type": "vízkár",
+  "date": "2025-11-03",
+  "amount": 1850,
+  "evidence": "user_confirmation.png",
+  "screenshot_sha256": "faf0c3c827b73330072c57843f20b3ef8ef9e661bfe49c70e0e2f589cd129296",
+  "visually_confirmed": [
+    "success heading",
+    "case ID",
+    "policy",
+    "claim type",
+    "date",
+    "amount"
+  ],
+  "description_visible": false,
+  "post_submission_csv_pending": true,
+  "robot_input_unchanged": true,
+  "next": "User re-indicates target7 as confirmation heading; leave confirmation screen open."
+}

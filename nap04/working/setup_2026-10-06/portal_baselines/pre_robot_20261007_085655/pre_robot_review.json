@@ -1,0 +1,21 @@
+{
+  "scope": "User-exported records reconciled offline before first robot run; not robot execution",
+  "source": "C:\\Users\\nagya\\Downloads\\sajat_karbejelentesek (1).csv",
+  "source_modified_utc": "2026-10-07T08:56:55.138336+00:00",
+  "sha256": "70cbabe6fe6bc5389bd7c3cc32b437cfbbd03ed95b6d3b19d9840c597f203645",
+  "own_record_count": 3,
+  "prior_two_records_unchanged": true,
+  "manual_fixture": {
+    "ugyszam": "K-GY-5405",
+    "kotvenyszam": "TR-900007",
+    "kartipus": "vízkár",
+    "karesemeny_datum": "2025-11-03",
+    "becsult_osszeg": "1850",
+    "karleiras": "UiPath target capture test."
+  },
+  "manual_fixture_all_five_values_match": true,
+  "first_robot_policy": "TR-402318",
+  "first_robot_policy_present": false,
+  "case_ids_unique": true,
+  "reservation_files": []
+}

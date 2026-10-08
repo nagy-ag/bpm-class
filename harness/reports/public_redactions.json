@@ -1,0 +1,16 @@
+{
+  "scope": "Public textual reference export; original private bytes backed up locally",
+  "files_redacted": [
+    "nap01/deliverables/zoho_lead_verification.json",
+    "nap01/notes/TASK_PROGRESS.md",
+    "nap03/deliverables/API_automation/README.md",
+    "nap03/deliverables/API_automation/colab_execution_checkpoint.json",
+    "nap03/deliverables/API_automation/notebook_download_verification.json",
+    "nap03/deliverables/Sheets_automation/README.md",
+    "nap03/notes/TASK_PROGRESS.md",
+    "nap03/working/notebook_download_verification.json",
+    "nap03/working/sheets_preparation_checkpoint.json",
+    "nap03/working/verify_cloud_notebook_download.py"
+  ],
+  "source_bundles_modified": false
+}

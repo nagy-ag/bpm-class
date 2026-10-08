@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "native_google_sheets_export": true,
+  "sheet": "ARFOLYAMOK",
+  "range": "A1:C3",
+  "sheet_timestamp": "2026-10-07T18:25:28.199000",
+  "rows": [
+    {
+      "coin": "Bitcoin",
+      "price_eur": 74116.78364446365,
+      "timestamp": "2026-10-07T18:25:28.199000"
+    },
+    {
+      "coin": "Ethereum",
+      "price_eur": 2286.729499973583,
+      "timestamp": "2026-10-07T18:25:28.199000"
+    }
+  ],
+  "numeric_prices_and_native_dates": true,
+  "configured_credentials_absent": true,
+  "refresh_timestamp_advanced": false,
+  "export_filename": "BPA Nap03 – CMC Sheets verification-89e9280a-d042-4aef-b08b-dbce7bd1db89.xlsx"
+}

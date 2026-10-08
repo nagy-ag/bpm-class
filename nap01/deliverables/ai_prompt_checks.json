@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-07",
+  "generation_method": "Actual outputs authored by this authenticated Codex model in this course session; saved directly to files. Not a separate ChatGPT web session or API invocation.",
+  "prompts": {
+    "explanation": "# Kurzushoz alkalmazott AI-instrukciók\n\nA BPA-kurzusban üzleti folyamatokkal, automatizálással és adatelemzéssel foglalkozom.\nA kurzusfeladatok kimenete magyarul készüljön; a fontos szakkifejezés után zárójelben szerepeljen az angol megfelelő.\nTömören válaszolj, először a lényeggel, utána a részletekkel.\nHosszú gondolatjel helyett használj vesszőt vagy kettőspontot.\nA bizonytalanságot jelezd, ne találj ki adatot vagy forrást.\nSzámításnál mutasd a lépéseket.\nA megadott mondat- és példaszámot külön ellenőrizd; a számlálási egységeket különítsd el.\nValódi ügyféladatot vagy hitelesítő adatot ne használj a gyakorlatokban.\n\n\nMagyarázd el röviden, három magyar mondatban, mi az üzleti folyamat; a fő szakkifejezés angol megfelelőjét add meg zárójelben.",
+    "summary": "# Kurzushoz alkalmazott AI-instrukciók\n\nA BPA-kurzusban üzleti folyamatokkal, automatizálással és adatelemzéssel foglalkozom.\nA kurzusfeladatok kimenete magyarul készüljön; a fontos szakkifejezés után zárójelben szerepeljen az angol megfelelő.\nTömören válaszolj, először a lényeggel, utána a részletekkel.\nHosszú gondolatjel helyett használj vesszőt vagy kettőspontot.\nA bizonytalanságot jelezd, ne találj ki adatot vagy forrást.\nSzámításnál mutasd a lépéseket.\nA megadott mondat- és példaszámot külön ellenőrizd; a számlálási egységeket különítsd el.\nValódi ügyféladatot vagy hitelesítő adatot ne használj a gyakorlatokban.\n\n\nFoglald össze két rövid bekezdésben a kárbejelentés feldolgozását egy kitalált biztosítónál; a fontos fogalmak angol megfelelőjét add meg zárójelben.",
+    "mini": "# Kurzushoz alkalmazott AI-instrukciók\n\nA BPA-kurzusban üzleti folyamatokkal, automatizálással és adatelemzéssel foglalkozom.\nA kurzusfeladatok kimenete magyarul készüljön; a fontos szakkifejezés után zárójelben szerepeljen az angol megfelelő.\nTömören válaszolj, először a lényeggel, utána a részletekkel.\nHosszú gondolatjel helyett használj vesszőt vagy kettőspontot.\nA bizonytalanságot jelezd, ne találj ki adatot vagy forrást.\nSzámításnál mutasd a lépéseket.\nA megadott mondat- és példaszámot külön ellenőrizd; a számlálási egységeket különítsd el.\nValódi ügyféladatot vagy hitelesítő adatot ne használj a gyakorlatokban.\n\n\nPontosan öt mondatban magyarázd el az üzleti folyamat fogalmát. Külön blokkban adj három számozott példát egy kitalált biztosító működéséből, példánként egy mondatban. A három példa nem része az öt magyarázó mondatnak."
+  },
+  "outputs": {
+    "explanation": "Az üzleti folyamat (business process) egymáshoz kapcsolódó tevékenységek sora, amely meghatározott bemenetből értékes eredményt hoz létre.\nEgy rendelés teljesítése például a kérés rögzítésétől az áru átadásáig tart.\nA folyamat javítását a lépések, felelősök és mérhető eredmények egyértelmű leírása segíti.\n",
+    "summary": "A kárbejelentés feldolgozása (claims processing) a bejelentés és a szükséges adatok rögzítésével indul, majd a biztosító ellenőrzi a szerződéshez tartozó fedezetet (coverage).\n\nAz ügyintéző tisztázza a hiányzó adatokat, értékeli a kárt, és előkészíti a döntést (decision). Jóváhagyás esetén megtörténik a kifizetés (payment), az eredményről pedig értesítik az ügyfelet.\n",
+    "mini": "Magyarázat\nAz üzleti folyamat (business process) egymáshoz kapcsolódó tevékenységek rendezett sora, amely egy meghatározott célt szolgál.\nA folyamat bemenetet (input) használ fel, például egy ügyfél kérését vagy egy dokumentumot.\nA résztvevők előre tisztázott lépésekben alakítják ezt eredménnyé (output).\nA felelősök és az ellenőrzési pontok meghatározása segít az egységes végrehajtásban.\nA folyamat teljesítménye (performance) például átfutási idővel és hibaaránnyal mérhető.\n\nHárom biztosítói példa\n1. A szerződéskötés (policy issuance) során a biztosító felméri az igényt, elkészíti az ajánlatot, majd elfogadás után kiállítja a kötvényt.\n2. A kárrendezés (claims settlement) a kárbejelentés rögzítésétől a fedezet ellenőrzésén és a döntésen át az indokolt kifizetésig tart.\n3. A díjbeszedés (premium collection) során a biztosító nyilvántartja az esedékes díjat, rögzíti a beérkezett összeget, és kezeli az eltéréseket.\n"
+  },
+  "evaluation": {
+    "date": "2026-10-07",
+    "tool": "current authenticated Codex session",
+    "global_settings_tested": false,
+    "checks": {
+      "explanation_3_sentences": true,
+      "summary_2_paragraphs": true,
+      "mini_5_explanation_sentences": true,
+      "mini_3_numbered_examples": true,
+      "one_sentence_per_example": true,
+      "no_em_dash": true,
+      "english_equivalents_present": true
+    },
+    "semantic_review": "Hungarian prose, clear process input/activity/output concept; insurer examples are distinct fictional policy issuance, claims settlement and premium collection. No external factual figures or invented citations. Counts verified by code independently of model self-assessment.",
+    "passed": true
+  }
+}

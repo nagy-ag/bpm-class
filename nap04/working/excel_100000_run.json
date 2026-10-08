@@ -1,0 +1,151 @@
+{
+  "Result": "Success",
+  "Code": "ToolResult",
+  "Data": {
+    "output": "Session ended",
+    "errors": [],
+    "logEntries": [
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Setting up environment"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Clearing flavour-scoped cache folders in: C:\\Users\\nagya\\dev\\school\\BPA\\nap04\\working\\ExcelRobot\\.local"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Restoring nuget packages"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Generating JIT assemblies"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "JitServiceProvider created: StoreVersion=AutoDetect, AutoUpgrade=False, Language=VisualBasic, InProcessCache=True, WorkspaceCache=True, HasMetadataReferenceProvider=True, HasAssemblyLoadContext=True."
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "No V3 or V4 entity store detected, using V3."
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Disk cache hit for 'GlobalVariables'."
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Storing 'GlobalVariables' \u2192 'GlobalVariablesT1PNoYwrqg' in cache."
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Loading assemblies with XML namespaces"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Registering activities metadata"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Update Xaml files with references to discarded entity assemblies."
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Initializing database"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Analyzing project"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Project analysis was skipped."
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "ST-ANA-003 - Expand to see details"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "ST-ANA-009 - Expand to see details"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Generating workflows from execution templates"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Generate tests based on data variation file."
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Processing Forms"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Processing triggers."
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Staging JIT assemblies for execution"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Compiling files"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Execution completed"
+      },
+      {
+        "source": "Compile",
+        "level": "Information",
+        "message": "Project built successfully."
+      },
+      {
+        "source": "Debug",
+        "level": "Information",
+        "message": "ExcelRobot execution started"
+      },
+      {
+        "source": "Debug",
+        "level": "Information",
+        "message": "12 \u00fcgyfelet olvastam be."
+      },
+      {
+        "source": "Debug",
+        "level": "Information",
+        "message": "K\u00e9sz: ugyfelek_minositve.xlsx; threshold=100000; rows=12"
+      },
+      {
+        "source": "Debug",
+        "level": "Information",
+        "message": "ExcelRobot execution ended in: 00:00:34"
+      }
+    ],
+    "debugState": "Completed"
+  }
+}

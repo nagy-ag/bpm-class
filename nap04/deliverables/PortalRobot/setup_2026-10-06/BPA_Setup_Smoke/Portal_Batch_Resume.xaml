@@ -1,0 +1,755 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Portal_Batch_Resume" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Portal_Logged_Trial_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="One-row trial - target indication required before Run File" sap:VirtualizedContainerService.HintSize="756.8,11943.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="runDir">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" Value="" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="policy">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" Value="" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="caseId">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" Value="" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Default="initializing" Name="stage" />
+      <Variable x:TypeArguments="x:Boolean" Default="True" Name="targetsConfigured" />
+      <Variable x:TypeArguments="sd2:DataTable" Name="dt" />
+      <Variable x:TypeArguments="x:String" Name="batchRunDir" />
+      <Variable x:TypeArguments="sd2:DataTable" Name="rowData" />
+      <Variable x:TypeArguments="x:Boolean" Default="True" Name="batchBaselineReviewed" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign DisplayName="Set runDir" sap:VirtualizedContainerService.HintSize="756.8,174.4" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[runDir]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[System.IO.Path.Combine("C:/Users/nagya/dev/school/BPA/nap04/working/setup_2026-10-06", "portal_batch_runs", DateTime.UtcNow.ToString("yyyyMMdd_HHmmss") &amp; "_" &amp; Guid.NewGuid().ToString("N"))]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign DisplayName="Batch set batchRunDir" sap:VirtualizedContainerService.HintSize="756.8,174.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[batchRunDir]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[runDir]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <If Condition="[Not batchBaselineReviewed]" DisplayName="Fresh baseline CSV must be reconciled before user-operated batch; do not run yet." sap:VirtualizedContainerService.HintSize="756.8,178.4" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <Sequence DisplayName="Then" sap2010:WorkflowViewState.IdRef="Sequence_85">
+          <Throw Exception="[New System.InvalidOperationException(&quot;Fresh baseline CSV must be reconciled before user-operated batch; do not run yet.&quot;)]" sap2010:WorkflowViewState.IdRef="Throw_82" />
+        </Sequence>
+      </If.Then>
+    </If>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Log run_started" sap:VirtualizedContainerService.HintSize="756.8,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Portal_Log.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_RunDir">[runDir]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Event">["run_started"]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Policy">[policy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_CaseId">[caseId]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Detail">["One-row trial; no automatic retry"]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <If Condition="[Not targetsConfigured]" DisplayName="Guard: Targets are not indicated. Follow PORTAL_LOGGED_HANDOFF.md before running." sap:VirtualizedContainerService.HintSize="756.8,401.6" sap2010:WorkflowViewState.IdRef="If_4">
+      <If.Then>
+        <Sequence DisplayName="Fail visibly" sap:VirtualizedContainerService.HintSize="449.6,173.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Throw DisplayName="Stop: Targets are not indicated. Follow PORTAL_LOGGED_HANDOFF.md before running." Exception="[New System.InvalidOperationException(&quot;Targets are not indicated. Follow PORTAL_LOGGED_HANDOFF.md before running.&quot;)]" sap:VirtualizedContainerService.HintSize="416,113.6" sap2010:WorkflowViewState.IdRef="Throw_6" />
+        </Sequence>
+      </If.Then>
+    </If>
+    <ui:ReadRange AddHeaders="True" DataTable="[dt]" DisplayName="Read all10lesson rows with headers" sap:VirtualizedContainerService.HintSize="756.8,226.4" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="bejelentesek" WorkbookPath="../../readiness_2026-10-06/karbejelentesek_input.xlsx">
+      <ui:ReadRange.Range>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ui:ReadRange.Range>
+    </ui:ReadRange>
+    <If Condition="[dt Is Nothing OrElse dt.Rows.Count &lt;&gt; 10]" DisplayName="Guard: Expected exactly ten input rows" sap:VirtualizedContainerService.HintSize="756.8,178.4" sap2010:WorkflowViewState.IdRef="If_7">
+      <If.Then>
+        <Sequence DisplayName="Fail visibly" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Throw DisplayName="Stop: Expected exactly one input row" Exception="[New System.InvalidOperationException(&quot;Expected exactly ten input rows&quot;)]" sap2010:WorkflowViewState.IdRef="Throw_9" />
+        </Sequence>
+      </If.Then>
+    </If>
+    <If Condition="[Not dt.Columns.Contains(&quot;kotvenyszam&quot;)]" DisplayName="Guard: Missing input column kotvenyszam" sap:VirtualizedContainerService.HintSize="756.8,178.4" sap2010:WorkflowViewState.IdRef="If_10">
+      <If.Then>
+        <Sequence DisplayName="Fail visibly" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <Throw DisplayName="Stop: Missing input column kotvenyszam" Exception="[New System.InvalidOperationException(&quot;Missing input column kotvenyszam&quot;)]" sap2010:WorkflowViewState.IdRef="Throw_12" />
+        </Sequence>
+      </If.Then>
+    </If>
+    <If Condition="[Not dt.Columns.Contains(&quot;kartipus&quot;)]" DisplayName="Guard: Missing input column kartipus" sap:VirtualizedContainerService.HintSize="756.8,178.4" sap2010:WorkflowViewState.IdRef="If_13">
+      <If.Then>
+        <Sequence DisplayName="Fail visibly" sap2010:WorkflowViewState.IdRef="Sequence_14">
+          <Throw DisplayName="Stop: Missing input column kartipus" Exception="[New System.InvalidOperationException(&quot;Missing input column kartipus&quot;)]" sap2010:WorkflowViewState.IdRef="Throw_15" />
+        </Sequence>
+      </If.Then>
+    </If>
+    <If Condition="[Not dt.Columns.Contains(&quot;karesemeny_datum&quot;)]" DisplayName="Guard: Missing input column karesemeny_datum" sap:VirtualizedContainerService.HintSize="756.8,178.4" sap2010:WorkflowViewState.IdRef="If_16">
+      <If.Then>
+        <Sequence DisplayName="Fail visibly" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <Throw DisplayName="Stop: Missing input column karesemeny_datum" Exception="[New System.InvalidOperationException(&quot;Missing input column karesemeny_datum&quot;)]" sap2010:WorkflowViewState.IdRef="Throw_18" />
+        </Sequence>
+      </If.Then>
+    </If>
+    <If Condition="[Not dt.Columns.Contains(&quot;becsult_osszeg&quot;)]" DisplayName="Guard: Missing input column becsult_osszeg" sap:VirtualizedContainerService.HintSize="756.8,178.4" sap2010:WorkflowViewState.IdRef="If_19">
+      <If.Then>
+        <Sequence DisplayName="Fail visibly" sap2010:WorkflowViewState.IdRef="Sequence_20">
+          <Throw DisplayName="Stop: Missing input column becsult_osszeg" Exception="[New System.InvalidOperationException(&quot;Missing input column becsult_osszeg&quot;)]" sap2010:WorkflowViewState.IdRef="Throw_21" />
+        </Sequence>
+      </If.Then>
+    </If>
+    <If Condition="[Not dt.Columns.Contains(&quot;karleiras&quot;)]" DisplayName="Guard: Missing input column karleiras" sap:VirtualizedContainerService.HintSize="756.8,178.4" sap2010:WorkflowViewState.IdRef="If_22">
+      <If.Then>
+        <Sequence DisplayName="Fail visibly" sap2010:WorkflowViewState.IdRef="Sequence_23">
+          <Throw DisplayName="Stop: Missing input column karleiras" Exception="[New System.InvalidOperationException(&quot;Missing input column karleiras&quot;)]" sap2010:WorkflowViewState.IdRef="Throw_24" />
+        </Sequence>
+      </If.Then>
+    </If>
+    <If Condition="[Not dt.Columns.Contains(&quot;ugyszam&quot;)]" DisplayName="Guard: Missing input column ugyszam" sap:VirtualizedContainerService.HintSize="756.8,178.4" sap2010:WorkflowViewState.IdRef="If_25">
+      <If.Then>
+        <Sequence DisplayName="Fail visibly" sap2010:WorkflowViewState.IdRef="Sequence_26">
+          <Throw DisplayName="Stop: Missing input column ugyszam" Exception="[New System.InvalidOperationException(&quot;Missing input column ugyszam&quot;)]" sap2010:WorkflowViewState.IdRef="Throw_27" />
+        </Sequence>
+      </If.Then>
+    </If>
+    <Assign DisplayName="Set policy" sap:VirtualizedContainerService.HintSize="756.8,174.4" sap2010:WorkflowViewState.IdRef="Assign_28">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[policy]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[dt.Rows(0)("kotvenyszam").ToString()]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <If Condition="[Not System.Text.RegularExpressions.Regex.IsMatch(policy, &quot;^TR-[0-9]{6}$&quot;)]" DisplayName="Guard: Invalid policy format" sap:VirtualizedContainerService.HintSize="756.8,178.4" sap2010:WorkflowViewState.IdRef="If_29">
+      <If.Then>
+        <Sequence DisplayName="Fail visibly" sap2010:WorkflowViewState.IdRef="Sequence_30">
+          <Throw DisplayName="Stop: Invalid policy format" Exception="[New System.InvalidOperationException(&quot;Invalid policy format&quot;)]" sap2010:WorkflowViewState.IdRef="Throw_31" />
+        </Sequence>
+      </If.Then>
+    </If>
+    <If Condition="[Not String.IsNullOrWhiteSpace(dt.Rows(0)(&quot;ugyszam&quot;).ToString())]" DisplayName="Guard: Input already contains a case ID; reconcile before another run" sap:VirtualizedContainerService.HintSize="756.8,178.4" sap2010:WorkflowViewState.IdRef="If_32">
+      <If.Then>
+        <Sequence DisplayName="Fail visibly" sap2010:WorkflowViewState.IdRef="Sequence_33">
+          <Throw DisplayName="Stop: Input already contains a case ID; reconcile before another run" Exception="[New System.InvalidOperationException(&quot;Input already contains a case ID; reconcile before another run&quot;)]" sap2010:WorkflowViewState.IdRef="Throw_34" />
+        </Sequence>
+      </If.Then>
+    </If>
+    <ui:WriteRange StartingCell="{x:Null}" DataTable="[dt]" DisplayName="Save actual input snapshot without modifying original" sap:VirtualizedContainerService.HintSize="756.8,278.4" sap2010:WorkflowViewState.IdRef="WriteRange_35" SheetName="Input" WorkbookPath="[System.IO.Path.Combine(runDir, &quot;input_snapshot.xlsx&quot;)]" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Log input_read" sap:VirtualizedContainerService.HintSize="756.8,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_36" UnSafe="False" WorkflowFileName="Portal_Log.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_RunDir">[runDir]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Event">["input_read"]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Policy">[policy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_CaseId">[caseId]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Detail">["One row saved in input_snapshot.xlsx"]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use user-attached Brave portal - never open or close it" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="756.8,8167.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_39" OpenMode="Never" ScopeGuid="52e595f1-111f-455b-a1d8-7baabf5504d8" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="755.2,7912" sap2010:WorkflowViewState.IdRef="Sequence_40">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ForEach x:TypeArguments="sd2:DataRow" CurrentIndex="{x:Null}" DisplayName="All10rows; skip only verified first policy" sap:VirtualizedContainerService.HintSize="721.6,7852" sap2010:WorkflowViewState.IdRef="ForEach_41" Values="[dt.Rows]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="sd2:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd2:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <If Condition="[CurrentRow(&quot;kotvenyszam&quot;).ToString() = &quot;TR-402318&quot;]" DisplayName="Skip previously verified K-GY-4147; never submit twice" sap2010:WorkflowViewState.IdRef="If_74">
+                    <If.Then>
+                      <Sequence sap2010:WorkflowViewState.IdRef="Sequence_86">
+                        <ui:LogMessage DisplayName="Previously verified first row" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Skipped TR-402318: already verified as K-GY-4147; no portal action for this row.&quot;]" />
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="One fictional claim with durable checkpoints" sap:VirtualizedContainerService.HintSize="720,7730.4" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign DisplayName="Batch set policy" sap2010:WorkflowViewState.IdRef="Assign_78">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[policy]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[CurrentRow("kotvenyszam").ToString()]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign DisplayName="Batch set caseId" sap2010:WorkflowViewState.IdRef="Assign_79">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[caseId]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[String.Empty]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign DisplayName="Batch set stage" sap2010:WorkflowViewState.IdRef="Assign_80">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[stage]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">["initializing"]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign DisplayName="Batch set runDir" sap2010:WorkflowViewState.IdRef="Assign_81">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[runDir]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[System.IO.Path.Combine(batchRunDir, policy)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <If Condition="[Not System.Text.RegularExpressions.Regex.IsMatch(policy,&quot;^TR-[0-9]{6}$&quot;)]" DisplayName="Invalid policy format; stop batch." sap2010:WorkflowViewState.IdRef="If_72">
+                          <If.Then>
+                            <Sequence sap2010:WorkflowViewState.IdRef="Sequence_87">
+                              <Throw Exception="[New System.InvalidOperationException(&quot;Invalid policy format; stop batch.&quot;)]" sap2010:WorkflowViewState.IdRef="Throw_83" />
+                            </Sequence>
+                          </If.Then>
+                        </If>
+                        <If Condition="[Not String.IsNullOrWhiteSpace(CurrentRow(&quot;ugyszam&quot;).ToString())]" DisplayName="Input has existing case ID; reconcile before submit." sap2010:WorkflowViewState.IdRef="If_73">
+                          <If.Then>
+                            <Sequence sap2010:WorkflowViewState.IdRef="Sequence_88">
+                              <Throw Exception="[New System.InvalidOperationException(&quot;Input has existing case ID; reconcile before submit.&quot;)]" sap2010:WorkflowViewState.IdRef="Throw_84" />
+                            </Sequence>
+                          </If.Then>
+                        </If>
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Log run_started" sap:VirtualizedContainerService.HintSize="756.8,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_87" UnSafe="False" WorkflowFileName="Portal_Log.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_RunDir">[runDir]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_Event">["run_started"]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_Policy">[policy]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_CaseId">[caseId]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_Detail">["One batch item; no automatic retry"]</InArgument>
+                          </ui:InvokeWorkflowFile.Arguments>
+                        </ui:InvokeWorkflowFile>
+                        <ui:InvokeCode ContinueOnError="{x:Null}" Code="rowTable = inputTable.Clone()&#xA;rowTable.ImportRow(inputRow)" DisplayName="One-row evidence data" sap2010:WorkflowViewState.IdRef="InvokeCode_38">
+                          <ui:InvokeCode.Arguments>
+                            <InArgument x:TypeArguments="sd2:DataTable" x:Key="inputTable">[dt]</InArgument>
+                            <InArgument x:TypeArguments="sd2:DataRow" x:Key="inputRow">[CurrentRow]</InArgument>
+                            <OutArgument x:TypeArguments="sd2:DataTable" x:Key="rowTable">[rowData]</OutArgument>
+                          </ui:InvokeCode.Arguments>
+                        </ui:InvokeCode>
+                        <ui:WriteRange DataTable="[rowData]" DisplayName="Save one batch item snapshot" sap:VirtualizedContainerService.HintSize="756.8,278.4" sap2010:WorkflowViewState.IdRef="WriteRange_36" SheetName="Input" StartingCell="A1" WorkbookPath="[System.IO.Path.Combine(runDir, &quot;input_snapshot.xlsx&quot;)]" />
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Log input_read" sap:VirtualizedContainerService.HintSize="756.8,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_88" UnSafe="False" WorkflowFileName="Portal_Log.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_RunDir">[runDir]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_Event">["input_read"]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_Policy">[policy]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_CaseId">[caseId]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_Detail">["One row saved in input_snapshot.xlsx"]</InArgument>
+                          </ui:InvokeWorkflowFile.Arguments>
+                        </ui:InvokeWorkflowFile>
+                        <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim folder As String = System.IO.Path.Combine(root, &quot;reservations&quot;)&#xA;System.IO.Directory.CreateDirectory(folder)&#xA;Dim path As String = System.IO.Path.Combine(folder, policyNumber &amp; &quot;.lock&quot;)&#xA;Using stream As New System.IO.FileStream(path, System.IO.FileMode.CreateNew, System.IO.FileAccess.Write, System.IO.FileShare.None)&#xA;    Using writer As New System.IO.StreamWriter(stream)&#xA;        writer.WriteLine(runFolder)&#xA;    End Using&#xA;End Using" DisplayName="Reserve fictional policy once; manual reconciliation before retry" sap:VirtualizedContainerService.HintSize="756.8,400.8" sap2010:WorkflowViewState.IdRef="InvokeCode_37">
+                          <ui:InvokeCode.Arguments>
+                            <InArgument x:TypeArguments="x:String" x:Key="root">["C:/Users/nagya/dev/school/BPA/nap04/working/setup_2026-10-06/portal_runs"]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="policyNumber">[policy]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="runFolder">[runDir]</InArgument>
+                          </ui:InvokeCode.Arguments>
+                        </ui:InvokeCode>
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Log policy_reserved" sap:VirtualizedContainerService.HintSize="756.8,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_38" UnSafe="False" WorkflowFileName="Portal_Log.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_RunDir">[runDir]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_Event">["policy_reserved"]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_Policy">[policy]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_CaseId">[caseId]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_Detail">["Keep reservation until saved rows are reconciled"]</InArgument>
+                          </ui:InvokeWorkflowFile.Arguments>
+                        </ui:InvokeWorkflowFile>
+                        <TryCatch DisplayName="Record uncertainty and stop; never retry submit" sap:VirtualizedContainerService.HintSize="686.4,7670.4" sap2010:WorkflowViewState.IdRef="TryCatch_43">
+                          <TryCatch.Try>
+                            <Sequence DisplayName="Fill, submit once, capture confirmation" sap:VirtualizedContainerService.HintSize="684.8,6888" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NTakeScreenshot ContinueOnError="False" DisplayName="Capture attached portal before filling" FileName="[System.IO.Path.Combine(runDir, &quot;01_before.png&quot;)]" FileNameMode="None" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="651.2,276.8" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_45" ScopeIdentifier="52e595f1-111f-455b-a1d8-7baabf5504d8" Version="V5" />
+                              <Assign DisplayName="Set stage" sap:VirtualizedContainerService.HintSize="651.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_46">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[stage]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">["fill_kotvenyszam"]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="False" DisplayName="TODO Indicate 1 - Kötvényszám" EmptyFieldMode="SingleLine" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="651.2,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_47" InteractionMode="SameAsCard" ScopeIdentifier="52e595f1-111f-455b-a1d8-7baabf5504d8" Text="[CurrentRow(&quot;kotvenyszam&quot;).ToString()]" Timeout="10" Version="V5">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable ContentHash="rdDmxTihdkugF60AhfvgBg" DesignTimeRectangle="454, 516, 478, 49" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='kotvenyszam' tag='INPUT' type='' class='' placeholder='TR-123456' aaname='Kötvényszám' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="f6ac91fc-7ef0-4fca-a6e7-05db4b809e53" InformativeScreenshot="52cf7dac348031053ec9c3a17f666e73.jpg" IsResponsive="True" Reference="O2OegXa4uUmX-8tf3FY-ug/pGCA_9ynVkazKjtfzwgL1A" ScopeSelectorArgument="&lt;html app='brave.exe' title='Meridian Biztosító | Kárrendszer (gyakorló példány)' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target DesignTimeRectangle="454, 488, 478, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='karbejelento-urlap' tag='LABEL' type='' class='' aaname='Kötvényszám' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Kötvényszám' /&gt;" Guid="5af163ee-299d-4285-90e4-7506e8b553de" SearchSteps="FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Log field_activity_completed" sap:VirtualizedContainerService.HintSize="651.2,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_48" UnSafe="False" WorkflowFileName="Portal_Log.xaml">
+                                <ui:InvokeWorkflowFile.Arguments>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_RunDir">[runDir]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_Event">["field_activity_completed"]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_Policy">[policy]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_CaseId">[caseId]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_Detail">["kotvenyszam"]</InArgument>
+                                </ui:InvokeWorkflowFile.Arguments>
+                              </ui:InvokeWorkflowFile>
+                              <Assign DisplayName="Set stage" sap:VirtualizedContainerService.HintSize="651.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_49">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[stage]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">["fill_kartipus"]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <uix:NSelectItem ContinueOnError="False" DisplayName="TODO Indicate 2 - Kár típusa" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="651.2,194.4" sap2010:WorkflowViewState.IdRef="NSelectItem_50" Item="[CurrentRow(&quot;kartipus&quot;).ToString()]" ScopeIdentifier="52e595f1-111f-455b-a1d8-7baabf5504d8" Timeout="10" Version="V5">
+                                <uix:NSelectItem.Items>
+                                  <scg:List x:TypeArguments="x:String" Capacity="7">
+                                    <x:String>- válassz -</x:String>
+                                    <x:String>vízkár</x:String>
+                                    <x:String>viharkár</x:String>
+                                    <x:String>üvegkár</x:String>
+                                    <x:String>betöréses lopás</x:String>
+                                    <x:String>tűzkár</x:String>
+                                    <x:String>felelősségi kár</x:String>
+                                  </scg:List>
+                                </uix:NSelectItem.Items>
+                                <uix:NSelectItem.Target>
+                                  <uix:TargetAnchorable ContentHash="LWjeq58x3Ue_-BBZxqiY1w" DesignTimeRectangle="955, 516, 478, 51" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='kartipus' tag='SELECT' type='' class='' aaname='Kár típusa' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e5f2553f-9236-4479-ac17-32c1760caf4c" InformativeScreenshot="acd7c29e62c343bbcf56e03c30857ac8.jpg" Reference="O2OegXa4uUmX-8tf3FY-ug/beq6XBsirE2vtmPa3M9ykA" ScopeSelectorArgument="&lt;html app='brave.exe' title='Meridian Biztosító | Kárrendszer (gyakorló példány)' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target DesignTimeRectangle="955, 488, 478, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Kár típusa' parentid='karbejelento-urlap' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:text='Kár típusa' /&gt;" Guid="1a86376f-36b9-499f-adee-87e1f370da51" SearchSteps="FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NSelectItem.Target>
+                              </uix:NSelectItem>
+                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Log field_activity_completed" sap:VirtualizedContainerService.HintSize="651.2,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_51" UnSafe="False" WorkflowFileName="Portal_Log.xaml">
+                                <ui:InvokeWorkflowFile.Arguments>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_RunDir">[runDir]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_Event">["field_activity_completed"]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_Policy">[policy]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_CaseId">[caseId]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_Detail">["kartipus"]</InArgument>
+                                </ui:InvokeWorkflowFile.Arguments>
+                              </ui:InvokeWorkflowFile>
+                              <Assign DisplayName="Set stage" sap:VirtualizedContainerService.HintSize="651.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_52">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[stage]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">["fill_karesemeny_datum"]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="False" DisplayName="TODO Indicate 3 - Káresemény dátuma" EmptyFieldMode="SingleLine" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="651.2,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_53" InteractionMode="SameAsCard" ScopeIdentifier="52e595f1-111f-455b-a1d8-7baabf5504d8" Text="[CurrentRow(&quot;karesemeny_datum&quot;).ToString()]" Timeout="10" Version="V5">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable ContentHash="qtV5pR4GgEGP0FrjpbjIcQ" DesignTimeRectangle="454, 637, 478, 49" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='karesemeny-datum' tag='INPUT' type='' class='' placeholder='2025-07-14' aaname='Káresemény dátuma' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="87e67e04-5a18-4f3c-9b1a-189d442d8a8f" InformativeScreenshot="eb2f85cc0cdfc252eccdc37af8491a71.jpg" IsResponsive="True" Reference="O2OegXa4uUmX-8tf3FY-ug/mvdKXGYIGUuYgn0njmgC-A" ScopeSelectorArgument="&lt;html app='brave.exe' title='Meridian Biztosító | Kárrendszer (gyakorló példány)' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target DesignTimeRectangle="454, 608, 478, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Káresemény dátuma' parentid='karbejelento-urlap' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:text='Káresemény dátuma' /&gt;" Guid="e94f9c48-492a-4cb2-83df-e1dd434f3133" SearchSteps="FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Log field_activity_completed" sap:VirtualizedContainerService.HintSize="651.2,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_54" UnSafe="False" WorkflowFileName="Portal_Log.xaml">
+                                <ui:InvokeWorkflowFile.Arguments>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_RunDir">[runDir]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_Event">["field_activity_completed"]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_Policy">[policy]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_CaseId">[caseId]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_Detail">["karesemeny_datum"]</InArgument>
+                                </ui:InvokeWorkflowFile.Arguments>
+                              </ui:InvokeWorkflowFile>
+                              <Assign DisplayName="Set stage" sap:VirtualizedContainerService.HintSize="651.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_55">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[stage]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">["fill_becsult_osszeg"]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="False" DisplayName="TODO Indicate 4 - Becsült összeg" EmptyFieldMode="SingleLine" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="651.2,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_56" InteractionMode="SameAsCard" ScopeIdentifier="52e595f1-111f-455b-a1d8-7baabf5504d8" Text="[CurrentRow(&quot;becsult_osszeg&quot;).ToString()]" Timeout="10" Version="V5">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable ContentHash="JmRvsuqEGkmZannjx1ct_w" DesignTimeRectangle="955, 637, 478, 49" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='becsult-osszeg' tag='INPUT' type='' class='' placeholder='pl. 2500' aaname='Becsült összeg (lej)' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="f9661ff3-ec90-4835-b554-2eb3f48ba14e" InformativeScreenshot="eec8756534124da4eabf429aa5cf8f4f.jpg" IsResponsive="True" Reference="O2OegXa4uUmX-8tf3FY-ug/1u9Q-qiyeEWSGXi9j1ykDA" ScopeSelectorArgument="&lt;html app='brave.exe' title='Meridian Biztosító | Kárrendszer (gyakorló példány)' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target DesignTimeRectangle="955, 608, 478, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Becsült összeg (lej)' parentid='karbejelento-urlap' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:text='Becsült összeg (lej)' /&gt;" Guid="894e3ff2-46ff-4557-8c80-b9c1cc15e728" SearchSteps="FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Log field_activity_completed" sap:VirtualizedContainerService.HintSize="651.2,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_57" UnSafe="False" WorkflowFileName="Portal_Log.xaml">
+                                <ui:InvokeWorkflowFile.Arguments>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_RunDir">[runDir]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_Event">["field_activity_completed"]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_Policy">[policy]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_CaseId">[caseId]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_Detail">["becsult_osszeg"]</InArgument>
+                                </ui:InvokeWorkflowFile.Arguments>
+                              </ui:InvokeWorkflowFile>
+                              <Assign DisplayName="Set stage" sap:VirtualizedContainerService.HintSize="651.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_58">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[stage]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">["fill_karleiras"]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="False" DisplayName="TODO Indicate 5 - A kár rövid leírása" EmptyFieldMode="MultiLine" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="651.2,245.6" sap2010:WorkflowViewState.IdRef="NTypeInto_59" InteractionMode="SameAsCard" ScopeIdentifier="52e595f1-111f-455b-a1d8-7baabf5504d8" Text="[CurrentRow(&quot;karleiras&quot;).ToString()]" Timeout="10" Version="V5">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable ContentHash="ao_F2wb4oEuioPunjcx4gQ" DesignTimeRectangle="454, 732, 979, 99" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='karleiras' tag='TEXTAREA' type='' class='' aaname='A kár rövid leírása' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="d182871a-ca6a-4619-9b56-9dd2e354ca14" InformativeScreenshot="2a8bddb15fb4bc9a4da914dc1404649a.jpg" IsResponsive="True" Reference="O2OegXa4uUmX-8tf3FY-ug/mXnnCoiMUEawY0Kp8yMnvw" ScopeSelectorArgument="&lt;html app='brave.exe' title='Meridian Biztosító | Kárrendszer (gyakorló példány)' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target DesignTimeRectangle="454, 703, 979, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='A kár rövid leírása' parentid='karbejelento-urlap' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:text='A kár rövid leírása' /&gt;" Guid="b0ae1105-5e24-4b61-b5a4-f44f9d3b9eb9" SearchSteps="FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Log field_activity_completed" sap:VirtualizedContainerService.HintSize="651.2,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_60" UnSafe="False" WorkflowFileName="Portal_Log.xaml">
+                                <ui:InvokeWorkflowFile.Arguments>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_RunDir">[runDir]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_Event">["field_activity_completed"]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_Policy">[policy]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_CaseId">[caseId]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_Detail">["karleiras"]</InArgument>
+                                </ui:InvokeWorkflowFile.Arguments>
+                              </ui:InvokeWorkflowFile>
+                              <uix:NTakeScreenshot ContinueOnError="False" DisplayName="Capture filled portal before submit" FileName="[System.IO.Path.Combine(runDir, &quot;02_filled.png&quot;)]" FileNameMode="None" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="651.2,276.8" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_61" ScopeIdentifier="52e595f1-111f-455b-a1d8-7baabf5504d8" Version="V5" />
+                              <Assign DisplayName="Set stage" sap:VirtualizedContainerService.HintSize="651.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_62">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[stage]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">["submit_attempted"]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Log submit_attempted" sap:VirtualizedContainerService.HintSize="651.2,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_63" UnSafe="False" WorkflowFileName="Portal_Log.xaml">
+                                <ui:InvokeWorkflowFile.Arguments>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_RunDir">[runDir]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_Event">["submit_attempted"]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_Policy">[policy]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_CaseId">[caseId]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_Detail">["A click may commit; do not retry without readback"]</InArgument>
+                                </ui:InvokeWorkflowFile.Arguments>
+                              </ui:InvokeWorkflowFile>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="False" DisplayName="TODO Indicate 6 - Bejelentés rögzítése" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="651.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_64" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="52e595f1-111f-455b-a1d8-7baabf5504d8" Timeout="10" Version="V5">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable ContentHash="kx2muFWJBUGWoszphim3tA" DesignTimeRectangle="454, 861, 225, 55" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='bejelentes-rogzites' tag='BUTTON' /&gt;" Guid="db356f17-77d6-4523-9514-6edfb18c0ded" InformativeScreenshot="6e93edd457acea1ca48e227e6608e4f6.jpg" Reference="O2OegXa4uUmX-8tf3FY-ug/UlAJebHxyk21tAhHXqKeXg" ScopeSelectorArgument="&lt;html app='brave.exe' title='Meridian Biztosító | Kárrendszer (gyakorló példány)' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <uix:NCheckState CheckVisibility="True" DisplayName="TODO Indicate 7 - A bejelentést rögzítettük" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="651.2,2801.6" sap2010:WorkflowViewState.IdRef="NCheckState_65" ScopeIdentifier="52e595f1-111f-455b-a1d8-7baabf5504d8" Timeout="10" Version="V5">
+                                <uix:NCheckState.IfExists>
+                                  <Sequence DisplayName="Confirmation appeared - still verify saved data after run" sap:VirtualizedContainerService.HintSize="649.6,2292" sap2010:WorkflowViewState.IdRef="Sequence_66">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign DisplayName="Set stage" sap:VirtualizedContainerService.HintSize="616,174.4" sap2010:WorkflowViewState.IdRef="Assign_67">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[stage]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">["confirmation_seen"]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Log confirmation_seen" sap:VirtualizedContainerService.HintSize="616,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_68" UnSafe="False" WorkflowFileName="Portal_Log.xaml">
+                                      <ui:InvokeWorkflowFile.Arguments>
+                                        <InArgument x:TypeArguments="x:String" x:Key="in_RunDir">[runDir]</InArgument>
+                                        <InArgument x:TypeArguments="x:String" x:Key="in_Event">["confirmation_seen"]</InArgument>
+                                        <InArgument x:TypeArguments="x:String" x:Key="in_Policy">[policy]</InArgument>
+                                        <InArgument x:TypeArguments="x:String" x:Key="in_CaseId">[caseId]</InArgument>
+                                        <InArgument x:TypeArguments="x:String" x:Key="in_Detail">[String.Empty]</InArgument>
+                                      </ui:InvokeWorkflowFile.Arguments>
+                                    </ui:InvokeWorkflowFile>
+                                    <uix:NTakeScreenshot ContinueOnError="False" DisplayName="Capture confirmation and actual generated case number" FileName="[System.IO.Path.Combine(runDir, &quot;03_confirmation.png&quot;)]" FileNameMode="None" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="616,276.8" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_69" ScopeIdentifier="52e595f1-111f-455b-a1d8-7baabf5504d8" Version="V5" />
+                                    <uix:NGetText ContinueOnError="False" DisplayName="TODO Indicate 8 - generated K-GY case number" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="616,142.4" sap2010:WorkflowViewState.IdRef="NGetText_70" ScopeIdentifier="52e595f1-111f-455b-a1d8-7baabf5504d8" TextString="[caseId]" Timeout="10" Version="V5">
+                                      <uix:NGetText.Target>
+                                        <uix:TargetAnchorable ContentHash="olkcdLQRYEav_lQM0q5xWA" DesignTimeRectangle="457, 503, 993, 43" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='ugyszam-ertek' tag='DIV' /&gt;" Guid="a949ea25-9f73-4585-bdd3-53624996a7a5" InformativeScreenshot="4b93093dd60841276a0d3987e5c68c0e.jpg" Reference="O2OegXa4uUmX-8tf3FY-ug/OFhTlu75302hkby5GZLe_g" ScopeSelectorArgument="&lt;html app='brave.exe' title='Meridian Biztosító | Kárrendszer (gyakorló példány)' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                      </uix:NGetText.Target>
+                                    </uix:NGetText>
+                                    <If Condition="[Not System.Text.RegularExpressions.Regex.IsMatch(caseId.Trim(), &quot;^K-GY-[0-9]+$&quot;)]" DisplayName="Guard: Case ID readback is missing or invalid; outcome requires reconciliation" sap:VirtualizedContainerService.HintSize="616,401.6" sap2010:WorkflowViewState.IdRef="If_71">
+                                      <If.Then>
+                                        <Sequence DisplayName="Fail visibly" sap:VirtualizedContainerService.HintSize="452.8,173.6" sap2010:WorkflowViewState.IdRef="Sequence_72">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <Throw DisplayName="Stop: Case ID readback is missing or invalid; outcome requires reconciliation" Exception="[New System.InvalidOperationException(&quot;Case ID readback is missing or invalid; outcome requires reconciliation&quot;)]" sap:VirtualizedContainerService.HintSize="419.2,113.6" sap2010:WorkflowViewState.IdRef="Throw_73" />
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="452.8,89.6" sap2010:WorkflowViewState.IdRef="Sequence_84">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
+                                    <Assign DisplayName="Set caseId" sap:VirtualizedContainerService.HintSize="616,174.4" sap2010:WorkflowViewState.IdRef="Assign_74">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[caseId]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[caseId.Trim()]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Log case_id_read" sap:VirtualizedContainerService.HintSize="616,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_75" UnSafe="False" WorkflowFileName="Portal_Log.xaml">
+                                      <ui:InvokeWorkflowFile.Arguments>
+                                        <InArgument x:TypeArguments="x:String" x:Key="in_RunDir">[runDir]</InArgument>
+                                        <InArgument x:TypeArguments="x:String" x:Key="in_Event">["case_id_read"]</InArgument>
+                                        <InArgument x:TypeArguments="x:String" x:Key="in_Policy">[policy]</InArgument>
+                                        <InArgument x:TypeArguments="x:String" x:Key="in_CaseId">[caseId]</InArgument>
+                                        <InArgument x:TypeArguments="x:String" x:Key="in_Detail">[String.Empty]</InArgument>
+                                      </ui:InvokeWorkflowFile.Arguments>
+                                    </ui:InvokeWorkflowFile>
+                                    <ui:WriteTextFile File="{x:Null}" Output="{x:Null}" DisplayName="Save actual generated case ID immediately" FileName="[System.IO.Path.Combine(runDir, &quot;case_id.txt&quot;)]" sap:VirtualizedContainerService.HintSize="616,175.2" sap2010:WorkflowViewState.IdRef="WriteTextFile_76" Text="[caseId]" />
+                                    <Assign DisplayName="Set stage" sap:VirtualizedContainerService.HintSize="616,174.4" sap2010:WorkflowViewState.IdRef="Assign_77">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[stage]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">["return_to_form"]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="False" DisplayName="TODO Indicate 9 - Új bejelentés rögzítése" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="616,193.6" sap2010:WorkflowViewState.IdRef="NClick_78" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="52e595f1-111f-455b-a1d8-7baabf5504d8" Timeout="10" Version="V5">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable ContentHash="bpWJYn1MQUKXrIkS9epRcg" DesignTimeRectangle="457, 608, 247, 53" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='uj-bejelentes' tag='BUTTON' /&gt;" Guid="fa5d8f06-0f64-4e1f-9139-4acc8e56c0a9" InformativeScreenshot="42163d05e4e907b9838ee2c8d02a0983.jpg" Reference="O2OegXa4uUmX-8tf3FY-ug/bY8sjvIyEUWf5F17lx4ZxQ" ScopeSelectorArgument="&lt;html app='brave.exe' title='Meridian Biztosító | Kárrendszer (gyakorló példány)' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Log ui_sequence_complete" sap:VirtualizedContainerService.HintSize="616,167.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_79" UnSafe="False" WorkflowFileName="Portal_Log.xaml">
+                                      <ui:InvokeWorkflowFile.Arguments>
+                                        <InArgument x:TypeArguments="x:String" x:Key="in_RunDir">[runDir]</InArgument>
+                                        <InArgument x:TypeArguments="x:String" x:Key="in_Event">["ui_sequence_complete"]</InArgument>
+                                        <InArgument x:TypeArguments="x:String" x:Key="in_Policy">[policy]</InArgument>
+                                        <InArgument x:TypeArguments="x:String" x:Key="in_CaseId">[caseId]</InArgument>
+                                        <InArgument x:TypeArguments="x:String" x:Key="in_Detail">["Await exported saved-record verification; not yet verified"]</InArgument>
+                                      </ui:InvokeWorkflowFile.Arguments>
+                                    </ui:InvokeWorkflowFile>
+                                  </Sequence>
+                                </uix:NCheckState.IfExists>
+                                <uix:NCheckState.IfNotExists>
+                                  <Sequence DisplayName="Confirmation absent - do not resubmit" sap:VirtualizedContainerService.HintSize="649.6,173.6" sap2010:WorkflowViewState.IdRef="Sequence_80">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Throw DisplayName="Stop on absent confirmation" Exception="[New System.Exception(&quot;A bejelentés nem mentődött; ellenőrizd a portál hibaüzenetét. Submission outcome is uncertain; do not retry.&quot;)]" sap:VirtualizedContainerService.HintSize="616,113.6" sap2010:WorkflowViewState.IdRef="Throw_81" />
+                                  </Sequence>
+                                </uix:NCheckState.IfNotExists>
+                                <uix:NCheckState.Target>
+                                  <uix:TargetAnchorable ContentHash="UcMd9hOuD0GdlLg2HkA0kQ" DesignTimeRectangle="457, 410, 993, 30" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" Guid="4b2464f4-14f2-4b27-a78c-2560723ed467" InformativeScreenshot="bc1f331258af20ee32523e8c4b26fffd.jpg" Reference="O2OegXa4uUmX-8tf3FY-ug/kFS65zP5-EGmzaCKPzfABg" ScopeSelectorArgument="&lt;html app='brave.exe' title='Meridian Biztosító | Kárrendszer (gyakorló példány)' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                </uix:NCheckState.Target>
+                              </uix:NCheckState>
+                            </Sequence>
+                          </TryCatch.Try>
+                          <TryCatch.Catches>
+                            <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                              <ActivityAction x:TypeArguments="s:Exception">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Persist failure without replaying any portal action" sap:VirtualizedContainerService.HintSize="684.8,560.8" sap2010:WorkflowViewState.IdRef="Sequence_82">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Log stopped_requires_review" sap:VirtualizedContainerService.HintSize="651.2,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_83" UnSafe="False" WorkflowFileName="Portal_Log.xaml">
+                                    <ui:InvokeWorkflowFile.Arguments>
+                                      <InArgument x:TypeArguments="x:String" x:Key="in_RunDir">[runDir]</InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="in_Event">["stopped_requires_review"]</InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="in_Policy">[policy]</InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="in_CaseId">[caseId]</InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="in_Detail">["stage=" &amp; stage &amp; "; type=" &amp; exception.GetType().FullName]</InArgument>
+                                    </ui:InvokeWorkflowFile.Arguments>
+                                  </ui:InvokeWorkflowFile>
+                                  <uix:NTakeScreenshot ContinueOnError="True" DisplayName="Best-effort capture of attached portal only" FileName="[System.IO.Path.Combine(runDir, &quot;error.png&quot;)]" FileNameMode="None" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="651.2,276.8" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_84" ScopeIdentifier="52e595f1-111f-455b-a1d8-7baabf5504d8" Version="V5" />
+                                  <Rethrow DisplayName="Keep original fault and stop" sap:VirtualizedContainerService.HintSize="651.2,48" sap2010:WorkflowViewState.IdRef="Rethrow_85" />
+                                </Sequence>
+                              </ActivityAction>
+                            </Catch>
+                          </TryCatch.Catches>
+                          <TryCatch.Finally>
+                            <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="684.8,89.6" sap2010:WorkflowViewState.IdRef="Sequence_83">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </TryCatch.Finally>
+                        </TryCatch>
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Log run_finished_pending_readback" sap:VirtualizedContainerService.HintSize="756.8,167.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_86" UnSafe="False" WorkflowFileName="Portal_Log.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_RunDir">[runDir]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_Event">["run_finished_pending_readback"]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_Policy">[policy]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_CaseId">[caseId]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_Detail">["Export own practice rows and compare before claiming success"]</InArgument>
+                          </ui:InvokeWorkflowFile.Arguments>
+                        </ui:InvokeWorkflowFile>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </ActivityAction>
+              </ui:ForEach.Body>
+            </ui:ForEach>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 15, 1905, 1005" ContentHash="9xxCA0-NHkef9B_EU_UiVg" FilePath="C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAguSURBVFhHvZgLdE1XGoD/mxuJhERIQiLI80pTIVSkxCMyHknaUZk6YRqm2nqF8VZjdY0q1VpTtCgzXZNe06E1xFCP0hpTrZrWqDVaLEqNmFGveiTinRCfWScnN+fefW6I1vRb619Z65xz9/7O3vvf+z8R+QEUJQcvoEuLCjpHwaPNIS0SUptBx3DoEAbtm0BKY2jXCJKDoU1DSKz/wdQQn1C1rQdKkN1Wf5EjaDzdW1ygS0sMwShIi4DUpobgI6HVgiGegkmBN3EELB4VEhjiozb8IKhnE583WjfMo0dUMV1bYQrqI6gIpngTbACJAdd5OHJmkM3mq7Z/X9jtdnHO/m2Is12jPGdyo8nO5EbjlrUNGkbPlt/QLeY2XaOrBVt4TvEjuqBrir0IPhQArf0vL2vmM9MZZhvpDLc97wyzDXM28Y2xqxJ3Y98AWyCj2q3j52FnyY68RGZsGT1jL9A99jbdYjBH0F2wqSFYswZdgkFugvX1tQiOeldJ8C0lzn6ZWFsJ0bav9kVJW9XDgq9NZH8fCUST7WiCGT6Q0wR6xGIIukbQfYqbGZKp4bVPcVKgIZjgC9FiRkzV35L9LSX5rnPvzJDmDJK/espVx0A7jO8FBf3hqQx4vC1kxkHfJMjPgCn5UDgHli+Cac9CfiZkOqBjU+NFeifBgK7w1M/g4Yaegqbo/o0RkhZhF+955EyV59CkxCKnx6s5UHISblyFI1/D1lXwl0WwaTmcLIbKSjwoOQcfrYHCebDqbdi1HUpLoKIc5k+HhHpWwWi5SbQsKQiSeqpbFc5O0glN/muRm5ICp771FPgxXL4EU59T5fS4+GmE/NrhXU+kWX3xPZQtn3rIPRMK+7epXfx4jh2BAd1UwWJnmLRRvWpwpkokmhyukcuzw/tzoOI6VN6Cg9th43z480QoHA3rfgdH98D1K8Z9F/p037gOx4thxR9hxnh4aRwsmg0bV0JFBdy+DX/faCSXKXjGGSq5qlcNzlQZgibnDTkbvJIFp48YneoNnik2pGbpydLKSBw9JqXANzuNZ3SOH4VxvzQyVu+4Qzg8kQazJ8FXO+FW9cvoU/3yRHD4uwTLNzeTBc3tXtZg+xDx+7KX/AFNblYJDg2BLb+3Lv6qhi/Ans2wbApMToY8f/jnOlPwwB7IaQepEfD8s7B2OXx3zHtbe3ZCj3hzFGPk44JgiVP9pCBO/NBkKZpUVgkOj4Rda9XmPNEz8osimNYFDvzDvK7LPJMDS+ZAWan7L6wcPwZ927oLbi8IkkTVT4J8RVZ1lqlocqVKcKAvvDUcLp1Xm/Tk8E6YPxCOHzSvXS6DF0bC6nc816bKzQpYuhDahpiCcfJeQYgEqn5VOFOlF5qcrEmSQfWg6CW4dklt2uBmOayebQiWnDGv61O9cBYMzYGyi+6/MNHlNhVBpwhTLlauOsPkBdWrBueTEs4Q2e+xzeQHwoZ5UH5N7QJOHIKRUfDOJCi/7nmvaCm0D4V173le19FfYNsH0D3OPYP16T3lDJNs1auG/v1Fvh8iKz0E9RjSENa/ZpVcOd3I4qKZZoK4+GgtpEVBn2TP6zqfbIYMhyqnj+ABZ5REqF4e7OsrIyyCejzdCNbPM6bGxa51MKolTG4Py6bDJ6thx0b40zx4ug+0awyv/sZdDT7bYpWrjmOtZHVKoNhUJw/29ZE4i5wrxsbB11vMzm5VwL93w8wc6BcI2UHQMxg6BkB2G2MUr10xnz99AvK6W8Sqqxn2Rclo1ccraPKtRU6PMTGw929mhy70JFrxMjwWAl38YFo+nDimPgVnT8EvOlsFjajcFysPqS5eQZPXLHJ6vNgdys6p3Rroa3DuSBiYBGUl6l2TGWMh1keV00exeGHKPabXBQOlq0VOP/pez1O7Mzm6F0Z3gaymsO19z7Xqzrtv1VZqLVI9auXx5tIATU5ZJGf0sG7ctyvh4OcwrTdk2iHNBk8kwvrlRsHgjn7UzZoAsXZVTs/gTNWjVvx8xI7mpbLWM3nTG+bo6Bv1h4thRDRk+0Avf+gVBm0E2gfDi2Oh9IIpuGOrde8z4kKkj9RXPWrFz0eEPBmPJrctknoRUTgG1syG8YkwuIFRzayZb6y9ihuwdQ0M6WVsM/oxNmMcLJjpWRR4xgY/kbp/2NltIh9nSjc0uWwRdIV+DM7IgE0LofS0OUourl4xtpkRucZHlFXKjDiZ4id1TBAX6aHiQJPdFrGa6Q6BQ5+rWlbOfQ9PplulXBEjV5aES0/vX0l3IT1UGqNJoUXMFXq1oxeuR75UlUzOnoZpwyG5kVXMjH+l+0trtf97kh5atR+OQZNyi5x7jI03jjy1GD18AAZlQJyXPc8z3k73l8Zq/3VigkM6o8ler8niHkPDYcObcPkilN+Azz40KmqrjBqlZxzyqw4Bas91JCtCAosfk7locs0i5R65Av0CYPFEWPE69G4F8RYZNW4SJxsnhHgp7++Hd6dIDMNkjUVKFewr0EPgUTsky70FY2Tv7laS2f6Hjp4Lh0MkPVJaoMmCmg8qNXTBrGrBVKmL4I7/xEsHR7372PvuRaif+KJJvtcjsO6CN4iRuaE2CbB+Vz4AOjUW2dtb0kpzZTN51R9XdROsIEH2nEqUQZ38xU9t94EzKl6aXRog09HkUFWGuwQzvAqevxQthc5EaZeVoLb0f2RwrNintJZMNFlJrlz1GEG9WIiXSqLlCzrI4MENJVj9/U+CfmaPjZcIcmU8WfKd2xSXkSBvjg2WpNSGtfyv76dmfQdJutNT1t7pJLvudJN+05Pu8/Cvhf8BbQ86Axn3CSwAAAAASUVORK5CYII=" InformativeScreenshot="66fcbf09718f47cc4ef85bcc7c1531ad.jpg" Reference="O2OegXa4uUmX-8tf3FY-ug/Xj9_CwQOT0SozIJq-StUnA" Selector="&lt;html app='brave.exe' title='Meridian Biztosító | Kárrendszer (gyakorló példány)' /&gt;" Version="V3" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <Assign DisplayName="Batch set runDir" sap2010:WorkflowViewState.IdRef="Assign_82">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[runDir]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[batchRunDir]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Batch finished pending exported readback" sap:VirtualizedContainerService.HintSize="756.8,167.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_89" UnSafe="False" WorkflowFileName="Portal_Log.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_RunDir">[runDir]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Event">["batch_finished_pending_readback"]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Policy">[policy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_CaseId">[caseId]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Detail">["Ten input rows considered; first verified row skipped; export and compare all rows."]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+  </Sequence>
+</Activity>

@@ -1,0 +1,14 @@
+test_changed_prior_record_fails (test_verify_portal_batch.BatchVerifierTests.test_changed_prior_record_fails) ... ok
+test_complete_fixture_is_only_automated_pending_visual (test_verify_portal_batch.BatchVerifierTests.test_complete_fixture_is_only_automated_pending_visual) ... ok
+test_duplicate_case_id_fails (test_verify_portal_batch.BatchVerifierTests.test_duplicate_case_id_fails) ... ok
+test_incomplete_submission_log_fails (test_verify_portal_batch.BatchVerifierTests.test_incomplete_submission_log_fails) ... ok
+test_missing_row_folder_fails (test_verify_portal_batch.BatchVerifierTests.test_missing_row_folder_fails) ... ok
+test_total_mismatch_fails (test_verify_portal_batch.BatchVerifierTests.test_total_mismatch_fails) ... ok
+test_unreconciled_pending_baseline_fails (test_verify_portal_batch.BatchVerifierTests.test_unreconciled_pending_baseline_fails) ... ok
+test_wrong_input_snapshot_fails (test_verify_portal_batch.BatchVerifierTests.test_wrong_input_snapshot_fails) ... ok
+test_wrong_saved_value_fails (test_verify_portal_batch.BatchVerifierTests.test_wrong_saved_value_fails) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 6.759s
+
+OK

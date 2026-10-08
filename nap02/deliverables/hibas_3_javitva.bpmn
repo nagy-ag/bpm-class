@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='utf-8'?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Defs_ComplaintFixed" targetNamespace="http://fsega.ubbcluj.ro/bpa">
+  <bpmn:process id="Process_ComplaintFixed" isExecutable="false">
+    <bpmn:startEvent id="s" name="Panasz beérkezik">
+      <bpmn:outgoing>f0</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="t1" name="Panasz kivizsgálása">
+      <bpmn:incoming>f0</bpmn:incoming>
+      <bpmn:outgoing>f1</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="t2" name="Válaszlevél írása és javítása">
+      <bpmn:incoming>f1</bpmn:incoming>
+      <bpmn:outgoing>f2</bpmn:outgoing>
+      <bpmn:incoming>f5</bpmn:incoming>
+    </bpmn:task>
+    <bpmn:userTask id="t3" name="Válaszlevél jóváhagyása">
+      <bpmn:incoming>f2</bpmn:incoming>
+      <bpmn:outgoing>f3</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="g1" name="Jóváhagyta a vezető?">
+      <bpmn:incoming>f3</bpmn:incoming>
+      <bpmn:outgoing>f4</bpmn:outgoing>
+      <bpmn:outgoing>f5</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sendTask id="send" name="Jóváhagyott válasz elküldése">
+      <bpmn:incoming>f4</bpmn:incoming>
+      <bpmn:outgoing>f6</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:endEvent id="e" name="Panasz lezárva">
+      <bpmn:incoming>f6</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="f0" sourceRef="s" targetRef="t1" />
+    <bpmn:sequenceFlow id="f1" sourceRef="t1" targetRef="t2" />
+    <bpmn:sequenceFlow id="f2" sourceRef="t2" targetRef="t3" />
+    <bpmn:sequenceFlow id="f3" sourceRef="t3" targetRef="g1" />
+    <bpmn:sequenceFlow id="f4" sourceRef="g1" targetRef="send" name="igen" />
+    <bpmn:sequenceFlow id="f5" sourceRef="g1" targetRef="t2" name="nem" />
+    <bpmn:sequenceFlow id="f6" sourceRef="send" targetRef="e" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_ComplaintFixed">
+    <bpmndi:BPMNPlane id="Plane_ComplaintFixed" bpmnElement="Process_ComplaintFixed">
+      <bpmndi:BPMNShape id="Shape_s" bpmnElement="s">
+        <dc:Bounds x="150" y="190" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="105" y="234" width="125" height="42" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_t1" bpmnElement="t1">
+        <dc:Bounds x="250" y="173" width="120" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_t2" bpmnElement="t2">
+        <dc:Bounds x="440" y="173" width="120" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_t3" bpmnElement="t3">
+        <dc:Bounds x="630" y="173" width="120" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_g1" bpmnElement="g1" isMarkerVisible="true">
+        <dc:Bounds x="820" y="183" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="775" y="241" width="125" height="42" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_send" bpmnElement="send">
+        <dc:Bounds x="950" y="173" width="120" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_e" bpmnElement="e">
+        <dc:Bounds x="1160" y="190" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1115" y="234" width="125" height="42" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Edge_f0" bpmnElement="f0">
+        <di:waypoint x="186" y="208.0" />
+        <di:waypoint x="218.0" y="208.0" />
+        <di:waypoint x="250" y="208.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_f1" bpmnElement="f1">
+        <di:waypoint x="370" y="208.0" />
+        <di:waypoint x="405.0" y="208.0" />
+        <di:waypoint x="440" y="208.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_f2" bpmnElement="f2">
+        <di:waypoint x="560" y="208.0" />
+        <di:waypoint x="595.0" y="208.0" />
+        <di:waypoint x="630" y="208.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_f3" bpmnElement="f3">
+        <di:waypoint x="750" y="208.0" />
+        <di:waypoint x="785.0" y="208.0" />
+        <di:waypoint x="820" y="208.0" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_f4" bpmnElement="f4">
+        <di:waypoint x="870" y="208.0" />
+        <di:waypoint x="910.0" y="208.0" />
+        <di:waypoint x="950" y="208.0" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="915.0" y="183.0" width="75" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_f5" bpmnElement="f5">
+        <di:waypoint x="845.0" y="233" />
+        <di:waypoint x="845.0" y="328" />
+        <di:waypoint x="500.0" y="328" />
+        <di:waypoint x="500.0" y="243" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="850.0" y="303" width="75" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_f6" bpmnElement="f6">
+        <di:waypoint x="1070" y="208.0" />
+        <di:waypoint x="1115.0" y="208.0" />
+        <di:waypoint x="1160" y="208.0" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

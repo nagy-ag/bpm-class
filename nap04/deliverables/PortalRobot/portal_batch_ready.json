@@ -1,0 +1,17 @@
+{
+  "scope": "Offline guard enablement only; user must initiate every portal run",
+  "baseline": "C:\\Users\\nagya\\dev\\school\\BPA\\nap04\\working\\setup_2026-10-06\\portal_baselines\\pre_batch_export3_20261007\\baseline_review.json",
+  "baseline_sha256": "8f81b312e8f69b24235443c540f2a9acffefa1b798a222516bb0a4fa7952ab4e",
+  "guard_before": false,
+  "guard_after": true,
+  "only_guard_changed": true,
+  "captured_targets_unchanged": true,
+  "original_trial_unchanged": true,
+  "batch_sha256": "f994d8d7d8b3704be5e7eaad1de8f9ce27cb60c5e597834f8740ae1091b3db94",
+  "actual_batch_executed": false,
+  "expected_after": {
+    "page_total": 33,
+    "own_count": 13,
+    "matching_lesson_inputs": 10
+  }
+}

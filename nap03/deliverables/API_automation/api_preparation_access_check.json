@@ -1,0 +1,10 @@
+{
+  "coinmarketcap": {
+    "status": "verified",
+    "check": "BTC and ETH quotes in EUR"
+  },
+  "zoho_crm": {
+    "status": "verified",
+    "check": "EU CRM Leads read access"
+  }
+}

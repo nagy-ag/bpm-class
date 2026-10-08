@@ -1,0 +1,228 @@
+{
+  "passed": true,
+  "date": "2026-10-07",
+  "projects": [
+    {
+      "project": "Nap04_gyakorlas",
+      "dependencies": {
+        "UiPath.System.Activities": "[26.8.2]"
+      },
+      "executed_workflow_bytes_preserved": [
+        {
+          "file": "Calculation_Validated.xaml",
+          "sha256": "0c13fa81e8ed54062648953e8989cdfa5ab5f9f16f5e6ca3755a76b9f9a651e4",
+          "working_sha256": "0c13fa81e8ed54062648953e8989cdfa5ab5f9f16f5e6ca3755a76b9f9a651e4",
+          "byte_identical": true,
+          "semantically_equivalent": true
+        },
+        {
+          "file": "Greeting_Initial.xaml",
+          "sha256": "f922a7c421b4fc3f620363f6710518db9f5843dc0ae8b1d50003b180aee870da",
+          "working_sha256": "f922a7c421b4fc3f620363f6710518db9f5843dc0ae8b1d50003b180aee870da",
+          "byte_identical": true,
+          "semantically_equivalent": true
+        },
+        {
+          "file": "Greeting_Repaired.xaml",
+          "sha256": "d767ed7ca8c8f8d03ddda0e4d6a37a5e5759149b30e38dd277d66b154521c01c",
+          "working_sha256": "d767ed7ca8c8f8d03ddda0e4d6a37a5e5759149b30e38dd277d66b154521c01c",
+          "byte_identical": true,
+          "semantically_equivalent": true
+        },
+        {
+          "file": "Main.xaml",
+          "sha256": "5e653b30aadc1a2d257b8e826984eda324d9264f7bf6861a75822f99855adeac",
+          "working_sha256": "5e653b30aadc1a2d257b8e826984eda324d9264f7bf6861a75822f99855adeac",
+          "byte_identical": true,
+          "semantically_equivalent": true
+        },
+        {
+          "file": "Validation_Regression.xaml",
+          "sha256": "1db820ec0b5ef94d980197611bc81ec5c2b911f3fe6b291b0f6624f4829700db",
+          "working_sha256": "1db820ec0b5ef94d980197611bc81ec5c2b911f3fe6b291b0f6624f4829700db",
+          "byte_identical": true,
+          "semantically_equivalent": true
+        }
+      ]
+    },
+    {
+      "project": "ExcelRobot",
+      "dependencies": {
+        "UiPath.Excel.Activities": "3.6.1",
+        "UiPath.System.Activities": "[26.8.2]"
+      },
+      "executed_workflow_bytes_preserved": [
+        {
+          "file": "Classify_150000.xaml",
+          "sha256": "d7017ba9643bcb3d17e17567a14d074e702c226687f4b3162bf2f0d3f503fa5e",
+          "working_sha256": "d7017ba9643bcb3d17e17567a14d074e702c226687f4b3162bf2f0d3f503fa5e",
+          "byte_identical": true,
+          "semantically_equivalent": true
+        },
+        {
+          "file": "Main.xaml",
+          "sha256": "24aeee2d92919c6ee27e598b5296977edb2b2c88bb2541643e1a84dba584605c",
+          "working_sha256": "24aeee2d92919c6ee27e598b5296977edb2b2c88bb2541643e1a84dba584605c",
+          "byte_identical": true,
+          "semantically_equivalent": true
+        }
+      ]
+    },
+    {
+      "project": "RiportRobot",
+      "dependencies": {
+        "UiPath.System.Activities": "[26.8.2]",
+        "UiPath.Excel.Activities": "3.6.1",
+        "UiPath.Presentations.Activities": "2.6.1"
+      },
+      "executed_workflow_bytes_preserved": [
+        {
+          "file": "Main.xaml",
+          "sha256": "bb01c24768181b038249671ec7941193c8d2e0476da1bc7d7713be35854bdb2b",
+          "working_sha256": "bb01c24768181b038249671ec7941193c8d2e0476da1bc7d7713be35854bdb2b",
+          "byte_identical": true,
+          "semantically_equivalent": true
+        },
+        {
+          "file": "Report_6.xaml",
+          "sha256": "d19d90774f1dc0d4d4e1a17d4dd29aad6209cc4545d46b88a962c91bb4c5df13",
+          "working_sha256": "d19d90774f1dc0d4d4e1a17d4dd29aad6209cc4545d46b88a962c91bb4c5df13",
+          "byte_identical": true,
+          "semantically_equivalent": true
+        }
+      ]
+    },
+    {
+      "project": "Fajlrendezo",
+      "dependencies": {
+        "UiPath.System.Activities": "[26.8.2]"
+      },
+      "executed_workflow_bytes_preserved": [
+        {
+          "file": "Main.xaml",
+          "sha256": "4708b01770eb002d9b0bdb83569685fab75e10209455891959150fed6beb9060",
+          "working_sha256": "4708b01770eb002d9b0bdb83569685fab75e10209455891959150fed6beb9060",
+          "byte_identical": true,
+          "semantically_equivalent": true
+        },
+        {
+          "file": "Sort_With_Images.xaml",
+          "sha256": "37288e240cfd452f8e6c28aa07aff5cd7181a16ddd38df4c33f2aad3544b1c2d",
+          "working_sha256": "37288e240cfd452f8e6c28aa07aff5cd7181a16ddd38df4c33f2aad3544b1c2d",
+          "byte_identical": true,
+          "semantically_equivalent": true
+        }
+      ]
+    },
+    {
+      "project": "PortalRobot/setup_2026-10-06/BPA_Setup_Smoke",
+      "dependencies": {
+        "UiPath.Excel.Activities": "[3.6.1]",
+        "UiPath.Presentations.Activities": "[2.6.1]",
+        "UiPath.System.Activities": "[26.8.2]",
+        "UiPath.UIAutomation.Activities": "[26.10.5]"
+      },
+      "executed_workflow_bytes_preserved": [
+        {
+          "file": "Main.xaml",
+          "sha256": "fb1527c4f78a1c6bdd15b83d0c342880d9970ca9afd5719718c7397a83f13786",
+          "working_sha256": "fb1527c4f78a1c6bdd15b83d0c342880d9970ca9afd5719718c7397a83f13786",
+          "byte_identical": true,
+          "semantically_equivalent": true
+        },
+        {
+          "file": "Portal_Batch_Resume.xaml",
+          "sha256": "e0f012e3be7fae29f55941fafe1fe8fd82caca33dcd1ae742f806822aac86483",
+          "working_sha256": "e0f012e3be7fae29f55941fafe1fe8fd82caca33dcd1ae742f806822aac86483",
+          "byte_identical": true,
+          "semantically_equivalent": true
+        },
+        {
+          "file": "Portal_Log.xaml",
+          "sha256": "9ee2cc2f8a398c30e9b18e1321bf26efa24e3000433fa4788ccdf62f895eecbd",
+          "working_sha256": "9ee2cc2f8a398c30e9b18e1321bf26efa24e3000433fa4788ccdf62f895eecbd",
+          "byte_identical": true,
+          "semantically_equivalent": true
+        },
+        {
+          "file": "Portal_Logged_Trial.xaml",
+          "sha256": "2dcad35ca995551566dbb9f423b24bf23b68c06264acd718a03afe0955d56d4e",
+          "working_sha256": "2dcad35ca995551566dbb9f423b24bf23b68c06264acd718a03afe0955d56d4e",
+          "byte_identical": true,
+          "semantically_equivalent": true
+        }
+      ]
+    }
+  ],
+  "actual_prior_runs_reviewed": [
+    {
+      "file": "nap04/working/nap04_main_run.json",
+      "sha256": "af79b35b30e08559f910c2e521dc10e7261aba27b5018c1f5a9f025c5f3ddbaa",
+      "expected_failure": false
+    },
+    {
+      "file": "nap04/working/greeting_initial_20_run.json",
+      "sha256": "b7a44f5b365f9ad14621a10d8a194b621617af0aaf3c43f44fe7f68fffdc42e7",
+      "expected_failure": false
+    },
+    {
+      "file": "nap04/working/greeting_repaired_5_run.json",
+      "sha256": "7fa8568a0716ac2b4c48c0afc3f37d391d9303399e4925fae8a7e906117a0517",
+      "expected_failure": false
+    },
+    {
+      "file": "nap04/working/greeting_validation_fixed_run.json",
+      "sha256": "11051949c5050342f62c08517e7b4d8af25f534066df4e13e5265ab56836187c",
+      "expected_failure": false
+    },
+    {
+      "file": "nap04/working/excel_100000_run.json",
+      "sha256": "0fc52940ac27cd9a32f0c41047a163d47e1f62fb2b12c2d84a53c0edf2ff0a45",
+      "expected_failure": false
+    },
+    {
+      "file": "nap04/working/excel_150000_run.json",
+      "sha256": "1322c36cde4e7065f17c4b270943248e5df5e42e3684eaed2ccc9de94931dfa1",
+      "expected_failure": false
+    },
+    {
+      "file": "nap04/working/sorter_run.json",
+      "sha256": "d42b67ec9b2fb29cc18e62329a3453d0b297057f36d39949175556a8ce07754a",
+      "expected_failure": false
+    },
+    {
+      "file": "nap04/working/sorter_images_run1.json",
+      "sha256": "eed63aa11cd07cff92a01bbc4790a3ede7468fd249fe255a017d427002dd3a3f",
+      "expected_failure": false
+    },
+    {
+      "file": "nap04/working/sorter_images_run2.json",
+      "sha256": "3f2a68b3ca06cb5c67a8b1cb966b85b81604ba5c441f714404c6a32061f2686b",
+      "expected_failure": false
+    },
+    {
+      "file": "nap04/working/report_12_run.json",
+      "sha256": "136423dd347d02099288d85b6920164d6a3385ec7d4686eb174c72900428d546",
+      "expected_failure": false
+    },
+    {
+      "file": "nap04/working/report_6_run.json",
+      "sha256": "a0b9707948bfd5c56eeaa02a84e16c942ae82317d68ddfcd43e2005af01e8081",
+      "expected_failure": false
+    },
+    {
+      "file": "nap04/working/greeting_initial_sok_run.json",
+      "sha256": "b9f38eb252e28fb93c8c9fdf65a88293077b473fc22030cfa03f031e3b61e5ac",
+      "expected_failure": true
+    }
+  ],
+  "files_credential_scanned_including_decompressed_archives": 306,
+  "portal_trial_checks": 19,
+  "portal_batch_checks": 43,
+  "portal_row_checks": 171,
+  "manual_and_isolated_reset_verified": true,
+  "source_workflows_unchanged": true,
+  "new_robot_or_browser_execution": false,
+  "path_limitations": "Project-local inputs/workflow references verified. Portal intentionally retains original absolute attachment/log/reservation paths and Brave executable. This is a handoff for the current workspace, not a machine-independent deployment.",
+  "runtime_limitation": "Previous actual executions/builds reused. No new run or fresh compile claimed; completed outputs and duplicate guards preserved."
+}

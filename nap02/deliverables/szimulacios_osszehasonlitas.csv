@@ -1,0 +1,8 @@
+﻿forgatokonyv,esetszam,atlag_munkaidoben,atlag_naptari,atlag_munkaido_perc,atlag_naptari_perc,futas_hossza_kerekitve,koltseg_EUR,legnagyobb_atlagos_varakozas_helye,legnagyobb_atlagos_varakozas,eroforras_kihasznaltsag_szazalek
+kave_01_alap,100,11.3 minutes,20.9 minutes,11.3,20.9,1.1 days,91.2,Csészébe kiöntés,2.7 m,"{""Pultos"": ""42.25"", ""Barista"": ""65.82""}"
+kave_02_csucs,100,1.9 hours,1.9 hours,114.0,114.0,6.7 hours,91.9,Elviteles pohárba töltés,54.1 m,"{""Pultos"": ""61.76"", ""Barista"": ""96.36""}"
+kave_03_ket_barista,100,12.5 minutes,12.5 minutes,12.5,12.5,5.2 hours,90.5,Fizetés,2.9 m,"{""Pultos"": ""81.16"", ""Barista"": ""60.26""}"
+kave_04_ket_pultos,100,1.3 hours,1.3 hours,78.0,78.0,6.3 hours,88.7,Csészébe kiöntés,40.7 m,"{""Pultos"": ""32.55"", ""Barista"": ""99.24""}"
+raktar_01_alap,135,3.1 hours,5.2 hours,186.0,312.0,1.2 days,3353,Betárolás,29.7 m,"{""Raktáros"": ""15.91"", ""Targoncás"": ""82.01"", ""Adminisztrátor"": ""62.5""}"
+raktar_02_A_tiz_targoncas,135,2.2 hours,3 hours,132.0,180.0,1.1 days,3304.8,Lerakodás,3.8 m,"{""Raktáros"": ""18.56"", ""Targoncás"": ""76.85"", ""Adminisztrátor"": ""73.22""}"
+raktar_03_B_kulon_betarolas,135,2.1 hours,2.8 hours,126.0,168.0,1.1 days,2721.9,Készletrögzítés,7.8 m,"{""Raktáros"": ""17.85"", ""Targoncás"": ""61.15"", ""Adminisztrátor"": ""66.82""}"

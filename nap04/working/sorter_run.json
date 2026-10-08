@@ -1,0 +1,33 @@
+[Information] Validating project...
+[Information] Building for execution...
+[Information] Starting execution...
+[Information] Fajlrendezo execution started
+[Information] MOVED|Word|arajanlat_atlas.docx
+[Information] MOVED|Word|arajanlat_meridian.docx
+[Information] MOVED|Word|arajanlat_northbridge.docx
+[Information] MOVED|Excel|riport_Q1.xlsx
+[Information] MOVED|Excel|riport_Q2.xlsx
+[Information] MOVED|Excel|riport_Q3.xlsx
+[Information] MOVED|Excel|riport_Q4.xlsx
+[Information] MOVED|PDF|szamla_2026_100.pdf
+[Information] MOVED|PDF|szamla_2026_107.pdf
+[Information] MOVED|PDF|szamla_2026_114.pdf
+[Information] MOVED|PDF|szamla_2026_121.pdf
+[Information] MOVED|PDF|szamla_2026_128.pdf
+[Information] MOVED|PDF|szamla_2026_135.pdf
+[Information] MOVED|Word|szerzodes_terv_atlas.docx
+[Information] MOVED|Word|szerzodes_terv_meridian.docx
+[Information] SORT_COMPLETE|moved=15
+[Information] Fajlrendezo execution ended in: 00:00:02
+{
+  "Result": "Success",
+  "Code": "ToolResult",
+  "Data": {
+    "output": "{}",
+    "hasErrors": false,
+    "errorMessage": null,
+    "profiling": null,
+    "debugState": null,
+    "debugDetails": null
+  }
+}

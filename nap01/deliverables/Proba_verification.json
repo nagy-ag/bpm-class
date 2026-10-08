@@ -1,0 +1,21 @@
+{
+  "verified": true,
+  "date": "2026-10-07",
+  "checks": {
+    "run_completed": true,
+    "message_exact": true,
+    "framework_language": true,
+    "copy_Main.xaml": true,
+    "copy_project.json": true,
+    "copy_project.uiproj": true
+  },
+  "run_seconds": 58,
+  "observed_message": "Fut az első robotom!",
+  "warnings": [
+    "Automation Hub URL not configured",
+    "Default activity name",
+    "No Log Message in this introductory one-message workflow"
+  ],
+  "run_evidence": "../working/proba_run.txt",
+  "dialog_evidence": "../working/proba_dialog.jpg"
+}

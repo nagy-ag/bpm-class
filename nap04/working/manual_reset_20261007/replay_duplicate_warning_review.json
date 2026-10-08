@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-07",
+  "evidence_source": "User-supplied replay screenshot visually reviewed",
+  "screenshot": "replay_duplicate_warning_user.png",
+  "visible_state": "Filled first-row form with duplicate policy/type/date validation error",
+  "visible_error_translation": "This policy, claim type and date combination has already been recorded; check the list.",
+  "success_confirmation_visible": false,
+  "new_record_button_clear_verified": false,
+  "address_bar_visible": false,
+  "yellow_badge_visible_fragment": "Gya",
+  "expected_isolated_badge": "MANUAL RESET TEST",
+  "actual_portal_copy_confirmed": false,
+  "possible_wrong_portal_copy": true,
+  "local_isolated_source_still_has_expected_badge_and_duplicate_guard": true,
+  "new_submission_appears_blocked_by_validation": true,
+  "record_counts_after_attempt_verified": false,
+  "earlier_user_reported_reset_scope_needs_reconciliation": true,
+  "agent_portal_action": false,
+  "next": "User supplies full browser screenshot including address bar and entire badge. No further submission, deletion, reset, or robot replay until correct copy and stored-record state are reconciled."
+}

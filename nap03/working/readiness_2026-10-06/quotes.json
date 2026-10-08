@@ -1,0 +1,28 @@
+{
+  "checked_utc": "2026-10-06T15:35:00.098650+00:00",
+  "coins": [
+    {
+      "id": 1,
+      "symbol": "BTC",
+      "price_eur": 76563.85617320461,
+      "change_24h_percent": 1.08856626,
+      "provider_time": "2026-10-06T15:33:05.000Z"
+    },
+    {
+      "id": 1027,
+      "symbol": "ETH",
+      "price_eur": 2411.989365643681,
+      "change_24h_percent": 0.76200636,
+      "provider_time": "2026-10-06T15:33:05.000Z"
+    },
+    {
+      "id": 5426,
+      "symbol": "SOL",
+      "price_eur": 107.70279407495157,
+      "change_24h_percent": 1.44337966,
+      "provider_time": "2026-10-06T15:33:05.000Z"
+    }
+  ],
+  "finite_positive_prices": true,
+  "credential_values_saved": false
+}

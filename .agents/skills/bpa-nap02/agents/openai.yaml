@@ -1,0 +1,3 @@
+interface:
+  display_name: "BPA nap02: BPMN and Simulation"
+  short_description: "Build models, run BIMP scenarios and repair BPMN"

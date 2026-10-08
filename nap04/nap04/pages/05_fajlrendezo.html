@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ciklus és feltétel: a mapparendező robot | negyedik nap · UiPath: az első robotjaid</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="inner">
+    <div>
+      <div class="course">Business Process Automation · Negyedik nap: UiPath-alapok és az első szoftverrobotok</div>
+      <div class="module">5. blokk · Fájlrendező robot</div>
+    </div>
+    <a href="../index.html" target="_blank" rel="noopener noreferrer">⌂ A nap kezdőlapja</a>
+  </div>
+</header>
+<main id="tartalom">
+  <div class="card">
+    <div class="crumb">5 / 7 blokk</div>
+    <h1>Ciklus és feltétel: a mapparendező robot</h1>
+    <p class="lead">For Each File + If + Move File: a robotod 20 vegyes fájlt válogat szét almappákba, és megtanulod a két legfontosabb építőkockát.</p>
+    <div class="box goal">
+      <span class="t">A blokk végére</span>
+            <ul style="margin:6px 0 0">
+        <li>a robotod egy rendetlen mappát fájltípus szerint almappákba rendez;</li>
+        <li>használtad a For Each File és az If építőkockákat: ciklus és feltétel;</li>
+        <li>ez az első robotod, ami fájlokkal dolgozik képernyő-kattintás nélkül.</li>
+      </ul>
+
+    </div>
+
+    <h2>A letöltések-mappa, amit mind ismerünk</h2>
+    <p>Töltsd le és csomagold ki a gyakorlómappát (20 vegyes fájl: számlák, riportok, képek, jegyzetek), mondjuk az Asztalra:</p>
+    <div class="dls">
+      <a class="dl" href="../docs/gyakorlo_mappa.zip" download target="_blank" rel="noopener noreferrer">gyakorlo_mappa.zip</a>
+    </div>
+    <ol class="steps">
+      <li>Új projekt: <kbd>Process</kbd>, név: <em>Fajlrendezo</em>.</li>
+      <li>Add hozzá a <kbd>For Each File in Folder</kbd> aktivitást. In folder: a kicsomagolt gyakorlómappa teljes útvonala. <strong>Include subfolders: kikapcsolva</strong>, szűrő: minden fájl (<code>*</code> vagy <code>*.*</code> a felület szerint). Az Item name legyen <code>CurrentFile</code>. A ciklus így csak a felső mappa fájljait dolgozza fel, a már rendezett almappákat nem.<figure class="shot"><img src="../img/nap04_foreachfile.png" alt="A For Each File in Folder kártya a gyakorlómappával" loading="lazy"><figcaption>A For Each File in Folder kártya a gyakorlómappával</figcaption></figure></li>
+      <li>A ciklus elé tegyél három <kbd>Create Folder</kbd> aktivitást, a gyakorlómappán belüli <code>PDF</code>, <code>Excel</code> és <code>Word</code> almappákhoz. Példa: <code>"C:\Users\Te\Desktop\gyakorlo_mappa\PDF"</code>. Mindhárom célmappa előre készüljön el. A már létező mappa létrehozása nem törli a tartalmát.</li>
+      <li>A cikluson belülre add hozzá: <em>If</em>. Feltétele (Condition): <code>CurrentFile.Extension.ToLower = ".pdf"</code></li>
+      <li>Az If Then ágába tegyél <kbd>Move File</kbd> aktivitást. From: <code>CurrentFile.FullName</code>. To: <code>System.IO.Path.Combine("C:\Users\Te\Desktop\gyakorlo_mappa", "PDF", CurrentFile.Name)</code>. A példa első útvonalát cseréld a saját gyakorlómappádra. A cél teljes fájlútvonal, benne az eredeti fájlnévvel. A forrásfájlt áthelyezzük, nem másoljuk.<figure class="shot"><img src="../img/nap04_if_movefile.png" alt="Az If feltétele és a Then ágban a kitöltött Move File" loading="lazy"><figcaption>Az If feltétele és a Then ágban a kitöltött Move File</figcaption></figure></li>
+      <li>Futtasd, és nézd meg a mappát: a PDF-ek átköltöztek a PDF almappába.<figure class="shot"><img src="../img/nap04_rendezes_futas.png" alt="Futtatás a Studióban" loading="lazy"><figcaption>Futtatás a Studióban</figcaption></figure><figure class="shot"><img src="../img/nap04_pdf_mozgatas_utan.png" alt="A gyakorlómappa a futás után: a 6 PDF a PDF almappában" loading="lazy"><figcaption>A gyakorlómappa a futás után: a 6 PDF a PDF almappában</figcaption></figure></li>
+      <li>Bővítsd ugyanígy két szabállyal: <code>.xlsx</code> az <em>Excel</em> almappába, <code>.docx</code> a <em>Word</em> almappába (legegyszerűbb egymás után három If-et tenni a ciklusba).</li>
+    </ol>
+    <div class="box check">
+      <span class="t">Ellenőrzőpont: ezt kell látnod</span>
+      <p style="margin:4px 0">Három almappa készül: PDF → 6 fájl, Excel → 4 fájl, Word → 5 fájl. A felső mappában 3 PNG és 2 TXT marad. A teljes fájlszám továbbra is 20: az almappák nem számítanak fájlnak.</p><p style="margin:4px 0"><strong>Ha mást látsz:</strong> file already exists esetén a célban már van azonos nevű fájl. Egy új próba előtt töröld a teljes gyakorlómásolatot, és bontsd ki újra az eredeti ZIP-et. Ne egyesítsd az új kibontást a korábban rendezett mappával. A gyakorlat kizárólag a kapott mintamappával dolgozzon.</p>
+    </div>
+<figure class="shot"><img src="../img/nap04_fajlrendezo_teljes.png" alt="A kész fájlrendező folyamat egyben" loading="lazy"><figcaption>A kész fájlrendező folyamat egyben</figcaption></figure>
+    <div class="box task">
+      <span class="t">Mini-feladat</span>
+          <p>Hozd létre a <code>Kepek</code> almappát is a ciklus előtt, majd adj hozzá negyedik feltételt: <code>CurrentFile.Extension.ToLower() = ".png"</code>. A Then ág Move File célja a Kepek almappa és az eredeti fájlnév legyen. Így 3 kép kerül oda, felül csak 2 TXT marad. Futtasd kétszer: a második futás semmit nem mozgat, ha az Include subfolders ki van kapcsolva. Ebben a feladatban ezt nevezzük idempotens viselkedésnek.</p>
+
+    </div>
+    <div class="box warn">
+      <span class="t">Tipikus hibák ennél a gyakorlatnál</span>
+            <ul style="margin:6px 0 0">
+        <li>A Move File "Could not find a part of the path" hibát dob: a PDF almappa nem létezik; a Create Folder lépés maradt ki, vagy elgépelted az útvonalat.</li>
+        <li>Nagybetűs kiterjesztés (.PDF): ezért van a feltételben a .ToLower; ha lemarad, a robot átugorja ezeket a fájlokat.</li>
+        <li>A Move File a megfelelő If Then ágában, az If pedig a ciklus testében legyen. A cikluson kívül a CurrentFile hatóköre nem biztosított; a Studio ezt hibával jelezheti.</li>
+        <li>A gyakorlómappát a zipből nem csomagoltad ki, és a robot a zipen belül próbál dolgozni: előbb Extract all.</li>
+      </ul>
+
+    </div>
+    <div class="box term">
+      <span class="t">Hol használnád még?</span>
+            <ul style="margin:6px 0 0">
+        <li>Bejövő számlák szétválogatása lejárat vagy partner szerint.</li>
+        <li>Havi zárásnál a riportfájlok archiválása dátumozott mappákba.</li>
+        <li>A hetedik napon ugyanez a ciklus + feltétel páros dolgozza fel a számla-PDF-eket.</li>
+      </ul>
+
+    </div>
+
+    <nav class="pn">
+      <a href="04_excel_ppt.html" target="_blank" rel="noopener noreferrer">◂ Excel + PowerPoint</a>
+      <a class="next" href="06_urlap_robot.html" target="_blank" rel="noopener noreferrer">Következő: Űrlapkitöltő ▸</a>
+    </nav>
+  </div>
+</main>
+</body>
+</html>

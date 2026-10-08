@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frissülő árfolyamtábla Excelben | harmadik nap · API-k a gyakorlatban</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="inner">
+    <div>
+      <div class="course">Business Process Automation · Harmadik nap: API-k és CRM a gyakorlatban</div>
+      <div class="module">2. blokk · API az Excelben (Power Query)</div>
+    </div>
+    <a href="../index.html" target="_blank" rel="noopener noreferrer">⌂ A nap kezdőlapja</a>
+  </div>
+</header>
+<main id="tartalom">
+  <div class="card">
+    <div class="crumb">2 / 6 blokk</div>
+    <h1>Frissülő árfolyamtábla Excelben</h1>
+    <p class="lead">A Power Queryvel JSON-válaszból frissíthető táblázatot készítesz. A képernyőképek korábbi Excel-felületen mutatják a lépéseket; a gombok neve és helye verziónként eltérhet.</p>
+    <div class="box goal">
+      <span class="t">A blokk végére</span>
+            <ul style="margin:6px 0 0">
+        <li>az Exceled saját magától kéri le az árfolyamokat: gombnyomásra frissülő táblázatod van;</li>
+        <li>a JSON-válaszból táblát csináltál a Power Query lépéseivel;</li>
+        <li>tudod, hol állítod be az automatikus, időzített frissítést.</li>
+      </ul>
+
+    </div>
+
+    <h2>A böngészőből az Excelbe</h2>
+    <p>Ugyanazt a címet, amit a böngészőbe írtál, az Excel is meg tudja hívni, és ami a böngészőben csak szöveg volt, itt élő, frissíthető táblázat lesz. Ez a Power Query: az Excel beépített adatlekérő eszköze, telepíteni nem kell semmit.</p>
+    <ol class="steps">
+      <li>Nyiss egy üres munkafüzetet, és a <kbd>Data</kbd> (Adatok) szalag bal szélén kattints közvetlenül a <kbd>From Web</kbd> gombra (ha nálad nincs kint, ugyanez elérhető: <kbd>Get Data</kbd> → <kbd>From Other Sources</kbd> → <kbd>From Web</kbd>).<figure class="shot"><img src="../img/cmc_12.png" alt="Az Excel Data szalagja: balra a From Web gomb" loading="lazy"><figcaption>Az Excel Data szalagja: balra a From Web gomb</figcaption></figure></li>
+      <li>A megnyíló ablakba illeszd be a teljes lekérdező címet (a saját kulcsoddal a végén), és kattints az <kbd>OK</kbd> gombra.<figure class="shot"><img src="../img/cmc_13.png" alt="A From Web ablak a beillesztett API-címmel és az OK gombbal" loading="lazy"><figcaption>A From Web ablak a beillesztett API-címmel és az OK gombbal</figcaption></figure></li>
+      <li>Első kapcsolódáskor válaszd az <strong>Anonymous</strong> lehetőséget, majd <kbd>Connect</kbd>: ebben a példában a CMC-kulcs már a kérés címében szerepel. Ha adatvédelmi szintet kér, a nyilvános árfolyamadatok forrását <kbd>Public</kbd> szintre állíthatod. Több adatforrás összekapcsolásánál az adatvédelmi szinteket külön meg kell választani; az ellenőrzés kikapcsolása nem szükséges ehhez a feladathoz.<figure class="shot"><img src="../img/cmc_anon.png" alt="Access Web content ablak: Anonymous kiválasztva, Connect gomb" loading="lazy"><figcaption>Access Web content ablak: Anonymous kiválasztva, Connect gomb</figcaption></figure></li>
+      <li>Az Excel lefuttatja a kérést, és megnyílik a Power Query szerkesztő. A válasz gyökere a <code>status</code> és a <code>data</code> rekordot tartalmazza; előfordulhat, hogy az újabb Excel már automatikusan táblázatos nézetet mutat. A sorok megjelenési sorrendje nem számít.<figure class="shot"><img src="../img/cmc_14.png" alt="A Power Query szerkesztő a beérkezett status és data rekordokkal" loading="lazy"><figcaption>A Power Query szerkesztő a beérkezett status és data rekordokkal</figcaption></figure></li>
+      <li>Kattints felül az <kbd>Into Table</kbd> (Táblázatba) gombra.<figure class="shot"><img src="../img/cmc_15.png" alt="Az Into Table gomb a Power Query szalag bal szélén, piros keretben" loading="lazy"><figcaption>Az Into Table gomb a Power Query szalag bal szélén, piros keretben</figcaption></figure></li>
+      <li>Most lépkedj lefelé az adatban: a <em>data</em> sor Record linkjére kattintva belépsz (két mezőt látsz: 1 és 1027), itt ismét <kbd>Into Table</kbd>, majd a Value oszlop fejlécén a kis széthúzó ikonnal (két nyíl) bontsd ki a mezőket.<figure class="shot"><img src="../img/cmc_16.png" alt="Az oszlopkibontó lista a data tábla Value oszlopán" loading="lazy"><figcaption>Az oszlopkibontó lista a data tábla Value oszlopán</figcaption></figure></li>
+      <li>A kibontásnál válaszd ki, mi kell a táblába: elég a <em>name</em>, <em>symbol</em> és a <em>quote</em> (az árak abban vannak), aztán <kbd>OK</kbd>. A quote oszlopot ugyanígy bontsd ki (csak az EUR lesz benne), majd az EUR-t még egyszer: itt a <em>price</em> mellé pipáld be a <em>percent_change_24h</em> mezőt is, a többit vedd ki.<figure class="shot"><img src="../img/cmc_17.png" alt="Az EUR kibontása: price és percent_change_24h bejelölve, alul az OK gomb" loading="lazy"><figcaption>Az EUR kibontása: price és percent_change_24h bejelölve, alul az OK gomb</figcaption></figure></li>
+      <li>Ha a név, szimbólum, ár és 24 órás változás oszlopa megvan, állítsd az ár és a változás típusát <kbd>Decimal Number</kbd> értékre az oszlopfejléc típusikonján. Az azonosítókat tartalmazó Name oszlopot nevezd át CMC_ID-re vagy töröld; a kriptonevet tartalmazó oszlop legyen Név. Végül <kbd>Close &amp; Load</kbd>.<figure class="shot"><img src="../img/cmc_20.png" alt="A Close and Load gomb a Power Query szalag bal szélén" loading="lazy"><figcaption>A Close and Load gomb a Power Query szalag bal szélén</figcaption></figure></li>
+      <li>Az eredmény: élő tábla a munkalapon. Jobb oldalt a Queries &amp; Connections panelen látod a lekérdezésedet.<figure class="shot"><img src="../img/cmc_21.png" alt="A kész Excel-tábla a Bitcoin adataival és a lekérdezés-panellel" loading="lazy"><figcaption>A kész Excel-tábla a Bitcoin adataival és a lekérdezés-panellel</figcaption></figure></li>
+    </ol>
+    <div class="box check">
+      <span class="t">Ellenőrzőpont: ezt kell látnod</span>
+      <p style="margin:4px 0">A táblában a Bitcoin és az Ethereum külön sorban áll, az ár numerikus érték. A Refresh új adatlekérést indít; az ár nem feltétlenül változik minden frissítésnél, mert a szolgáltató gyorsítótárat és saját frissítési ciklust használ.</p><p style="margin:4px 0"><strong>Ha mást látsz:</strong> ha "credentials" ablak jön fel, válaszd az <em>Anonymous</em> lehetőséget (a kulcs a címben van, nem külön jelszóban); ha 401-es hibát kapsz, a kulcs maradt le vagy gépelődött el a cím végén.</p>
+    </div>
+
+    <h2>Frissítés: gombra és magától</h2>
+    <ol class="steps">
+      <li>Kézi frissítés: jobb kattintás a táblán → <kbd>Refresh</kbd>, vagy a Data menü <kbd>Refresh All</kbd> gombja.</li>
+      <li><strong>Időzített frissítés:</strong> Queries &amp; Connections → jobb kattintás a lekérdezésen → <kbd>Properties</kbd> → <kbd>Refresh every ... minutes</kbd>: 60. Ez a nyitott munkafüzetre vonatkozik; a bezárt Excel nem futtatja a frissítést. A <kbd>Refresh data when opening the file</kbd> külön lehetőség a megnyitáskori frissítésre.<figure class="shot"><img src="../img/cmc_19.png" alt="Query Properties: Refresh every 60 minutes bejelölve" loading="lazy"><figcaption>Query Properties: Refresh every 60 minutes bejelölve</figcaption></figure></li>
+    </ol>
+    <div class="box warn">
+      <span class="t">Mielőtt 1 percre állítanád</span>
+          <p>Az ellenőrzött Basic csomag havi 15 000 kreditet és percenként legfeljebb 50 kérést enged. A saját fejlesztői portálod aktuális kerete az irányadó. Ebben a példában (két kriptovaluta, egy pénznem) egy sikeres hívás jellemzően 1 kredit. Percenként, napi 24 órában 1440 kérés történne; ez önmagában nagyjából 10-11 nap alatt elhasználná a 15 000 kreditet. Óránként, nyolc munkaórában kb. nyolc kérés történik. A külön eszközökből futó frissítések ugyanazt a kulcskeretet fogyasztják.</p>
+
+    </div>
+    <div class="box task">
+      <span class="t">Mini-feladat: a saját árfolyamtáblád</span>
+            <ol style="margin:6px 0 0">
+        <li>Bővítsd az id-listát a Solanával: <code>id=1,1027,5426</code>. Az 5426 a példában használt CMC-azonosító; az azonosító nem a tőzsdei rangsor sorszáma. Más eszközt a szolgáltató ID Map végpontjával azonosíthatsz.</li>
+        <li>Formázd meg: félkövér fejléc, ár két tizedessel, pozitív/negatív változás zöld/piros jelzéssel. A <code>percent_change_24h</code> már százalékpontban megadott szám: a 2.1 érték 2.1%-os változást jelent. A szokásos Excel százalékformátum ezt 210%-nak mutatná; vagy oszd 100-zal a formázás előtt, vagy használj egyéni <code>0.00"%"</code> számformátumot.</li>
+        <li>Frissíts kétszer 1 perc különbséggel, és nézd meg, melyik érték változott.</li>
+      <p class="note">Az itt használt Power Query-lépések JSON-t adó webes API-khoz illenek. Más forrásnál eltérhet a hitelesítés, a válasz szerkezete és az átalakítás.</p></ol>
+
+    </div>
+    <div class="box term">
+      <span class="t">Hol használnád még?</span>
+            <ul style="margin:6px 0 0">
+        <li>A Power Query más webes adatforrásokhoz is használható, például devizaárfolyamokhoz és időjárásadatokhoz. A hitelesítést és a feldolgozást az adott API válaszformátumához kell igazítani.</li>
+        <li>A vállalati BI-eszközök (Power BI) pontosan ezt a Power Query-t használják, tehát ezt a tudást viszed magaddal.</li>
+        <li>A nyolcadik napon a robotod maga hívja meg ugyanezt az API-t, és az eredményt Excel-riportba írja.</li>
+      </ul>
+
+    </div>
+
+    <nav class="pn">
+      <a href="01_api_alapok.html" target="_blank" rel="noopener noreferrer">◂ API-alapok</a>
+      <a class="next" href="03_google_sheets.html" target="_blank" rel="noopener noreferrer">Következő: Google Sheets ▸</a>
+    </nav>
+  </div>
+</main>
+</body>
+</html>

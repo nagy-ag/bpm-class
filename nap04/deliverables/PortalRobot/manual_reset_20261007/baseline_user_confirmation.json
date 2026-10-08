@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-07",
+  "evidence_source": "User reply to isolated MANUAL RESET TEST baseline handoff",
+  "user_reply": "20",
+  "displayed_total_user_confirmed": 20,
+  "unchanged_seed_count_offline_verified": 20,
+  "own_count_inferred_from_total_and_seed_count": 0,
+  "agent_live_browser_observation": false,
+  "manual_submission_verified": false,
+  "reset_verified": false,
+  "next": "User enters first supplied row in isolated copy and supplies confirmation screenshot/case ID; no reset before exported row verification."
+}

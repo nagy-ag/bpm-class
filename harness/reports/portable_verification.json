@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-08",
+  "passed": true,
+  "verification": "Clean Git index export in a different folder containing spaces, setup.ps1 with fresh venv, then offline suite",
+  "checks": 231,
+  "source_files_byte_verified": 223,
+  "regression_tests": 39,
+  "skills_validated": 5,
+  "fresh_projects_relocation_tested": 7,
+  "local_tasks_initialized": 75,
+  "local_steps_initialized": 294,
+  "all_steps_pending": true,
+  "credentials_transferred": false,
+  "native_query_relocation": "Native Excel configured fresh workbook and independently reopened it; separate report",
+  "new_laptop_live_apps_verified": false,
+  "limitations": [
+    "Each colleague must verify their own app licensing, browser/native tool capabilities, accounts and actual robot/cloud runs",
+    "Portal is user-started only; historical batch not enabled for fresh accounts",
+    "No unattended website re-login",
+    "CMC uses Python fetch plus native Power Query adaptation"
+  ]
+}

@@ -1,0 +1,117 @@
+[
+  {
+    "forgatokonyv": "kave_01_alap",
+    "esetszam": 100,
+    "atlag_munkaidoben": "11.3 minutes",
+    "atlag_naptari": "20.9 minutes",
+    "atlag_munkaido_perc": 11.3,
+    "atlag_naptari_perc": 20.9,
+    "futas_hossza_kerekitve": "1.1 days",
+    "koltseg_EUR": "91.2",
+    "legnagyobb_atlagos_varakozas_helye": "Csészébe kiöntés",
+    "legnagyobb_atlagos_varakozas": "2.7 m",
+    "eroforras_kihasznaltsag_szazalek": {
+      "Pultos": "42.25",
+      "Barista": "65.82"
+    }
+  },
+  {
+    "forgatokonyv": "kave_02_csucs",
+    "esetszam": 100,
+    "atlag_munkaidoben": "1.9 hours",
+    "atlag_naptari": "1.9 hours",
+    "atlag_munkaido_perc": 114.0,
+    "atlag_naptari_perc": 114.0,
+    "futas_hossza_kerekitve": "6.7 hours",
+    "koltseg_EUR": "91.9",
+    "legnagyobb_atlagos_varakozas_helye": "Elviteles pohárba töltés",
+    "legnagyobb_atlagos_varakozas": "54.1 m",
+    "eroforras_kihasznaltsag_szazalek": {
+      "Pultos": "61.76",
+      "Barista": "96.36"
+    }
+  },
+  {
+    "forgatokonyv": "kave_03_ket_barista",
+    "esetszam": 100,
+    "atlag_munkaidoben": "12.5 minutes",
+    "atlag_naptari": "12.5 minutes",
+    "atlag_munkaido_perc": 12.5,
+    "atlag_naptari_perc": 12.5,
+    "futas_hossza_kerekitve": "5.2 hours",
+    "koltseg_EUR": "90.5",
+    "legnagyobb_atlagos_varakozas_helye": "Fizetés",
+    "legnagyobb_atlagos_varakozas": "2.9 m",
+    "eroforras_kihasznaltsag_szazalek": {
+      "Pultos": "81.16",
+      "Barista": "60.26"
+    }
+  },
+  {
+    "forgatokonyv": "kave_04_ket_pultos",
+    "esetszam": 100,
+    "atlag_munkaidoben": "1.3 hours",
+    "atlag_naptari": "1.3 hours",
+    "atlag_munkaido_perc": 78.0,
+    "atlag_naptari_perc": 78.0,
+    "futas_hossza_kerekitve": "6.3 hours",
+    "koltseg_EUR": "88.7",
+    "legnagyobb_atlagos_varakozas_helye": "Csészébe kiöntés",
+    "legnagyobb_atlagos_varakozas": "40.7 m",
+    "eroforras_kihasznaltsag_szazalek": {
+      "Pultos": "32.55",
+      "Barista": "99.24"
+    }
+  },
+  {
+    "forgatokonyv": "raktar_01_alap",
+    "esetszam": 135,
+    "atlag_munkaidoben": "3.1 hours",
+    "atlag_naptari": "5.2 hours",
+    "atlag_munkaido_perc": 186.0,
+    "atlag_naptari_perc": 312.0,
+    "futas_hossza_kerekitve": "1.2 days",
+    "koltseg_EUR": "3353",
+    "legnagyobb_atlagos_varakozas_helye": "Betárolás",
+    "legnagyobb_atlagos_varakozas": "29.7 m",
+    "eroforras_kihasznaltsag_szazalek": {
+      "Raktáros": "15.91",
+      "Targoncás": "82.01",
+      "Adminisztrátor": "62.5"
+    }
+  },
+  {
+    "forgatokonyv": "raktar_02_A_tiz_targoncas",
+    "esetszam": 135,
+    "atlag_munkaidoben": "2.2 hours",
+    "atlag_naptari": "3 hours",
+    "atlag_munkaido_perc": 132.0,
+    "atlag_naptari_perc": 180.0,
+    "futas_hossza_kerekitve": "1.1 days",
+    "koltseg_EUR": "3304.8",
+    "legnagyobb_atlagos_varakozas_helye": "Lerakodás",
+    "legnagyobb_atlagos_varakozas": "3.8 m",
+    "eroforras_kihasznaltsag_szazalek": {
+      "Raktáros": "18.56",
+      "Targoncás": "76.85",
+      "Adminisztrátor": "73.22"
+    }
+  },
+  {
+    "forgatokonyv": "raktar_03_B_kulon_betarolas",
+    "esetszam": 135,
+    "atlag_munkaidoben": "2.1 hours",
+    "atlag_naptari": "2.8 hours",
+    "atlag_munkaido_perc": 126.0,
+    "atlag_naptari_perc": 168.0,
+    "futas_hossza_kerekitve": "1.1 days",
+    "koltseg_EUR": "2721.9",
+    "legnagyobb_atlagos_varakozas_helye": "Készletrögzítés",
+    "legnagyobb_atlagos_varakozas": "7.8 m",
+    "eroforras_kihasznaltsag_szazalek": {
+      "Raktáros": "17.85",
+      "Targoncás": "61.15",
+      "Adminisztrátor": "66.82"
+    }
+  }
+]

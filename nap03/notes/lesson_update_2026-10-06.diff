@@ -1,0 +1,106 @@
+--- before/nap03/index.html
++++ updated/nap03/index.html
+@@ -3,7 +3,7 @@
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+-<title>Harmadik nap · API-k a gyakorlatban | Üzleti folyamatok modellezése és automatizálása</title>
++<title>Harmadik nap · API a gyakorlatban | Üzleti folyamatok modellezése és automatizálása</title>
+ <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+@@ -11,30 +11,30 @@
+   <div class="inner">
+     <div>
+       <div class="course">Business Process Automation · Harmadik nap: API-k és CRM a gyakorlatban</div>
+-      <div class="module">Harmadik nap: API-k és CRM a gyakorlatban</div>
++      <div class="module">Harmadik nap: API és CRM a gyakorlatban</div>
+     </div>
+     <span></span>
+   </div>
+ </header>
+ <main id="tartalom">
+   <div class="card">
+-    <h1>Harmadik nap: API-k és CRM a gyakorlatban</h1>
+-    <p class="lead">API-n keresztül kérsz le adatot, majd programból új rekordot hozol létre a CRM-ben. Megtanulod értelmezni a kérés és a válasz szerkezetét, kezelni a gyakori hibákat, és összekapcsolni az adatlekérést egy egyszerű üzleti szabállyal.</p>
++    <h1>Harmadik nap: API és CRM a gyakorlatban</h1>
++    <p class="lead">API-n keresztül kérsz le adatokat, majd API-on keresztül hozol létre új rekordot a CRM-ben. Megismered az API kérések és válaszok felépítését, megtanulod felismerni és kezelni a gyakori hibákat, végül pedig egy egyszerű példában összekapcsolod az adatlekérést a CRM-műveletekkel.</p>
+     <div class="box goal">
+-      <span class="t">A nap menete</span>
+-          <p>Először megismered az API-k alapjait, elkészíted a frissíthető árfolyamtáblát, majd kézzel dolgozol a CRM-ben. Az alapútvonal az Excel; a Google Sheets fejezet helyette választható. Ezután a Zoho-hitelesítést és a programból történő rekordlétrehozást gyakorolod, végül összekapcsolod a két API-t.</p>
++      <span class="t">Mai témák és feladatok</span>
++          <p>A nap során megismered az API-k gyakorlati használatát Excelben és Google Sheetsben, áttekinted a Zoho CRM működését, majd API-n keresztül is létrehozol CRM-rekordokat, végül pedig egy egyszerű automatizmusban összekapcsolod az árfolyamlekérést a CRM-műveletekkel.</p>
+ 
+     </div>
+ 
+     <ul class="chapters">
+       <li><a href="pages/01_api_alapok.html" target="_blank" rel="noopener noreferrer"><span class="no">1</span><div><div class="ttl">API-alapok</div><div class="sub">Cím, végpont, paraméter, kulcs, JSON-olvasás: a nap egyetlen elméleti blokkja.</div></div></a></li>
+       <li><a href="pages/02_excel_power_query.html" target="_blank" rel="noopener noreferrer"><span class="no">2</span><div><div class="ttl">API az Excelben (Power Query)</div><div class="sub">Frissülő árfolyamtábla: From Web, Into Table, kibontás, időzített frissítés.</div></div></a></li>
+-      <li><a href="pages/03_google_sheets.html" target="_blank" rel="noopener noreferrer"><span class="no">3</span><div><div class="ttl">API a Google Sheetsben</div><div class="sub">Ugyanez szkripttel: beillesztés, engedélyezés, időzítő. Az Excel helyett választható alternatíva.</div></div></a></li>
++      <li><a href="pages/03_google_sheets.html" target="_blank" rel="noopener noreferrer"><span class="no">3</span><div><div class="ttl">API a Google Sheetsben</div><div class="sub">Ugyanez szkripttel: beillesztés, engedélyezés, időzítő.</div></div></a></li>
+       <li><a href="pages/04_zoho_crm.html" target="_blank" rel="noopener noreferrer"><span class="no">4</span><div><div class="ttl">Zoho CRM kézzel</div><div class="sub">Lead, konvertálás, deal, pipeline: megtapasztalod, mit tart nyilván a CRM.</div></div></a></li>
+       <li><a href="pages/05_zoho_api.html" target="_blank" rel="noopener noreferrer"><span class="no">5</span><div><div class="ttl">Zoho API: rekord kódból</div><div class="sub">Self Client, token, és lead-létrehozás Colabból, telepítés nélkül.</div></div></a></li>
+       <li><a href="pages/06_mini_lanc.html" target="_blank" rel="noopener noreferrer"><span class="no">6</span><div><div class="ttl">Árfolyamjelzés: API-k összekapcsolása</div><div class="sub">Árfolyam-olvasás + döntés + CRM-írás egyetlen működő automatizmusban.</div></div></a></li>
+     </ul>
+-<p class="note" style="margin-top:18px">A gyakorlatokhoz az első napi útmutatóban létrehozott CoinMarketCap-kulcsodat és EU-s Zoho CRM-fiókodat használod. Az árfolyamtáblát Excelben vagy Google Sheetsben készítheted el; a Colabhoz Google-fiók szükséges. Csomagold ki a teljes ZIP-et, majd nyisd meg a <code>nap03/index.html</code> fájlt. A külső szolgáltatásokhoz internetkapcsolat kell.</p>
++<p class="note" style="margin-top:18px">A gyakorlatokhoz az első napi útmutatóban létrehozott CoinMarketCap-kulcsodat és EU-s Zoho CRM-fiókodat használod. Az árfolyamtáblát Excelben vagy Google Sheetsben készítheted el; a Colabhoz Google-fiók szükséges.</p>
+   </div>
+ </main>
+ </body>
+--- before/nap03/pages/01_api_alapok.html
++++ updated/nap03/pages/01_api_alapok.html
+@@ -19,20 +19,20 @@
+ <main id="tartalom">
+   <div class="card">
+     <div class="crumb">1 / 6 blokk</div>
+-    <h1>Az API: cím, paraméter, kulcs, JSON</h1>
+-    <p class="lead">Az első napi lekérdezésből kiindulva megismered a végpontot, a paramétereket, a hitelesítést és a JSON-választ. Ezeket a következő feladatokban már több eszközből használod.</p>
++    <h1>API komponensek: cím, paraméter, kulcs, JSON</h1>
++    <p class="lead">Az első napi lekérdezésre építve megismered az API-k legfontosabb elemeit: a végpontokat, a paramétereket, a hitelesítést és a JSON-válaszok felépítését, majd ezeket a következő feladatokban már több különböző eszközben is alkalmazod.</p>
+     <div class="box goal">
+       <span class="t">A blokk végére</span>
+             <ul style="margin:6px 0 0">
+         <li>el tudod olvasni egy API-hívás címét: mi a végpont, mik a paraméterek, hol a kulcs;</li>
+-        <li>kiigazodsz egy JSON-válaszban, és megtalálod benne a kellő mezőt;</li>
++        <li>eligazodsz egy JSON-válaszban;</li>
+         <li>tudod, mire való az API egy üzleti folyamatban.</li>
+       </ul>
+ 
+     </div>
+ 
+     <h2>API-alapok: kérés és válasz</h2>
+-    <p>Az API (Application Programming Interface) egy szoftver programozott használatához adott felület. A mai webes API-kat HTTP-kéréssel érjük el. A <strong>GET</strong> adatlekérésre, a <strong>POST</strong> például új rekord létrehozására szolgál. A kérésnek lehet címe, fejlécében hitelesítés és törzsében elküldött adat; a válaszban HTTP-státusz és gyakran JSON-adat érkezik.</p>
++    <p>Az API (Application Programming Interface) olyan programozási felület, amelyen keresztül egy szoftver más alkalmazások számára is elérhetővé teszi bizonyos funkcióit és adatait. A webes API-kat jellemzően HTTP-kérésekkel érjük el: a <strong>GET</strong> adatlekérésre, a <strong>POST</strong> pedig például új rekord létrehozására használható. A kérés tartalmazhat címet, hitelesítési adatokat a fejlécben, valamint elküldendő adatokat a törzsben; a válasz pedig HTTP-státuszkódot és gyakran JSON-formátumú adatot tartalmaz.</p>
+     <pre class="codeblock"><code>https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?id=1,1027&amp;convert=EUR&amp;CMC_PRO_API_KEY=IDE_A_KULCSOD</code></pre>
+     <div class="table-scroll"><table class="t"><thead><tr><th>Rész</th><th>A példában</th><th>Jelentés</th></tr></thead><tbody><tr><td>Szolgáltató</td><td><code>https://pro-api.coinmarketcap.com</code></td><td>Az API szerverének címe.</td></tr><tr><td>Végpont</td><td><code>/v1/cryptocurrency/quotes/latest</code></td><td>Legfrissebb árfolyamadatok lekérése.</td></tr><tr><td>Paraméterek</td><td><code>id=1,1027</code>; <code>convert=EUR</code></td><td>Bitcoin és Ethereum; euróban megadott ár.</td></tr><tr><td>Hitelesítés</td><td><code>CMC_PRO_API_KEY</code></td><td>A saját kulcsod. A böngészős példában a kérés része; más API-knál külön fejléc vagy OAuth-token kell.</td></tr></tbody></table></div><p>A JSON objektumokból, listákból, szövegekből, számokból, logikai értékekből és üres (null) értékből épülhet fel. Az objektum mezőit névvel, a listák elemeit sorszámmal éred el. A mai quotes/latest válaszban a kriptoazonosító az objektum kulcsa: <code>"1"</code> és <code>"1027"</code>.</p>
+     <pre class="codeblock"><code>{
+@@ -63,25 +63,12 @@
+     }
+   }
+ }</code></pre>
+-    <p class="note">Érvényes JSON, kitalált árakkal; nem aktuális piaci adat. A <code>data → 1 → quote → EUR → price</code> útvonal a Bitcoin árához vezet. A teljes példát <a href="../docs/cmc_pelda_valasz.json" target="_blank" rel="noopener noreferrer">JSON-fájlként is megnyithatod</a>. A <code>null</code> üres értéket jelent; sikeres kérésnél az error_message mező lehet null vagy üres szöveg.</p><div class="box task">
+-      <span class="t">Mini-gyakorlat a saját válaszodon</span>
+-            <ol style="margin:6px 0 0">
+-        <li>Futtasd le a fenti címet a böngésződben a saját kulcsoddal. Az <code>id=1,1027</code> paraméter mindkét eszközt kéri; ha csak <code>id=1</code> szerepel benne, az Ethereum nem lesz a válaszban.</li>
+-        <li>Keresd meg a válaszban: 1) az Ethereum árát, 2) a 24 órás változást százalékban, 3) a status részben az error_code értékét.</li>
+-        <li>Írd fel az Ethereum-ár útvonalát ugyanabban a "nyíl" formában, mint fent a Bitcoiné.</li>
+-      </ol>
+-
+-    </div>
+-    <div class="box check">
+-      <span class="t">Ellenőrzőpont: ezt kell látnod</span>
+-      <p style="margin:4px 0">Az Ethereum útvonala: data, 1027, quote, EUR, price; az error_code pedig 0.</p><p style="margin:4px 0"><strong>Ha mást látsz:</strong> egyetlen hosszú sor esetén keress rá a <code>price</code> mezőre a böngészőben. Ha van Pretty print lehetőség, bekapcsolhatod. A HTTP 401 hitelesítési hibára, 429 kerettúllépésre utalhat; a JSON status.error_code mezője siker esetén 0. Az error_message puszta jelenléte nem jelent hibát.</p>
+-    </div>
++    <p class="note">Érvényes JSON, kitalált árakkal; nem aktuális piaci adat. A <code>data → 1 → quote → EUR → price</code> útvonal a Bitcoin árához vezet. A teljes példát <a href="../docs/cmc_pelda_valasz.json" target="_blank" rel="noopener noreferrer">JSON-fájlként is megnyithatod</a>. A <code>null</code> üres értéket jelent; sikeres kérésnél az error_message mező lehet null vagy üres szöveg.</p>
+     <div class="box term">
+-      <span class="t">Miért ez a nagy ügy üzletileg?</span>
++      <span class="t">Miért fontos ez üzleti szempontból?</span>
+             <ul style="margin:6px 0 0">
+-        <li>Az API csökkentheti a kézi másolást, és ütemezhető adatátvitelt tesz lehetővé. Hibás kérés, adat vagy üzleti szabály esetén azonban az automatizmus is hibázhat; ezért ellenőrizzük a válaszokat.</li>
+-        <li>Majdnem minden modern vállalati rendszernek van API-ja: CRM, számlázó, bank, webshop, futárcég.</li>
+-        <li>A mai nap menete: előbb olvasunk adatot API-n (árfolyam), aztán írunk adatot API-n (CRM-rekord), a végén a kettőt összekötjük egy mini folyamattá.</li>
++        <li>Az API-k csökkenthetik a kézi adatmásolást, és lehetővé teszik az adatok automatikus, akár ütemezett továbbítását a rendszerek között. <strong>VIGYÁZAT:</strong> az automatizálás a hibás kéréseket, adatokat vagy üzleti szabályokat is következetesen végrehajtja, ezért a válaszok ellenőrzése elengedhetetlen.</li>
++        <li>Szinte minden modern vállalati rendszer kínál API-kapcsolatot: ilyenek például a CRM-, számlázási, banki, webshop- és futárszolgálati rendszerek.</li>
+       </ul>
+ 
+     </div>
