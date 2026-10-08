@@ -1,3 +1,11 @@
+## 2026-10-08 explicit maintenance skills and code-only publication — complete
+
+Published repo-local `$bpa-import-lessons` and `$bpa-audit-injections`, both with implicit invocation disabled. ZIPs are extracted into isolated staging before inspection; safe source replacement preserves credentials, outer work and completed task evidence. Updated-source coursework stays unfinished until an explicit solve request creates separate revision tasks/work. Injection audit remains separately requested passive review with coverage limits. Usage: [maintenance guide](harness/LESSON_UPDATES.md).
+
+Every root napXX folder is removed from GitHub's current main tree and ignored for future pushes. All1321previously tracked local day files are preserved. Reusable44helpers,7robot code templates,75pending task definitions and all maintained tests/verifiers remain under harness. Colleagues import their own ZIPs. The sharing audit rejects force-added root-day files; earlier Git history is preserved.
+
+All61regression tests and both skill validators pass. A clean Windows checkout passed code-only verification, the actual isolated synthetic ZIP stage/audit/apply/revision/step sequence (10checks before/11after import), and the214file sharing audit: [Windows CI](https://github.com/nagy-ag/bpm-class/actions/runs/37793972459), code commit049915f. NTFS short-path issues found in the first two CI attempts are fixed and regression-tested. The author's223earlier supplied files remain unchanged; local verification also passes. This publication task did not update actual course sources or perform a full current-course injection audit; separate imports have their own progress records. [Verification](harness/reports/lesson_maintenance_verification.json). Older distribution inventories below are historical.
+
 ## 2026-10-08 portable harness publication — complete
 
 Published [bpm-class](https://github.com/nagy-ag/bpm-class) with five repo-scoped skills, setup/technology instructions, fresh ordered progress and guarded isolated project preparation. A clean checkout with spaces passed setup with a fresh environment,231offline checks/39regression tests and223unchanged supplied file hashes. GitHub's clean Windows CI passed for code commit5ab0f61. Remote tree verified:1376files, six test files and18verifier files retained, no credentials/runtime/private state. [Setup](SETUP.md), [workflow](harness/WORKFLOWS.md), [verification](harness/reports/portable_verification.json), [publication](harness/reports/publication.json).
@@ -137,12 +145,4 @@ Resumed nap01 chapter 1: checking the supplied café sample in the BPMN editor. 
 Completed all six blocks at user request. Seven BIMP runs finished (100 café or 135 warehouse instances each). Deliverable index records parameterized models, measured result tables, comparisons, repairs, and browser export/heat-map limitations.
 
 At the user's request, transferred all six block results to Brave in the “📚 BPA nap02” group, ordered 1–6. The café and warehouse scenarios were rerun successfully in Brave (100 and 135 completed instances); these fresh random samples differ from the original saved comparison runs. Closed the six in-app copies after verifying the transfer.
-
-# 2026-10-08 explicit maintenance skills — publication in progress
-
-Added repo-local `$bpa-import-lessons` and `$bpa-audit-injections`, both with implicit invocation disabled. ZIPs are extracted into isolated staging before inspection; safe source replacement preserves credentials, outer work and completed task evidence. New source provenance explicitly leaves coursework unfinished; solving later creates separate source/import-specific pending tasks and work folders. Injection audit remains a separately requested passive review with documented coverage limits.
-
-At the user's additional request, every root napXX folder is excluded from the shared repository;1321previously tracked day files were untracked and every local copy remains intact. Reusable44helpers,7robot code templates and75task definitions are retained under harness. A colleague imports their own ZIPs. The sharing audit also rejects force-added root-day files.
-
-Verified60regression tests, both skill validators and a code-only clean staged export with an actual synthetic lesson CLI sequence (10code checks before/11after isolated import; real local course sources explicitly unavailable). The author's unchanged local sources still pass233offline checks. No real course sources were updated and no full current-course injection audit was performed. Implementation/tests and [maintenance verification](harness/reports/lesson_maintenance_verification.json) are retained in Git; GitHub deletion/update and clean Windows CI are the current final step. Usage: [maintenance guide](harness/LESSON_UPDATES.md). Earlier publication/source-evidence entries below are history, not the current distribution inventory.
 

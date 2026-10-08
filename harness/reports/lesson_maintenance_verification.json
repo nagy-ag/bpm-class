@@ -3,11 +3,14 @@
   "scope": "Code-only shared harness, offline synthetic fixtures and clean staged export; no real lesson import or current-course injection audit",
   "passed": true,
   "repo_skills": 7,
-  "new_explicit_only_skills": ["bpa-import-lessons", "bpa-audit-injections"],
+  "new_explicit_only_skills": [
+    "bpa-import-lessons",
+    "bpa-audit-injections"
+  ],
   "both_skill_validators_passed": true,
   "offline_checks": 233,
-  "regression_tests": 60,
-  "new_maintenance_tests": 20,
+  "regression_tests": 61,
+  "new_maintenance_tests": 21,
   "original_source_files_unchanged": 223,
   "root_day_files_in_git_index": 0,
   "previously_tracked_local_day_files_preserved": 1321,
@@ -19,8 +22,22 @@
     "fresh_local_state": true,
     "baseline_checks_passed": 10,
     "after_synthetic_import_checks_passed": 11,
-    "local_course_sources_intentionally_unavailable_in_export": ["nap01", "nap02", "nap03", "nap04"],
-    "actual_cli_sequence": ["init", "stage-lessons", "audit-injections --stage", "apply-lessons", "lesson-status", "start-revision", "step in_progress", "step done"],
+    "local_course_sources_intentionally_unavailable_in_export": [
+      "nap01",
+      "nap02",
+      "nap03",
+      "nap04"
+    ],
+    "actual_cli_sequence": [
+      "init",
+      "stage-lessons",
+      "audit-injections --stage",
+      "apply-lessons",
+      "lesson-status",
+      "start-revision",
+      "step in_progress",
+      "step done"
+    ],
     "source_replacement_only_in_isolated_export": true
   },
   "verified_boundaries": [
@@ -33,6 +50,16 @@
     "Concurrent imports/progress and active day claims protected",
     "Audit is passive candidate triage with private-path exclusions, redaction and coverage limits"
   ],
-  "test_and_verifier_code": ["harness/tests/test_lessons.py", "harness/verify_maintenance_export.py"],
-  "publication_evidence": "TASK_PROGRESS.md, harness-02 step 6"
+  "test_and_verifier_code": [
+    "harness/tests/test_lessons.py",
+    "harness/verify_maintenance_export.py"
+  ],
+  "publication_evidence": "TASK_PROGRESS.md, harness-02 step 6",
+  "windows_ci": {
+    "run_id": 37793972459,
+    "code_commit": "049915fdee3dd823428c81ed1e1bb4e5c57cec7c",
+    "conclusion": "success",
+    "url": "https://github.com/nagy-ag/bpm-class/actions/runs/37793972459"
+  },
+  "ntfs_short_paths_and_rollback_regression_passed": true
 }

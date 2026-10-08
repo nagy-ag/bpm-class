@@ -22,27 +22,3 @@ __pycache__/
 Thumbs.db
 .DS_Store
 *.tmp
-# Obsolete source backups and machine-specific aggregate handoff archives.
-# Supplied gyakorlo_mappa.zip and all test/verifier implementations stay public.
-nap*/working/source_backups*/
-nap*/working/source-backups/
-nap04/deliverables/BPA_nap04_final_handoff_20261007.zip
-nap04/deliverables/BPA_nap04_verified_projects_20261007.zip
-# Downloaded third-party authoring skill caches, installed by their own tools.
-nap03/working/cmc_auto_refresh/.agents/
-nap03/working/cmc_auto_refresh/.claude/
-# Historical tracker copies and pre-Studio snapshots; final audit stays public.
-nap04/working/final_audit_20261007/*backup*
-nap04/working/final_audit_20261007/*before*
-nap04/working/final_audit_20261007/*pre_studio*
-nap04/working/setup_2026-10-06/Portal_Logged_Trial_all_targets_guard_false.xaml.backup
-# Account-specific raw browser screenshots, enumerated by privacy inventory.
-# Verifiers, test fixtures and non-private measured result reports remain public.
-nap01/working/zoho_lead_overview.png
-nap01/working/zoho_lead_timeline.png
-nap03/working/family_foods_account.png
-nap03/working/kek_duna_account.png
-nap03/working/colab_clean_saved.png
-nap03/working/readiness_2026-10-06/colab_run.png
-nap03/working/sheets*.png
-nap03/deliverables/Sheets_automation/sheets*.png
