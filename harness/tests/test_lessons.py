@@ -108,7 +108,7 @@ class LessonTests(unittest.TestCase):
         before_index = (self.root / 'lesson_versions/index.json').read_bytes()
         record = stage_lessons(self.root, self.archive(files={'nap02/index.html': 'next version'}))
         def fail_catalog(path, value):
-            if path == self.root / 'lesson_versions/index.json':
+            if path.resolve() == (self.root / 'lesson_versions/index.json').resolve():
                 raise OSError('simulated catalog write failure')
             return write_json(path, value)
         with patch('harness.lessons.write_json', side_effect=fail_catalog):

@@ -46,6 +46,7 @@ def within(path: Path, parent: Path) -> bool:
 
 
 def inspect(root: Path, day: str):
+    root = Path(root).resolve()
     manifest = json.loads((root / 'course_skill_manifest.json').read_text(encoding='utf-8'))
     source = (root / day / day).resolve()
     reviewed = manifest['days'].get(day, {})
