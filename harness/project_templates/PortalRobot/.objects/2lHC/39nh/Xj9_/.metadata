@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Meridian Biztosító  Kárrendszer (gyakorló pél",
+  "Type": "Screen",
+  "Id": "Xj9_CwQOT0SozIJq-StUnA",
+  "Reference": "O2OegXa4uUmX-8tf3FY-ug/Xj9_CwQOT0SozIJq-StUnA",
+  "ParentRef": "O2OegXa4uUmX-8tf3FY-ug/39nhXhYO8UCHIso2-ywZow",
+  "Created": "2026-10-07T06:55:28.9562239Z",
+  "Updated": "2026-10-07T06:55:28.9562239Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

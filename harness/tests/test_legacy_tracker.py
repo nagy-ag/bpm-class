@@ -32,7 +32,7 @@ Status: `done` · Owner: `unassigned` · Updated: 2026-01-01 · Next step: None
 | 2 | Verify | done | second-verify-evidence |
 '''
             path.write_text(before, encoding='utf-8')
-            result = subprocess.run([sys.executable, str(ROOT / 'nap03/working/task_update.py'), str(path),
+            result = subprocess.run([sys.executable, str(ROOT / 'harness/course_tools/day03/task_update.py'), str(path),
                                      'first-01', '2', 'done', 'actual-first-result'], capture_output=True)
             self.assertEqual(result.returncode, 0)
             after = path.read_text(encoding='utf-8')

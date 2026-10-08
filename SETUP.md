@@ -21,9 +21,11 @@ python -m venv .venv
 
 Use `.venv/Scripts/python.exe` instead of `python` below if your default Python does not have the dependencies. No environment activation is required.
 
+The repository contains code/skills/tests, **not the napXX folders or completed lesson files**. Obtain your own lesson ZIPs from the course, place them in `lesson-downloads/` (or the checkout root), and explicitly ask `$bpa-import-lessons lesson-downloads/nap01.zip`, then the other days. This safely extracts/inspects sources and keeps them local-only. The importer never solves tasks. When you request solving a day, the agent reads those current lessons and starts its fresh revision task plan. Offline code tests run without the professor's bundles; platform/course tests require the local assets.
+
 ## 2. Open in Codex
 
-Open this cloned folder as a **local Windows project** in the Codex desktop app. Sign in to your own account. The five skills live in `.agents/skills`; restart/reopen Codex if they do not appear. Do not copy another user's global Codex settings, login/session files or plugins cache.
+Open this cloned folder as a **local Windows project** in the Codex desktop app. Sign in to your own account. The seven skills live in `.agents/skills`; restart/reopen Codex if they do not appear. Do not copy another user's global Codex settings, login/session files or plugins cache.
 
 For desktop control: open **Plugins → Computer Use → Install/Enable**, turn on its **server and skill** toggles, then **Try now**. In **Settings → Computer use**, review app access and approve the specific apps when prompted. Keep Windows unlocked with the target app visible during a run. Availability depends on account, region and administrator controls. The built-in browser is used first for web work. See [CAPABILITIES.md](harness/CAPABILITIES.md) for agent-side checks. Ask Codex:
 
@@ -42,7 +44,7 @@ Setup creates a blank root `.env.local` from `.env.example`. Fill it privately i
 - Moodle, Google and UiPath: sign in privately when prompted. Never add website passwords, cookies or verification codes to files or chat.
 
 ```powershell
-python nap03/working/bpa_access.py check
+python harness/course_tools/day03/bpa_access.py check
 ```
 
 This checks live API access and may exchange/refresh Zoho tokens. The helper currently targets Zoho **EU**; a non-EU account needs an explicit regional adaptation first. Do not reuse the author's CRM records or permission state. Picklist Phone and course account relationships must be checked in your CRM before fictional inserts.
@@ -85,12 +87,16 @@ Record actual checks in local shared setup tasks, in order:
 | Portal | Prepare PortalRobot; user captures targets, reports baseline, starts one fictional trial and exports CSV. Verify before batch (WORKFLOWS.md). |
 | BIMP / Colab / Sheets | Actual model simulation/export/heatmap; actual notebook positive/no-write branches; actual manual and optional time-driven Sheets refresh with cleanup proof. |
 
-A fresh clone is prepared, not fully platform-verified. The repository includes the author's real reference evidence and reusable verification tools. This laptop must pass its own actual runs before its tasks are marked done.
+A fresh clone contains reusable code, task plans and verification tools; it is not platform-verified. This laptop must pass its own actual runs before its tasks are marked done.
+
+The root summary describes historical reference runs; their day-folder artifacts are retained only on the author's laptop. Shared robot templates contain code, not completed workbook/deck outputs or transferable proof. Missing source files do not count as source verification. `prepare CMC_auto_refresh` additionally requires a locally created native CMC workbook from its prerequisite lesson; it is not distributed.
 
 ## 6. Work through the class
 
 Ask: **“Use $bpa-nap01 and complete the first unfinished task step by step. Keep my local progress current. Ask me only for a necessary private sign-in or exact UI action.”** Then proceed nap02 → nap03 → nap04. Final graded submission needs your specific instruction.
 
 Your local work is `.bpa/`; keep it backed up privately. Git pull updates reusable files and leaves it untouched. Do not erase completed-run reservations to retry; reconcile ambiguous output first.
+
+Two optional repo-local maintenance commands are available after opening this checkout in Codex: `$bpa-import-lessons ZIP` and `$bpa-audit-injections TARGET`. Both require explicit invocation. ZIPs are extracted first into safe staging; old completion is preserved and updated-source coursework starts only on a later solve request. Root ZIP downloads and `lesson-downloads/` are ignored, while imported source provenance/tests are shareable. See [lesson maintenance](harness/LESSON_UPDATES.md).
 
 Official product references (checked 2026-10-08): [repo-scoped skills](https://learn.chatgpt.com/docs/build-skills), [Windows app](https://learn.chatgpt.com/docs/windows/windows-app), [browser](https://learn.chatgpt.com/docs/browser), [computer use](https://learn.chatgpt.com/docs/computer-use), [UiPath package management](https://docs.uipath.com/studio/standalone/latest/user-guide/managing-activities-packages), [UiPath file URL permissions](https://docs.uipath.com/studio/standalone/latest/user-guide/enable-access-to-file-urls-and-inprivate-mode).

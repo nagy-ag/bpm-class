@@ -138,3 +138,11 @@ Completed all six blocks at user request. Seven BIMP runs finished (100 café or
 
 At the user's request, transferred all six block results to Brave in the “📚 BPA nap02” group, ordered 1–6. The café and warehouse scenarios were rerun successfully in Brave (100 and 135 completed instances); these fresh random samples differ from the original saved comparison runs. Closed the six in-app copies after verifying the transfer.
 
+# 2026-10-08 explicit maintenance skills — publication in progress
+
+Added repo-local `$bpa-import-lessons` and `$bpa-audit-injections`, both with implicit invocation disabled. ZIPs are extracted into isolated staging before inspection; safe source replacement preserves credentials, outer work and completed task evidence. New source provenance explicitly leaves coursework unfinished; solving later creates separate source/import-specific pending tasks and work folders. Injection audit remains a separately requested passive review with documented coverage limits.
+
+At the user's additional request, every root napXX folder is excluded from the shared repository;1321previously tracked day files were untracked and every local copy remains intact. Reusable44helpers,7robot code templates and75task definitions are retained under harness. A colleague imports their own ZIPs. The sharing audit also rejects force-added root-day files.
+
+Verified60regression tests, both skill validators and a code-only clean staged export with an actual synthetic lesson CLI sequence (10code checks before/11after isolated import; real local course sources explicitly unavailable). The author's unchanged local sources still pass233offline checks. No real course sources were updated and no full current-course injection audit was performed. Implementation/tests and [maintenance verification](harness/reports/lesson_maintenance_verification.json) are retained in Git; GitHub deletion/update and clean Windows CI are the current final step. Usage: [maintenance guide](harness/LESSON_UPDATES.md). Earlier publication/source-evidence entries below are history, not the current distribution inventory.
+

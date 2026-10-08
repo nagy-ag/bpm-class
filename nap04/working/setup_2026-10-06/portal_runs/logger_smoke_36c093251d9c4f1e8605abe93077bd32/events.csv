@@ -1,4 +1,0 @@
-utc,event,policy,case_id,detail
-"2026-10-07T07:43:36.4537182+00:00","logger_smoke_started","LOGGER-SMOKE","NOT-A-PORTAL-CASE","File-only check, not portal execution"
-"2026-10-07T07:43:36.7563934+00:00","logger_smoke_escaped","LOGGER-SMOKE","NOT-A-PORTAL-CASE","Comma, quote "" Hungarian: vízkár"
-"2026-10-07T07:43:36.8298201+00:00","logger_smoke_complete","LOGGER-SMOKE","NOT-A-PORTAL-CASE","Expected exactly three events"

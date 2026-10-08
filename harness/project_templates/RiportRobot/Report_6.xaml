@@ -1,0 +1,85 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Report_6" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference><AssemblyReference>UiPath.Excel.Activities</AssemblyReference><AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+<Sequence DisplayName="Excel és PowerPoint riport">
+<Sequence.Variables><Variable x:TypeArguments="ue:IChartRef" Name="diagram"/></Sequence.Variables>
+<If DisplayName="Helyőrző konfigurálva" Condition='["Content Placeholder 2".StartsWith("TODO:")]'><If.Then><Sequence><Throw Exception="[New System.InvalidOperationException(&quot;Prepare slide9 layout and set actual content placeholder before execution.&quot;)]"/></Sequence></If.Then></If>
+<If DisplayName="Új munkapéldány ellenőrzése" Condition='[System.IO.File.Exists("reports_6/run_started.lock")]'><If.Then><Sequence><Throw Exception="[New System.IO.IOException(&quot;This copy has already started. Preserve outputs and use fresh copies before rerun.&quot;)]"/></Sequence></If.Then></If>
+<TryCatch DisplayName="Futás jelölése"><TryCatch.Try><Sequence DisplayName="Futás jelölése – műveletek"><ui:WriteTextFile DisplayName="Ismétlés elleni jelző" FileName="reports_6/run_started.lock" Encoding="utf-8" Text="Office run started; preserve files and reconcile before any retry."/></Sequence></TryCatch.Try><TryCatch.Catches><Catch x:TypeArguments="s:Exception"><ActivityAction x:TypeArguments="s:Exception"><ActivityAction.Argument><DelegateInArgument x:TypeArguments="s:Exception" Name="exception"/></ActivityAction.Argument><Sequence DisplayName="Hiba naplózása"><ui:LogMessage Level="Error" DisplayName="Office hiba" Message="[exception.ToString()]"/><Rethrow/></Sequence></ActivityAction></Catch></TryCatch.Catches></TryCatch><TryCatch DisplayName="Office riport"><TryCatch.Try><Sequence DisplayName="Office riport – műveletek">
+<ueab:ExcelApplicationCard DisplayName="Riport munkafüzet" WorkbookPath="reports_6/Riport_adatok.xlsx" CreateNewFile="False" AutoSave="True" KeepExcelFileOpen="False">
+<ueab:ExcelApplicationCard.Body><ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle"><ActivityAction.Argument><DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel"/></ActivityAction.Argument><Sequence DisplayName="Diagram és prezentáció">
+<ueab:InsertExcelChartX DisplayName="Első 6 rekord diagramja" Range='[Excel.Sheet("us-500").Range("A1:B7")]' InsertIntoSheet='[Excel.Sheet("us-500")]' ChartCategory="Column" ChartType="xlColumnClustered" ChartHeight="350" ChartWidth="640" Left="320" Top="20" InsertedChart="[diagram]"/>
+<ueab:CopyChartToClipboardX DisplayName="Diagram a vágólapra" Chart="[diagram]" Action="CopyToClipboard"/>
+<ui:PowerPointApplicationScope DisplayName="Riport prezentáció" PresentationPath="reports_6/Riport_eredmeny.pptx" AutoSave="True" CreateIfNotExists="False"><ui:PowerPointApplicationScope.Body><ActivityAction x:TypeArguments="ui:IPresentationQuickHandle"><ActivityAction.Argument><DelegateInArgument x:TypeArguments="ui:IPresentationQuickHandle" Name="PowerPoint"/></ActivityAction.Argument><Sequence DisplayName="Beillesztés a kilencedik diára">
+<ui:PasteIntoSlide DisplayName="Diagram a tartalom-helyőrzőbe" Presentation="[PowerPoint]" SlideIndex="9" ShapeName="Content Placeholder 2" NewShapeName="BPA_6_rekord"/>
+</Sequence></ActivityAction></ui:PowerPointApplicationScope.Body></ui:PowerPointApplicationScope>
+</Sequence></ActivityAction></ueab:ExcelApplicationCard.Body></ueab:ExcelApplicationCard>
+</Sequence></TryCatch.Try><TryCatch.Catches><Catch x:TypeArguments="s:Exception"><ActivityAction x:TypeArguments="s:Exception"><ActivityAction.Argument><DelegateInArgument x:TypeArguments="s:Exception" Name="exception"/></ActivityAction.Argument><Sequence DisplayName="Hiba naplózása"><ui:LogMessage Level="Error" DisplayName="Office hiba" Message="[exception.ToString()]"/><Rethrow/></Sequence></ActivityAction></Catch></TryCatch.Catches></TryCatch><ui:LogMessage DisplayName="Riport kész" Level="Info" Message="Riport kész: 6 rekord; us-500 A1:B7; dia9."/>
+</Sequence></Activity>

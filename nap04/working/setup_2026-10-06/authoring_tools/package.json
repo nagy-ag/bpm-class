@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@uipath/cli": "^1.202.1",
-    "@uipath/rpa-tool": "^1.202.1"
-  }
-}

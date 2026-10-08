@@ -1,0 +1,2520 @@
+{
+  "schema": 1,
+  "scope": "Reviewed task requirements only, never inherited completion",
+  "tasks": [
+    {
+      "id": "setup-05",
+      "title": "Short portal batch handoff",
+      "day": "shared",
+      "requirements": "Source: user asks to finish non-portal work first and simplify later portal instructions. Offline document edit only; no portal action or robot run.",
+      "dependencies": "",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Preserve detailed handoff and write short exact button/wait/export instructions.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Verify paths, workflow choice, expected count and retry warning; save handoff.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "setup-04",
+      "title": "Review the user-started portal trial offline",
+      "day": "shared",
+      "requirements": "Source: user reports done after the one-row Portal_Logged_Trial Run File handoff. Dependencies: setup-03 completed and pre-run CSV reconciled. Inspect only saved files and user-run evidence; do not control the blocked portal, initiate robot/browser actions or retry submissions.",
+      "dependencies": "setup-03 completed and pre-run CSV reconciled. Inspect only saved files and user-run evidence; do not control the blocked portal, initiate robot/browser actions or retry submissions.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Review actual run logs, snapshot, case ID and saved screenshots; identify success or the exact stop point.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Obtain fresh own-record export; verify saved values, uniqueness and preservation of earlier records.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Reconcile setup/readiness/progress and save exact next action.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "setup-03",
+      "title": "Prepare logged portal workflow for a user-started run",
+      "day": "shared",
+      "requirements": "Source: user asks to add execution evidence, prepare the portal and give exact button/wait instructions, then wait for the user's “done” before continuing. This is offline preparation only while setup-01 stays blocked. Do not run browser activities, validate/highlight selectors against the portal, change protocol or use another tool to access the blocked page. Preserve existing source bundles and verified workflows. User-run evidence review cannot substitute for actual evidence.",
+      "dependencies": "",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read current project/lesson and official UiPath authoring guidance; determine safe offline authoring route.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Prepare offline workflow and per-run logging/evidence capture without executing portal actions.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Perform only offline structural/build checks; prepare evidence review.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save exact button/wait handoff, reconcile progress and await user “done”.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "setup-02",
+      "title": "Prepare a user-operated portal handoff",
+      "day": "shared",
+      "requirements": "Source: user asks whether the agent can prepare UiPath and leave the local file/targets to the user. Independent preparation is allowed while setup-01 steps7–8 remain blocked. Do not control the portal, execute browser activities, serve it over HTTP, or change browser targets as a workaround. Preserve the user's attached Portal_Brave_Check workflow and earlier verified robots.",
+      "dependencies": "",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Inspect the current native project, lesson and work copies; preserve existing workflows.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Prepare a separate data-only input workflow through Studio, without browser interaction.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Run only the data-only workflow and verify its preview.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save exact manual targeting/run steps and reconcile progress.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "setup-01",
+      "title": "Execute Office, Studio and portal setup",
+      "day": "shared",
+      "requirements": "Source: user explicitly requests execution of plan steps1–3. Reuse installed apps and outer working copies. Earlier verify-01 evidence remains valid; these steps close its native execution gaps. If a private sign-in/trust permission blocks a step, record it and continue only independent setup preparation.",
+      "dependencies": "",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Establish native Office control; create/edit/calculate/save/reopen a test workbook.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Create a local Power Query refresh test; change harmless input and verify updated loaded values.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Create/copy a chart into editable PowerPoint, save/reopen and verify.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Observe Studio start screen and verify private sign-in/Community desktop entitlement.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 5,
+          "action": "Restore compatible official packages; create and execute actual Message Box smoke project.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 6,
+          "action": "Execute small workbook read/write robot and verify its saved output.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 7,
+          "action": "Establish user-configured official browser extension/file access and practice portal session.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 8,
+          "action": "Verify Studio target identification and one fictional portal submission/readback.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 9,
+          "action": "Reconcile readiness/access/progress with evidence and exact remaining actions.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "access-01",
+      "title": "CoinMarketCap",
+      "day": "shared",
+      "requirements": "",
+      "dependencies": "",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Load approved key without displaying it.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Run live BTC/ETH EUR check and validate response.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "access-02",
+      "title": "Zoho EU OAuth",
+      "day": "shared",
+      "requirements": "",
+      "dependencies": "",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "User saves fresh authorized Self Client grant locally.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Exchange, save tokens and clear consumed grant.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Verify live CRM read and token renewal.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "access-03",
+      "title": "Moodle session",
+      "day": "shared",
+      "requirements": "",
+      "dependencies": "",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "User signs in privately.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Verify authenticated course page.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "access-04",
+      "title": "UiPath desktop",
+      "day": "shared",
+      "requirements": "",
+      "dependencies": "",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Verify approved free Community organization/Studio entitlement.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Download signed official installer and obtain installation authorization.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Finish existing installation; verify Studio executable/start screen.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "User signs in privately; verify desktop license and restore Process packages.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 5,
+          "action": "Run actual Message Box smoke robot and observe successful finish.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "access-05",
+      "title": "Colab",
+      "day": "shared",
+      "requirements": "",
+      "dependencies": "",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Verify signed-in Colab home without reading credentials.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Create/connect required course notebook and verify a safe cell run.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "verify-01",
+      "title": "Cross-course readiness verification",
+      "day": "shared",
+      "requirements": "Source: user requests representative tests for every course task type. Dependencies: existing approved accounts and supplied lessons. These are independent readiness checks, not completion of course assignments. If one requires private sign-in, record its blocker and continue the next independent capability. Test artifacts belong in outer day working areas; use only uniquely tagged fictional CRM records and no workflow triggers.",
+      "dependencies": "existing approved accounts and supplied lessons. These are independent readiness checks, not completion of course assignments. If one requires private sign-in, record its blocker and continue the next independent capability. Test artifacts belong in outer day working areas; use only uniquely tagged fictional CRM records and no workflow triggers.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Inspect current sources and map all required capability types.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Verify live quotes, CRM read and OAuth renewal without displaying credentials.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Verify fictional CRM write/read/update/cleanup and conditional-chain preparation.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Test local workbook/presentation/file/archive output round trips.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 5,
+          "action": "Open test files in native Office and verify editing/calculation capability.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 6,
+          "action": "Verify Studio start screen/licensing/packages and run a real smoke robot if permitted and signed in.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 7,
+          "action": "Check Moodle, UiPath cloud, Zoho browser and Colab; run a harmless notebook cell if authenticated.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 8,
+          "action": "Verify BPMN/simulation access and practice-portal prerequisites; retain documented policy limits.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 9,
+          "action": "Save evidence, reconcile access/progress, and list exact remaining setup actions.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D1-01",
+      "title": "Café model",
+      "day": "nap01",
+      "requirements": "Scope: required. Dependencies: None.\n\n\n\nSource: [01_folyamatabra.html](../nap01/pages/01_folyamatabra.html).\n\n\n\nMigrated 2026-10-05 editor verification; not rerun for tracking.",
+      "dependencies": "None.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read the lesson and supplied model; confirm the named start, three tasks and end.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Build and save kave_rendeles.bpmn with valid BPMN geometry.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Reopen supplied example and own model in bpmn.io; verify the sequence.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Link final model and editor verification.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D1-02",
+      "title": "Morning routine mini-exercise",
+      "day": "nap01",
+      "requirements": "Scope: required. Dependencies: Previous applicable task in lesson order.\n\n\n\nSource: [01_folyamatabra.html](../nap01/pages/01_folyamatabra.html).\n\n\n\nSample routine, not a factual claim about user habits.",
+      "dependencies": "Previous applicable task in lesson order.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read the mini-exercise and distinguish a sample from the user's actual routine.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Build at most six named activities with start/end; save reggeli_rutin.bpmn.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Reopen and check order, reachability and labels.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Link final model and disclose that this is a sample.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D1-03",
+      "title": "CoinMarketCap lesson and quote mini-exercise",
+      "day": "nap01",
+      "requirements": "Scope: required. Dependencies: Previous applicable task in lesson order.\n\n\n\nSource: [02_coinmarketcap.html](../nap01/pages/02_coinmarketcap.html).\n\n\n\nAPI access is verified; chapter demonstrations and quote evidence remain separate.",
+      "dependencies": "Previous applicable task in lesson order.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read current lesson and public demo requirements.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Verify existing approved free account/key and live BTC/ETH EUR API access.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Try the public demo; record actual success or service limitation.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Retrieve BTC and ETH prices safely; record numeric EUR quotes and retrieval time without credentials.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 5,
+          "action": "Verify JSON status/paths and save the quote/concept evidence.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D1-04",
+      "title": "First manual fictional Zoho lead",
+      "day": "nap01",
+      "requirements": "Scope: required. Dependencies: EU CRM access; no duplicate course lead.\n\n\n\nSource: [03_zoho.html](../nap01/pages/03_zoho.html).",
+      "dependencies": "EU CRM access; no duplicate course lead.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read source fields and verify EU CRM/session.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Check whether Kiss Márta / Corner Shop already exists.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Create the lead through UI only if missing; preserve sample data.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Reopen and verify all fields plus Timeline; save fictional record evidence.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D1-05",
+      "title": "UiPath installation and smoke robot",
+      "day": "nap01",
+      "requirements": "Scope: required. Dependencies: Shared access-04.\n\n\n\nSource: [04_uipath.html](../nap01/pages/04_uipath.html).\n\n\n\nIndependent from the blocked Zoho picklist decision. Reuse completed shared setup-01 license/packages; this lesson requires a separate Proba project and the exact course message, which differs from the earlier readiness smoke.",
+      "dependencies": "Shared access-04.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read lesson; verify existing Community organization and authorized installation.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Finish existing installation and privately signed-in desktop Studio; verify license.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Create Windows/VB Proba project, restore packages and add the Message Box.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Run; observe correct message and successful completion after OK.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 5,
+          "action": "Save runnable project and version/run evidence.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D1-06",
+      "title": "AI account and instruction setup",
+      "day": "nap01",
+      "requirements": "Scope: required. Dependencies: Previous applicable task in lesson order.\n\n\n\nSource: [05_chatgpt.html](../nap01/pages/05_chatgpt.html).",
+      "dependencies": "Previous applicable task in lesson order.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read lesson and inspect the permitted authenticated AI interface.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Prepare adapted Hungarian instructions without overwriting unrelated preferences.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Apply permitted instruction changes or record exact user-only setting handoff.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Record optional memory/data-control choices only when provided by the user; link configuration evidence.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D1-07",
+      "title": "AI output checks and mini-prompt",
+      "day": "nap01",
+      "requirements": "Scope: required. Dependencies: Previous applicable task in lesson order.\n\n\n\nSource: [05_chatgpt.html](../nap01/pages/05_chatgpt.html).",
+      "dependencies": "Previous applicable task in lesson order.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read required prompt checks and prepare separate explanation/example counts.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Run business-process explanation and summary tests.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Run five-sentence explanation plus three insurer examples.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Evaluate actual language, counts/style; refine and rerun if needed.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 5,
+          "action": "Save prompts, outputs and evaluations; index nap01 artifacts.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D2-EXPORT-01",
+      "title": "Native BIMP export and heat-map verification",
+      "day": "nap02",
+      "requirements": "Scope: user explicitly requests every remaining feature test, excluding website re-login. Dependencies: preserved verified nap02 outputs. New runs are separate evidence; never replace earlier measurements.\n\nSource: pages/04_szimulacio.html and pages/05_raktar.html, user-approved verification plan.",
+      "dependencies": "preserved verified nap02 outputs. New runs are separate evidence; never replace earlier measurements.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read current source and existing evidence; prepare separate fresh test workspace and observe BIMP.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Import a saved scenario, run actual simulation and verify native model/result downloads against visible settings/results.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Open waiting/duration heat-map and verify rendered view against actual result tables.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Preserve downloads/screenshots/results and record pass or exact blocker; reconcile summary.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D2-01",
+      "title": "Café XOR",
+      "day": "nap02",
+      "requirements": "Scope: required. Dependencies: Previous applicable task.\n\nSource: [01_kavezo.html](../nap02/pages/01_kavezo.html).\n\nPrior verification: 2026-10-05. Native simulation exports/heat-map limitations remain in measurement notes; no new platform run is claimed.",
+      "dependencies": "Previous applicable task.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read lesson and reference; preserve supplied files.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Build named cup/takeaway XOR alternatives and merge before payment. Save working BPMN.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Reopen in bpmn.io; verify names, graph and event/gateway/pool semantics.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Link final model and verification.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D2-02",
+      "title": "Webshop payment race",
+      "day": "nap02",
+      "requirements": "Scope: required. Dependencies: Previous applicable task.\n\nSource: [02_webshop.html](../nap02/pages/02_webshop.html).\n\nPrior verification: 2026-10-05. Native simulation exports/heat-map limitations remain in measurement notes; no new platform run is claimed.",
+      "dependencies": "Previous applicable task.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read lesson and reference; preserve supplied files.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Build message/payment-vs-PT48H race with both endings. Save working BPMN.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Reopen in bpmn.io; verify names, graph and event/gateway/pool semantics.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Link final model and verification.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D2-03",
+      "title": "Webshop return mini-exercise",
+      "day": "nap02",
+      "requirements": "Scope: required. Dependencies: Previous applicable task.\n\nSource: [02_webshop.html](../nap02/pages/02_webshop.html).\n\nPrior verification: 2026-10-05. Native simulation exports/heat-map limitations remain in measurement notes; no new platform run is claimed.",
+      "dependencies": "Previous applicable task.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read lesson and reference; preserve supplied files.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "After receipt confirmation, race return request against P14D. Save working BPMN.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Reopen in bpmn.io; verify names, graph and event/gateway/pool semantics.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Link final model and verification.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D2-04",
+      "title": "Meridian claims model",
+      "day": "nap02",
+      "requirements": "Scope: required. Dependencies: Previous applicable task.\n\nSource: [03_karfelvetel.html](../nap02/pages/03_karfelvetel.html).\n\nPrior verification: 2026-10-05. Native simulation exports/heat-map limitations remain in measurement notes; no new platform run is claimed.",
+      "dependencies": "Previous applicable task.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read lesson and reference; preserve supplied files.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Build two insurer lanes, customer pool, four messages and supplement loop. Save working BPMN.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Reopen in bpmn.io; verify names, graph and event/gateway/pool semantics.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Link final model and verification.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D2-05",
+      "title": "Café baseline",
+      "day": "nap02",
+      "requirements": "Scope: required. Dependencies: D2-01 and prior café scenario where applicable.\n\nSource: [04_szimulacio.html](../nap02/pages/04_szimulacio.html).\n\nPrior verification: 2026-10-05. Native simulation exports/heat-map limitations remain in measurement notes; no new platform run is claimed.",
+      "dependencies": "D2-01 and prior café scenario where applicable.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read current scenario requirements and prerequisite model.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Configure100cases, minutes, timetable/costs/probabilities and mean6, cashier1/barista1.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Run BIMP; verify100finished and measured cycle/wait/utilization/cost.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save scenario/results with accurate native-export or local-preservation provenance.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D2-06",
+      "title": "Café peak",
+      "day": "nap02",
+      "requirements": "Scope: required. Dependencies: D2-01 and prior café scenario where applicable.\n\nSource: [04_szimulacio.html](../nap02/pages/04_szimulacio.html).\n\nPrior verification: 2026-10-05. Native simulation exports/heat-map limitations remain in measurement notes; no new platform run is claimed.",
+      "dependencies": "D2-01 and prior café scenario where applicable.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read current scenario requirements and prerequisite model.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Configure100cases, minutes, timetable/costs/probabilities and mean3, cashier1/barista1.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Run BIMP; verify100finished and measured cycle/wait/utilization/cost.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save scenario/results with accurate native-export or local-preservation provenance.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D2-07",
+      "title": "Peak plus barista",
+      "day": "nap02",
+      "requirements": "Scope: required. Dependencies: D2-01 and prior café scenario where applicable.\n\nSource: [04_szimulacio.html](../nap02/pages/04_szimulacio.html).\n\nPrior verification: 2026-10-05. Native simulation exports/heat-map limitations remain in measurement notes; no new platform run is claimed.",
+      "dependencies": "D2-01 and prior café scenario where applicable.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read current scenario requirements and prerequisite model.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Configure100cases, minutes, timetable/costs/probabilities and mean3, cashier1/barista2.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Run BIMP; verify100finished and measured cycle/wait/utilization/cost.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save scenario/results with accurate native-export or local-preservation provenance.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D2-08",
+      "title": "Peak plus cashier",
+      "day": "nap02",
+      "requirements": "Scope: required. Dependencies: D2-01 and prior café scenario where applicable.\n\nSource: [04_szimulacio.html](../nap02/pages/04_szimulacio.html).\n\nPrior verification: 2026-10-05. Native simulation exports/heat-map limitations remain in measurement notes; no new platform run is claimed.",
+      "dependencies": "D2-01 and prior café scenario where applicable.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read current scenario requirements and prerequisite model.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Configure100cases, minutes, timetable/costs/probabilities and mean3, cashier2/barista1; restore barista1.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Run BIMP; verify100finished and measured cycle/wait/utilization/cost.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save scenario/results with accurate native-export or local-preservation provenance.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D2-09",
+      "title": "Café comparison",
+      "day": "nap02",
+      "requirements": "Scope: required. Dependencies: D2-05 through D2-08.\n\nSource: [04_szimulacio.html](../nap02/pages/04_szimulacio.html).\n\nPrior verification: 2026-10-05. Native simulation exports/heat-map limitations remain in measurement notes; no new platform run is claimed.",
+      "dependencies": "D2-05 through D2-08.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read all four observed runs and consistent metric definitions.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Compare offered loads with measured waits/cycles/utilization.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Record heat-map limitation and observed table-based analysis.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save capacity recommendation with linked evidence.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D2-10",
+      "title": "Warehouse baseline",
+      "day": "nap02",
+      "requirements": "Scope: required. Dependencies: Prior applicable task; previous warehouse scenario where applicable.\n\nSource: [05_raktar.html](../nap02/pages/05_raktar.html).\n\nPrior verification: 2026-10-05. Native simulation exports/heat-map limitations remain in measurement notes; no new platform run is claimed.",
+      "dependencies": "Prior applicable task; previous warehouse scenario where applicable.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read source/model and simultaneous capacity assumptions.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Configure135cases, mean7, Monday06:00, daily06–22, minutes/costs/branches and 8forklifts and original Normal durations.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Run BIMP; verify135finished and measured cycle/utilization/cost/finish-time precision.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save scenario and measured results with documented limitations.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D2-11",
+      "title": "Warehouse A",
+      "day": "nap02",
+      "requirements": "Scope: required. Dependencies: Prior applicable task; previous warehouse scenario where applicable.\n\nSource: [05_raktar.html](../nap02/pages/05_raktar.html).\n\nPrior verification: 2026-10-05. Native simulation exports/heat-map limitations remain in measurement notes; no new platform run is claimed.",
+      "dependencies": "Prior applicable task; previous warehouse scenario where applicable.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read source/model and simultaneous capacity assumptions.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Configure135cases, mean7, Monday06:00, daily06–22, minutes/costs/branches and 10forklifts with original durations.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Run BIMP; verify135finished and measured cycle/utilization/cost/finish-time precision.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save scenario and measured results with documented limitations.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D2-12",
+      "title": "Warehouse B",
+      "day": "nap02",
+      "requirements": "Scope: required. Dependencies: Prior applicable task; previous warehouse scenario where applicable.\n\nSource: [05_raktar.html](../nap02/pages/05_raktar.html).\n\nPrior verification: 2026-10-05. Native simulation exports/heat-map limitations remain in measurement notes; no new platform run is claimed.",
+      "dependencies": "Prior applicable task; previous warehouse scenario where applicable.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read source/model and simultaneous capacity assumptions.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Configure135cases, mean7, Monday06:00, daily06–22, minutes/costs/branches and reset8forklifts and putaway Fixed0minutes; retain separate night work.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Run BIMP; verify135finished and measured cycle/utilization/cost/finish-time precision.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save scenario and measured results with documented limitations.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D2-13",
+      "title": "Warehouse comparison",
+      "day": "nap02",
+      "requirements": "Scope: required. Dependencies: D2-10 through D2-12.\n\nSource: [05_raktar.html](../nap02/pages/05_raktar.html).\n\nPrior verification: 2026-10-05. Native simulation exports/heat-map limitations remain in measurement notes; no new platform run is claimed.",
+      "dependencies": "D2-10 through D2-12.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read comparable three-run evidence.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Calculate day capacity and retained night effort/cost.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Compare measured turnaround, utilization and approximate last completion.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save justified recommendation without inferring layoffs from average utilization.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D2-14",
+      "title": "Repair model1",
+      "day": "nap02",
+      "requirements": "Scope: required. Dependencies: Previous applicable task.\n\nSource: [06_hibavadaszat.html](../nap02/pages/06_hibavadaszat.html).\n\nPrior verification: 2026-10-05. Native simulation exports/heat-map limitations remain in measurement notes; no new platform run is claimed.",
+      "dependencies": "Previous applicable task.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read broken source model and identify actual errors.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Replace XOR merge with synchronizing AND. Save repaired working copy.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Reopen and verify gateway semantics, labels and reachable completion.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save final repair and diagnosis.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D2-15",
+      "title": "Repair model2",
+      "day": "nap02",
+      "requirements": "Scope: required. Dependencies: Previous applicable task.\n\nSource: [06_hibavadaszat.html](../nap02/pages/06_hibavadaszat.html).\n\nPrior verification: 2026-10-05. Native simulation exports/heat-map limitations remain in measurement notes; no new platform run is claimed.",
+      "dependencies": "Previous applicable task.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read broken source model and identify actual errors.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Name task/question/branches and connect appraisal coherently. Save repaired working copy.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Reopen and verify gateway semantics, labels and reachable completion.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save final repair and diagnosis.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D2-16",
+      "title": "Repair model3",
+      "day": "nap02",
+      "requirements": "Scope: required. Dependencies: Previous applicable task.\n\nSource: [06_hibavadaszat.html](../nap02/pages/06_hibavadaszat.html).\n\nPrior verification: 2026-10-05. Native simulation exports/heat-map limitations remain in measurement notes; no new platform run is claimed.",
+      "dependencies": "Previous applicable task.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read broken source model and identify actual errors.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Add controlled loop exit reaching a named end. Save repaired working copy.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Reopen and verify gateway semantics, labels and reachable completion.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save final repair and diagnosis.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D2-17",
+      "title": "Eight-point check and handoff",
+      "day": "nap02",
+      "requirements": "Scope: required. Dependencies: All required nap02 tasks.\n\nSource: [06_hibavadaszat.html](../nap02/pages/06_hibavadaszat.html).\n\nPrior verification: 2026-10-05. Native simulation exports/heat-map limitations remain in measurement notes; no new platform run is claimed.",
+      "dependencies": "All required nap02 tasks.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read all applicable completed models and repairs.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Apply eight checks plus reachability and DI consistency.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Confirm seven measured scenarios and known limitations are linked.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save index and reconcile course summary.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D2-VIEW-01",
+      "title": "Open existing results in Brave",
+      "day": "nap02",
+      "requirements": "Source: user request, 2026-10-06. Dependencies: saved six-block deliverables and previews verified in the deliverable index.",
+      "dependencies": "saved six-block deliverables and previews verified in the deliverable index.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Prepare browser-readable views of the existing six blocks, preserving original models and measurements.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Open six result views in Brave and verify the displayed results.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Leave user-opened result views available and record verification provenance/limits.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D3-AUTO-01",
+      "title": "Automatic local CMC-to-Excel refresh",
+      "day": "nap03",
+      "requirements": "Scope: execute the user-approved finite automatic Python CMC fetch → native Excel Power Query refresh adaptation twice. Dependencies: completed D3-03/04 adaptation, existing canonical API client and licensed Office/UiPath. Independent of waiting hourly Sheets event. No permanent local schedule or website re-login.\n\n\n\nSource: user-approved expanded test plan, working/fetch_cmc_power_query.py, existing native CMC_arfolyamok_SOL.xlsx and local import query. Preserve original deliverable; use a separate working workbook.",
+      "dependencies": "completed D3-03/04 adaptation, existing canonical API client and licensed Office/UiPath. Independent of waiting hourly Sheets event. No permanent local schedule or website re-login.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Inspect canonical fetch/native workbook and required UiPath authoring tools; prepare separate work area.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Build bounded automation fetching with canonical client then refreshing/saving native Excel.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Execute twice without intermediate user inputs; verify actual refreshed data and timestamps each time.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Package source, working output and actual evidence; document unattended limits.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D3-V01",
+      "title": "Download and verify saved cloud notebook",
+      "day": "nap03",
+      "requirements": "Scope: user requests all remaining feature tests, excluding website re-login. Dependencies: verified output-free Drive notebook and preserved actual Colab results. Independent of BIMP heat-map/user result-page handoff; no CRM execution or credential cells rerun.\n\n\n\nSource: saved BPA_Nap3_Zoho_verified.ipynb cloud notebook, D3-17 evidence.",
+      "dependencies": "verified output-free Drive notebook and preserved actual Colab results. Independent of BIMP heat-map/user result-page handoff; no CRM execution or credential cells rerun.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Observe saved cloud copy and download through permitted Colab UI.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Parse downloaded notebook, compare meaningful source and scan for credentials/outputs.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Package downloaded copy and verification; reconcile summary.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D3-01",
+      "title": "API/JSON concepts",
+      "day": "nap03",
+      "requirements": "Scope: required. Dependencies: Prior course prerequisites.\n\n\n\nSource: [01_api_alapok.html](../nap03/pages/01_api_alapok.html).",
+      "dependencies": "Prior course prerequisites.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read updated intro and invented JSON example.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Explain endpoint/parameters/GET/POST/header/body and traverse BTC/ETH price paths.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Save checked concept notes; null error_message is normal.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D3-P01",
+      "title": "Credential-free API automation preparation",
+      "day": "nap03",
+      "requirements": "Scope: independent preparation only, not completion of D3-11 through D3-15. Dependencies: existing shared CourseAPI and reviewed current pages05/06. D1-04 and D3-03 are blocked; this preparation does not change CRM records or require their results.\n\n\n\nSource: [05_zoho_api.html](../nap03/pages/05_zoho_api.html), [06_mini_lanc.html](../nap03/pages/06_mini_lanc.html), supplied token/refresh/lead/chain scripts.",
+      "dependencies": "existing shared CourseAPI and reviewed current pages05/06. D1-04 and D3-03 are blocked; this preparation does not change CRM records or require their results.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Review current cloud requirements, credential boundaries and reusable API client.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Build credential-free notebook and duplicate-safe lead/conditional helpers.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Verify transport/error/duplicate/strict-threshold behavior offline; perform live read-only access check.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Package sources, notebook and exact cloud execution handoff; retain actual coursework as pending.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D3-02",
+      "title": "Choose spreadsheet route",
+      "day": "nap03",
+      "requirements": "Scope: required. Dependencies: D3-01.\n\n\n\nSource: [02_excel_power_query.html](../nap03/pages/02_excel_power_query.html).",
+      "dependencies": "D3-01.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read index and permitted Excel/Sheets alternatives.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Record selected route using current access/user preference.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Mark only unchosen-route tasks not_applicable with reason, preserving their history.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D3-03",
+      "title": "Excel refreshable quote table",
+      "day": "nap03",
+      "requirements": "Scope: Excel route. Dependencies: D3-02 selects Excel.\n\n\n\nSource: [02_excel_power_query.html](../nap03/pages/02_excel_power_query.html).",
+      "dependencies": "D3-02 selects Excel.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read lesson and establish approved credential-safe refresh mechanism.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Create actual Power Query and flatten BTC/ETH EUR fields.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Set numeric types/load rows; run Refresh and verify new request.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save credential-free workbook and execution evidence.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D3-04",
+      "title": "Excel Solana mini-exercise",
+      "day": "nap03",
+      "requirements": "Scope: Excel route. Dependencies: D3-03.\n\n\n\nSource: [02_excel_power_query.html](../nap03/pages/02_excel_power_query.html).",
+      "dependencies": "D3-03.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read mini; extend query with ID5426.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Apply headings, two-decimal prices and correctly scaled change formatting.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Refresh twice one minute apart and record real observations.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Inspect60minute/opening refresh settings; save result/evidence.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D3-05",
+      "title": "Sheets quote table",
+      "day": "nap03",
+      "requirements": "Scope: user-requested additional Sheets route. Dependencies: D3-02 Excel route remains complete; user now requests all alternatives.\n\n\n\nSource: [03_google_sheets.html](../nap03/pages/03_google_sheets.html).",
+      "dependencies": "D3-02 Excel route remains complete; user now requests all alternatives.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read/adapt bound script with approved runtime credentials and headers.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "User handles required restricted authorization; preserve unrelated cells.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Run arfolyamFrissites and verify ARFOLYAMOK A1:C3.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Rerun, verify timestamp refresh and save credential-free script/evidence.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D3-06",
+      "title": "Sheets Solana mini-exercise",
+      "day": "nap03",
+      "requirements": "Scope: user-requested additional Sheets route. Dependencies: D3-05.\n\n\n\nSource: [03_google_sheets.html](../nap03/pages/03_google_sheets.html).",
+      "dependencies": "D3-05.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read mini; extend IDs1,1027,5426.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Run actual script and verify A1:C4, numeric prices and timestamps.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Save source/table evidence.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D3-07",
+      "title": "Sheets trigger and cleanup",
+      "day": "nap03",
+      "requirements": "Scope: user-requested additional Sheets route. Dependencies: D3-06.\n\n\n\nSource: [03_google_sheets.html](../nap03/pages/03_google_sheets.html).",
+      "dependencies": "D3-06.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read requirement and check existing triggers.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Create one authorized hourly trigger and verify configuration.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Record demonstrated cloud scheduling behavior.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Remove practice trigger as permitted; verify no duplicate ongoing credit use.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D3-08",
+      "title": "Corner Shop conversion/pipeline",
+      "day": "nap03",
+      "requirements": "Scope: required. Dependencies: Chosen spreadsheet route; D1-04.\n\n\n\nSource: [04_zoho_crm.html](../nap03/pages/04_zoho_crm.html).",
+      "dependencies": "Chosen spreadsheet route; D1-04.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read source and existing Kiss Márta identity/Timeline.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Convert if needed to linked Account/Contact and4500deal, date~30days, Qualification.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Inspect links and move Stage to Needs Analysis/equivalent through UI.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save fictional IDs/fields/Stage evidence; avoid duplicate conversion.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D3-09",
+      "title": "Kék Duna company/contact",
+      "day": "nap03",
+      "requirements": "Scope: required. Dependencies: D3-08.\n\n\n\nSource: [04_zoho_crm.html](../nap03/pages/04_zoho_crm.html).",
+      "dependencies": "D3-08.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read source and check existing fictional entities.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Create/verify account with Billing City Kolozsvár.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Create/verify Molnár Eszter contact linked to correct account.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Reopen and save relationship evidence.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D3-10",
+      "title": "Family Foods mini-exercise",
+      "day": "nap03",
+      "requirements": "Scope: required. Dependencies: D3-09.\n\n\n\nSource: [04_zoho_crm.html](../nap03/pages/04_zoho_crm.html).",
+      "dependencies": "D3-09.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read mini and create/verify Nagy Péter lead with Trade Show source.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Convert through UI with2800 Family Foods próbarendelés deal.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Verify links and count actually observed steps.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save evidence without inventing click counts.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D3-11",
+      "title": "Colab notebook/token runtime",
+      "day": "nap03",
+      "requirements": "Scope: required. Dependencies: D3-10; shared access-02 and access-05.\n\n\n\nSource: [05_zoho_api.html](../nap03/pages/05_zoho_api.html).",
+      "dependencies": "D3-10; shared access-02 and access-05.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read token/refresh scripts and reuse existing EU authorization.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Create BPA_Nap3_Zoho.ipynb, connect and execute greeting cell.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Establish private runtime token access without uploading .env.local or storing values.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Verify runtime/token use and save credential-free notebook/evidence.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D3-12",
+      "title": "API Teszt lead",
+      "day": "nap03",
+      "requirements": "Scope: required. Dependencies: D3-11.\n\n\n\nSource: [05_zoho_api.html](../nap03/pages/05_zoho_api.html).",
+      "dependencies": "D3-11.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read supplied fields and check existing record before POST.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Execute fictional sample creation with trigger[] in actual Colab.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Require HTTP/per-record success/id and exact CRM readback/Timeline.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save fictional ID/fields and notebook evidence.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D3-13",
+      "title": "Distinct API lead mini-exercise",
+      "day": "nap03",
+      "requirements": "Scope: required. Dependencies: D3-12.\n\n\n\nSource: [05_zoho_api.html](../nap03/pages/05_zoho_api.html).",
+      "dependencies": "D3-12.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Prepare distinct fictional fields and contextual Description.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Check identity and execute one authorized creation.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Verify returned ID and exact CRM fields.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save evidence; reconcile uncertain writes before retry.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D3-14",
+      "title": "Conditional chain positive branch",
+      "day": "nap03",
+      "requirements": "Scope: required. Dependencies: D3-13.\n\n\n\nSource: [06_mini_lanc.html](../nap03/pages/06_mini_lanc.html).",
+      "dependencies": "D3-13.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read chain/model; one manual test, no scheduler.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Fetch live valid BTC EUR and choose below-current threshold.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Run actual Colab chain and verify ÁRJELZÉS Lead success/readback.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save time/price/threshold/outcome/fictional ID.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D3-15",
+      "title": "Conditional chain negative branch",
+      "day": "nap03",
+      "requirements": "Scope: required. Dependencies: D3-14.\n\n\n\nSource: [06_mini_lanc.html](../nap03/pages/06_mini_lanc.html).",
+      "dependencies": "D3-14.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read strict-greater condition and choose above-current threshold.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Run live chain and check actual price/threshold.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Verify no record from this run; save observation.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D3-16",
+      "title": "Controlled equality check",
+      "day": "nap03",
+      "requirements": "Scope: optional local boundary check. Dependencies: D3-15.\n\n\n\nSource: [06_mini_lanc.html](../nap03/pages/06_mini_lanc.html).",
+      "dependencies": "D3-15.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Identify optional offline boundary test separately from live evidence.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Use price equal to threshold and verify no creation call.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Save explicitly offline outcome.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D3-P02",
+      "title": "Colab evidence export and runtime closure",
+      "day": "nap03",
+      "requirements": "Scope: independent evidence preservation. Dependencies: D3-11–16 done. Spreadsheet remains independently blocked at privacy prompt; save finished API work now without marking Day3 complete.",
+      "dependencies": "D3-11–16 done. Spreadsheet remains independently blocked at privacy prompt; save finished API work now without marking Day3 complete.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Export actual safe results JSON and reconcile three IDs and both branches.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Clear memory credentials, export/sanitize notebook and retain execution evidence separately.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Update API index and exact resume checkpoint.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D3-17",
+      "title": "Day3 handoff",
+      "day": "nap03",
+      "requirements": "Scope: required. Dependencies: All required/selected nap03 tasks.\n\n\n\nSource: [06_mini_lanc.html](../nap03/pages/06_mini_lanc.html).",
+      "dependencies": "All required/selected nap03 tasks.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Review required tasks and chosen alternatives.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Verify spreadsheet, manual CRM, Colab and both live branch evidence.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Strip sensitive outputs/metadata from exported notebook/scripts.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save deliverable index and reconcile course summary.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D4-P02",
+      "title": "Isolated manual/reset practice preparation",
+      "day": "nap04",
+      "requirements": "Scope: independent offline preparation for blocked D4-11. Existing13own/33total and all reservation locks must remain intact. No browser/UiPath portal actions initiated by the agent.",
+      "dependencies": "",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Copy portal to a separate work area and isolate its persistence key; preserve original bytes and behavior.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Verify exact allowed differences, seed count and first input row; save preparation evidence.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Write short user-only baseline/manual/confirmation/new-form/reset handoff; actual actions remain pending.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D4-01",
+      "title": "Studio workspace/first Run",
+      "day": "nap04",
+      "requirements": "Scope: required. Dependencies: Shared access-04.\n\nSource: [01_studio_terkep.html](../nap04/pages/01_studio_terkep.html).",
+      "dependencies": "Shared access-04.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read lesson; verify desktop entitlement and Windows/VB Process.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Create Nap04_gyakorlas and restore packages.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Run Működik! Message Box; observe dialog and successful Output.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save runnable project and evidence.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D4-02",
+      "title": "Greeting/initial calculation",
+      "day": "nap04",
+      "requirements": "Scope: required. Dependencies: D4-01.\n\nSource: [02_elso_robot.html](../nap04/pages/02_elso_robot.html).",
+      "dependencies": "D4-01.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read dialogs/variable types and scopes.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Build name/count dialogs and initial CInt calculation.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Run20→5000 and demonstrate sok conversion failure.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save actual outcomes and initial workflow evidence.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D4-03",
+      "title": "Input-validation repair",
+      "day": "nap04",
+      "requirements": "Scope: required. Dependencies: D4-02.\n\nSource: [02_elso_robot.html](../nap04/pages/02_elso_robot.html).",
+      "dependencies": "D4-02.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read repair; preserve initial evidence.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Use TryParse and allowed0–1000000range.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Run5→1250; sok/-1/blank→friendly message without exception.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save repaired project and observations.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D4-04",
+      "title": "Excel100000classification",
+      "day": "nap04",
+      "requirements": "Scope: required. Dependencies: D4-03.\n\nSource: [03_excel_robot.html](../nap04/pages/03_excel_robot.html).",
+      "dependencies": "D4-03.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read schema and copy source workbook to working area.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Build workbook read/row Assign/write with headers.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Run robot; verify12rows,6kiemelt/6normál and preserved values.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save first result/project/run evidence.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D4-05",
+      "title": "Excel150000mini-exercise",
+      "day": "nap04",
+      "requirements": "Scope: required. Dependencies: D4-04.\n\nSource: [03_excel_robot.html](../nap04/pages/03_excel_robot.html).",
+      "dependencies": "D4-04.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Preserve first output and choose v2file.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Set150000threshold and run actual robot.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Verify12rows/3kiemelt and specified annual amounts.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save second result alongside first with run evidence.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D4-06",
+      "title": "Excel/PPT12records",
+      "day": "nap04",
+      "requirements": "Scope: required. Dependencies: D4-05; desktop Excel and PowerPoint.\n\nSource: [04_excel_ppt.html](../nap04/pages/04_excel_ppt.html).",
+      "dependencies": "D4-05; desktop Excel and PowerPoint.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read template/native route and prepare fresh Office copies.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Build chart/copy/paste for us-500 A1:B13 and slide9content placeholder.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Run robot; verify success and12bars in both files/correct title.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save both outputs and visible evidence.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D4-07",
+      "title": "Six-record report mini-exercise",
+      "day": "nap04",
+      "requirements": "Scope: required. Dependencies: D4-06.\n\nSource: [04_excel_ppt.html](../nap04/pages/04_excel_ppt.html).",
+      "dependencies": "D4-06.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Use separate fresh copies preserving12record reports.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Set A1:B7 and run actual robot.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Verify6bars in Excel/PPT with successful Output.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save separate reports/evidence.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D4-08",
+      "title": "PDF/Excel/Word sorter",
+      "day": "nap04",
+      "requirements": "Scope: required. Dependencies: D4-07.\n\nSource: [05_fajlrendezo.html](../nap04/pages/05_fajlrendezo.html).",
+      "dependencies": "D4-07.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read ZIP; extract isolated working copy and record20files.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Build top-only loop/folders/lowercase rules/full filename destinations.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Run robot; verify6PDF/4Excel/5Word,3PNG/2TXTroot and20preserved files.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save project and content/filename/count evidence.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D4-09",
+      "title": "PNG sorter and second run",
+      "day": "nap04",
+      "requirements": "Scope: required. Dependencies: D4-08.\n\nSource: [05_fajlrendezo.html](../nap04/pages/05_fajlrendezo.html).",
+      "dependencies": "D4-08.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read mini and add Kepek/.pngrule.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Run robot; verify3images moved and2TXTroot.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Run again; verify no further moves and20preserved files.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save both run observations/project.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D4-10",
+      "title": "Portal prerequisites",
+      "day": "nap04",
+      "requirements": "Scope: required. Dependencies: D4-09; desktop/browser prerequisites.\n\nSource: [06_urlap_robot.html](../nap04/pages/06_urlap_robot.html).",
+      "dependencies": "D4-09; desktop/browser prerequisites.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read source/policy and copy portal/input to stable working paths.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "User completes required extension/fileURL permissions by permitted handoff.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "User opens/logs into practice tab as required; verify field-level targeting.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Record browser/path/access evidence without credentials.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D4-11",
+      "title": "Manual practice claim",
+      "day": "nap04",
+      "requirements": "Scope: required. Dependencies: D4-10.\n\nSource: [06_urlap_robot.html](../nap04/pages/06_urlap_robot.html).",
+      "dependencies": "D4-10.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read schema and establish20sample baseline.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Enter first row manually; submit/confirm/new-form action.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Preserve evidence and reset only disposable added practice records as permitted.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Verify baseline/form before robot trial.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D4-12",
+      "title": "One-row form robot",
+      "day": "nap04",
+      "requirements": "Scope: required. Dependencies: D4-11.\n\nSource: [06_urlap_robot.html](../nap04/pages/06_urlap_robot.html).",
+      "dependencies": "D4-11.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Build Windows/VB UrlapRobot reading A1:F2.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Attach logged-in tab; configure clear typing/Select Item and submit/wait/reset/Throw.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Run actual robot; verify first-row saved fields and Output.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Preserve evidence and reset only trial record as permitted.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D4-13",
+      "title": "Ten-row form robot",
+      "day": "nap04",
+      "requirements": "Scope: required. Dependencies: D4-12.\n\nSource: [06_urlap_robot.html](../nap04/pages/06_urlap_robot.html).",
+      "dependencies": "D4-12.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Restore full range and verify10input rows.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Run actual robot with same tab and checked submission/reset.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Verify20+10=30, K-GY IDs and first/last policy/amount/type.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save project/evidence/export; reconcile partial submissions before retry.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D4-14",
+      "title": "Robot/API/human choices",
+      "day": "nap04",
+      "requirements": "Scope: required. Dependencies: D4-13.\n\nSource: [07_zaras.html](../nap04/pages/07_zaras.html).",
+      "dependencies": "D4-13.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Read all five scenarios and selection criteria.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Write choices addressing access, data structure/errors and human responsibility.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Check reasoning without inventing real records or later assignment details.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save decision notes.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D4-15",
+      "title": "Day4 runnable handoff",
+      "day": "nap04",
+      "requirements": "Scope: required. Dependencies: All required nap04 tasks.\n\nSource: [07_zaras.html](../nap04/pages/07_zaras.html).",
+      "dependencies": "All required nap04 tasks.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Review all required tasks and variants.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Verify project dependencies/paths and actual runs/results.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Package clean runnable projects and outputs without sensitive/transient files.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 4,
+          "action": "Save index and reconcile course summary.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "id": "D4-P01",
+      "title": "Offline batch verification tooling",
+      "day": "nap04",
+      "requirements": "Scope: independent preparation, not actual portal execution. Dependencies: preserved actual one-row evidence and guarded batch draft. D4-11/13 need fresh user-exported baseline; this tooling reads saved files only and performs no portal/browser action.\n\nSource: [06_urlap_robot.html](../nap04/pages/06_urlap_robot.html), original executed trial logs, prepared Portal_Batch_Resume.xaml.",
+      "dependencies": "preserved actual one-row evidence and guarded batch draft. D4-11/13 need fresh user-exported baseline; this tooling reads saved files only and performs no portal/browser action.",
+      "owner": "",
+      "steps": [
+        {
+          "number": 1,
+          "action": "Review saved CSV/input/event contracts and pending baseline requirements.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 2,
+          "action": "Build offline cumulative verifier preserving prior records and checking each pending row.",
+          "state": "not_started",
+          "evidence": ""
+        },
+        {
+          "number": 3,
+          "action": "Test incomplete/duplicate/changed-record failures with isolated fixtures; package verifier and partial deliverable index.",
+          "state": "not_started",
+          "evidence": ""
+        }
+      ]
+    }
+  ]
+}

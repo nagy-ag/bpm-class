@@ -1,0 +1,5 @@
+interface:
+  display_name: "BPA Import Lessons"
+  short_description: "Stage ZIP lessons and preserve completed work"
+policy:
+  allow_implicit_invocation: false

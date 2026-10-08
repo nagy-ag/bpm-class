@@ -1,7 +1,0 @@
-{
-  "Result": "Success",
-  "Code": "ToolResult",
-  "Data": {
-    "message": "Found 1 warning(s):\n[warning] C:\\Users\\nagya\\dev\\school\\BPA\\nap04\\working\\RiportRobot\\Report_6.xaml - UiPath recommends using \u201cUse Excel File\u201d inside an \u201cExcel Process Scope\" (WARNING, Validation Error) | activity: 1.15"
-  }
-}

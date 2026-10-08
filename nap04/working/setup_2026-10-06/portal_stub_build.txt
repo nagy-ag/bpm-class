@@ -1,7 +1,0 @@
-{
-  "Result": "Failure",
-  "ErrorCode": "unknown_error",
-  "Message": "Build failed: Target or Input UI Element must be set.\r\nTarget or Input UI Element must be set.\r\nTarget or Input UI Element must be set.\r\nTarget or Input UI Element must be set.\r\nTarget or Input UI Element must be set.\r\n",
-  "Instructions": "Check project path and build configuration.",
-  "Retry": "RetryWillNotFix"
-}

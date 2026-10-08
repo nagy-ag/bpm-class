@@ -44,7 +44,17 @@ def prepare_project(root, name):
     }
     source = sources.get(name, root / 'nap04/deliverables' / name)
     if not (source / 'project.json').is_file():
+        source = root / 'harness/project_templates' / name
+    if not (source / 'project.json').is_file():
         raise ValueError('Reference project missing.')
+    required = {'ExcelRobot': ['nap04/nap04/docs/ugyfelek.xlsx'],
+                'RiportRobot': ['nap04/nap04/docs/Raw_data.xlsx', 'nap04/nap04/docs/Dickinson_Sample_Slides.pptx'],
+                'Fajlrendezo': ['nap04/nap04/docs/gyakorlo_mappa.zip'],
+                'PortalRobot': ['nap04/nap04/docs/karbejelentesek_input.xlsx', 'nap04/nap04/docs/gyakorlo_karportal.html'],
+                'CMC_auto_refresh': ['nap03/deliverables/CMC_arfolyamok_SOL.xlsx']}.get(name, [])
+    missing = [p for p in required if not (root / p).is_file()]
+    if missing:
+        raise ValueError('Local lesson inputs/workbook required before preparation: ' + ', '.join(missing) + '. Import your own lesson ZIPs or complete the prerequisite workbook task; no partial project was created.')
     target.mkdir(parents=True)
     for path in source.glob('*'):
         if path.suffix in ('.xaml', '.uiproj') or path.name in ('project.json', 'entry-points.json'):
@@ -68,7 +78,8 @@ def prepare_project(root, name):
             copy_file(root / 'nap04/nap04/docs/Raw_data.xlsx', folder / 'Riport_adatok.xlsx')
             # Course data copied from source, no chart/output or completed-run marker.
             # Use the previously verified slide9 layout/placeholder from reference; keep its other eight source slides.
-            template = Presentation(source / f'reports_{count}/Riport_eredmeny.pptx')
+            reference_deck = source / f'reports_{count}/Riport_eredmeny.pptx'
+            template = Presentation(reference_deck if reference_deck.is_file() else root / 'nap04/nap04/docs/Dickinson_Sample_Slides.pptx')
             clean_slide = template.slides[8]
             for shape in list(clean_slide.shapes):
                 if shape.has_chart or shape.name.startswith('BPA_'):
@@ -126,6 +137,7 @@ def prepare_project(root, name):
         copy_file(root / 'nap03/deliverables/CMC_arfolyamok_SOL.xlsx', target / 'CMC_Auto_Refresh.xlsx')
         path = target / 'Main.xaml'
         raw = path.read_text(encoding='utf-8')
+        raw = raw.replace('nap03/working/fetch_cmc_power_query.py', 'harness/course_tools/day03/fetch_cmc_power_query.py')
         python_exe = root / '.venv/Scripts/python.exe'
         raw = re.sub(r'System.Diagnostics.ProcessStartInfo\("[^"]*python.exe"\)',
                      lambda _: 'System.Diagnostics.ProcessStartInfo("' + escape(str(python_exe)) + '")', raw)

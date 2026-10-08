@@ -35,6 +35,21 @@ The initial completed nap01 models and nap02 tasks are migrated from existing da
 
 ## Shared setup tasks
 
+### harness-02 — Explicit lesson import and injection audit skills
+
+Status: `in_progress` · Owner: `codex-harness` · Updated: 2026-10-08 · Next step: 6
+
+Source: user requests two repository-local explicit-only skills, staged ZIP extraction before inspection, safe source updates with unfinished revision tracking and preserved completed work, then update GitHub. Dependencies: portable harness-01; no course reruns, credentials or live account operations.
+
+| Step | Action / acceptance | Status | Evidence / blocker |
+| --- | --- | --- | --- |
+| 1 | Review existing import, progress and skill contracts; define staged/versioned boundaries. | done | Existing portable CLI/immutable completion, source inspector, prior source-only update records and skill invocation policy reviewed. Separate extracted staging, imported source provenance, reviewed runbook hashes and per-user revision work/progress; no inherited completion or implicit audit. |
+| 2 | Implement staged safe import, revision tracking and opt-in injection audit; write both repo skills and usage docs. | done | Two repo-local skills with implicit invocation disabled; staged ZIP validation/inspection/application with rollback/source backups and version provenance; preserved source-review manifest, dynamic days, source/import-specific pending tasks/work and coordinated claim release; passive audit helper with private-path exclusions, sanitized candidates and documented coverage. README/SETUP/SKILLS/AGENTS/workflow and maintenance guide updated. |
+| 3 | Verify isolated import/rollback/history and injection fixtures; run full offline checks and sharing audit. | done | Both skill validators pass; 233 offline checks and all59regression tests (20new maintenance tests) pass. Clean staged export at a different path with spaces passed baseline233checks, actual synthetic nap05 CLI stage/audit/apply/revision/step workflow, and234checks after import. Source223files unchanged. Staged and full indexed credential-sharing scans pass. Test/verifier implementations are tracked; no real lesson import or current-course injection audit was requested/performed. See harness/reports/lesson_maintenance_verification.json. |
+| 4 | Exclude all root napXX folders from GitHub while preserving local files; retain reusable automation/test code in harness and adapt the source-free checkout. | done | Removed1321root-day files from Git index, verified all1321still exist locally, added root-day ignore and sharing-audit rejection. Retained44authored helpers,7robot code templates and75pending task definitions under harness. No teacher bundle, completed Office outputs or day-run artifacts are required by code-only CI. Local assets are explicit prerequisites; missing inputs leave no partial project. |
+| 5 | Reverify the code-only clean export, maintained tests and sharing/source-exclusion boundaries. | done | Clean staged export has zero root napXX files; all60regression tests pass against generated synthetic assets. Code-only baseline10checks and11after actual synthetic nap05 stage/audit/apply/revision/step CLI sequence pass, with missing actual course sources explicitly reported. Full214file Git index credential/path audit and whitespace check pass. Original local supplied223files remain verified; earlier full-bundle checks in step3 are preserved as history. |
+| 6 | Commit/push to origin/main, verify source folders absent remotely and clean Windows CI, and reconcile progress. | in_progress | Audited code-only commit ready; pending GitHub deletion/update and clean Windows CI. Normal deletion commit preserves earlier Git history. |
+
 ### harness-01 — Portable shared course harness
 
 Status: `done` · Owner: `unassigned` · Updated: 2026-10-08 · Next step: None

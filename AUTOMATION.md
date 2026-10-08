@@ -37,14 +37,14 @@ Run these commands from the BPA root:
 
 ```powershell
 # Report only whether each credential field is filled.
-python nap03/working/bpa_access.py status
+python harness/course_tools/day03/bpa_access.py status
 
 # Check CMC and CRM without creating exercise records.
 # If a grant code is available, this also completes initial Zoho authorization.
-python nap03/working/bpa_access.py check
+python harness/course_tools/day03/bpa_access.py check
 
 # Explicitly exchange a new grant code or renew with the stored refresh token.
-python nap03/working/bpa_access.py zoho-auth
+python harness/course_tools/day03/bpa_access.py zoho-auth
 ```
 
 The PowerShell token helper selects a fresh grant code first, otherwise a refresh token. It saves the generated tokens and expiry time, clears a consumed grant code, and preserves unrelated `.env.local` content. API code renews expiring tokens before requests, retries a rejected read once after refresh, and does not automatically repeat CRM writes after an uncertain outcome.

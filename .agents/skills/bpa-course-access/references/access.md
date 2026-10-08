@@ -7,8 +7,8 @@ Root `AUTOMATION.md` is the maintained status inventory. Recheck capabilities ne
 Run from BPA root:
 
 ```powershell
-python nap03/working/bpa_access.py status
-python nap03/working/bpa_access.py check
+python harness/course_tools/day03/bpa_access.py status
+python harness/course_tools/day03/bpa_access.py check
 ```
 
 `status` prints filled/empty only. `check` performs live BTC/ETH EUR quotes and minimal EU CRM Leads read, creating no record. Reuse these helpers rather than another credential loader.
@@ -17,9 +17,9 @@ Only root ignored `.env.local` stores local credentials. Required external value
 
 If initial Zoho access is absent, give these private steps: `https://api-console.zoho.eu`, existing Self Client, Generate Code, scope `ZohoCRM.modules.ALL`, duration10minutes if offered, description `BPA kurzus`, select own CRM organization, Create, copy into root `.env.local` as `ZOHO_GRANT_CODE`, save, report saved without pasting it in chat. Do not duplicate clients. User handles identity verification and sensitive console fields.
 
-Immediately run `python nap03/working/bpa_access.py zoho-auth`, then `check`. The helper sends secrets in the EU endpoint's form body, atomically saves tokens, preserves unrelated settings and clears the consumed code. Expired/consumed grants need a fresh code; refresh is different. Never dump the environment or put secrets in URLs/arguments.
+Immediately run `python harness/course_tools/day03/bpa_access.py zoho-auth`, then `check`. The helper sends secrets in the EU endpoint's form body, atomically saves tokens, preserves unrelated settings and clears the consumed code. Expired/consumed grants need a fresh code; refresh is different. Never dump the environment or put secrets in URLs/arguments.
 
-Import `CourseAPI` from `nap03/working/bpa_access.py` for working Python. `cmc_quotes((1,1027), 'EUR')` uses a header. `zoho('GET', 'Leads', params=...)` and `zoho('POST', 'Leads', payload=...)` target `www.zohoapis.eu/crm/v8`. Read actual signatures. Expiry refreshes before requests; rejected reads retry once; writes never auto-retry. After an uncertain write, search/read before retry. Require per-record `SUCCESS`, `success`, `details.id`, then read back the fictional record. Use `trigger: []` in lesson creations.
+Import `CourseAPI` from `harness/course_tools/day03/bpa_access.py` for working Python. `cmc_quotes((1,1027), 'EUR')` uses a header. `zoho('GET', 'Leads', params=...)` and `zoho('POST', 'Leads', payload=...)` target `www.zohoapis.eu/crm/v8`. Read actual signatures. Expiry refreshes before requests; rejected reads retry once; writes never auto-retry. After an uncertain write, search/read before retry. Require per-record `SUCCESS`, `success`, `details.id`, then read back the fictional record. Use `trigger: []` in lesson creations.
 
 Do not copy keys into the lesson's URL examples, notebooks, workbooks, screenshots or shared script source. Prepare credential-free working variants using headers and runtime inputs. A UI exercise needing its own credential store requires a user-controlled secure path; do not silently substitute a static export or broaden approved secret destinations.
 

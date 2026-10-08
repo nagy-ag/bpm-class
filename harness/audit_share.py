@@ -75,6 +75,8 @@ def audit(root=ROOT, staged=False):
             raise ValueError('Invalid Git object framing.')
     for name in selected:
         parts = PurePosixPath(name).parts
+        if re.fullmatch(r'nap[0-9]+', parts[0]):
+            errors.append({'path': name, 'reason': 'local-only course folder must not be shared'})
         if (PurePosixPath(name).name.startswith('.env') and name != '.env.example') or any(
                 part in {'.bpa', '.venv', 'node_modules', '__pycache__', '.local', '.project', '.codex'} for part in parts):
             errors.append({'path': name, 'reason': 'private/runtime path staged'})

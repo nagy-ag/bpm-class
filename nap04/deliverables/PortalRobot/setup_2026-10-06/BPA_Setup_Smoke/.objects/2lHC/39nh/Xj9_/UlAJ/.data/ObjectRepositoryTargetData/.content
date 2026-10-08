@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="kx2muFWJBUGWoszphim3tA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="454, 861, 225, 55" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='bejelentes-rogzites' tag='BUTTON' /&gt;" Guid="db356f17-77d6-4523-9514-6edfb18c0ded" ScopeSelectorArgument="&lt;html app='brave.exe' title='Meridian Biztosító | Kárrendszer (gyakorló példány)' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="6e93edd457acea1ca48e227e6608e4f6.jpg" xmlns="">0BRxsNN2m7US-E2y5xdEVsw</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

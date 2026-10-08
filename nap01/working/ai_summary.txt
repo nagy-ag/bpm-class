@@ -1,3 +1,0 @@
-A kárbejelentés feldolgozása (claims processing) a bejelentés és a szükséges adatok rögzítésével indul, majd a biztosító ellenőrzi a szerződéshez tartozó fedezetet (coverage).
-
-Az ügyintéző tisztázza a hiányzó adatokat, értékeli a kárt, és előkészíti a döntést (decision). Jóváhagyás esetén megtörténik a kifizetés (payment), az eredményről pedig értesítik az ügyfelet.

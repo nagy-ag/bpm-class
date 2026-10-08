@@ -1,9 +1,0 @@
-{
-  "task": "D3-09",
-  "verified_date": "2026-10-07",
-  "method": "Actual Zoho EU browser UI creation and persisted relationship readback",
-  "account": {"id": "1037931000000654084", "name": "Kék Duna Étterem Kft", "billing_city": "Kolozsvár"},
-  "contact": {"id": "1037931000000654086", "first_name": "Eszter", "last_name": "Molnár", "email": "eszter.molnar@kekduna.example", "account_id": "1037931000000654084"},
-  "checks": {"fresh_duplicate_check_passed": true, "account_contacts_count": 1, "contact_reopened": true, "contact_account_link_matches": true, "inherited_mailing_city": "Kolozsvár"},
-  "screenshots": ["../working/kek_duna_account.png", "../working/kek_duna_contact.png"]
-}

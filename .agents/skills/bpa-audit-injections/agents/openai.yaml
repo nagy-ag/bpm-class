@@ -1,0 +1,5 @@
+interface:
+  display_name: "BPA Audit Injections"
+  short_description: "Inspect source instructions without executing them"
+policy:
+  allow_implicit_invocation: false

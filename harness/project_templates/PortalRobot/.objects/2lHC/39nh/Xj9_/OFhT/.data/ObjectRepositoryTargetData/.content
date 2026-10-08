@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="olkcdLQRYEav_lQM0q5xWA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="457, 503, 993, 43" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='ugyszam-ertek' tag='DIV' /&gt;" Guid="a949ea25-9f73-4585-bdd3-53624996a7a5" ScopeSelectorArgument="&lt;html app='brave.exe' title='Meridian Biztosító | Kárrendszer (gyakorló példány)' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4b93093dd60841276a0d3987e5c68c0e.jpg" xmlns="">07vJTEGp_J0-TtokqG5rDoA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,1 +1,0 @@
-"2026-10-07T14:39:15.8512843+00:00","batch_finished_pending_readback","TR-905324","K-GY-4302","Ten input rows considered; first verified row skipped; export and compare all rows."

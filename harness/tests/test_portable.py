@@ -20,7 +20,7 @@ class PortableTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory(prefix='BPA different laptop with spaces ')
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
-        for name in ['TASK_PROGRESS.md', '.env.example', 'harness/config.example.json'] + [f'nap0{n}/notes/TASK_PROGRESS.md' for n in range(1, 5)]:
+        for name in ['TASK_PROGRESS.md', '.env.example', 'harness/config.example.json', 'harness/task_templates.json']:
             dst = self.root / name
             dst.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(ROOT / name, dst)
@@ -70,16 +70,16 @@ class PortableTests(unittest.TestCase):
         self.assertEqual(len((self.root / '.bpa/events.jsonl').read_text().splitlines()), 5)
 
     def copy_sources(self, name):
-        sources = {'Proba': 'nap01/deliverables/Proba',
-                   'PortalRobot': 'nap04/deliverables/PortalRobot/setup_2026-10-06/BPA_Setup_Smoke',
-                   'CMC_auto_refresh': 'nap03/deliverables/CMC_auto_refresh'}
-        source = sources.get(name, 'nap04/deliverables/' + name)
+        source = 'harness/project_templates/' + name
         shutil.copytree(ROOT / source, self.root / source,
                         ignore=shutil.ignore_patterns('.local', '.project', 'node_modules'), dirs_exist_ok=True)
-        shutil.copytree(ROOT / 'nap04/nap04/docs', self.root / 'nap04/nap04/docs', dirs_exist_ok=True)
+        from harness.tests.fixtures import make_lesson_inputs
+        make_lesson_inputs(self.root)
         if name == 'CMC_auto_refresh':
             dest = self.root / 'nap03/deliverables/CMC_arfolyamok_SOL.xlsx'
-            shutil.copyfile(ROOT / dest.relative_to(self.root), dest)
+            from openpyxl import Workbook
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            book = Workbook(); book.save(dest); book.close()
 
     def test_new_task_and_explicit_handoff_preserve_evidence(self):
         add_task(self.root, {'id': 'LOCAL-01', 'title': 'New requirement', 'steps': ['Inspect inputs', 'Verify output']})
@@ -148,6 +148,12 @@ class PortableTests(unittest.TestCase):
         files = list((target / 'exercise/gyakorlo_mappa').glob('*'))
         self.assertEqual(sum(p.suffix.lower() in ('.pdf', '.xlsx', '.docx') for p in files), 15)
         self.assertEqual(sum(p.suffix.lower() == '.png' for p in files), 3)
+
+    def test_project_missing_local_inputs_stops_without_partial_copy(self):
+        shutil.copytree(ROOT / 'harness/project_templates/ExcelRobot', self.root / 'harness/project_templates/ExcelRobot')
+        with self.assertRaisesRegex(ValueError, 'Local lesson inputs'):
+            prepare_project(self.root, 'ExcelRobot')
+        self.assertFalse((self.root / '.bpa/projects/ExcelRobot').exists())
 
     def test_secret_scan_inspects_nested_archives_without_printing_value(self):
         credential = b'synthetic-private-test-secret'
