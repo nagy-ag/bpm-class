@@ -1,0 +1,15 @@
+# User-assisted desktop steps
+
+Follow the surface cleanup and authorization rules in [AGENTS.md](../../../../AGENTS.md); this reference owns only method selection and the user-assisted interaction sequence.
+
+Apply this sequence when a course step needs the user to select a UiPath indication target, enter private information, or perform another action the agent cannot complete. Ordinary autonomous UI work does not need a readiness question.
+
+Before requesting human interaction, prefer an authorized CLI/API route when it can produce the same required final result and that equivalence can be verified. Check the actual outputs against the task's acceptance criteria; a successful command alone is insufficient. When the user accepts equivalent results, complete that route without an unnecessary manual overlay. Record the chosen method and any implementation-specific activity that remains untested. If a particular activity, manual action or UI behavior is itself required, matching output alone does not verify it. Existing tool restrictions, private actions and user-started portal/SelectorDemo boundaries still apply.
+
+1. Finish independent preparation first. Ask a readiness question that names the app/page and explains the exact **human-only** action: what to select or enter, what successful selection looks like, and what to report if the expected prompt does not appear. State which apps must stay open and which are unnecessary. Do not ask the user to open, switch, navigate, restore, or foreground a surface the agent can control with its permitted tools.
+2. Wait for an explicit readiness reply before starting the interaction. Package-install approval is not readiness for an overlay. Request separate readiness for each overlay when required by the UiPath indication guide.
+3. After confirmation, use permitted computer-use tools to open/navigate/restore and foreground the correct app or tab **on the user's desktop**. Verify the target and foreground state through those tools. A background tab or a Codex browser tab does not establish that the native UiPath target is in front. For UiPath exploration and interaction, follow the installed RPA skill's UIA-only boundary and use UiPath UIA, including its window/tab foreground controls; do not substitute another browser driver.
+4. Only then start the UiPath indication or user-assisted robot step. Tell the user the prompt is starting and restate only their required action. Allow time for it; do not launch another blocking overlay while one is unresolved.
+5. Inspect both the command result and the captured artifact. A returned repository ID without a target/selector is preparation, not a successful selection. If no overlay appeared or capture is empty, stop dependent actions, explain the tool failure, preserve evidence, and continue independent work. Do not ask the user to repeat blindly or claim their selection succeeded.
+
+If available tools cannot foreground or operate a required surface, state the exact limitation and request only the unavoidable action. Apply the linked authorization rules when choosing any fallback.

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "3173f4f485a54ac3a2a2f4509ea3e99b",
+  "day": "nap05",
+  "created_utc": "2026-10-08T14:34:30.122139+00:00",
+  "archive_name": "nap05.zip",
+  "archive_sha256": "ba38b50cee4062c7e1611048daaf2c5f3939ef0c909c373989ed9ac5c20551d0",
+  "source_version": "81d24f7072d0089a8db8fcadb12d40dc1c703b55ec3774e3504e6d941928d269",
+  "previous_source_version": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "files": {
+    "docs/valaszlap_B1.xlsx": "268b6ffd32d42fd90fdeb58567d80b01a5a4d02afd221dabe593f76632db3b17",
+    "img/zoho2026_10_setup.png": "72e184e19c7e9386f2b54b10b59ea2f053734d3dd877c2418ed62f091947eaff",
+    "img/zoho2026_21_import_menu.png": "0b86eeed13a93ee9af92e7cbc13c30fb045f64f9107a0d76f192fc34ceb7f344",
+    "img/zoho2026_22_import_fieldmapping.png": "7201377e56bee75b24d359ab510cea22fd95b1313b745bdeef0150b79ad3e132",
+    "img/zoho2026_28_export_oldal.png": "983731b455affae5cbde4b1a608d9f967d14ba170b9c00c5ece28b948d21845c",
+    "index.html": "e102dcbe21114891a588cf50636327347114b7e396887af330202fcd67808b0e",
+    "parameterek_crm.html": "3bd8d146facf49cc086e38ac4e20c08e7f60980130a8b426ffd5cc0ac39123e0",
+    "parameterek_folyamat.html": "f87d3105dc9687db10c8da6d8ea74f58ebde7edbf6c63aba43f1d123de6e038a",
+    "style.css": "fc9bdab15e18005c56991cfc75406e1dc1a4f294cefdf6f1c238e16bb651c3ad"
+  },
+  "changed": [],
+  "added": [
+    "docs/valaszlap_B1.xlsx",
+    "img/zoho2026_10_setup.png",
+    "img/zoho2026_21_import_menu.png",
+    "img/zoho2026_22_import_fieldmapping.png",
+    "img/zoho2026_28_export_oldal.png",
+    "index.html",
+    "parameterek_crm.html",
+    "parameterek_folyamat.html",
+    "style.css"
+  ],
+  "removed": [],
+  "imported_utc": "2026-10-08T14:36:39.489755+00:00",
+  "coursework": "not_started_for_this_source_version",
+  "runbook_review": "required",
+  "backup": null
+}

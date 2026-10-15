@@ -11,32 +11,42 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 
-def main():
+def source_checks(root):
     checks = []
-    manifest = json.loads((ROOT / 'course_skill_manifest.json').read_text(encoding='utf-8'))
+    manifest = json.loads((root / 'course_skill_manifest.json').read_text(encoding='utf-8'))
     from harness.lessons import catalog, snapshot
-    imported = catalog(ROOT)['days']
+    imported = catalog(root)['days']
     unavailable = []
     for name, day in manifest['days'].items():
         if name in imported:
             continue  # Imported bytes have separate provenance; reviewed hashes are NOT reset.
-        if not (ROOT / name / name).exists():
+        if not (root / name / name).exists():
             unavailable.append(name)
             continue  # Course bundles are intentionally local-only, not a failed code test.
         for item in day['files']:
-            path = ROOT / item['path']
+            path = root / item['path']
             checks.append({'check': item['path'], 'passed': path.is_file() and hashlib.sha256(path.read_bytes()).hexdigest() == item['sha256']})
     for name, current in imported.items():
-        record = json.loads((ROOT / current['record']).read_text(encoding='utf-8'))
+        if not (root / name / name).exists():
+            unavailable.append(name)
+            continue  # Public provenance does not distribute the private lesson bundle.
+        record = json.loads((root / current['record']).read_text(encoding='utf-8'))
         checks.append({'check': f'{name} imported source bytes',
-                       'passed': snapshot(ROOT / name / name) == record['files'],
+                       'passed': snapshot(root / name / name) == record['files'],
                        'runbook_review': current['runbook_review']})
+    return checks, unavailable
+
+
+def main():
+    checks, unavailable = source_checks(ROOT)
     for skill in ['bpa-course-access', 'bpa-nap01', 'bpa-nap02', 'bpa-nap03', 'bpa-nap04',
                   'bpa-import-lessons', 'bpa-audit-injections']:
         path = ROOT / '.agents/skills' / skill / 'SKILL.md'
         text = path.read_text(encoding='utf-8')
         checks.append({'check': skill, 'passed': text.startswith('---\n') and f'name: {skill}\n' in text and 'harness/WORKFLOWS.md' in text})
-    suites = [('.', ['harness.tests.test_portable', 'harness.tests.test_legacy_tracker', 'harness.tests.test_lessons']),
+    suites = [('.', ['harness.tests.test_portable', 'harness.tests.test_legacy_tracker', 'harness.tests.test_lessons',
+                     'harness.tests.test_uipath_cli', 'harness.tests.test_verify',
+                     'harness.tests.test_readiness']),
               ('harness/course_tools/day03', ['test_bpa_access', 'test_api_exercises']),
               ('harness/course_tools/day04/setup_2026-10-06', ['test_verify_portal_batch'])]
     for cwd, modules in suites:

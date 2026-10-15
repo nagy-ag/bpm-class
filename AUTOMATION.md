@@ -1,4 +1,16 @@
-# Current automation access — 2026-10-07
+# Current automation access — 2026-10-15
+
+Latest native execution handoff (2026-10-15): [current report](.bpa/native-execution-20261015/REPORT.md) supersedes the earlier coverage gaps below. Native PDF/email/error, chart, web CLI/filter/export, dialog/error-repair and Power Query formatting/settings checks pass. Exact fictional CRM links were reverified through authenticated EU GETs with zero mutations. Colab greeting/client-load passed; the user deferred private/API cells, and its runtime/tab were closed. Portal/strict-selector live runs remain user-started. No all-course completion or vendor MCP repair is claimed.
+
+Earlier dated checks follow as history.
+
+Task-type coverage recheck (2026-10-15): [62-checkpoint audit](.bpa/task-type-audit-20261015/REPORT.md) confirms incomplete native coverage. Additional actual official CLI sorter runs pass15/3/0moves on current nap07 input; native calculation helper passes8assertions. First public API example returns200/10rows. Current nap08 Cross-platform PDF/email/browser/error workflows and current chart/cloud/UI checks remain unverified. Prior Colab/Office/CRM evidence stays dated. No portal action, MCP runtime repair or new entitlement is implied;39unit tests do not mean all lesson types passed.
+
+Latest accepted route (2026-10-15): user accepts official CLI validation/run. The [project-aware launcher](harness/UIPATH_CLI.md) is verified with real per-process project context, byte-exact logs and semantic verdicts. Both unchanged ExcelRobot files validate, project build passes and both actual runs produce exact12row outputs with6and3highlights in a fresh folder with spaces. All39regression tests pass. [Evidence](.bpa/uipath-project-cli-20261015/REPORT.md). No vendor/MCP config/authentication change; MCP project-context defect remains, but it is not a blocker for the accepted CLI route.
+
+2026-10-15 update: official UiPath rpa-tool1.203.2 installed through the exposed MCP command tool; fresh inventory status `ok`. An actual MCP build of the isolated ExcelRobot passed. MCP validation/run currently ignore `--project-dir` and fail at the repository root; direct official CLI validates both workflows and actually runs both successfully. Current nap07 input and outputs verified exactly (12rows;6and3highlights); Main output opened in native Excel. Live CMC BTC/ETH/SOL and disposable fictional Zoho create/read/update/read/delete passed with cleanup. [Current readiness report and precise platform limits](.bpa/readiness-20261015/REPORT.md). No new course completion, portal access, cloud permission or unattended re-login is implied. Earlier dated inventory below is historical.
+
+UiPath MCP recheck (2026-10-14): exposed `mcp__uipath__run_command` successfully executed read-only `login status` and `tools list`. Login reports a Robot-backed authenticated session in DefaultTenant; installed CLI tool list is empty. This verifies MCP connectivity/status commands, not robot execution. No installation or account change performed. Earlier account/Studio evidence below is historical.
 
 Supplied nap01–nap04 execution and expanded feature checks are verified. [Current course summary](PROGRESS.md), [nap04 handoff](nap04/deliverables/HANDOFF.md). API credentials remain in ignored.env.local and matching-service calls use the canonical helper. No account passwords are stored.
 

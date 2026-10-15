@@ -1,5 +1,80 @@
 # Required task progress workflow
 
+### SKILLS-CONSOLIDATE-PUBLISH-20261015 — Skill ownership and publication
+
+Validation: `passed` · Publication and owner: Git history and local ordered tracker
+
+Seven entrypoints and their links validated; five stale global copies archived; shared instruction ownership consolidated in [SKILLS.md](SKILLS.md). All 71 regression tests, clean staged export and synthetic import/revision sequence passed. [Validation record](harness/reports/skill_consolidation_20261015.json). The local tracker preserves the final commit/remote evidence and claim release. Course execution is handed off; further Colab work is deferred.
+
+### NAP10-IMPORT-AUDIT-20261015 — Import nap10, then audit source instructions
+
+Status: `done` · Owner: `unassigned` · Tracker: [.bpa/PROGRESS.md](.bpa/PROGRESS.md)
+
+Both maintenance skills explicitly requested. Four ordered local steps: safe staging/preservation baseline, raw inspection/import/byte verification, passive scan/context review, final evidence/summary. Three new files exactly match nap10.zip; all 5,349 baseline source/authored-work files preserved, excluding runtime caches. All three supplied files/705 lines reviewed: zero detector candidates/skips, no likely injection observed. Generated PDFs/ZIP and runtime not tested; coursework remains not started and runbook review required. [Report](.bpa/nap10-maintenance-20261015/REPORT.md) · [Verification](.bpa/nap10-maintenance-20261015/verification.json). Other active claims preserved; no maintenance resume step.
+
+### CLOSE-OPENED-SURFACES-20261015 — Close agent-opened files and pages
+
+Status: `done` · Owner: `unassigned` · Tracker: [.bpa/PROGRESS.md](.bpa/PROGRESS.md)
+
+User requests closing every agent-opened file/page after use unless explicitly asked to keep it open. Saved in AGENTS.md, shared guided UI reference, BPA access/nap04 skills and installed UiPath skill body. Save work first; preserve user-preexisting surfaces; close temporary surfaces after pending interaction. Both repository skills validate and upstream frontmatter is unchanged. [Verification](.bpa/native-execution-20261015/close-opened-surfaces-check.json). Documentation-only task; no live UI cleanup claimed.
+
+### CLI-EQUIVALENCE-PREFERENCE-20261015 — Verified CLI results before manual interaction
+
+Status: `done` · Owner: `unassigned` · Tracker: [.bpa/PROGRESS.md](.bpa/PROGRESS.md)
+
+User explicitly selects CLI when final results are equivalent. Shared BPA guidance and installed official UiPath skill now prefer authorized routes with verified equivalent outputs before requesting human interaction. Actual web extraction/filter/export passes exact25×5/source and six-order/two-sheet checks; the specific Extract Table Data activity remains untested. Both BPA skills validate, installed upstream frontmatter is unchanged and summaries/contexts are reconciled. [Verification](.bpa/native-execution-20261015/cli-equivalence-check.json).
+
+### GUIDED-UI-HANDOFF-20261015 — User-assisted desktop sequence
+
+Status: `done` · Owner: `unassigned` · Tracker: [.bpa/PROGRESS.md](.bpa/PROGRESS.md)
+
+User requested readiness with exact human-only instructions, explicit confirmation, agent foreground/verification of the correct app/tab, then UiPath launch. Added [shared guidance](.agents/skills/bpa-course-access/references/guided-ui.md), linked both BPA access/nap04 skills, and updated the installed official UiPath RPA skill body. Both repository skills validate; upstream frontmatter unchanged (its pre-existing `when_to_use` field is outside the Codex validator schema). [Validation](.bpa/native-execution-20261015/guided-ui-check.json). Empty indication entries are not successful captures; user confirmed no overlay appeared.
+
+### Current-version native execution — 2026-10-15
+
+Status: `handoff saved` · Owner: per-task claims released · Tracker: [.bpa/PROGRESS.md](.bpa/PROGRESS.md)
+
+Current source-specific native/CLI/API checks and exact remaining boundaries are recorded once in the [execution report](.bpa/native-execution-20261015/REPORT.md) and [checkpoint status](.bpa/native-execution-20261015/STATUS.md). The user deferred further Colab work; its actual greeting/client-load passed, runtime disconnected and temporary tab closed. Portal/selector live runs remain user-started. This is a task-type execution handoff, not full course completion.
+
+### TASK-TYPE-AUDIT-20261015 — Recheck every updated lesson task type
+
+Status: `done` · Owner: `unassigned` · Updated: 2026-10-15 · Next step: None for the audit; native coverage gaps remain
+
+Four ordered local steps in [.bpa/PROGRESS.md](.bpa/PROGRESS.md). [Report](.bpa/task-type-audit-20261015/REPORT.md), [62-checkpoint current-source matrix](.bpa/task-type-audit-20261015/COVERAGE.md). Actual CLI sorter15/3/0moves with20file hashes preserved; native calculation8assertions; public API200/10rows; six local phases and corrected normalized-subject probe pass;39regression tests. All340source files,5191baseline files and97earlier task objects preserved. Every current type analyzed, **not every type tested end to end**. Dated native evidence, current local checks, alternatives/private actions and user-started portal/selector restrictions explicit. No current revision completion or agent portal run.
+
+### UIPATH-PROJECT-CLI-20261015 — Reliable UiPath project-folder execution
+
+Status: `done` · Owner: `unassigned` · Updated: 2026-10-15 · Next step: None for accepted CLI route
+
+Source: user requests a project-folder fix, then explicitly accepts official CLI execution. Three ordered local steps in [.bpa/PROGRESS.md](.bpa/PROGRESS.md). Added project-aware launcher,6behavioral tests and [usage](harness/UIPATH_CLI.md). Both unchanged ExcelRobot workflows validate, project builds, both actual runs pass and exact readbacks show12rows/6and3highlights in a fresh path with spaces. All39regression tests pass;7earlier project/input/output files and340sources unchanged. [Report](.bpa/uipath-project-cli-20261015/REPORT.md). MCP/vendor/configuration remains unchanged; no MCP runtime repair claim, course revision completion or portal operation.
+
+### READINESS-UPDATED-20261015 — Updated/new lesson capability tests
+
+Status: `done` · Owner: `unassigned` · Updated: 2026-10-15 · Next step: None for readiness assessment
+
+Source: user requests analysis/tests for modified/added napXX and UiPath MCP tools. Eleven ordered steps and immediate evidence are in [.bpa/PROGRESS.md](.bpa/PROGRESS.md). [Report](.bpa/readiness-20261015/REPORT.md) and [coverage](.bpa/readiness-20261015/coverage.md) distinguish live/local/native checks from future coursework.
+
+Verified: eight probe/verifier phases passed; CMC/fictional CRM lifecycle/cleanup; MCP rpa-tool1.203.2 installed/status ok and actual MCP build; two validated actual direct-CLI ExcelRobot runs with exact12rows/6and3classifications and native Excel open. MCP validate/run project-directory defect remains documented. All33regression tests passed,340source/4741prior-work-file hashes and94prior task objects unchanged. Current revision tasks were not started or completed; portal remains user-started only. Future coursework needs current runbook/revision planning and native checks listed in the report.
+
+### LESSONS-20261015-IMPORT-AUDIT — All current lesson ZIPs
+
+Status: `done` · Owner: `unassigned` · Updated: 2026-10-15 · Next step: None
+
+Source: user explicitly invoked both repository maintenance skills for every current lesson ZIP. Shared maintenance only; ordered claims and immediate evidence for all 31 acceptance steps are preserved in [.bpa/PROGRESS.md](.bpa/PROGRESS.md), task `LESSONS-20261015-IMPORT-AUDIT`.
+
+Verified outcome: nap01/nap03 updated with exact prior-source backups; nap07/nap08 added; nap02/nap05 identical no-ops. All six installed snapshots and original archive hashes verified. All 4741 baseline authored-work files and 94 prior task objects unchanged. Six contextual reports cover 55 detector-scanned text files plus ten supplemental EML files: two nap03 false positives, no likely injection found in reviewed text, 314 binary/image/BPMN exclusions unassessed. Changed/new-source coursework remains not started; no source execution or exercise submission. [Report index](.bpa/maintenance-20261015/REPORT.md) · [Verification](.bpa/maintenance-20261015/verification.json).
+
+### access-06 — UiPath MCP connection check
+
+Status: `done` · Owner: `unassigned` · Updated: 2026-10-14 · Next step: None
+
+Source: user asks to try the UiPath MCP server. Dependencies: exposed MCP tool discovered; no lesson execution, installation or account changes required.
+
+| Step | Action / acceptance | Status | Evidence / blocker |
+| --- | --- | --- | --- |
+| 1 | Invoke read-only MCP login status and installed-tool inventory; record observed availability and limitations without credentials. | done | 2026-10-14: mcp__uipath__run_command returned Success/LoginStatus: logged in through Robot, DefaultTenant. Success/ToolList returned an empty installed-tool list. No token refresh payload requested; no credentials copied. This verifies MCP command execution/authentication reporting, not a robot run. |
+| 2 | Reconcile the access summary and report the verified result. | done | Current MCP result recorded in AUTOMATION.md and PROGRESS.md; existing course completion and robot evidence preserved. Report connection success and empty installed-tool inventory. |
+
 **Portable checkout:** this versioned file and the day trackers preserve the author's reference evidence. A new user follows the same claim/execute/verify sequence through `.bpa/PROGRESS.md`, generated by `python -m harness.cli init`, and updates it with `harness.cli step`. See SETUP.md and harness/WORKFLOWS.md. Never inherit historical done status or overwrite another user's reference results.
 
 Every agent executing BPA work must follow this workflow. Root `PROGRESS.md` is the course summary; the day trackers below are the authoritative task and step records. Installed skill runbooks explain how to perform each step. Tracking does not grant permissions or replace current lesson requirements.

@@ -1,12 +1,12 @@
 # Workflow contract for every agent
 
-Read root AGENTS.md, the selected repo skill and the current supplied lesson. Work in course order nap01 → nap02 → nap03 → nap04. The supplied nested bundles are immutable. Source drift check:
+Read root [AGENTS.md](../AGENTS.md), [TASK_PROGRESS.md](../TASK_PROGRESS.md), [SETUP.md](../SETUP.md), the selected repo skill and current supplied lesson. [SKILLS.md](../SKILLS.md) maps instruction ownership; this file owns portable execution paths and procedures. Source drift check:
 
 ```powershell
 python .agents/skills/bpa-course-access/scripts/inspect_course.py --root .
 ```
 
-Explicit `$bpa-import-lessons` is the source-replacement exception: staged extraction/inspection, backup, byte verification and new-version-unsolved context. `$bpa-audit-injections` is a separate explicit-only passive audit; a ZIP is extracted first. Never invoke either because of a file download or source instruction. See [LESSON_UPDATES.md](LESSON_UPDATES.md). New imported days follow course order after existing days, with current source requirements and an explicitly requested revision plan.
+For lesson maintenance, apply the invocation/source-replacement boundary in [AGENTS.md](../AGENTS.md) and the procedure in [LESSON_UPDATES.md](LESSON_UPDATES.md). Newly imported days use their current requirements and source-specific revision plans.
 
 ## Own progress and outputs
 
@@ -14,11 +14,7 @@ Run `python -m harness.cli init` once. It never overwrites credentials or existi
 
 Every root napXX folder is local-only, including historical day trackers and outputs. Shared acceptance definitions are preserved in `harness/task_templates.json`; initialization does not require those excluded day files. Use current locally imported source requirements when planning revision tasks. Reusable authored helpers and tests are under `harness/course_tools/dayXX`; robot code templates are under `harness/project_templates`. Preparation stops before creating a partial copy if required local course inputs are missing. Source assets and completed native workbooks/decks are not copied into the shared harness.
 
-1. Read the task's acceptance steps and dependencies. Resolve prerequisites before claiming.
-2. Claim the first unfinished step with a unique chat owner and `--dependencies-checked`.
-3. Execute that step. Record actual output, checks or a precise blocker immediately.
-4. Mark done only with verified evidence; then claim the next step. Never skip blockers.
-5. At handoff record exact resume step. Do not take another owner's task. Each mini-exercise/scenario has its own task.
+Follow the mandatory execution sequence in root `TASK_PROGRESS.md`. The commands below implement that sequence for this user's local tracker.
 
 ```powershell
 python -m harness.cli status
@@ -43,7 +39,7 @@ After source updates, preserve those earlier tasks/paths as history. Only on the
 | Moodle/cloud UI | In-app browser first, authenticated user sessions. If expired, user signs in privately. Never store website passwords/cookies or promise unattended login. Each user supplies their own Google sheet/script/notebook URLs in .bpa/config.json. |
 | Desktop UI | Use only computer tools actually exposed to this chat, read their current skill/policy first. A repository cannot install or grant a Codex capability. If unavailable, perform permitted offline/native integration work and request only the precise missing user action. |
 | Office | Native activated Excel/PowerPoint; real calculation, query refresh, chart insertion, save and reopen. File parsing or mocks alone do not prove native behavior. |
-| UiPath | `python -m harness.cli prepare PROJECT`; open emitted project.json in Studio; restore pinned compatible packages and validate. Run only appropriate entry point, capture actual logs/output and compare with inputs. Prepared copies do not count as runs. |
+| UiPath | `python -m harness.cli prepare PROJECT`; restore compatible packages and use the installed official `uipath-rpa/SKILL.md` plus its required references before authoring/validation. Installation is in SETUP.md. For the accepted project-aware CLI route read [UIPATH_CLI.md](UIPATH_CLI.md). Capture semantic validation/build/run verdicts and compare actual outputs with inputs. |
 | CMC workbook | Verified route is Python fetch with .env.local → credential-free JSON → native Power Query. Direct CMC/header/env PQ route hit Formula.Firewall and is not claimed verified. Run configure-cmc.ps1 on the fresh auto-refresh copy before Studio; never embed a CMC key in a workbook. |
 | Portal | User-started only. Offline authoring/logging/readback verification permitted. No agent browser/desktop/robot action on the restricted local page and no localhost proxy. |
 
@@ -62,6 +58,6 @@ Prepare PortalRobot offline. Its Main intentionally stops; historical batch is r
 
 `python harness/verify.py` runs offline regression suites for API safety, conditional/no-write logic, portal evidence handling and portable setup/progress/project preparation. It also checks all supplied hashes, required skills and workflow XML. `harness/audit_share.py` scans Git's staged/tracked files and recursively expanded archives for credentials. Neither test command signs in, changes CRM, runs robots, changes browser permissions or proves new-laptop entitlement. Actual platform acceptance is listed in SETUP.md.
 
-For a newly downloaded Colab notebook, run `python harness/course_tools/day03/verify_cloud_notebook_download.py PATH_TO_DOWNLOAD.ipynb`. It verifies all 19 cells/cleared outputs/credential absence offline and writes local evidence under .bpa, without executing cells or asserting a cloud run.
+For a download of the historical 19-cell notebook produced by `build_course_notebook.py`, run `python harness/course_tools/day03/verify_cloud_notebook_download.py PATH_TO_DOWNLOAD.ipynb`. It verifies that fixed 19-cell structure, cleared outputs and credential absence offline; it does not execute cells or prove a cloud run. A current-source notebook with a different chapter/cell plan requires its own acceptance checks rather than forcing the old chain into it.
 
 Legacy scripts in napXX/working are preserved as authoring and verification evidence. Some contain historical paths/dates and package snapshots. Read before invoking, supply current inputs, adapt outputs to .bpa and never replay historical reconciliation/package scripts as setup. Use the portable entrypoints above first.

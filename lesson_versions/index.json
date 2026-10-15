@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "days": {
+    "nap05": {
+      "source_version": "81d24f7072d0089a8db8fcadb12d40dc1c703b55ec3774e3504e6d941928d269",
+      "import_id": "3173f4f485a54ac3a2a2f4509ea3e99b",
+      "record": "lesson_versions/nap05/3173f4f485a54ac3a2a2f4509ea3e99b.json",
+      "coursework": "not_started_for_this_source_version",
+      "runbook_review": "required"
+    },
+    "nap01": {
+      "source_version": "52fdccfa447978cd12fcdc6d4c598196c987504bd283da5d230e1fc3ca083388",
+      "import_id": "a3b7d6a4f7ab4920a9ada8d5d97263b1",
+      "record": "lesson_versions/nap01/a3b7d6a4f7ab4920a9ada8d5d97263b1.json",
+      "coursework": "not_started_for_this_source_version",
+      "runbook_review": "required"
+    },
+    "nap03": {
+      "source_version": "3427de470a3922589e198790276325c6b4ef3d55f11370e115bff63f9c427aa0",
+      "import_id": "58d5e1ba4e5b43e8b59afa5898cfc8ff",
+      "record": "lesson_versions/nap03/58d5e1ba4e5b43e8b59afa5898cfc8ff.json",
+      "coursework": "not_started_for_this_source_version",
+      "runbook_review": "required"
+    },
+    "nap07": {
+      "source_version": "e71de94d677fe13b596b314daf766c7941bf847469efa924e0a7b71ea356946b",
+      "import_id": "77e5479eb53d46949848f8b60537a350",
+      "record": "lesson_versions/nap07/77e5479eb53d46949848f8b60537a350.json",
+      "coursework": "not_started_for_this_source_version",
+      "runbook_review": "required"
+    },
+    "nap08": {
+      "source_version": "5ce1d216554e811ad4e4ce492b709d8846e3fe34dd8a876c28b7017879b98dc1",
+      "import_id": "acce02ded4624148bdec4574a44f44fb",
+      "record": "lesson_versions/nap08/acce02ded4624148bdec4574a44f44fb.json",
+      "coursework": "not_started_for_this_source_version",
+      "runbook_review": "required"
+    }
+  }
+}

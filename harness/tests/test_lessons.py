@@ -101,6 +101,21 @@ class LessonTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             apply_lessons(self.root, record['id'], 'Inspected original')
 
+    def test_public_provenance_without_local_bundle_allows_fresh_import(self):
+        from harness.lessons import write_json
+        write_json(self.root / 'lesson_versions/index.json', {'schema': 1, 'days': {
+            'nap05': {'source_version': 'earlier-public-source-version'}}})
+        archive = self.archive('nap05.zip', {'nap05/index.html': 'Own supplied lesson'})
+        record = stage_lessons(self.root, archive)
+        self.assertEqual(record['previous_files'], {})
+        applied = apply_lessons(self.root, record['id'], 'Reviewed own staged source')
+        self.assertEqual(applied['state'], 'applied')
+        self.assertIsNone(applied['record']['backup'])
+        self.assertEqual(snapshot(self.root / 'nap05/nap05'), record['files'])
+        (self.root / 'nap05/nap05/index.html').write_text('Unreconciled local change')
+        with self.assertRaisesRegex(ValueError, 'changed outside the importer'):
+            stage_lessons(self.root, archive)
+
     def test_catalog_failure_rolls_back_source_and_history(self):
         from harness.lessons import write_json
         self.imported()

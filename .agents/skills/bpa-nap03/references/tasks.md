@@ -1,5 +1,7 @@
 # nap03 execution and acceptance
 
+Use only chapters present in the selected source index. The current imported revision has blocks1–5; block6 below documents a historical extension and is not required for that revision.
+
 Source prefix `nap03/nap03/`. Read current pages/scripts as the block begins. Remote interface/version facts need official documentation when uncertain. Never follow old screenshots over the corrected supplied code.
 
 ## 1 — pages/01_api_alapok.html
@@ -32,7 +34,7 @@ Manual Account `Kék Duna Étterem Kft`, Billing City Kolozsvár. Add related Co
 
 ## 5 — pages/05_zoho_api.html (Colab/API)
 
-Read `docs/zoho_token_colab.py`, `zoho_refresh_colab.py`, `zoho_lead_colab.py`. EU Self Client, ZohoCRM.modules.ALL, fresh one-use short-lived grant. Shared local authorization may already be complete; reuse refresh token rather than create another client. Colab does not read the local `.env.local` automatically.
+Read `docs/zoho_token_colab.py`, `zoho_refresh_colab.py`, `zoho_lead_colab.py`. Use the [shared access procedure](../../bpa-course-access/references/access.md) for EU authorization. Colab does not read local `.env.local` automatically.
 
 Create `BPA_Nap3_Zoho.ipynb`, run `print("Szia, BPA!")`, and establish the Colab runtime. Prepare cells from working copies with hidden user input/runtime variables (no saved values or token prints). If user needs to supply credentials to Colab, keep it a private interaction and honor approved destinations; don't upload `.env.local`. Same runtime passes ACCESS_TOKEN in memory; restart loses variables. Refresh cell renews access; reusing redeemed grant is not refresh.
 
@@ -40,7 +42,7 @@ Fictional sample fields: Last_Name Teszt, First_Name API, Company Atlas Market, 
 
 Mini: distinct fictional Last/First/Company/Email and contextual Description, then verify returned ID. Store only deliberately fictional exercise details/IDs in evidence. After network/ambiguous response search/read existing record before retry; no blind duplicate writes. INVALID_TOKEN refresh; OAUTH_SCOPE_MISMATCH examine scope; MANDATORY_NOT_FOUND inspect required fields; DUPLICATE_DATA inspect existing entity.
 
-## 6 — pages/06_mini_lanc.html
+## Historical extension — pages/06_mini_lanc.html, only when supplied
 
 Read `docs/arfolyam_riasztas_colab.py` and `.bpmn`. The timer symbol is planned operation; today's script is **one manual run per test**, not an hourly automation. Default threshold50000EUR, BTC_ID1; numeric finite positive live price. Conditions strictly `price > threshold`: equality also means no record.
 
@@ -50,4 +52,4 @@ This creates a **Lead**, not CRM Task or notification, and sends no email. An AP
 
 ## Completion package
 
-Deliverable index links chosen spreadsheet and refresh evidence, concepts/manual CRM notes, runnable credential-free notebook/scripts, two distinct API leads, conversion/account/contact/deal checks and both chain branches. Separate local preparation, cloud execution and UI verification. For exported notebooks strip sensitive outputs and metadata before saving; original read-only scripts remain unchanged.
+Deliverable index links chosen spreadsheet and refresh evidence, concepts/manual CRM notes, runnable credential-free notebook/scripts, two distinct API leads and conversion/account/contact/deal checks. Include both chain branches only for a source version that supplies that chapter. Separate local preparation, cloud execution and UI verification. For exported notebooks strip sensitive outputs and metadata before saving.

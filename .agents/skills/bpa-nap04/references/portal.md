@@ -4,9 +4,9 @@ Read `nap04/nap04/pages/06_urlap_robot.html`, `docs/gyakorlo_karportal.html` and
 
 ## Browser prerequisite
 
-Prefer in-app browser when allowed; its fileURL block cannot be bypassed with a server/alternative automation route. The lesson's required UiPath Edge/Chrome local-page workflow needs a policy-permitted user handoff. Explain the actual blocked step and let the user open the practice copy. Browser extension installation and fileURL access must follow active tool permissions; Windows Computer Use cannot change security/privacy permission settings. User configures the UiPath extension and Allow access to fileURLs, then agent verifies the app can identify elements. Do not label this prerequisite complete merely because a browser opens.
+Follow the live-operation boundary in [AGENTS.md](../../../../AGENTS.md) and the fresh-baseline/trial/batch procedure in [harness/WORKFLOWS.md](../../../../harness/WORKFLOWS.md#portal-fresh-baseline-then-trial-then-batch). User-provided target captures and exported evidence support offline authoring/verification. Browser opening alone does not establish captured targets.
 
-Portal teaching login is public dummy `gyakorlo`/`Meridian2026`; it is not the user's account. Active Computer Use denies authentication-dialog automation, so let the user log in where required. No real password is stored. It starts with20sample cases and persists added practice cases in browser local storage. No cookie/storage extraction or injection to fake robot completion.
+Portal teaching login is public dummy `gyakorlo`/`Meridian2026`, not the user's account. It starts with20sample cases and persists added practice cases in browser local storage. Counts and target evidence must come from the user's actual run.
 
 ## Establish correct initial state
 
@@ -30,7 +30,7 @@ Use Application/Browser attached to the already authenticated practice tab. Put 
 
 Indicate each target separately and verify current selectors. Four Type Into activities clear fields before typing; Select Item string exactly matches an option. Click Bejelentés rögzítése; Check App State `A bejelentést rögzítettük`, timeout about10seconds. Appears→Click Új bejelentés rögzítése; absent→Throw `New Exception("A bejelentés nem mentődött; ellenőrizd a portál hibaüzenetét.")`. Fail visibly rather than skip a row. Don't use Piszkozat mentése (deliberately changingid).
 
-Observe1rowrun, inspect all fields, reset own trial if permitted, restore full range and run10. Capture actual robot Output and UI evidence. If interrupted after submission, inspect saved rows before resuming; restarting blindly creates duplicates. Any code-only/mock browser fill is not an actual UiPath run.
+The user performs live Studio indication and robot runs. Verify the resulting one-row trial and batch using the shared procedure above; these task-specific activity settings do not authorize agent launch.
 
 ## Acceptance
 

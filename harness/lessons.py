@@ -144,7 +144,8 @@ def stage_lessons(root, archive, day=None):
                 shutil.copyfile(path, out)
             hashes, base = snapshot(staged), snapshot(target)
             current = catalog(root)['days'].get(day)
-            if current and version(base) != current['source_version']:
+            # A shared checkout has provenance but no local-only lesson assets.
+            if current and target.exists() and version(base) != current['source_version']:
                 raise ValueError('Installed source changed outside the importer; reconcile it before updating.')
             with archive.open('rb') as stream:
                 archive_hash = hashlib.file_digest(stream, 'sha256').hexdigest()

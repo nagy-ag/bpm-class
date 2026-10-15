@@ -1,3 +1,51 @@
+## 2026-10-15 skills consolidated and publication validated
+
+Seven repository skills validate. Five stale global copies were archived locally; `.agents/skills` is the sole maintained discovery location. [SKILLS.md](SKILLS.md) maps one owner for each shared instruction; day and maintenance entrypoints link to those owners. Current-source nap03 and nap07/08 routing are corrected, earlier course evidence is preserved, and further Colab work is deferred.
+
+All 71 offline regression tests and the clean staged export/import/revision sequence pass. Publication includes the project-aware CLI helper, readiness diagnostics, regression fixes and source provenance; root lesson folders and private execution data stay local. [Validation record](harness/reports/skill_consolidation_20261015.json). Git records publication; the ordered local maintenance task records its verified remote result.
+
+## 2026-10-15 nap10 import and injection audit — complete
+
+Explicitly imported nap10.zip, then audited the installed bundle. Three new source files exactly match the original archive; all 5,349 baseline lesson/authored-work files are unchanged (runtime caches excluded). No previous nap10 source required a backup. Passive scanning and contextual review covered all three files/705 raw lines, including the inline generator script: zero detector candidates, zero skipped files, no likely injection observed. Generated PDFs/ZIPs and runtime behavior were not tested. [Report](.bpa/nap10-maintenance-20261015/REPORT.md) · [Verification](.bpa/nap10-maintenance-20261015/verification.json).
+
+Nap10 coursework remains **not started**, with runbook review required; no exercise, API request or graded submission occurred. Ordered shared task `NAP10-IMPORT-AUDIT-20261015` is in [.bpa/PROGRESS.md](.bpa/PROGRESS.md). Other chats' claims and earlier completion evidence are preserved. No remaining maintenance action.
+
+## 2026-10-15 native task-type handoff
+
+Additional actual checks passed: CLI-authored café/routine BPMNs reopened in the editor; Windows greeting/calculation dialogs; expected CInt(sok) failure and eight repaired cases; Működik smoke; native Power Query refresh settings and SOL/percentage formatting; and exact current fictional CRM relationship readbacks without duplicates. Earlier current native PDF/email/error, chart, sorter, classification and web extraction/filter/workbook evidence remains preserved. Methods and limits: [.bpa/native-execution-20261015/REPORT.md](.bpa/native-execution-20261015/REPORT.md).
+
+Colab greeting/client load ran in a new actual cloud runtime; the user deferred further Colab work. Its runtime was stopped and the temporary tab closed. Portal/strict-selector demonstrations remain user-started; private AI settings and personal viewing are not claimed. Specific Extract Table Data activity and editor-panel tours were not replayed. No claim that all coursework or every implementation path is complete. Exact checkpoint handoff: [STATUS.md](.bpa/native-execution-20261015/STATUS.md).
+
+## 2026-10-15 task-type re-audit — incomplete native coverage confirmed
+
+Rechecked all21current nap01/03/07/08 lesson pages against62separate acceptance checkpoints, including minis, alternatives and user-only actions. **Every type is analyzed; every type has not been tested end to end.** [Detailed report](.bpa/task-type-audit-20261015/REPORT.md) and [source-linked matrix](.bpa/task-type-audit-20261015/COVERAGE.md) distinguish current native/live tests, local probes, dated evidence and remaining checks. The39harness tests are not a lesson-coverage count.
+
+Added actual CLI sorter runs on current nap07 bytes:15document moves,3PNGmoves,repeat0; all20names/hashes preserved. Actual unchanged UiPath calculation workflow passed8assertions. Public unauthenticated API200/10rows passed; six isolated local phases and corrected lowercase email-log probe pass; final39regression tests pass. All340sources,5191baseline earlier files and97prior tasks preserved. Current chart/nap08 native workflows and current cloud/UI refresh checks remain unverified; portal/selector live demonstrations remain user-started. Earlier actual Colab/AI evidence reconciled without inheriting completion. No new coursework completion or submission. Resume: none for audit; native gaps require their own current-source execution plans.
+
+## 2026-10-15 reliable UiPath CLI route — verified
+
+User accepted official CLI execution as the alternative to the MCP project-folder defect. Added [project-aware launcher and commands](harness/UIPATH_CLI.md), using real per-command arguments plus project working directory, shell-free path handling, semantic success checks, no retries and byte-exact evidence logs. Official/vendor installation, MCP settings and authentication are unchanged; MCP validation/run is not claimed fixed.
+
+Both unchanged ExcelRobot workflows validated without diagnostics; whole project built; both actually ran through the launcher in a fresh folder with spaces. Exact current-input/readback checks passed:12rows each,6highlights at100000 and3at150000, all other fields exact. All39regression tests passed. Seven earlier project/input/output files and340supplied files preserved. [Report](.bpa/uipath-project-cli-20261015/REPORT.md), [verification](.bpa/uipath-project-cli-20261015/verification.json). No remaining step for the accepted CLI route; no new coursework completion, submission or agent portal action.
+
+## 2026-10-15 updated lesson readiness and UiPath tools — complete assessment
+
+Analyzed current nap01/nap03/nap07/nap08 tasks, minis and alternatives. Eight capability/verification phases passed, including live CMC quotes and a unique disposable fictional Zoho lead lifecycle with cleanup. Installed official UiPath rpa-tool1.203.2 through MCP; MCP project build passed. MCP validate/run ignore the supplied project directory and fail at the repository root. Direct official CLI validated and actually ran both fresh ExcelRobot variants:12rows,6highlights at100000 and3at150000; exact current nap07 input, output readbacks and native Excel opening verified. This distinguishes MCP build from direct CLI runtime success.
+
+Key adaptations: nap03 old mini-chain removed; nap07 base chart has243rows and slide8 target; nap08 PDF delimiters require actual-engine checking, and the supplied bad PDF is valid but empty. Local invoice/email/table/error/selector tests passed; remaining native platform checks and user-only portal execution are explicit in the [readiness report](.bpa/readiness-20261015/REPORT.md), [coverage matrix](.bpa/readiness-20261015/coverage.md) and [reproducible probe usage](harness/READINESS.md). All33harness regression tests passed. All340supplied source files,4741earlier authored files and94prior task objects remain unchanged. Current-version coursework stays unfinished; no submission or agent portal operation. Resume: none for assessment; future solve requests need current revision plans/runbook review and MCP project-context repair before claiming MCP runtime success.
+
+## 2026-10-15 lesson ZIP imports and injection audits — complete
+
+Processed all six current ZIPs in order: nap01 and nap03 updated; nap07 and nap08 added; nap02 and nap05 were byte-identical and left unchanged. Installed source hashes match the staged archive manifests; original ZIPs remain intact. Exact previous-source backups for nap01/nap03 were verified. All 4741 files in the authored-work preservation baseline and all 94 prior local task objects are unchanged.
+
+Each bundle received a separate passive text audit and contextual report. Across 55 detector-scanned text files plus ten separately reviewed nap08 email samples, no likely prompt injection was found. Two nap03 detector candidates are fixed status messages that do not print token values. The reports list 314 remaining exclusions, including images, PDFs, Office files and BPMN; those contents are unassessed. [Combined report and six audit links](.bpa/maintenance-20261015/REPORT.md), [verification](.bpa/maintenance-20261015/verification.json), [ordered local progress](.bpa/PROGRESS.md).
+
+Coursework for the changed/new nap01, nap03, nap07 and nap08 source versions is **not started**; a later explicit solve request must create their revision plans. Earlier work remains historical evidence. The unchanged nap05 completed revision and nap02 reference results remain intact. No course exercise, portal action or graded submission occurred; runbook-review hashes were not changed. Resume: none for this maintenance request.
+
+## 2026-10-14 UiPath MCP check — complete
+
+Read-only calls through `mcp__uipath__run_command` succeeded: `login status --output json` reports an authenticated Robot-backed session in DefaultTenant; `tools list --output json` reports no installed UiPath CLI tools. MCP command execution is verified. No robot was executed or tool installed. See access-06 in [TASK_PROGRESS.md](TASK_PROGRESS.md).
+
 ## 2026-10-08 explicit maintenance skills and code-only publication — complete
 
 Published repo-local `$bpa-import-lessons` and `$bpa-audit-injections`, both with implicit invocation disabled. ZIPs are extracted into isolated staging before inspection; safe source replacement preserves credentials, outer work and completed task evidence. Updated-source coursework stays unfinished until an explicit solve request creates separate revision tasks/work. Injection audit remains separately requested passive review with coverage limits. Usage: [maintenance guide](harness/LESSON_UPDATES.md).
@@ -5,6 +53,16 @@ Published repo-local `$bpa-import-lessons` and `$bpa-audit-injections`, both wit
 Every root napXX folder is removed from GitHub's current main tree and ignored for future pushes. All1321previously tracked local day files are preserved. Reusable44helpers,7robot code templates,75pending task definitions and all maintained tests/verifiers remain under harness. Colleagues import their own ZIPs. The sharing audit rejects force-added root-day files; earlier Git history is preserved.
 
 All61regression tests and both skill validators pass. A clean Windows checkout passed code-only verification, the actual isolated synthetic ZIP stage/audit/apply/revision/step sequence (10checks before/11after import), and the214file sharing audit: [Windows CI](https://github.com/nagy-ag/bpm-class/actions/runs/37793972459), code commit049915f. NTFS short-path issues found in the first two CI attempts are fixed and regression-tested. The author's223earlier supplied files remain unchanged; local verification also passes. This publication task did not update actual course sources or perform a full current-course injection audit; separate imports have their own progress records. [Verification](harness/reports/lesson_maintenance_verification.json). Older distribution inventories below are historical.
+
+## 2026-10-08 nap05 explicit injection audit — complete within text coverage
+
+Explicit `$bpa-audit-injections for nap05` scanned and contextually reviewed the three HTML files (including both inline scripts) and CSS in `nap05/nap05`. Zero pattern candidates and no likely injection observed in reviewed text. [Contextual report](.bpa/audits/20261008T143839117630-review.md), [raw findings](.bpa/audits/20261008T143839117630.json), [verification](.bpa/audits/20261008T143839117630-verification.json). All nine supplied file hashes remain unchanged. Four PNG images and the XLSX workbook remain unreviewed binary coverage; they are not declared clean. Shared local maintenance task `AUDIT-NAP05-20261008` records ordered evidence. No source code, account action, coursework execution or graded submission occurred. Nap05 coursework remains **not started** and runbook review remains required.
+
+## 2026-10-08 nap05 lesson import — complete; coursework not started
+
+Explicit `$bpa-import-lessons nap05.zip` imported nine files to [nap05 lesson](nap05/nap05/index.html). All installed files byte-match the retained original ZIP; all 223 earlier nap01–nap04 supplied-source hashes still match the reviewed manifest. No previous nap05 source existed, so no source backup was needed. Existing coursework/evidence and the runbook-review manifest were preserved. Source version: `81d24f7072d0089a8db8fcadb12d40dc1c703b55ec3774e3504e6d941928d269`.
+
+Shared local maintenance task `IMPORT-NAP05-20261008` has four verified steps and its owner released in [.bpa progress](.bpa/PROGRESS.md). [Import verification](.bpa/imports/3173f4f485a54ac3a2a2f4509ea3e99b/verification.json) and [inspection notes](.bpa/imports/3173f4f485a54ac3a2a2f4509ea3e99b/inspection.json) record the evidence and supplied CRM B2/day6 labels/download filename inconsistent with the combined B1 assignment. Source bytes remain unchanged. Structural/content inspection only; the separate injection audit was not invoked. New-version coursework is **not started**, runbook review is required, and no revision execution or graded submission occurred. Only a later explicit solve request starts the current-version task plan.
 
 ## 2026-10-08 portable harness publication — complete
 
@@ -146,3 +204,11 @@ Completed all six blocks at user request. Seven BIMP runs finished (100 café or
 
 At the user's request, transferred all six block results to Brave in the “📚 BPA nap02” group, ordered 1–6. The café and warehouse scenarios were rerun successfully in Brave (100 and 135 completed instances); these fresh random samples differ from the original saved comparison runs. Closed the six in-app copies after verifying the transfer.
 
+
+## nap05 execution — 2026-10-08
+Completed the requested current nap05 revision for NagyAlfonzGabor. Current-source ordered revision tasks are in .bpa/PROGRESS.md; artifacts under .bpa/work/nap05/revisions/81d24f7072d0089a8db8fcadb12d40dc1c703b55ec3774e3504e6d941928d269/3173f4f485a54ac3a2a2f4509ea3e99b. Nine actual BIMP runs completed120cases each; three native Save scenario files and both own parameter JSONs verified; provided workbook retains24formulas and3validations with nine measured rows and Hungarian recommendation. Zoho native import added40/updated0/skipped0, exact eight-field API readback passed; native53row export filtered to40owncodes with64original headings and all field values preserved. Brave page captures exclude browser chrome. [Moodle upload ZIP](nap05/deliverables/NagyAlfonzGabor_B1.zip) has7required root files plus27distinct page screenshots; reopened CRC/member hashes passed (SHA256 e62a5439147f071caa80c1738943abd182d879c87ad84c77e779af4484112291). Earlier day evidence preserved. No Moodle submission performed.
+## 2026-10-15 native execution record
+
+The ordered current-source execution plan contains 62 acceptance checkpoints. The final native task-type handoff at the top of this file supersedes the earlier in-session gap list; exact execution evidence and remaining method-specific checks are maintained in the [report](.bpa/native-execution-20261015/REPORT.md) and [checkpoint status](.bpa/native-execution-20261015/STATUS.md). No full-course completion is claimed.
+
+The user's interaction preferences are maintained in [guided interaction](.agents/skills/bpa-course-access/references/guided-ui.md) and the cleanup rule in [AGENTS.md](AGENTS.md). Their earlier implementation checks remain in the local execution evidence; current skill ownership is documented in [SKILLS.md](SKILLS.md).
