@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "id": "1844c586ef0e4bc18e74b0e77d6c728c",
+  "day": "nap10",
+  "created_utc": "2026-10-15T14:37:30.416318+00:00",
+  "archive_name": "nap10.zip",
+  "archive_sha256": "cfb4ab285b56d72b09e4f1c4f4bb0eae523ee3bd510de3d6c74bd04148a070c6",
+  "source_version": "20328ed5665c2b5443c57c924ab425b1d838c3d5ebb8a262e0634c1fc52ad9e7",
+  "previous_source_version": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "files": {
+    "bemenet_B3.html": "6f460698cc8fc0dc31c88470ccca95fe7a259c618a14b4c1938f8d29cde85394",
+    "index.html": "fba25645e0b212bae3c2643a141bf682906aa7f5efe865fdcbda93d258f945f3",
+    "style.css": "5398bf018c22a32325a521136686531fe92cea321928d0b76e7caa28aef66651"
+  },
+  "changed": [],
+  "added": [
+    "bemenet_B3.html",
+    "index.html",
+    "style.css"
+  ],
+  "removed": [],
+  "imported_utc": "2026-10-15T14:38:20.795218+00:00",
+  "coursework": "not_started_for_this_source_version",
+  "runbook_review": "required",
+  "backup": null
+}

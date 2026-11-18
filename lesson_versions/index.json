@@ -35,6 +35,13 @@
       "record": "lesson_versions/nap08/acce02ded4624148bdec4574a44f44fb.json",
       "coursework": "not_started_for_this_source_version",
       "runbook_review": "required"
+    },
+    "nap10": {
+      "source_version": "20328ed5665c2b5443c57c924ab425b1d838c3d5ebb8a262e0634c1fc52ad9e7",
+      "import_id": "1844c586ef0e4bc18e74b0e77d6c728c",
+      "record": "lesson_versions/nap10/1844c586ef0e4bc18e74b0e77d6c728c.json",
+      "coursework": "not_started_for_this_source_version",
+      "runbook_review": "required"
     }
   }
 }

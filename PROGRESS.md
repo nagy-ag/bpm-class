@@ -212,3 +212,13 @@ Completed the requested current nap05 revision for NagyAlfonzGabor. Current-sour
 The ordered current-source execution plan contains 62 acceptance checkpoints. The final native task-type handoff at the top of this file supersedes the earlier in-session gap list; exact execution evidence and remaining method-specific checks are maintained in the [report](.bpa/native-execution-20261015/REPORT.md) and [checkpoint status](.bpa/native-execution-20261015/STATUS.md). No full-course completion is claimed.
 
 The user's interaction preferences are maintained in [guided interaction](.agents/skills/bpa-course-access/references/guided-ui.md) and the cleanup rule in [AGENTS.md](AGENTS.md). Their earlier implementation checks remain in the local execution evidence; current skill ownership is documented in [SKILLS.md](SKILLS.md).
+
+## Nap10 B3 completed — 2026-10-15
+
+Current revision executed for NagyAlfonzGabor. Personalized originals verified; actual bound Google Apps Script/Sheets run and native XLSX export passed five rows and15historical prices. Actual Windows/VB UiPath run sorted100unchanged PDFs (63Jovahagyando,37Atutalhato); same workflow passed1799/1800/1801EUR boundary tests. Final six-item ZIP and both nested archives safely reopened and verified. Supplied sources unchanged, credential scan clean, agent-created browser tabs closed. No Moodle submission performed; only upload/finalization remains with user.
+
+[Upload ZIP](.bpa/work/nap10/revisions/20328ed5665c2b5443c57c924ab425b1d838c3d5ebb8a262e0634c1fc52ad9e7/1844c586ef0e4bc18e74b0e77d6c728c/deliverables/NagyAlfonzGabor_B3.zip) · [Upload guide](.bpa/work/nap10/revisions/20328ed5665c2b5443c57c924ab425b1d838c3d5ebb8a262e0634c1fc52ad9e7/1844c586ef0e4bc18e74b0e77d6c728c/deliverables/FELTOLTESI_UTMUTATO.md) · [Verification report](.bpa/work/nap10/revisions/20328ed5665c2b5443c57c924ab425b1d838c3d5ebb8a262e0634c1fc52ad9e7/1844c586ef0e4bc18e74b0e77d6c728c/notes/REPORT.md).
+
+Nap10 B3 rechecked at user request on2026-10-15: independent direct-archive review passed, fresh generator bytes match,100PDFs/15prices and both nested ZIPs verified. Final upload unchanged; no issues. [Recheck report](.bpa/work/nap10/revisions/20328ed5665c2b5443c57c924ab425b1d838c3d5ebb8a262e0634c1fc52ad9e7/1844c586ef0e4bc18e74b0e77d6c728c/notes/RECHECK-20261015.md).
+
+Nap10 upload ZIP also copied to [nap10/deliverables/NagyAlfonzGabor_B3.zip](nap10/deliverables/NagyAlfonzGabor_B3.zip) at user request; exact bytes/SHA256 and ZIP CRC verified against the completed revision artifact.

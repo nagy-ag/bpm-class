@@ -300,3 +300,9 @@ Source: user requests representative tests for every course task type. Dependenc
 
 
 
+
+### NAP10-B3-SOLVE-20261015 — Current-version coursework
+
+Status: `done` · Owner: `unassigned after final claim release` · Ordered state: [.bpa/PROGRESS.md](.bpa/PROGRESS.md)
+
+Four revision tasks: generated own inputs; actual Google script/export; actual UiPath100PDF run plus equality test; recursively verified exact six-item upload package. See [report](.bpa/work/nap10/revisions/20328ed5665c2b5443c57c924ab425b1d838c3d5ebb8a262e0634c1fc52ad9e7/1844c586ef0e4bc18e74b0e77d6c728c/notes/REPORT.md). Final upload remains user action; no execution resume step. Earlier evidence and other claims preserved.
